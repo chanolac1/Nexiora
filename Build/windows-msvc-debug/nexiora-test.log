@@ -1,15 +1,5 @@
-[2026-07-07 15:47:35] [INFO] [Logging] Nexiora logging initialized.
-[2026-07-07 15:47:35] [INFO] [Runtime] Nexiora runtime initialized.
-[2026-07-07 15:47:35] [INFO] [Runtime] Memory current=0 peak=0 allocations=0 frees=0
-[2026-07-07 15:47:35] [INFO] [Runtime] Nexiora runtime shutdown.
-[2026-07-07 15:47:35] [INFO] [Logging] Nexiora logging shutdown.
-[2026-07-07 15:49:01] [INFO] [Logging] Nexiora logging initialized.
-[2026-07-07 15:49:01] [INFO] [Runtime] Nexiora runtime initialized.
-[2026-07-07 15:49:01] [INFO] [Runtime] Memory current=0 peak=0 allocations=0 frees=0
-[2026-07-07 15:49:01] [INFO] [Runtime] Nexiora runtime shutdown.
-[2026-07-07 15:49:01] [INFO] [Logging] Nexiora logging shutdown.
-[2026-07-07 16:16:31] [INFO] [Logging] Nexiora logging initialized.
-[2026-07-07 16:16:31] [INFO] [Runtime] Nexiora runtime initialized.
-[2026-07-07 16:16:31] [INFO] [Runtime] Memory current=0 peak=0 allocations=0 frees=0
-[2026-07-07 16:16:31] [INFO] [Runtime] Nexiora runtime shutdown.
-[2026-07-07 16:16:31] [INFO] [Logging] Nexiora logging shutdown.
+[2026-07-07 16:36:09] [INFO] [Logging] Nexiora logging initialized.
+[2026-07-07 16:36:09] [INFO] [Runtime] Nexiora runtime initialized.
+[2026-07-07 16:36:09] [INFO] [Runtime] Memory current=0 peak=0 allocations=0 frees=0
+[2026-07-07 16:36:09] [INFO] [Runtime] Nexiora runtime shutdown.
+[2026-07-07 16:36:09] [INFO] [Logging] Nexiora logging shutdown.

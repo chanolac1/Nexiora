@@ -3,7 +3,7 @@
 
 #define NX_VERSION_MAJOR 0
 #define NX_VERSION_MINOR 0
-#define NX_VERSION_PATCH 2
-#define NX_VERSION_NAME "Evidence"
+#define NX_VERSION_PATCH 4
+#define NX_VERSION_NAME "HAL"
 
 #endif

@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.25)
 
 project(Nexiora
-    VERSION 0.0.2
-    DESCRIPTION "Nexiora Core Platform - Evidence"
+    VERSION 0.0.4
+    DESCRIPTION "Nexiora Core Platform - HAL"
     LANGUAGES C)
 
 # Nexiora targets C23. MSVC still exposes the most recent C support through
@@ -44,6 +44,10 @@ add_library(NexioraNCP STATIC
 target_include_directories(NexioraNCP PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/Include
 )
+
+if (CMAKE_C_COMPILER_ID STREQUAL "GNU")
+    target_compile_options(NexioraNCP PRIVATE -mxsave)
+endif()
 
 target_compile_definitions(NexioraNCP PUBLIC
     NEXIORA_VERSION_MAJOR=${PROJECT_VERSION_MAJOR}
