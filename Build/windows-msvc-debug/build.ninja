@@ -51,82 +51,110 @@ build cmake_object_order_depends_target_NexioraNCP: phony || .
 
 build CMakeFiles/NexioraNCP.dir/Source/NCP/Common/NxResult.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Common/NxResult.c || cmake_object_order_depends_target_NexioraNCP
   CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=5
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=6
   DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Common\NxResult.c.obj.d
   FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
   INCLUDES = -ID:/Nexiora/Include
   OBJECT_DIR = CMakeFiles\NexioraNCP.dir
   OBJECT_FILE_DIR = CMakeFiles\NexioraNCP.dir\Source\NCP\Common
-  TARGET_SUPPORT_DIR = CMakeFiles\NexioraNCP.dir
-
-build CMakeFiles/NexioraNCP.dir/Source/NCP/Memory/NxMemory.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Memory/NxMemory.c || cmake_object_order_depends_target_NexioraNCP
-  CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=5
-  DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Memory\NxMemory.c.obj.d
-  FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
-  INCLUDES = -ID:/Nexiora/Include
-  OBJECT_DIR = CMakeFiles\NexioraNCP.dir
-  OBJECT_FILE_DIR = CMakeFiles\NexioraNCP.dir\Source\NCP\Memory
-  TARGET_SUPPORT_DIR = CMakeFiles\NexioraNCP.dir
-
-build CMakeFiles/NexioraNCP.dir/Source/NCP/Logging/NxLog.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Logging/NxLog.c || cmake_object_order_depends_target_NexioraNCP
-  CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=5
-  DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Logging\NxLog.c.obj.d
-  FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
-  INCLUDES = -ID:/Nexiora/Include
-  OBJECT_DIR = CMakeFiles\NexioraNCP.dir
-  OBJECT_FILE_DIR = CMakeFiles\NexioraNCP.dir\Source\NCP\Logging
-  TARGET_SUPPORT_DIR = CMakeFiles\NexioraNCP.dir
-
-build CMakeFiles/NexioraNCP.dir/Source/NCP/Hardware/NxHardware.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Hardware/NxHardware.c || cmake_object_order_depends_target_NexioraNCP
-  CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=5
-  DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Hardware\NxHardware.c.obj.d
-  FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
-  INCLUDES = -ID:/Nexiora/Include
-  OBJECT_DIR = CMakeFiles\NexioraNCP.dir
-  OBJECT_FILE_DIR = CMakeFiles\NexioraNCP.dir\Source\NCP\Hardware
-  TARGET_SUPPORT_DIR = CMakeFiles\NexioraNCP.dir
-
-build CMakeFiles/NexioraNCP.dir/Source/NCP/String/NxString.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/String/NxString.c || cmake_object_order_depends_target_NexioraNCP
-  CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=5
-  DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\String\NxString.c.obj.d
-  FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
-  INCLUDES = -ID:/Nexiora/Include
-  OBJECT_DIR = CMakeFiles\NexioraNCP.dir
-  OBJECT_FILE_DIR = CMakeFiles\NexioraNCP.dir\Source\NCP\String
-  TARGET_SUPPORT_DIR = CMakeFiles\NexioraNCP.dir
-
-build CMakeFiles/NexioraNCP.dir/Source/NCP/Benchmark/NxBenchmark.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Benchmark/NxBenchmark.c || cmake_object_order_depends_target_NexioraNCP
-  CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=5
-  DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Benchmark\NxBenchmark.c.obj.d
-  FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
-  INCLUDES = -ID:/Nexiora/Include
-  OBJECT_DIR = CMakeFiles\NexioraNCP.dir
-  OBJECT_FILE_DIR = CMakeFiles\NexioraNCP.dir\Source\NCP\Benchmark
-  TARGET_SUPPORT_DIR = CMakeFiles\NexioraNCP.dir
-
-build CMakeFiles/NexioraNCP.dir/Source/NCP/Evidence/NxEvidence.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Evidence/NxEvidence.c || cmake_object_order_depends_target_NexioraNCP
-  CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=5
-  DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Evidence\NxEvidence.c.obj.d
-  FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
-  INCLUDES = -ID:/Nexiora/Include
-  OBJECT_DIR = CMakeFiles\NexioraNCP.dir
-  OBJECT_FILE_DIR = CMakeFiles\NexioraNCP.dir\Source\NCP\Evidence
+  TARGET_COMPILE_PDB = CMakeFiles\NexioraNCP.dir\NexioraNCP.pdb
+  TARGET_PDB = lib\libNexioraNCP.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\NexioraNCP.dir
 
 build CMakeFiles/NexioraNCP.dir/Source/NCP/Runtime/NxRuntime.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Runtime/NxRuntime.c || cmake_object_order_depends_target_NexioraNCP
   CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=5
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=6
   DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Runtime\NxRuntime.c.obj.d
   FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
   INCLUDES = -ID:/Nexiora/Include
   OBJECT_DIR = CMakeFiles\NexioraNCP.dir
   OBJECT_FILE_DIR = CMakeFiles\NexioraNCP.dir\Source\NCP\Runtime
+  TARGET_COMPILE_PDB = CMakeFiles\NexioraNCP.dir\NexioraNCP.pdb
+  TARGET_PDB = lib\libNexioraNCP.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\NexioraNCP.dir
+
+build CMakeFiles/NexioraNCP.dir/Source/NCP/Memory/NxMemory.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Memory/NxMemory.c || cmake_object_order_depends_target_NexioraNCP
+  CONFIG = Debug
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=6
+  DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Memory\NxMemory.c.obj.d
+  FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
+  INCLUDES = -ID:/Nexiora/Include
+  OBJECT_DIR = CMakeFiles\NexioraNCP.dir
+  OBJECT_FILE_DIR = CMakeFiles\NexioraNCP.dir\Source\NCP\Memory
+  TARGET_COMPILE_PDB = CMakeFiles\NexioraNCP.dir\NexioraNCP.pdb
+  TARGET_PDB = lib\libNexioraNCP.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\NexioraNCP.dir
+
+build CMakeFiles/NexioraNCP.dir/Source/NCP/Logging/NxLog.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Logging/NxLog.c || cmake_object_order_depends_target_NexioraNCP
+  CONFIG = Debug
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=6
+  DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Logging\NxLog.c.obj.d
+  FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
+  INCLUDES = -ID:/Nexiora/Include
+  OBJECT_DIR = CMakeFiles\NexioraNCP.dir
+  OBJECT_FILE_DIR = CMakeFiles\NexioraNCP.dir\Source\NCP\Logging
+  TARGET_COMPILE_PDB = CMakeFiles\NexioraNCP.dir\NexioraNCP.pdb
+  TARGET_PDB = lib\libNexioraNCP.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\NexioraNCP.dir
+
+build CMakeFiles/NexioraNCP.dir/Source/NCP/Hardware/NxHardware.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Hardware/NxHardware.c || cmake_object_order_depends_target_NexioraNCP
+  CONFIG = Debug
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=6
+  DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Hardware\NxHardware.c.obj.d
+  FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
+  INCLUDES = -ID:/Nexiora/Include
+  OBJECT_DIR = CMakeFiles\NexioraNCP.dir
+  OBJECT_FILE_DIR = CMakeFiles\NexioraNCP.dir\Source\NCP\Hardware
+  TARGET_COMPILE_PDB = CMakeFiles\NexioraNCP.dir\NexioraNCP.pdb
+  TARGET_PDB = lib\libNexioraNCP.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\NexioraNCP.dir
+
+build CMakeFiles/NexioraNCP.dir/Source/NCP/String/NxString.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/String/NxString.c || cmake_object_order_depends_target_NexioraNCP
+  CONFIG = Debug
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=6
+  DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\String\NxString.c.obj.d
+  FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
+  INCLUDES = -ID:/Nexiora/Include
+  OBJECT_DIR = CMakeFiles\NexioraNCP.dir
+  OBJECT_FILE_DIR = CMakeFiles\NexioraNCP.dir\Source\NCP\String
+  TARGET_COMPILE_PDB = CMakeFiles\NexioraNCP.dir\NexioraNCP.pdb
+  TARGET_PDB = lib\libNexioraNCP.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\NexioraNCP.dir
+
+build CMakeFiles/NexioraNCP.dir/Source/NCP/Containers/NxVector.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Containers/NxVector.c || cmake_object_order_depends_target_NexioraNCP
+  CONFIG = Debug
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=6
+  DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Containers\NxVector.c.obj.d
+  FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
+  INCLUDES = -ID:/Nexiora/Include
+  OBJECT_DIR = CMakeFiles\NexioraNCP.dir
+  OBJECT_FILE_DIR = CMakeFiles\NexioraNCP.dir\Source\NCP\Containers
+  TARGET_COMPILE_PDB = CMakeFiles\NexioraNCP.dir\NexioraNCP.pdb
+  TARGET_PDB = lib\libNexioraNCP.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\NexioraNCP.dir
+
+build CMakeFiles/NexioraNCP.dir/Source/NCP/Benchmark/NxBenchmark.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Benchmark/NxBenchmark.c || cmake_object_order_depends_target_NexioraNCP
+  CONFIG = Debug
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=6
+  DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Benchmark\NxBenchmark.c.obj.d
+  FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
+  INCLUDES = -ID:/Nexiora/Include
+  OBJECT_DIR = CMakeFiles\NexioraNCP.dir
+  OBJECT_FILE_DIR = CMakeFiles\NexioraNCP.dir\Source\NCP\Benchmark
+  TARGET_COMPILE_PDB = CMakeFiles\NexioraNCP.dir\NexioraNCP.pdb
+  TARGET_PDB = lib\libNexioraNCP.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\NexioraNCP.dir
+
+build CMakeFiles/NexioraNCP.dir/Source/NCP/Evidence/NxEvidence.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Evidence/NxEvidence.c || cmake_object_order_depends_target_NexioraNCP
+  CONFIG = Debug
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=6
+  DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Evidence\NxEvidence.c.obj.d
+  FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
+  INCLUDES = -ID:/Nexiora/Include
+  OBJECT_DIR = CMakeFiles\NexioraNCP.dir
+  OBJECT_FILE_DIR = CMakeFiles\NexioraNCP.dir\Source\NCP\Evidence
+  TARGET_COMPILE_PDB = CMakeFiles\NexioraNCP.dir\NexioraNCP.pdb
+  TARGET_PDB = lib\libNexioraNCP.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\NexioraNCP.dir
 
 
@@ -137,14 +165,15 @@ build CMakeFiles/NexioraNCP.dir/Source/NCP/Runtime/NxRuntime.c.obj: C_COMPILER__
 #############################################
 # Link the static library lib\libNexioraNCP.a
 
-build lib/libNexioraNCP.a: C_STATIC_LIBRARY_LINKER__NexioraNCP_Debug CMakeFiles/NexioraNCP.dir/Source/NCP/Common/NxResult.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Memory/NxMemory.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Logging/NxLog.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Hardware/NxHardware.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/String/NxString.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Benchmark/NxBenchmark.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Evidence/NxEvidence.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Runtime/NxRuntime.c.obj
+build lib/libNexioraNCP.a: C_STATIC_LIBRARY_LINKER__NexioraNCP_Debug CMakeFiles/NexioraNCP.dir/Source/NCP/Common/NxResult.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Runtime/NxRuntime.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Memory/NxMemory.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Logging/NxLog.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Hardware/NxHardware.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/String/NxString.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Containers/NxVector.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Benchmark/NxBenchmark.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Evidence/NxEvidence.c.obj
   CONFIG = Debug
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles\NexioraNCP.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\NexioraNCP.dir\NexioraNCP.pdb
   TARGET_FILE = lib\libNexioraNCP.a
-  TARGET_PDB = NexioraNCP.a.dbg
+  TARGET_PDB = lib\libNexioraNCP.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\NexioraNCP.dir
 
 # =============================================================================
@@ -158,12 +187,14 @@ build cmake_object_order_depends_target_nexiora: phony || cmake_object_order_dep
 
 build CMakeFiles/nexiora.dir/Source/NxBootstrap.c.obj: C_COMPILER__nexiora_unscanned_Debug D$:/Nexiora/Source/NxBootstrap.c || cmake_object_order_depends_target_nexiora
   CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=5
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=6
   DEP_FILE = CMakeFiles\nexiora.dir\Source\NxBootstrap.c.obj.d
   FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic
   INCLUDES = -ID:/Nexiora/Include
   OBJECT_DIR = CMakeFiles\nexiora.dir
   OBJECT_FILE_DIR = CMakeFiles\nexiora.dir\Source
+  TARGET_COMPILE_PDB = CMakeFiles\nexiora.dir\
+  TARGET_PDB = bin\nexiora.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexiora.dir
 
 
@@ -181,49 +212,11 @@ build bin/nexiora.exe: C_EXECUTABLE_LINKER__nexiora_Debug CMakeFiles/nexiora.dir
   OBJECT_DIR = CMakeFiles\nexiora.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\nexiora.dir\
   TARGET_FILE = bin\nexiora.exe
   TARGET_IMPLIB = lib\libnexiora.dll.a
-  TARGET_PDB = nexiora.exe.dbg
+  TARGET_PDB = bin\nexiora.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexiora.dir
-
-# =============================================================================
-# Object build statements for EXECUTABLE target nexiora_tests
-
-
-#############################################
-# Order-only phony target for nexiora_tests
-
-build cmake_object_order_depends_target_nexiora_tests: phony || cmake_object_order_depends_target_NexioraNCP
-
-build CMakeFiles/nexiora_tests.dir/Tests/NxCoreTests.c.obj: C_COMPILER__nexiora_tests_unscanned_Debug D$:/Nexiora/Tests/NxCoreTests.c || cmake_object_order_depends_target_nexiora_tests
-  CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=5
-  DEP_FILE = CMakeFiles\nexiora_tests.dir\Tests\NxCoreTests.c.obj.d
-  FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic
-  INCLUDES = -ID:/Nexiora/Include
-  OBJECT_DIR = CMakeFiles\nexiora_tests.dir
-  OBJECT_FILE_DIR = CMakeFiles\nexiora_tests.dir\Tests
-  TARGET_SUPPORT_DIR = CMakeFiles\nexiora_tests.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target nexiora_tests
-
-
-#############################################
-# Link the executable bin\nexiora_tests.exe
-
-build bin/nexiora_tests.exe: C_EXECUTABLE_LINKER__nexiora_tests_Debug CMakeFiles/nexiora_tests.dir/Tests/NxCoreTests.c.obj | lib/libNexioraNCP.a || lib/libNexioraNCP.a
-  CONFIG = Debug
-  FLAGS = -g
-  LINK_LIBRARIES = lib/libNexioraNCP.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\nexiora_tests.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = bin\nexiora_tests.exe
-  TARGET_IMPLIB = lib\libnexiora_tests.dll.a
-  TARGET_PDB = nexiora_tests.exe.dbg
-  TARGET_SUPPORT_DIR = CMakeFiles\nexiora_tests.dir
 
 # =============================================================================
 # Object build statements for EXECUTABLE target nexiora_bench
@@ -236,12 +229,14 @@ build cmake_object_order_depends_target_nexiora_bench: phony || cmake_object_ord
 
 build CMakeFiles/nexiora_bench.dir/Tests/NxBenchmarkMain.c.obj: C_COMPILER__nexiora_bench_unscanned_Debug D$:/Nexiora/Tests/NxBenchmarkMain.c || cmake_object_order_depends_target_nexiora_bench
   CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=5
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=6
   DEP_FILE = CMakeFiles\nexiora_bench.dir\Tests\NxBenchmarkMain.c.obj.d
   FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic
   INCLUDES = -ID:/Nexiora/Include
   OBJECT_DIR = CMakeFiles\nexiora_bench.dir
   OBJECT_FILE_DIR = CMakeFiles\nexiora_bench.dir\Tests
+  TARGET_COMPILE_PDB = CMakeFiles\nexiora_bench.dir\
+  TARGET_PDB = bin\nexiora_bench.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexiora_bench.dir
 
 
@@ -259,10 +254,95 @@ build bin/nexiora_bench.exe: C_EXECUTABLE_LINKER__nexiora_bench_Debug CMakeFiles
   OBJECT_DIR = CMakeFiles\nexiora_bench.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\nexiora_bench.dir\
   TARGET_FILE = bin\nexiora_bench.exe
   TARGET_IMPLIB = lib\libnexiora_bench.dll.a
-  TARGET_PDB = nexiora_bench.exe.dbg
+  TARGET_PDB = bin\nexiora_bench.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\nexiora_bench.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target nexiora_tests
+
+
+#############################################
+# Order-only phony target for nexiora_tests
+
+build cmake_object_order_depends_target_nexiora_tests: phony || cmake_object_order_depends_target_NexioraNCP
+
+build CMakeFiles/nexiora_tests.dir/Tests/NxCoreTests.c.obj: C_COMPILER__nexiora_tests_unscanned_Debug D$:/Nexiora/Tests/NxCoreTests.c || cmake_object_order_depends_target_nexiora_tests
+  CONFIG = Debug
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=6
+  DEP_FILE = CMakeFiles\nexiora_tests.dir\Tests\NxCoreTests.c.obj.d
+  FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic
+  INCLUDES = -ID:/Nexiora/Include
+  OBJECT_DIR = CMakeFiles\nexiora_tests.dir
+  OBJECT_FILE_DIR = CMakeFiles\nexiora_tests.dir\Tests
+  TARGET_COMPILE_PDB = CMakeFiles\nexiora_tests.dir\
+  TARGET_PDB = bin\nexiora_tests.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\nexiora_tests.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target nexiora_tests
+
+
+#############################################
+# Link the executable bin\nexiora_tests.exe
+
+build bin/nexiora_tests.exe: C_EXECUTABLE_LINKER__nexiora_tests_Debug CMakeFiles/nexiora_tests.dir/Tests/NxCoreTests.c.obj | lib/libNexioraNCP.a || lib/libNexioraNCP.a
+  CONFIG = Debug
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libNexioraNCP.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\nexiora_tests.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\nexiora_tests.dir\
+  TARGET_FILE = bin\nexiora_tests.exe
+  TARGET_IMPLIB = lib\libnexiora_tests.dll.a
+  TARGET_PDB = bin\nexiora_tests.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\nexiora_tests.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target NxVectorTests
+
+
+#############################################
+# Order-only phony target for NxVectorTests
+
+build cmake_object_order_depends_target_NxVectorTests: phony || cmake_object_order_depends_target_NexioraNCP
+
+build CMakeFiles/NxVectorTests.dir/Tests/Unit/NxVectorTests.c.obj: C_COMPILER__NxVectorTests_unscanned_Debug D$:/Nexiora/Tests/Unit/NxVectorTests.c || cmake_object_order_depends_target_NxVectorTests
+  CONFIG = Debug
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=6
+  DEP_FILE = CMakeFiles\NxVectorTests.dir\Tests\Unit\NxVectorTests.c.obj.d
+  FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic
+  INCLUDES = -ID:/Nexiora/Include
+  OBJECT_DIR = CMakeFiles\NxVectorTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\NxVectorTests.dir\Tests\Unit
+  TARGET_COMPILE_PDB = CMakeFiles\NxVectorTests.dir\
+  TARGET_PDB = bin\NxVectorTests.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\NxVectorTests.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target NxVectorTests
+
+
+#############################################
+# Link the executable bin\NxVectorTests.exe
+
+build bin/NxVectorTests.exe: C_EXECUTABLE_LINKER__NxVectorTests_Debug CMakeFiles/NxVectorTests.dir/Tests/Unit/NxVectorTests.c.obj | lib/libNexioraNCP.a || lib/libNexioraNCP.a
+  CONFIG = Debug
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libNexioraNCP.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\NxVectorTests.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\NxVectorTests.dir\
+  TARGET_FILE = bin\NxVectorTests.exe
+  TARGET_IMPLIB = lib\libNxVectorTests.dll.a
+  TARGET_PDB = bin\NxVectorTests.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\NxVectorTests.dir
 
 
 #############################################
@@ -305,6 +385,10 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build NexioraNCP: phony lib/libNexioraNCP.a
 
+build NxVectorTests: phony bin/NxVectorTests.exe
+
+build NxVectorTests.exe: phony bin/NxVectorTests.exe
+
 build libNexioraNCP.a: phony lib/libNexioraNCP.a
 
 build nexiora: phony bin/nexiora.exe
@@ -327,7 +411,7 @@ build nexiora_tests.exe: phony bin/nexiora_tests.exe
 #############################################
 # Folder: D:/Nexiora/Build/windows-msvc-debug
 
-build all: phony lib/libNexioraNCP.a bin/nexiora.exe bin/nexiora_tests.exe bin/nexiora_bench.exe
+build all: phony lib/libNexioraNCP.a bin/nexiora.exe bin/nexiora_bench.exe bin/nexiora_tests.exe bin/NxVectorTests.exe
 
 # =============================================================================
 # Built-in targets
@@ -336,14 +420,14 @@ build all: phony lib/libNexioraNCP.a bin/nexiora.exe bin/nexiora_tests.exe bin/n
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja D$:/Nexiora/Build/windows-msvc-debug/cmake_install.cmake D$:/Nexiora/Build/windows-msvc-debug/CTestTestfile.cmake: RERUN_CMAKE | C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Linker/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.4.0-rc3/CMakeCCompiler.cmake CMakeFiles/4.4.0-rc3/CMakeRCCompiler.cmake CMakeFiles/4.4.0-rc3/CMakeSystem.cmake D$:/Nexiora/CMakeLists.txt
+build build.ninja D$:/Nexiora/Build/windows-msvc-debug/cmake_install.cmake D$:/Nexiora/Build/windows-msvc-debug/CTestTestfile.cmake: RERUN_CMAKE | C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCCompilerABI.c C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerSupport.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeNinjaFindMake.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeSystem.cmake.in C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Diab-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/PellesC-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Renesas-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/CMakeInspectCLinker.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Linker/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.4.0-rc3/CMakeCCompiler.cmake CMakeFiles/4.4.0-rc3/CMakeRCCompiler.cmake CMakeFiles/4.4.0-rc3/CMakeSystem.cmake D$:/Nexiora/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Linker/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.4.0-rc3/CMakeCCompiler.cmake CMakeFiles/4.4.0-rc3/CMakeRCCompiler.cmake CMakeFiles/4.4.0-rc3/CMakeSystem.cmake D$:/Nexiora/CMakeLists.txt: phony
+build C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCCompiler.cmake.in C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCCompilerABI.c C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeDetermineCompilerSupport.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeNinjaFindMake.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeRCInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeSystem.cmake.in C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeTestCCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Diab-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/PellesC-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Renesas-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/CMakeInspectCLinker.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Linker/GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/Windows.cmake C$:/Program$ Files/CMake/share/cmake-4.4/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.4.0-rc3/CMakeCCompiler.cmake CMakeFiles/4.4.0-rc3/CMakeRCCompiler.cmake CMakeFiles/4.4.0-rc3/CMakeSystem.cmake D$:/Nexiora/CMakeLists.txt: phony
 
 
 #############################################

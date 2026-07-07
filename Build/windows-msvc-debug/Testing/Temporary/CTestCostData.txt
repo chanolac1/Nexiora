@@ -1,2 +1,3 @@
-NexioraCoreTests 2 0.00574105
+NexioraCoreTests 2 0.0051443
+NxVectorTests 2 0.0049555
 ---
