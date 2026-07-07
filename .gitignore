@@ -1,0 +1,62 @@
+# ==========================================
+# Nexiora - Git Ignore
+# ==========================================
+
+# Build
+Build/
+build/
+out/
+bin/
+lib/
+
+# Visual Studio
+.vs/
+*.VC.db
+*.VC.opendb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+compile_commands.json
+Makefile
+
+# Objetos y ejecutables
+*.obj
+*.o
+*.exe
+*.dll
+*.lib
+*.exp
+*.pdb
+*.ilk
+
+# Logs
+Logs/
+*.log
+
+# Benchmarks generados
+Benchmarks/Reports/
+Benchmarks/History/
+
+# Archivos temporales
+*.tmp
+*.bak
+*.cache
+
+# Sistema
+Thumbs.db
+Desktop.ini
+
+# Python (para futuras herramientas)
+__pycache__/
+*.pyc
+
+# Modelos grandes (no subir al repositorio)
+Models/Checkpoints/
+Datasets/Processed/
