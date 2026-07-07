@@ -3,3 +3,8 @@
 [2026-07-07 16:36:09] [INFO] [Runtime] Memory current=0 peak=0 allocations=0 frees=0
 [2026-07-07 16:36:09] [INFO] [Runtime] Nexiora runtime shutdown.
 [2026-07-07 16:36:09] [INFO] [Logging] Nexiora logging shutdown.
+[2026-07-07 16:46:37] [INFO] [Logging] Nexiora logging initialized.
+[2026-07-07 16:46:37] [INFO] [Runtime] Nexiora runtime initialized.
+[2026-07-07 16:46:37] [INFO] [Runtime] Memory current=0 peak=0 allocations=0 frees=0
+[2026-07-07 16:46:37] [INFO] [Runtime] Nexiora runtime shutdown.
+[2026-07-07 16:46:37] [INFO] [Logging] Nexiora logging shutdown.

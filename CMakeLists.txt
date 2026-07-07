@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.25)
 
 project(Nexiora
-    VERSION 0.0.4
-    DESCRIPTION "Nexiora Core Platform - HAL"
+    VERSION 0.0.5
+    DESCRIPTION "Nexiora Core Platform - String"
     LANGUAGES C)
 
 # Nexiora targets C23. MSVC still exposes the most recent C support through
@@ -36,6 +36,7 @@ add_library(NexioraNCP STATIC
     Source/NCP/Memory/NxMemory.c
     Source/NCP/Logging/NxLog.c
     Source/NCP/Hardware/NxHardware.c
+    Source/NCP/String/NxString.c
     Source/NCP/Benchmark/NxBenchmark.c
     Source/NCP/Evidence/NxEvidence.c
     Source/NCP/Runtime/NxRuntime.c
@@ -45,15 +46,15 @@ target_include_directories(NexioraNCP PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/Include
 )
 
-if (CMAKE_C_COMPILER_ID STREQUAL "GNU")
-    target_compile_options(NexioraNCP PRIVATE -mxsave)
-endif()
-
 target_compile_definitions(NexioraNCP PUBLIC
     NEXIORA_VERSION_MAJOR=${PROJECT_VERSION_MAJOR}
     NEXIORA_VERSION_MINOR=${PROJECT_VERSION_MINOR}
     NEXIORA_VERSION_PATCH=${PROJECT_VERSION_PATCH}
 )
+
+if(CMAKE_C_COMPILER_ID STREQUAL "GNU")
+    target_compile_options(NexioraNCP PRIVATE -mxsave)
+endif()
 
 add_executable(nexiora Source/NxBootstrap.c)
 target_link_libraries(nexiora PRIVATE NexioraNCP)

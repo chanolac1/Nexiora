@@ -2,6 +2,7 @@
 #include "Nexiora/NCP/Memory/NxMemory.h"
 #include "Nexiora/NCP/Common/NxResult.h"
 #include "Nexiora/NCP/Hardware/NxHardware.h"
+#include "Nexiora/NCP/String/NxString.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -103,6 +104,30 @@ static int test_hardware_query(void) {
     return 0;
 }
 
+
+static int test_string_primitives(void) {
+    char buffer[32];
+    NX_TEST_ASSERT(nx_string_length("Nexiora") == 7);
+    NX_TEST_ASSERT(nx_string_length(NULL) == 0);
+    NX_TEST_ASSERT(nx_string_length_bounded("Nexiora", 3) == 3);
+    NX_TEST_ASSERT(nx_string_compare("abc", "abc") == 0);
+    NX_TEST_ASSERT(nx_string_compare("abc", "abd") < 0);
+    NX_TEST_ASSERT(nx_string_compare("abd", "abc") > 0);
+    NX_TEST_ASSERT(nx_string_compare_n("abcdef", "abcXYZ", 3) == 0);
+    NX_TEST_ASSERT(nx_string_copy(buffer, sizeof(buffer), "Genesis") == NX_OK);
+    NX_TEST_ASSERT(strcmp(buffer, "Genesis") == 0);
+    NX_TEST_ASSERT(nx_string_copy(buffer, 4, "Genesis") == NX_ERROR_ARGUMENT);
+    NX_TEST_ASSERT(strcmp(buffer, "Gen") == 0);
+    NX_TEST_ASSERT(nx_string_find_char("Nexiora", 'i') != NULL);
+    NX_TEST_ASSERT(nx_string_find_char("Nexiora", 'z') == NULL);
+    NxStringView a = nx_string_view_from_cstr("NCP");
+    NxStringView b = nx_string_view_from_cstr("NCP");
+    NxStringView c = nx_string_view_from_cstr("LLM");
+    NX_TEST_ASSERT(nx_string_view_equals(a, b) == 1);
+    NX_TEST_ASSERT(nx_string_view_equals(a, c) == 0);
+    return 0;
+}
+
 static int test_runtime_lifecycle(void) {
     NxRuntime runtime;
     NX_TEST_ASSERT(nx_runtime_initialize(&runtime, "nexiora-test.log") == NX_OK);
@@ -121,6 +146,7 @@ int main(void) {
     failed += test_memory_zeroed();
     failed += test_arena_lifecycle();
     failed += test_hardware_query();
+    failed += test_string_primitives();
     failed += test_runtime_lifecycle();
 
     if (failed == 0) {

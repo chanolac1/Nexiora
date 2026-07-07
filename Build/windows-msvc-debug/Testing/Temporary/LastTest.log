@@ -1,10 +1,10 @@
-Start testing: Jul 07 16:36 Central Standard Time (Mexico)
+Start testing: Jul 07 16:46 Central Standard Time (Mexico)
 ----------------------------------------------------------
 1/1 Testing: NexioraCoreTests
 1/1 Test: NexioraCoreTests
 Command: "D:/Nexiora/Build/windows-msvc-debug/bin/nexiora_tests.exe"
 Directory: D:/Nexiora/Build/windows-msvc-debug
-"NexioraCoreTests" start time: Jul 07 16:36 Central Standard Time (Mexico)
+"NexioraCoreTests" start time: Jul 07 16:46 Central Standard Time (Mexico)
 Output:
 ----------------------------------------------------------
 Nexiora Core Tests: PASS
@@ -12,8 +12,8 @@ Nexiora Core Tests: PASS
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"NexioraCoreTests" end time: Jul 07 16:36 Central Standard Time (Mexico)
+"NexioraCoreTests" end time: Jul 07 16:46 Central Standard Time (Mexico)
 "NexioraCoreTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jul 07 16:36 Central Standard Time (Mexico)
+End testing: Jul 07 16:46 Central Standard Time (Mexico)

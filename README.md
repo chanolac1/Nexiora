@@ -6,7 +6,7 @@ This first release does **not** include an LLM yet. It establishes the Nexiora C
 
 - Runtime lifecycle
 - Result/error system
-- HAL manager with allocation statistics
+- String manager with allocation statistics
 - Logging system
 - Hardware detector
 - Benchmark engine
@@ -73,9 +73,9 @@ Nexiora/
 - `nexiora_bench.exe`: benchmark executable.
 
 
-## Nexiora 0.0.4 HAL
+## Nexiora 0.0.5 String
 
-Esta versión incorpora el primer HAL Engine:
+Esta versión incorpora el primer String Engine:
 
 - historial de benchmarks;
 - comparación contra la medición anterior;
@@ -105,7 +105,7 @@ xbuild.ps1 approve
 ```
 
 
-## 0.0.4 HAL
+## 0.0.5 String
 
 This release adds NXM-0002, the Nexiora Hardware Abstraction Layer. It detects CPU vendor, CPU brand, memory, cache line information, cache metadata, logical processors, and SIMD/CPU capabilities.
 
@@ -115,3 +115,16 @@ Run:
 .\Build\windows-msvc-debug\bin\nexiora.exe
 .\Build\windows-msvc-debug\bin\nexiora_bench.exe --iterations 100000
 ```
+
+## Nexiora 0.0.5 — String
+
+Esta entrega agrega NXM-0003 String Primitives:
+
+- `nx_string_length`
+- `nx_string_compare`
+- `nx_string_copy`
+- `nx_string_find_char`
+- `NxStringView`
+- pruebas unitarias
+- benchmarks con Evidence Engine
+

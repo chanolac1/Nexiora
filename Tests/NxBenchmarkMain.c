@@ -2,6 +2,7 @@
 #include "Nexiora/NCP/Evidence/NxEvidence.h"
 #include "Nexiora/NCP/Memory/NxMemory.h"
 #include "Nexiora/NCP/Hardware/NxHardware.h"
+#include "Nexiora/NCP/String/NxString.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -34,6 +35,26 @@ static void benchmark_hardware_query(void* user_data) {
     (void)user_data;
     NxHardwareInfo info;
     (void)nx_hardware_query(&info);
+}
+
+
+static void benchmark_string_length_64(void* user_data) {
+    const char* text = (const char*)user_data;
+    volatile size_t length = nx_string_length(text);
+    (void)length;
+}
+
+static void benchmark_string_compare_64(void* user_data) {
+    const char* text = (const char*)user_data;
+    volatile int value = nx_string_compare(text, "Nexiora Core Platform string benchmark sample payload 0001");
+    (void)value;
+}
+
+static void benchmark_string_copy_64(void* user_data) {
+    const char* text = (const char*)user_data;
+    char buffer[96];
+    volatile NxResult result = nx_string_copy(buffer, sizeof(buffer), text);
+    (void)result;
 }
 
 static uint64_t parse_iterations(int argc, char** argv) {
@@ -143,6 +164,45 @@ int main(int argc, char** argv) {
                               iterations,
                               &result);
     nx_arena_destroy(&context.arena);
+    if (status != NX_OK) {
+        printf("Benchmark failed: %d\n", (int)status);
+        nx_memory_shutdown();
+        return 1;
+    }
+    final_status |= run_evidence_for_result(&result, history_path, report_path);
+
+
+    const char* string_payload = "Nexiora Core Platform string benchmark sample payload 0001";
+
+    status = nx_benchmark_run("nx_string_length 64 bytes",
+                              benchmark_string_length_64,
+                              (void*)string_payload,
+                              iterations,
+                              &result);
+    if (status != NX_OK) {
+        printf("Benchmark failed: %d\n", (int)status);
+        nx_memory_shutdown();
+        return 1;
+    }
+    final_status |= run_evidence_for_result(&result, history_path, report_path);
+
+    status = nx_benchmark_run("nx_string_compare 64 bytes",
+                              benchmark_string_compare_64,
+                              (void*)string_payload,
+                              iterations,
+                              &result);
+    if (status != NX_OK) {
+        printf("Benchmark failed: %d\n", (int)status);
+        nx_memory_shutdown();
+        return 1;
+    }
+    final_status |= run_evidence_for_result(&result, history_path, report_path);
+
+    status = nx_benchmark_run("nx_string_copy 64 bytes",
+                              benchmark_string_copy_64,
+                              (void*)string_payload,
+                              iterations,
+                              &result);
     if (status != NX_OK) {
         printf("Benchmark failed: %d\n", (int)status);
         nx_memory_shutdown();
