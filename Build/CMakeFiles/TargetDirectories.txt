@@ -1,0 +1,7 @@
+D:/Nexiora/build/CMakeFiles/NexioraNCP.dir
+D:/Nexiora/build/CMakeFiles/nexiora.dir
+D:/Nexiora/build/CMakeFiles/nexiora_tests.dir
+D:/Nexiora/build/CMakeFiles/nexiora_bench.dir
+D:/Nexiora/build/CMakeFiles/test.dir
+D:/Nexiora/build/CMakeFiles/edit_cache.dir
+D:/Nexiora/build/CMakeFiles/rebuild_cache.dir

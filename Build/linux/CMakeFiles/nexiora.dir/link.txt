@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file=CMakeFiles/nexiora.dir/link.d CMakeFiles/nexiora.dir/Source/NxBootstrap.c.o -o bin/nexiora  lib/libNexioraNCP.a

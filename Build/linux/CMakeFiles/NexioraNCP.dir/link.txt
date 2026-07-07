@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib/libNexioraNCP.a CMakeFiles/NexioraNCP.dir/Source/NCP/Common/NxResult.c.o CMakeFiles/NexioraNCP.dir/Source/NCP/Memory/NxMemory.c.o CMakeFiles/NexioraNCP.dir/Source/NCP/Logging/NxLog.c.o CMakeFiles/NexioraNCP.dir/Source/NCP/Hardware/NxHardware.c.o CMakeFiles/NexioraNCP.dir/Source/NCP/Benchmark/NxBenchmark.c.o CMakeFiles/NexioraNCP.dir/Source/NCP/Runtime/NxRuntime.c.o
+/usr/bin/ranlib lib/libNexioraNCP.a

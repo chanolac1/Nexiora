@@ -1,0 +1,10 @@
+Nexiora Evidence Report
+Generated: 2026-07-07 21:52:12
+Benchmark: nx_memory_allocate/free 64 bytes
+Iterations: 1000
+TotalSeconds: 0.000354052
+CurrentAverageNs: 354.052
+PreviousAverageNs: none
+ChangePercent: none
+Status: no-baseline
+HumanApprovalRequired: no

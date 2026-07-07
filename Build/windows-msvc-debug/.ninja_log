@@ -1,0 +1,14 @@
+# ninja log v7
+3	79	8051640488344737	CMakeFiles/NexioraNCP.dir/Source/NCP/Common/NxResult.c.obj	df6a92693c6a83d6
+12	104	8051640488394502	CMakeFiles/NexioraNCP.dir/Source/NCP/Memory/NxMemory.c.obj	ccb017463bcd90c8
+17	111	8051640488444498	CMakeFiles/NexioraNCP.dir/Source/NCP/Logging/NxLog.c.obj	b400ec01816a897a
+37	127	8051640488654498	CMakeFiles/NexioraNCP.dir/Source/NCP/Runtime/NxRuntime.c.obj	dc530a1c07dc9f27
+41	132	8051640488684506	CMakeFiles/nexiora.dir/Source/NxBootstrap.c.obj	5891f43d4a68c1a2
+50	133	8051640488784517	CMakeFiles/nexiora_bench.dir/Tests/NxBenchmarkMain.c.obj	cfba1bd4a4f7b58b
+46	136	8051640488744536	CMakeFiles/nexiora_tests.dir/Tests/NxCoreTests.c.obj	7c8a10866689141b
+31	431	8051640488594516	CMakeFiles/NexioraNCP.dir/Source/NCP/Benchmark/NxBenchmark.c.obj	2ce7b8ea8d31174b
+24	435	8051640488544693	CMakeFiles/NexioraNCP.dir/Source/NCP/Hardware/NxHardware.c.obj	d11df60ae731c44e
+435	511	8051640492630872	lib/libNexioraNCP.a	4772c0970b459595
+511	608	8051640493385050	bin/nexiora.exe	5d3d0c6e977dec62
+515	613	8051640493429324	bin/nexiora_tests.exe	90c550f209c81d39
+519	616	8051640493469297	bin/nexiora_bench.exe	482f8816b4561155
