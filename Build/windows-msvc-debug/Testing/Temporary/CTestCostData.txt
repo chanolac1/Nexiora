@@ -1,2 +1,2 @@
-NexioraCoreTests 2 0.0045223
+NexioraCoreTests 3 0.00471677
 ---
