@@ -61,6 +61,8 @@ add_library(NexioraNCP STATIC
     Source/Research/NxKnowledgeQuery.c
     Source/Research/NxHypothesisEngine.c
     Source/Research/NxReasoningEngine.c
+    Source/Research/NxEvidenceCorrelation.c
+    Source/Research/NxConflictDetector.c
 )
 
 target_include_directories(NexioraNCP PUBLIC
@@ -181,6 +183,14 @@ if(NEXIORA_BUILD_TESTS)
     target_link_libraries(NxReasoningEngineTests PRIVATE NexioraNCP)
     add_test(NAME NxReasoningEngineTests COMMAND NxReasoningEngineTests)
 
+    add_executable(NxEvidenceCorrelationTests Tests/Unit/NxEvidenceCorrelationTests.c)
+    target_link_libraries(NxEvidenceCorrelationTests PRIVATE NexioraNCP)
+    add_test(NAME NxEvidenceCorrelationTests COMMAND NxEvidenceCorrelationTests)
+
+    add_executable(NxConflictDetectorTests Tests/Unit/NxConflictDetectorTests.c)
+    target_link_libraries(NxConflictDetectorTests PRIVATE NexioraNCP)
+    add_test(NAME NxConflictDetectorTests COMMAND NxConflictDetectorTests)
+
     set_tests_properties(
         NexioraCoreTests
         NxVectorTests
@@ -203,6 +213,8 @@ if(NEXIORA_BUILD_TESTS)
         NxKnowledgeQueryTests
         NxHypothesisEngineTests
         NxReasoningEngineTests
+        NxEvidenceCorrelationTests
+        NxConflictDetectorTests
         PROPERTIES WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
     )
 endif()
