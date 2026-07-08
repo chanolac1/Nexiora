@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.25)
+﻿cmake_minimum_required(VERSION 3.25)
 
 project(Nexiora
     VERSION 0.0.11
@@ -48,6 +48,7 @@ add_library(NexioraNCP STATIC
     Source/Research/NxResearchGraph.c
     Source/Research/NxResearchGraphExporter.c
     Source/Research/NxResearchGraphQuery.c
+    Source/Research/NxResearchScheduler.c
 )
 
 target_include_directories(NexioraNCP PUBLIC
@@ -69,6 +70,11 @@ if(NEXIORA_ENABLE_BENCHMARKS)
 
 add_executable(nexiora_bench Tests/NxBenchmarkMain.c)
     target_link_libraries(nexiora_bench PRIVATE NexioraNCP)
+
+    add_executable(NxResearchSchedulerBench
+        Tests/Benchmark/NxResearchSchedulerBench.c
+    )
+    target_link_libraries(NxResearchSchedulerBench PRIVATE NexioraNCP)
 endif()
 if(NEXIORA_BUILD_TESTS)
     enable_testing()
@@ -116,6 +122,12 @@ add_executable(NxResearchGraphTests
     )
     target_link_libraries(NxResearchGraphTests PRIVATE NexioraNCP)
     add_test(NAME NxResearchGraphTests COMMAND NxResearchGraphTests)
+
+    add_executable(NxResearchSchedulerTests
+        Tests/Unit/NxResearchSchedulerTests.c
+    )
+    target_link_libraries(NxResearchSchedulerTests PRIVATE NexioraNCP)
+    add_test(NAME NxResearchSchedulerTests COMMAND NxResearchSchedulerTests)
 endif()
 if(NEXIORA_ENABLE_BENCHMARKS)
 
@@ -124,7 +136,7 @@ add_executable(NxResearchGraphBenchmark
     )
     target_link_libraries(NxResearchGraphBenchmark PRIVATE NexioraNCP)
 
-    add_executable(NxResearchGraphQueryTests
+add_executable(NxResearchGraphQueryTests
         Tests/Unit/NxResearchGraphQueryTests.c
     )
     target_link_libraries(NxResearchGraphQueryTests PRIVATE NexioraNCP)
@@ -150,3 +162,4 @@ add_executable(NxResearchGraphExporterBenchmark
     Tests/Benchmark/NxResearchGraphExporterBenchmark.c
 )
 target_link_libraries(NxResearchGraphExporterBenchmark PRIVATE NexioraNCP)
+
