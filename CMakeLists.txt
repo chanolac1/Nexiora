@@ -57,6 +57,8 @@ add_library(NexioraNCP STATIC
     Source/Research/NxResearchPolicy.c
     Source/Research/NxResearchSession.c
     Source/Research/NxAutonomousResearchLoop.c
+    Source/Research/NxKnowledgeBase.c
+    Source/Research/NxKnowledgeQuery.c
 )
 
 target_include_directories(NexioraNCP PUBLIC
@@ -161,6 +163,14 @@ if(NEXIORA_BUILD_TESTS)
     target_link_libraries(NxAutonomousResearchLoopTests PRIVATE NexioraNCP)
     add_test(NAME NxAutonomousResearchLoopTests COMMAND NxAutonomousResearchLoopTests)
 
+    add_executable(NxKnowledgeBaseTests Tests/Unit/NxKnowledgeBaseTests.c)
+    target_link_libraries(NxKnowledgeBaseTests PRIVATE NexioraNCP)
+    add_test(NAME NxKnowledgeBaseTests COMMAND NxKnowledgeBaseTests)
+
+    add_executable(NxKnowledgeQueryTests Tests/Unit/NxKnowledgeQueryTests.c)
+    target_link_libraries(NxKnowledgeQueryTests PRIVATE NexioraNCP)
+    add_test(NAME NxKnowledgeQueryTests COMMAND NxKnowledgeQueryTests)
+
     set_tests_properties(
         NexioraCoreTests
         NxVectorTests
@@ -179,6 +189,8 @@ if(NEXIORA_BUILD_TESTS)
         NxResearchPolicyTests
         NxResearchSessionTests
         NxAutonomousResearchLoopTests
+        NxKnowledgeBaseTests
+        NxKnowledgeQueryTests
         PROPERTIES WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
     )
 endif()
