@@ -3,6 +3,7 @@
 #include "Nexiora/Research/NxAutonomousExecution.h"
 #include "Nexiora/Research/NxResearchDashboard.h"
 #include "Nexiora/Research/NxPersistentMemory.h"
+#include "Nexiora/Conversation/NxConversation.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -32,7 +33,6 @@ static void nx_print_research_run_result(const NxAutonomousExecutionResult* resu
     printf("  dashboard.html\n\n");
     printf("%s\n", result->message);
 }
-
 
 static void nx_print_memory_summary(const NxPersistentMemorySummary* summary, const char* path)
 {
@@ -65,6 +65,25 @@ static void nx_print_dashboard_result(const NxResearchDashboardResult* result)
     printf("%s\n", result->message);
 }
 
+static int nx_run_conversation(NxRuntime* runtime)
+{
+    NxConversationStatus conversation_status;
+
+    nx_log_write(NX_LOG_INFO, "Conversation", "Starting Nexiora laboratory conversation.");
+    conversation_status = NxConversation_RunInteractive(stdin, stdout);
+    if (conversation_status != NX_CONVERSATION_OK)
+    {
+        fprintf(stderr,
+            "Conversation failed: %s\n",
+            NxConversation_StatusToString(conversation_status));
+        nx_runtime_shutdown(runtime);
+        return 7;
+    }
+
+    nx_runtime_shutdown(runtime);
+    return 0;
+}
+
 int main(int argc, char** argv)
 {
     NxRuntime runtime;
@@ -75,6 +94,11 @@ int main(int argc, char** argv)
     {
         fprintf(stderr, "Failed to initialize Nexiora: %s\n", nx_result_to_string(result));
         return 1;
+    }
+
+    if (argc == 1)
+    {
+        return nx_run_conversation(&runtime);
     }
 
     if (argc >= 3 && strcmp(argv[1], "research") == 0 && strcmp(argv[2], "run") == 0)
@@ -122,11 +146,11 @@ int main(int argc, char** argv)
         return 0;
     }
 
-
     if (argc >= 3 && strcmp(argv[1], "memory") == 0 && strcmp(argv[2], "seed") == 0)
     {
         char memory_path[260];
         NxPersistentMemoryStatus memory_status;
+
         memory_status = NxPersistentMemory_SeedFromFirstAutonomousExecution(".", memory_path, sizeof(memory_path));
         if (memory_status != NX_PERSISTENT_MEMORY_OK)
         {
@@ -134,6 +158,7 @@ int main(int argc, char** argv)
             nx_runtime_shutdown(&runtime);
             return 4;
         }
+
         printf("Persistent memory created: %s\n", memory_path);
         nx_runtime_shutdown(&runtime);
         return 0;
@@ -145,6 +170,7 @@ int main(int argc, char** argv)
         NxPersistentMemorySummary summary;
         NxPersistentMemoryStatus memory_status;
         const char* memory_path = ".\\Knowledge\\Memory\\memory.jsonl";
+
         memory_status = NxPersistentMemory_Init(&memory);
         if (memory_status != NX_PERSISTENT_MEMORY_OK)
         {
@@ -152,6 +178,7 @@ int main(int argc, char** argv)
             nx_runtime_shutdown(&runtime);
             return 5;
         }
+
         memory_status = NxPersistentMemory_LoadJsonl(&memory, memory_path);
         if (memory_status != NX_PERSISTENT_MEMORY_OK)
         {
@@ -160,6 +187,7 @@ int main(int argc, char** argv)
             nx_runtime_shutdown(&runtime);
             return 6;
         }
+
         (void)NxPersistentMemory_GetSummary(&memory, &summary);
         nx_print_memory_summary(&summary, memory_path);
         NxPersistentMemory_Shutdown(&memory);
@@ -170,6 +198,7 @@ int main(int argc, char** argv)
     nx_log_write(NX_LOG_INFO, "Bootstrap", "Welcome to Nexiora Genesis.");
     nx_runtime_print_status(&runtime);
     printf("\nCommands:\n");
+    printf("  nexiora                       Abrir conversacion con el laboratorio\n");
     printf("  nexiora research run          Execute the first autonomous research session\n");
     printf("  nexiora research dashboard    Generate dashboard.html for the latest session\n");
     printf("  nexiora memory seed           Create persistent memory from current research state\n");

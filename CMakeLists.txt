@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.25)
+﻿cmake_minimum_required(VERSION 3.25)
 
 project(Nexiora
     VERSION 0.1.0
@@ -65,6 +65,7 @@ add_library(NexioraNCP STATIC
     Source/Research/NxReasoningEngine.c
     Source/Research/NxEvidenceCorrelation.c
     Source/Research/NxConflictDetector.c
+    Source/Conversation/NxConversation.c
     Source/Research/NxPersistentMemory.c
 )
 
@@ -228,6 +229,14 @@ if(NEXIORA_BUILD_TESTS)
     )
 endif()
 
+
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxConversationTests
+        Tests/Unit/NxConversationTests.c
+    )
+    target_link_libraries(NxConversationTests PRIVATE NexioraNCP)
+    add_test(NAME NxConversationTests COMMAND NxConversationTests)
+endif()
 add_executable(NxResearchGraphExportSample Tools/ResearchGraph/NxResearchGraphExportSample.c)
 target_link_libraries(NxResearchGraphExportSample PRIVATE NexioraNCP)
 
@@ -250,4 +259,6 @@ if(NEXIORA_BUILD_TESTS)
     target_link_libraries(NxResearchDashboardTests PRIVATE NexioraNCP)
     add_test(NAME NxResearchDashboardTests COMMAND NxResearchDashboardTests)
 endif()
+
+
 
