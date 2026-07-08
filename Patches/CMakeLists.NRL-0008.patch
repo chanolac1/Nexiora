@@ -1,0 +1,43 @@
+*** CMakeLists.txt
+--- CMakeLists.txt
+***************
+*** add_library(NexioraNCP STATIC
+      Source/Research/NxRegistry.c
+      Source/Research/NxAutonomousResearchPipeline.c
+  )
+--- add_library(NexioraNCP STATIC
+      Source/Research/NxRegistry.c
+      Source/Research/NxAutonomousResearchPipeline.c
++     Source/Research/NxDiscoveryEngine.c
+  )
+***************
+***     add_executable(NxAutonomousResearchPipelineTests
+          Tests/Unit/NxAutonomousResearchPipelineTests.c
+      )
+      target_link_libraries(NxAutonomousResearchPipelineTests PRIVATE NexioraNCP)
+      add_test(NAME NxAutonomousResearchPipelineTests COMMAND NxAutonomousResearchPipelineTests)
+---     add_executable(NxAutonomousResearchPipelineTests
+          Tests/Unit/NxAutonomousResearchPipelineTests.c
+      )
+      target_link_libraries(NxAutonomousResearchPipelineTests PRIVATE NexioraNCP)
+      add_test(NAME NxAutonomousResearchPipelineTests COMMAND NxAutonomousResearchPipelineTests)
++
++     add_executable(NxDiscoveryEngineTests
++         Tests/Unit/NxDiscoveryEngineTests.c
++     )
++     target_link_libraries(NxDiscoveryEngineTests PRIVATE NexioraNCP)
++     add_test(NAME NxDiscoveryEngineTests COMMAND NxDiscoveryEngineTests)
+***************
+*** if(NEXIORA_ENABLE_BENCHMARKS)
+      add_executable(nexiora_bench Tests/NxBenchmarkMain.c)
+      target_link_libraries(nexiora_bench PRIVATE NexioraNCP)
+  endif()
+--- if(NEXIORA_ENABLE_BENCHMARKS)
+      add_executable(nexiora_bench Tests/NxBenchmarkMain.c)
+      target_link_libraries(nexiora_bench PRIVATE NexioraNCP)
++
++     add_executable(NxDiscoveryEngineBenchmark
++         Tests/Benchmarks/NxDiscoveryEngineBenchmark.c
++     )
++     target_link_libraries(NxDiscoveryEngineBenchmark PRIVATE NexioraNCP)
+  endif()

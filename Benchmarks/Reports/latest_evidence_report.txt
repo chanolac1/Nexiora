@@ -1,10 +1,10 @@
 Nexiora Evidence Report
-Generated: 2026-07-08 11:53:53
+Generated: 2026-07-08 12:58:56
 Benchmark: nx_research_registry_add
 Iterations: 100000
-TotalSeconds: 0.077850200
-CurrentAverageNs: 778.502
-PreviousAverageNs: 1895.814
-ChangePercent: 58.936
-Status: improved
-HumanApprovalRequired: yes
+TotalSeconds: 0.077940800
+CurrentAverageNs: 779.408
+PreviousAverageNs: 778.502
+ChangePercent: -0.116
+Status: stable
+HumanApprovalRequired: no
