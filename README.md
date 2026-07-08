@@ -1,20 +1,37 @@
-# Nexiora 0.0.11 — Experiment Runner
+# Nexiora 0.0.12 — Research Evidence Generator Patch
 
-This snapshot adds **NRL-0004 — Experiment Runner**.
+## Copy these files into your repository
+
+- `Include/Nexiora/NCP/Research/NxResearchEvidence.h`
+- `Source/NCP/Research/NxResearchEvidence.c`
+- `Tests/Unit/NxResearchEvidenceTests.c`
+- `SPEC/SPEC-0005-Evidence-Generator.md`
+- `RFC/RFC-0026-Research-Evidence-Generator.md`
+- `LABBOOK/LAB-0005-Evidence-Generator.md`
+- `BOOK/01_CURRENT_STATE.md`
+- `BOOK/18_AI_CONTEXT.md`
+
+## CMake additions
+
+Add inside `add_library(NexioraNCP STATIC ...)`:
+
+```cmake
+Source/NCP/Research/NxResearchEvidence.c
+```
+
+Add inside `if(NEXIORA_BUILD_TESTS)`:
+
+```cmake
+add_executable(NxResearchEvidenceTests
+    Tests/Unit/NxResearchEvidenceTests.c
+)
+target_link_libraries(NxResearchEvidenceTests PRIVATE NexioraNCP)
+add_test(NAME NxResearchEvidenceTests COMMAND NxResearchEvidenceTests)
+```
 
 ## Build
 
 ```powershell
-Unblock-File .\Scripts\nxbuild.ps1
-.\Scripts\nxbuild.ps1 clean
-.\Scripts\nxbuild.ps1 all research
+cmake --build --preset release
+ctest --test-dir .\Build\windows-msvc-release --output-on-failure
 ```
-
-## New Files
-
-- `Include/Nexiora/NCP/Research/NxExperimentRunner.h`
-- `Source/NCP/Research/NxExperimentRunner.c`
-- `Tests/Unit/NxExperimentRunnerTests.c`
-- `SPEC/SPEC-0004-Experiment-Runner.md`
-- `RFC/RFC-0025-Experiment-Runner.md`
-- `LABBOOK/LAB-0004-Experiment-Runner.md`

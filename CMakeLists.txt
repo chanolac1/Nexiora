@@ -41,6 +41,7 @@ add_library(NexioraNCP STATIC
     Source/NCP/Evidence/NxEvidence.c
     Source/NCP/Research/NxJournal.c
     Source/NCP/Research/NxExperimentRunner.c
+    Source/NCP/Research/NxResearchEvidence.c
     Source/Research/NxExperiment.c
     Source/Research/NxResearchKernel.c
     Source/Research/NxManifest.c
@@ -95,6 +96,12 @@ if(NEXIORA_BUILD_TESTS)
     )
     target_link_libraries(NxExperimentRunnerTests PRIVATE NexioraNCP)
     add_test(NAME NxExperimentRunnerTests COMMAND NxExperimentRunnerTests)
-
+    
+    add_executable(NxResearchEvidenceTests
+    Tests/Unit/NxResearchEvidenceTests.c
+    )
+    
+    target_link_libraries(NxResearchEvidenceTests PRIVATE NexioraNCP)
+    add_test(NAME NxResearchEvidenceTests COMMAND NxResearchEvidenceTests)
 
 endif()
