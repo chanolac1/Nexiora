@@ -23,3 +23,7 @@ NRL-0011 — Graph Query Engine.
 
 ## Rule
 Nexiora may recommend. Only a human may promote.
+
+## EPIC-0001 — Autonomous Laboratory Foundation
+
+EPIC-0001 adds the first bounded autonomous research loop foundation. The lab can now queue research items, evaluate policy, execute bounded cycles through callbacks, and summarize a session without crossing the human-promotion boundary.

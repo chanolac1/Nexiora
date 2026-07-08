@@ -1,0 +1,11 @@
+Experiment
+{
+    Id         : LAB-0100
+    Title      : Manifest Roundtrip
+    Author     : Nexiora
+    Module     : Research
+    Target     : Research
+    Status     : Prepared
+    Hash       : 1555347906
+    Hypothesis : A manifest written by Nexiora should be readable as an experiment object.
+}
