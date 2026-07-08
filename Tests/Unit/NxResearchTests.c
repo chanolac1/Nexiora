@@ -1,5 +1,7 @@
 #include "Nexiora/Research/NxExperiment.h"
 #include "Nexiora/Research/NxResearchKernel.h"
+#include "Nexiora/Research/NxManifest.h"
+#include "Nexiora/Research/NxRegistry.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -63,10 +65,57 @@ static int test_research_kernel_registry(void) {
     return 0;
 }
 
+
+static int test_manifest_roundtrip(void) {
+    NxExperiment original;
+    NxExperiment loaded;
+    const char* path = "test_experiment_manifest.nx";
+
+    NX_TEST_ASSERT(nx_experiment_initialize(&original,
+                                            "LAB-0100",
+                                            "Manifest Roundtrip",
+                                            "Nexiora",
+                                            "Research",
+                                            "A manifest written by Nexiora should be readable as an experiment object.",
+                                            "Research") == NX_OK);
+    NX_TEST_ASSERT(nx_experiment_transition(&original, NX_EXPERIMENT_STATUS_PREPARED) == NX_OK);
+    NX_TEST_ASSERT(nx_manifest_write_experiment(path, &original) == NX_OK);
+    NX_TEST_ASSERT(nx_manifest_read_experiment(path, &loaded) == NX_OK);
+    NX_TEST_ASSERT(strcmp(loaded.id, "LAB-0100") == 0);
+    NX_TEST_ASSERT(strcmp(loaded.title, "Manifest Roundtrip") == 0);
+    NX_TEST_ASSERT(loaded.status == NX_EXPERIMENT_STATUS_PREPARED);
+    return 0;
+}
+
+static int test_registry_roundtrip(void) {
+    NxRegistry registry;
+    NxRegistry loaded;
+    NxExperiment experiment;
+    const char* path = "test_registry_roundtrip.nxr";
+
+    NX_TEST_ASSERT(nx_registry_initialize(&registry) == NX_OK);
+    NX_TEST_ASSERT(nx_experiment_initialize(&experiment,
+                                            "LAB-0101",
+                                            "Registry Roundtrip",
+                                            "Nexiora",
+                                            "Research",
+                                            "A registry should persist experiment index records.",
+                                            "Research") == NX_OK);
+    NX_TEST_ASSERT(nx_registry_add(&registry, &experiment) == NX_OK);
+    NX_TEST_ASSERT(nx_registry_write(&registry, path) == NX_OK);
+    NX_TEST_ASSERT(nx_registry_read(&loaded, path) == NX_OK);
+    NX_TEST_ASSERT(loaded.count == 1);
+    NX_TEST_ASSERT(nx_registry_find(&loaded, "LAB-0101") != NULL);
+    NX_TEST_ASSERT(nx_registry_find(&loaded, "LAB-DOES-NOT-EXIST") == NULL);
+    return 0;
+}
+
 int main(void) {
     int failed = 0;
     failed += test_experiment_lifecycle();
     failed += test_research_kernel_registry();
+    failed += test_manifest_roundtrip();
+    failed += test_registry_roundtrip();
 
     if (failed == 0) {
         printf("Nexiora Research Tests: PASS\n");

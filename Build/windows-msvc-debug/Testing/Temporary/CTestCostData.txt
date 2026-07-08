@@ -1,4 +1,4 @@
-NexioraCoreTests 1 0.0119772
-NxVectorTests 1 0.0108075
-NxResearchTests 1 0.0120565
+NexioraCoreTests 1 0.0119842
+NxVectorTests 1 0.0103343
+NxResearchTests 1 0.010799
 ---

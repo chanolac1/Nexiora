@@ -1,7 +1,7 @@
 # Current State
 
 ## Version
-0.0.8 — Research Lab
+0.0.9 — Research Lab
 
 ## Current Sprint
 Sprint 2 — Nexiora Research Lab
@@ -17,3 +17,7 @@ Sprint 2 — Nexiora Research Lab
 
 ## Next Objective
 Validate `NxResearchKernel` on Windows and record the first research benchmark baseline.
+
+
+## 0.0.9 Update
+NRL-0002 adds Manifest and Registry Engine.

@@ -1,4 +1,4 @@
-# Nexiora 0.0.8 — Research Lab
+# Nexiora 0.0.9 — Research Lab
 
 This snapshot introduces **NRL-0001 — Laboratory Kernel**, the first implementation of the Nexiora Research Lab.
 
@@ -41,3 +41,7 @@ git add .
 git commit -m "NRL-0001: Add Laboratory Kernel"
 git push
 ```
+
+
+## 0.0.9 Research Registry
+Adds manifest and registry roundtrip support.

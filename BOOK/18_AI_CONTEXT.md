@@ -2,7 +2,7 @@
 
 Project: Nexiora.
 
-Current version: 0.0.8 — Research Lab.
+Current version: 0.0.9 — Research Lab.
 Current sprint: Sprint 2 — Nexiora Research Lab.
 
 Source of truth: BOOK and LABBOOK.
@@ -20,3 +20,7 @@ Philosophy:
 - Evidence and human approval are required before promotion.
 
 When continuing in a new chat, read this file first, then BOOK/01_CURRENT_STATE.md.
+
+
+## 0.0.9 Update
+NRL-0002 adds Manifest and Registry Engine.

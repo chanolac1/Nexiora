@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.25)
 
 project(Nexiora
-    VERSION 0.0.8
-    DESCRIPTION "Nexiora Research Lab - Laboratory Kernel"
+    VERSION 0.0.9
+    DESCRIPTION "Nexiora Research Lab - Manifest and Registry Engine"
     LANGUAGES C
 )
 
@@ -41,6 +41,8 @@ add_library(NexioraNCP STATIC
     Source/NCP/Evidence/NxEvidence.c
     Source/Research/NxExperiment.c
     Source/Research/NxResearchKernel.c
+    Source/Research/NxManifest.c
+    Source/Research/NxRegistry.c
 )
 
 target_include_directories(NexioraNCP PUBLIC

@@ -6,6 +6,8 @@
 #include "Nexiora/NCP/Containers/NxVector.h"
 #include "Nexiora/Research/NxExperiment.h"
 #include "Nexiora/Research/NxResearchKernel.h"
+#include "Nexiora/Research/NxManifest.h"
+#include "Nexiora/Research/NxRegistry.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -32,6 +34,7 @@ typedef struct NxVectorBenchmarkContext {
 typedef struct NxResearchBenchmarkContext {
     NxResearchKernel kernel;
     NxExperiment experiment;
+    NxRegistry registry;
 } NxResearchBenchmarkContext;
 
 static void benchmark_alloc_free(void* user_data) {
@@ -98,6 +101,12 @@ static void benchmark_research_register_experiment(void* user_data) {
     NxResearchBenchmarkContext* context = (NxResearchBenchmarkContext*)user_data;
     context->kernel.experiment_count = 0;
     (void)nx_research_kernel_create_experiment(&context->kernel, &context->experiment);
+}
+
+static void benchmark_research_registry_add(void* user_data) {
+    NxResearchBenchmarkContext* context = (NxResearchBenchmarkContext*)user_data;
+    context->registry.count = 0;
+    (void)nx_registry_add(&context->registry, &context->experiment);
 }
 
 static uint64_t parse_iterations(int argc, char** argv) {
@@ -273,7 +282,9 @@ static int run_research_benchmarks(uint64_t iterations, const char* history_path
         return 1;
     }
 
+    nx_registry_initialize(&context.registry);
     final_status |= run_one("nx_research_register_experiment", benchmark_research_register_experiment, &context, iterations, history_path, report_path);
+    final_status |= run_one("nx_research_registry_add", benchmark_research_registry_add, &context, iterations, history_path, report_path);
     nx_research_kernel_shutdown(&context.kernel);
     return final_status;
 }

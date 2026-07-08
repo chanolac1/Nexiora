@@ -1,9 +1,9 @@
 Nexiora Evidence Report
-Generated: 2026-07-08 09:46:54
-Benchmark: nx_research_register_experiment
+Generated: 2026-07-08 09:52:48
+Benchmark: nx_research_registry_add
 Iterations: 1000000
-TotalSeconds: 54.728907100
-CurrentAverageNs: 54728.907
+TotalSeconds: 1.895814200
+CurrentAverageNs: 1895.814
 PreviousAverageNs: none
 ChangePercent: none
 Status: no-baseline
