@@ -1,13 +1,13 @@
-# Nexiora 0.0.12 — Research Evidence Generator Patch
+# Nexiora 0.0.13 — Promotion Pipeline Patch
 
-## Copy these files into your repository
+## Copy files
 
-- `Include/Nexiora/NCP/Research/NxResearchEvidence.h`
-- `Source/NCP/Research/NxResearchEvidence.c`
-- `Tests/Unit/NxResearchEvidenceTests.c`
-- `SPEC/SPEC-0005-Evidence-Generator.md`
-- `RFC/RFC-0026-Research-Evidence-Generator.md`
-- `LABBOOK/LAB-0005-Evidence-Generator.md`
+- `Include/Nexiora/NCP/Research/NxPromotion.h`
+- `Source/NCP/Research/NxPromotion.c`
+- `Tests/Unit/NxPromotionTests.c`
+- `SPEC/SPEC-0006-Promotion-Pipeline.md`
+- `RFC/RFC-0027-Promotion-Pipeline.md`
+- `LABBOOK/LAB-0006-Promotion-Pipeline.md`
 - `BOOK/01_CURRENT_STATE.md`
 - `BOOK/18_AI_CONTEXT.md`
 
@@ -16,17 +16,17 @@
 Add inside `add_library(NexioraNCP STATIC ...)`:
 
 ```cmake
-Source/NCP/Research/NxResearchEvidence.c
+Source/NCP/Research/NxPromotion.c
 ```
 
 Add inside `if(NEXIORA_BUILD_TESTS)`:
 
 ```cmake
-add_executable(NxResearchEvidenceTests
-    Tests/Unit/NxResearchEvidenceTests.c
+add_executable(NxPromotionTests
+    Tests/Unit/NxPromotionTests.c
 )
-target_link_libraries(NxResearchEvidenceTests PRIVATE NexioraNCP)
-add_test(NAME NxResearchEvidenceTests COMMAND NxResearchEvidenceTests)
+target_link_libraries(NxPromotionTests PRIVATE NexioraNCP)
+add_test(NAME NxPromotionTests COMMAND NxPromotionTests)
 ```
 
 ## Build

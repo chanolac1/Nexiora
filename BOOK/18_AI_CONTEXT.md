@@ -3,16 +3,20 @@
 Project: Nexiora
 
 Current Version:
-0.0.12 — Research Evidence Generator
+0.0.13 — Promotion Pipeline
 
 Current Sprint:
-Sprint 2 — Nexiora Research Lab
+Sprint 3 — Autonomous Research Pipeline
 
 Completed Recently:
-- Experiment Runner
-- Research Evidence Generator
+- Evidence Generator
+- Promotion Pipeline
 
 Next Task:
-NRL-0006 — Promotion Pipeline
+NRL-0007 — Autonomous Research Pipeline command integration
 
-Continue using BOOK as source of truth.
+Development Philosophy:
+- Evidence Before Opinion
+- Human Guided Evolution
+- Runtime is Sacred
+- Research First Development

@@ -1,10 +1,10 @@
 # Current State
 
 ## Version
-0.0.12 — Research Evidence Generator
+0.0.13 — Promotion Pipeline
 
 ## Current Sprint
-Sprint 2 — Nexiora Research Lab
+Sprint 3 — Autonomous Research Pipeline
 
 ## Completed
 - NRL-0001 Laboratory Kernel
@@ -12,9 +12,10 @@ Sprint 2 — Nexiora Research Lab
 - NRL-0003 Journal Engine
 - NRL-0004 Experiment Runner
 - NRL-0005 Evidence Generator Integration
+- NRL-0006 Promotion Pipeline
 
 ## Next Objective
-NRL-0006 — Promotion Pipeline.
+NRL-0007 — Autonomous Research Pipeline command integration.
 
 ## Rule
-No experiment can be promoted without evidence and human approval.
+Nexiora may recommend. Only a human may promote.
