@@ -1,3 +1,5 @@
+#include "Nexiora/NCP/Research/NxExperimentRunner.h"
+#include "Nexiora/NCP/Research/NxJournal.h"
 #include "Nexiora/NCP/Benchmark/NxBenchmark.h"
 #include "Nexiora/NCP/Evidence/NxEvidence.h"
 #include "Nexiora/NCP/Memory/NxMemory.h"
@@ -12,6 +14,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
+
+typedef struct NxBenchmarkTimer
+{
+    clock_t start;
+} NxBenchmarkTimer;
+
+static void nx_benchmark_timer_start(NxBenchmarkTimer* timer)
+{
+    timer->start = clock();
+}
+
+static double nx_benchmark_timer_stop(NxBenchmarkTimer* timer)
+{
+    return (double)(clock() - timer->start) / (double)CLOCKS_PER_SEC;
+}
 
 typedef enum NxBenchmarkModule {
     NX_BENCH_MODULE_ALL = 0,
@@ -291,6 +309,81 @@ static int run_research_benchmarks(uint64_t iterations, const char* history_path
 
 static void print_usage(const char* executable) {
     printf("Usage: %s [--iterations N] [--module all|memory|hardware|string|containers|research]\n", executable);
+}
+
+
+static void nx_benchmark_research_journal_write(size_t iterations)
+{
+    const char* path = "Benchmarks/Reports/journal_benchmark.log";
+    remove(path);
+
+    NxJournal journal;
+    if (nx_journal_open(&journal, path) != NX_OK)
+    {
+        printf("Benchmark: nx_research_journal_write\n  Failed to open journal\n");
+        return;
+    }
+
+    NxBenchmarkTimer timer;
+    nx_benchmark_timer_start(&timer);
+
+    for (size_t i = 0; i < iterations; ++i)
+    {
+        NxJournalEvent event = nx_journal_make_event(
+            NX_JOURNAL_EVENT_EXPERIMENT_STARTED,
+            "LAB-0003",
+            "JournalBenchmark",
+            "benchmark event"
+        );
+        nx_journal_write_event(&journal, &event);
+    }
+
+    double total = nx_benchmark_timer_stop(&timer);
+    double average_ns = (total * 1000000000.0) / (double)iterations;
+
+    printf("Benchmark: nx_research_journal_write\n");
+    printf("  Iterations: %zu\n", iterations);
+    printf("  Total: %.9f s\n", total);
+    printf("  Average: %.3f ns\n", average_ns);
+
+    nx_journal_close(&journal);
+}
+
+
+static void nx_benchmark_research_runner_lifecycle(size_t iterations)
+{
+    const char* journal_path = "Benchmarks/Reports/runner_benchmark_journal.log";
+    remove(journal_path);
+
+    NxJournal journal;
+    if (nx_journal_open(&journal, journal_path) != NX_OK)
+    {
+        printf("Benchmark: nx_research_runner_lifecycle\n  Failed to open journal\n");
+        return;
+    }
+
+    NxExperimentRunner runner;
+    nx_experiment_runner_initialize(&runner, "Research", &journal);
+
+    NxBenchmarkTimer timer;
+    nx_benchmark_timer_start(&timer);
+
+    for (size_t i = 0; i < iterations; ++i)
+    {
+        NxExperimentRunResult result;
+        nx_experiment_runner_execute(&runner, "LAB-0004", &result);
+    }
+
+    double total = nx_benchmark_timer_stop(&timer);
+    double average_ns = (total * 1000000000.0) / (double)iterations;
+
+    printf("Benchmark: nx_research_runner_lifecycle\n");
+    printf("  Iterations: %zu\n", iterations);
+    printf("  Total: %.9f s\n", total);
+    printf("  Average: %.3f ns\n", average_ns);
+
+    nx_experiment_runner_shutdown(&runner);
+    nx_journal_close(&journal);
 }
 
 int main(int argc, char** argv) {

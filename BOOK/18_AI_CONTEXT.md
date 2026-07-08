@@ -1,26 +1,35 @@
 # AI Context
 
-Project: Nexiora.
+Read this file first in every new chat.
 
-Current version: 0.0.9 — Research Lab.
-Current sprint: Sprint 2 — Nexiora Research Lab.
+Project: Nexiora
 
-Source of truth: BOOK and LABBOOK.
+Current Version:
+0.0.11 — Experiment Runner
 
-Current implementation focus:
+Current Sprint:
+Sprint 2 — Nexiora Research Lab
+
+Completed Recently:
 - NRL-0001 Laboratory Kernel
-- NxExperiment state machine
-- NxResearchKernel registry and journal
-- Research benchmark module
+- NRL-0002 Manifest + Registry Engine
+- NRL-0003 Journal Engine
+- NRL-0004 Experiment Runner
 
-Philosophy:
-- Runtime is sacred.
-- Every optimization starts as an experiment.
-- Failed experiments are assets.
-- Evidence and human approval are required before promotion.
+Current Focus:
+- Research execution pipeline
+- Experiment traceability
+- Journal + report generation
 
-When continuing in a new chat, read this file first, then BOOK/01_CURRENT_STATE.md.
+Next Task:
+NRL-0005 — Evidence Generator integration
 
+Development Philosophy:
+- Evidence Before Opinion
+- Human Guided Evolution
+- Documentation is the Source of Truth
+- Runtime is Sacred
+- Every Optimization Starts as an Experiment
 
-## 0.0.9 Update
-NRL-0002 adds Manifest and Registry Engine.
+Instruction for AI:
+Continue from the BOOK and do not redefine accepted architecture.

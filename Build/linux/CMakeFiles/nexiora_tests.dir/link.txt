@@ -1,1 +1,0 @@
-/usr/bin/cc -g -Wl,--dependency-file=CMakeFiles/nexiora_tests.dir/link.d CMakeFiles/nexiora_tests.dir/Tests/NxCoreTests.c.o -o bin/nexiora_tests  lib/libNexioraNCP.a

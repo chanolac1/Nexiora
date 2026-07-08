@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.25)
 
 project(Nexiora
-    VERSION 0.0.9
+    VERSION 0.0.11
     DESCRIPTION "Nexiora Research Lab - Manifest and Registry Engine"
     LANGUAGES C
 )
@@ -39,6 +39,8 @@ add_library(NexioraNCP STATIC
     Source/NCP/Containers/NxVector.c
     Source/NCP/Benchmark/NxBenchmark.c
     Source/NCP/Evidence/NxEvidence.c
+    Source/NCP/Research/NxJournal.c
+    Source/NCP/Research/NxExperimentRunner.c
     Source/Research/NxExperiment.c
     Source/Research/NxResearchKernel.c
     Source/Research/NxManifest.c
@@ -81,4 +83,18 @@ if(NEXIORA_BUILD_TESTS)
     add_executable(NxResearchTests Tests/Unit/NxResearchTests.c)
     target_link_libraries(NxResearchTests PRIVATE NexioraNCP)
     add_test(NAME NxResearchTests COMMAND NxResearchTests)
+
+    add_executable(NxJournalTests
+        Tests/Unit/NxJournalTests.c
+    )
+    target_link_libraries(NxJournalTests PRIVATE NexioraNCP)
+    add_test(NAME NxJournalTests COMMAND NxJournalTests)
+
+    add_executable(NxExperimentRunnerTests
+        Tests/Unit/NxExperimentRunnerTests.c
+    )
+    target_link_libraries(NxExperimentRunnerTests PRIVATE NexioraNCP)
+    add_test(NAME NxExperimentRunnerTests COMMAND NxExperimentRunnerTests)
+
+
 endif()

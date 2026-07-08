@@ -1,7 +1,0 @@
-/mnt/data/Nexiora_work/Nexiora/Build/linux/CMakeFiles/NexioraNCP.dir
-/mnt/data/Nexiora_work/Nexiora/Build/linux/CMakeFiles/nexiora.dir
-/mnt/data/Nexiora_work/Nexiora/Build/linux/CMakeFiles/nexiora_tests.dir
-/mnt/data/Nexiora_work/Nexiora/Build/linux/CMakeFiles/nexiora_bench.dir
-/mnt/data/Nexiora_work/Nexiora/Build/linux/CMakeFiles/test.dir
-/mnt/data/Nexiora_work/Nexiora/Build/linux/CMakeFiles/edit_cache.dir
-/mnt/data/Nexiora_work/Nexiora/Build/linux/CMakeFiles/rebuild_cache.dir

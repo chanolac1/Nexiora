@@ -1,1 +1,0 @@
-/usr/bin/cc -g -Wl,--dependency-file=CMakeFiles/nexiora_bench.dir/link.d CMakeFiles/nexiora_bench.dir/Tests/NxBenchmarkMain.c.o -o bin/nexiora_bench  lib/libNexioraNCP.a

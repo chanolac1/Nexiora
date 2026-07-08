@@ -1,23 +1,8 @@
-# Nexiora 0.0.9 — Research Lab
+# Nexiora 0.0.11 — Experiment Runner
 
-This snapshot introduces **NRL-0001 — Laboratory Kernel**, the first implementation of the Nexiora Research Lab.
+This snapshot adds **NRL-0004 — Experiment Runner**.
 
-## New in this snapshot
-
-- `Research/` infrastructure
-- `LABBOOK/`
-- `SPEC/`
-- `NxExperiment`
-- `NxResearchKernel`
-- experiment state machine
-- registry writer
-- journal writer
-- research unit tests
-- research benchmark module
-- RFC-0016 through RFC-0021
-- BOOK updates
-
-## Windows build
+## Build
 
 ```powershell
 Unblock-File .\Scripts\nxbuild.ps1
@@ -25,23 +10,11 @@ Unblock-File .\Scripts\nxbuild.ps1
 .\Scripts\nxbuild.ps1 all research
 ```
 
-Or manually:
+## New Files
 
-```powershell
-cmake --preset windows-msvc-debug
-cmake --build --preset debug
-ctest --preset debug-tests --output-on-failure
-.\Build\windows-msvc-debug\bin\nexiora_bench.exe --iterations 1000000 --module research
-```
-
-## Commit
-
-```powershell
-git add .
-git commit -m "NRL-0001: Add Laboratory Kernel"
-git push
-```
-
-
-## 0.0.9 Research Registry
-Adds manifest and registry roundtrip support.
+- `Include/Nexiora/NCP/Research/NxExperimentRunner.h`
+- `Source/NCP/Research/NxExperimentRunner.c`
+- `Tests/Unit/NxExperimentRunnerTests.c`
+- `SPEC/SPEC-0004-Experiment-Runner.md`
+- `RFC/RFC-0025-Experiment-Runner.md`
+- `LABBOOK/LAB-0004-Experiment-Runner.md`

@@ -1,9 +1,0 @@
-D:/Nexiora/Build/windows-msvc-debug/CMakeFiles/NexioraNCP.dir
-D:/Nexiora/Build/windows-msvc-debug/CMakeFiles/nexiora.dir
-D:/Nexiora/Build/windows-msvc-debug/CMakeFiles/nexiora_bench.dir
-D:/Nexiora/Build/windows-msvc-debug/CMakeFiles/nexiora_tests.dir
-D:/Nexiora/Build/windows-msvc-debug/CMakeFiles/NxVectorTests.dir
-D:/Nexiora/Build/windows-msvc-debug/CMakeFiles/NxResearchTests.dir
-D:/Nexiora/Build/windows-msvc-debug/CMakeFiles/test.dir
-D:/Nexiora/Build/windows-msvc-debug/CMakeFiles/edit_cache.dir
-D:/Nexiora/Build/windows-msvc-debug/CMakeFiles/rebuild_cache.dir
