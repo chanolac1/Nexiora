@@ -1,4 +1,4 @@
-﻿cmake_minimum_required(VERSION 3.25)
+cmake_minimum_required(VERSION 3.25)
 
 project(Nexiora
     VERSION 0.0.11
@@ -47,6 +47,7 @@ add_library(NexioraNCP STATIC
     Source/Research/NxRegistry.c
     Source/Research/NxResearchGraph.c
     Source/Research/NxResearchGraphExporter.c
+    Source/Research/NxResearchGraphQuery.c
 )
 
 target_include_directories(NexioraNCP PUBLIC
@@ -123,6 +124,11 @@ add_executable(NxResearchGraphBenchmark
     )
     target_link_libraries(NxResearchGraphBenchmark PRIVATE NexioraNCP)
 
+    add_executable(NxResearchGraphQueryTests
+        Tests/Unit/NxResearchGraphQueryTests.c
+    )
+    target_link_libraries(NxResearchGraphQueryTests PRIVATE NexioraNCP)
+    add_test(NAME NxResearchGraphQueryTests COMMAND NxResearchGraphQueryTests)
 endif()
 
 # ============================================================
