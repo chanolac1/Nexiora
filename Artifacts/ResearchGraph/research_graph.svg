@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="220" viewBox="0 0 1100 220">
+<rect width="100%" height="100%" fill="white"/>
+<text x="24" y="32" font-family="Arial" font-size="20">Nexiora Research Graph</text>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#333"/></marker></defs>
+<line x1="170" y1="110" x2="275" y2="110" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="220" y="96" font-family="Arial" font-size="12" text-anchor="middle">declares</text>
+<line x1="390" y1="110" x2="495" y2="110" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="440" y="96" font-family="Arial" font-size="12" text-anchor="middle">produces</text>
+<line x1="830" y1="110" x2="495" y2="110" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="880" y="96" font-family="Arial" font-size="12" text-anchor="middle">records</text>
+<line x1="610" y1="110" x2="935" y2="110" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="770" y="96" font-family="Arial" font-size="12" text-anchor="middle">supports</text>
+<line x1="1050" y1="110" x2="275" y2="110" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1320" y="96" font-family="Arial" font-size="12" text-anchor="middle">recommends review</text>
+<rect x="30" y="70" width="150" height="80" rx="10" fill="#f8f8f8" stroke="#222"/>
+<text x="105" y="104" font-family="Arial" font-size="13" text-anchor="middle">Manifest</text>
+<text x="105" y="128" font-family="Arial" font-size="11" text-anchor="middle">manifest</text>
+<rect x="250" y="70" width="150" height="80" rx="10" fill="#f8f8f8" stroke="#222"/>
+<text x="325" y="104" font-family="Arial" font-size="13" text-anchor="middle">SIMD_Vector_Experiment</text>
+<text x="325" y="128" font-family="Arial" font-size="11" text-anchor="middle">experiment</text>
+<rect x="470" y="70" width="150" height="80" rx="10" fill="#f8f8f8" stroke="#222"/>
+<text x="545" y="104" font-family="Arial" font-size="13" text-anchor="middle">Evidence</text>
+<text x="545" y="128" font-family="Arial" font-size="11" text-anchor="middle">evidence</text>
+<rect x="690" y="70" width="150" height="80" rx="10" fill="#f8f8f8" stroke="#222"/>
+<text x="765" y="104" font-family="Arial" font-size="13" text-anchor="middle">Journal_Run</text>
+<text x="765" y="128" font-family="Arial" font-size="11" text-anchor="middle">journal_entry</text>
+<rect x="910" y="70" width="150" height="80" rx="10" fill="#f8f8f8" stroke="#222"/>
+<text x="985" y="104" font-family="Arial" font-size="13" text-anchor="middle">Human_Review_Recommendation</text>
+<text x="985" y="128" font-family="Arial" font-size="11" text-anchor="middle">promotion_recommendation</text>
+</svg>

@@ -9,3 +9,4 @@
 - RFC-0022 — Experiment Manifests
 - RFC-0023 — Registry Is An Index
 - RFC-0024 — Research Graph Foundation
+- RFC-0025 — Research Graph Exporter

@@ -1,0 +1,14 @@
+digraph NexioraResearchGraph {
+  graph [rankdir=LR, label="Nexiora Research Graph", labelloc=t];
+  node [shape=box, style=rounded];
+  n1 [label="Manifest\nmanifest"];
+  n2 [label="SIMD_Vector_Experiment\nexperiment"];
+  n3 [label="Evidence\nevidence"];
+  n4 [label="Journal_Run\njournal_entry"];
+  n5 [label="Human_Review_Recommendation\npromotion_recommendation"];
+  n1 -> n2 [label="declares"];
+  n2 -> n3 [label="produces"];
+  n4 -> n3 [label="records"];
+  n3 -> n5 [label="supports"];
+  n5 -> n2 [label="recommends review"];
+}

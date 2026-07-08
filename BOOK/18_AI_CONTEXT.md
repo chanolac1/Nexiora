@@ -3,20 +3,20 @@
 Project: Nexiora
 
 Current Version:
-0.0.16 — Research Graph Foundation
+0.0.17 — Research Graph Exporter
 
 Current Sprint:
 Sprint 3 — Autonomous Research Pipeline
 
 Completed Recently:
-- Evidence Generator
 - Promotion Pipeline
 - Autonomous Research Pipeline
 - Experiment Discovery Engine
 - Research Graph Foundation
+- Research Graph Exporter
 
 Next Task:
-NRL-0010 — Graph Query Engine
+NRL-0011 — Graph Query Engine
 
 Development Philosophy:
 - Evidence Before Opinion

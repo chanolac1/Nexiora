@@ -1,0 +1,18 @@
+{
+  "node_count": 5,
+  "edge_count": 5,
+  "nodes": [
+    {"id": 1, "type": "manifest", "name": "Manifest"},
+    {"id": 2, "type": "experiment", "name": "SIMD_Vector_Experiment"},
+    {"id": 3, "type": "evidence", "name": "Evidence"},
+    {"id": 4, "type": "journal_entry", "name": "Journal_Run"},
+    {"id": 5, "type": "promotion_recommendation", "name": "Human_Review_Recommendation"}
+  ],
+  "edges": [
+    {"id": 1, "from": 1, "to": 2, "type": "declares", "label": "declares"},
+    {"id": 2, "from": 2, "to": 3, "type": "produces", "label": "produces"},
+    {"id": 3, "from": 4, "to": 3, "type": "records", "label": "records"},
+    {"id": 4, "from": 3, "to": 5, "type": "supports", "label": "supports"},
+    {"id": 5, "from": 5, "to": 2, "type": "recommends", "label": "recommends review"}
+  ]
+}

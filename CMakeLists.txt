@@ -48,6 +48,7 @@ add_library(NexioraNCP STATIC
     Source/Research/NxManifest.c
     Source/Research/NxRegistry.c
     Source/Research/NxResearchGraph.c
+    Source/Research/NxResearchGraphExporter.c
 )
 
 target_include_directories(NexioraNCP PUBLIC
@@ -117,7 +118,6 @@ if(NEXIORA_BUILD_TESTS)
     )
     target_link_libraries(NxResearchGraphTests PRIVATE NexioraNCP)
     add_test(NAME NxResearchGraphTests COMMAND NxResearchGraphTests)
-
 endif()
 
 if(NEXIORA_ENABLE_BENCHMARKS)
@@ -125,4 +125,19 @@ if(NEXIORA_ENABLE_BENCHMARKS)
         Tests/Benchmark/NxResearchGraphBenchmark.c
     )
     target_link_libraries(NxResearchGraphBenchmark PRIVATE NexioraNCP)
+
+    add_executable(NxResearchGraphExporterTests
+        Tests/Unit/NxResearchGraphExporterTests.c
+    )
+    target_link_libraries(NxResearchGraphExporterTests PRIVATE NexioraNCP)
+    add_test(NAME NxResearchGraphExporterTests COMMAND NxResearchGraphExporterTests)
 endif()
+add_executable(NxResearchGraphExportSample
+    Tools/ResearchGraph/NxResearchGraphExportSample.c
+)
+target_link_libraries(NxResearchGraphExportSample PRIVATE NexioraNCP)
+
+add_executable(NxResearchGraphExporterBenchmark
+    Tests/Benchmark/NxResearchGraphExporterBenchmark.c
+)
+target_link_libraries(NxResearchGraphExporterBenchmark PRIVATE NexioraNCP)

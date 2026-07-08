@@ -1,7 +1,7 @@
 # Current State
 
 ## Version
-0.0.16 — Research Graph Foundation
+0.0.17 — Research Graph Exporter
 
 ## Current Sprint
 Sprint 3 — Autonomous Research Pipeline
@@ -16,9 +16,10 @@ Sprint 3 — Autonomous Research Pipeline
 - NRL-0007 Autonomous Research Pipeline command integration
 - NRL-0008 Experiment Discovery Engine
 - NRL-0009 Research Graph Foundation
+- NRL-0010 Research Graph Exporter
 
 ## Next Objective
-NRL-0010 — Graph Query Engine.
+NRL-0011 — Graph Query Engine.
 
 ## Rule
 Nexiora may recommend. Only a human may promote.
