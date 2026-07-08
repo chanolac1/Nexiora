@@ -54,6 +54,7 @@ add_library(NexioraNCP STATIC
     Source/Research/NxResearchGraphQuery.c
     Source/Research/NxResearchScheduler.c
     Source/Research/NxAutonomousExecution.c
+    Source/Research/NxResearchDashboard.c
     Source/Research/NxResearchQueue.c
     Source/Research/NxResearchPolicy.c
     Source/Research/NxResearchSession.c
@@ -234,3 +235,12 @@ if(NEXIORA_BUILD_TESTS)
     target_link_libraries(NxAutonomousExecutionTests PRIVATE NexioraNCP)
     add_test(NAME NxAutonomousExecutionTests COMMAND NxAutonomousExecutionTests)
 endif()
+
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxResearchDashboardTests
+        Tests/Unit/NxResearchDashboardTests.c
+    )
+    target_link_libraries(NxResearchDashboardTests PRIVATE NexioraNCP)
+    add_test(NAME NxResearchDashboardTests COMMAND NxResearchDashboardTests)
+endif()
+

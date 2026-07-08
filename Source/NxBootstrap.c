@@ -1,6 +1,7 @@
 #include "Nexiora/NCP/Logging/NxLog.h"
 #include "Nexiora/NCP/Runtime/NxRuntime.h"
 #include "Nexiora/Research/NxAutonomousExecution.h"
+#include "Nexiora/Research/NxResearchDashboard.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -26,7 +27,25 @@ static void nx_print_research_run_result(const NxAutonomousExecutionResult* resu
     printf("  knowledge.json\n");
     printf("  graph.json\n");
     printf("  graph.dot\n");
-    printf("  graph.svg\n\n");
+    printf("  graph.svg\n");
+    printf("  dashboard.html\n\n");
+    printf("%s\n", result->message);
+}
+
+static void nx_print_dashboard_result(const NxResearchDashboardResult* result)
+{
+    printf("------------------------------------------------\n");
+    printf(" Nexiora Research Dashboard\n");
+    printf("------------------------------------------------\n\n");
+    printf("Dashboard Path : %s\n\n", result->dashboard_path);
+    printf("Artifacts detected:\n");
+    printf("  summary.txt             : %s\n", result->has_summary ? "yes" : "no");
+    printf("  report.md               : %s\n", result->has_report ? "yes" : "no");
+    printf("  metrics.json            : %s\n", result->has_metrics ? "yes" : "no");
+    printf("  knowledge.json          : %s\n", result->has_knowledge ? "yes" : "no");
+    printf("  graph.json              : %s\n", result->has_graph_json ? "yes" : "no");
+    printf("  graph.dot               : %s\n", result->has_graph_dot ? "yes" : "no");
+    printf("  graph.svg               : %s\n\n", result->has_graph_svg ? "yes" : "no");
     printf("%s\n", result->message);
 }
 
@@ -46,6 +65,7 @@ int main(int argc, char** argv)
     {
         NxAutonomousExecutionResult run_result;
         NxAutonomousExecutionStatus run_status;
+        NxResearchDashboardResult dashboard_result;
 
         nx_log_write(NX_LOG_INFO, "Research", "Starting first autonomous research execution.");
         run_status = NxAutonomousExecution_RunDefault(".", &run_result);
@@ -58,7 +78,30 @@ int main(int argc, char** argv)
             return 2;
         }
 
+        (void)NxResearchDashboard_Generate(run_result.session_path, &dashboard_result);
         nx_print_research_run_result(&run_result);
+        printf("Dashboard generated : %s\n", dashboard_result.dashboard_path);
+        nx_runtime_shutdown(&runtime);
+        return 0;
+    }
+
+    if (argc >= 3 && strcmp(argv[1], "research") == 0 && strcmp(argv[2], "dashboard") == 0)
+    {
+        NxResearchDashboardResult dashboard_result;
+        NxResearchDashboardStatus dashboard_status;
+
+        nx_log_write(NX_LOG_INFO, "Research", "Generating autonomous research dashboard.");
+        dashboard_status = NxResearchDashboard_GenerateDefault(".", &dashboard_result);
+        if (dashboard_status != NX_RESEARCH_DASHBOARD_OK)
+        {
+            fprintf(stderr,
+                "Research dashboard generation failed: %s\n",
+                NxResearchDashboard_StatusToString(dashboard_status));
+            nx_runtime_shutdown(&runtime);
+            return 3;
+        }
+
+        nx_print_dashboard_result(&dashboard_result);
         nx_runtime_shutdown(&runtime);
         return 0;
     }
@@ -66,7 +109,8 @@ int main(int argc, char** argv)
     nx_log_write(NX_LOG_INFO, "Bootstrap", "Welcome to Nexiora Genesis.");
     nx_runtime_print_status(&runtime);
     printf("\nCommands:\n");
-    printf("  nexiora research run    Execute the first autonomous research session\n");
+    printf("  nexiora research run          Execute the first autonomous research session\n");
+    printf("  nexiora research dashboard    Generate dashboard.html for the latest session\n");
 
     nx_runtime_shutdown(&runtime);
     return 0;
