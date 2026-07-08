@@ -1,0 +1,29 @@
+*** CMakeLists.txt
+--- CMakeLists.txt
+***************
+*** add_library(NexioraNCP STATIC
+      Source/Research/NxManifest.c
+      Source/Research/NxRegistry.c
+  )
+--- add_library(NexioraNCP STATIC
+      Source/Research/NxManifest.c
+      Source/Research/NxRegistry.c
++     Source/Research/NxAutonomousResearchPipeline.c
+  )
+***************
+***     add_executable(NxExperimentRunnerTests
+          Tests/Unit/NxExperimentRunnerTests.c
+      )
+      target_link_libraries(NxExperimentRunnerTests PRIVATE NexioraNCP)
+      add_test(NAME NxExperimentRunnerTests COMMAND NxExperimentRunnerTests)
+---     add_executable(NxExperimentRunnerTests
+          Tests/Unit/NxExperimentRunnerTests.c
+      )
+      target_link_libraries(NxExperimentRunnerTests PRIVATE NexioraNCP)
+      add_test(NAME NxExperimentRunnerTests COMMAND NxExperimentRunnerTests)
++
++     add_executable(NxAutonomousResearchPipelineTests
++         Tests/Unit/NxAutonomousResearchPipelineTests.c
++     )
++     target_link_libraries(NxAutonomousResearchPipelineTests PRIVATE NexioraNCP)
++     add_test(NAME NxAutonomousResearchPipelineTests COMMAND NxAutonomousResearchPipelineTests)

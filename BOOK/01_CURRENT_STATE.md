@@ -1,7 +1,7 @@
 # Current State
 
 ## Version
-0.0.13 — Promotion Pipeline
+0.0.14 — Autonomous Research Pipeline Orchestrator
 
 ## Current Sprint
 Sprint 3 — Autonomous Research Pipeline
@@ -13,9 +13,10 @@ Sprint 3 — Autonomous Research Pipeline
 - NRL-0004 Experiment Runner
 - NRL-0005 Evidence Generator Integration
 - NRL-0006 Promotion Pipeline
+- NRL-0007 Autonomous Research Pipeline Orchestrator
 
 ## Next Objective
-NRL-0007 — Autonomous Research Pipeline command integration.
+NRL-0008 — Autonomous Research Pipeline command integration.
 
 ## Rule
 Nexiora may recommend. Only a human may promote.

@@ -1,37 +1,46 @@
-# Nexiora 0.0.13 — Promotion Pipeline Patch
+# NRL-0007 — Autonomous Research Pipeline Orchestrator
 
-## Copy files
+Copy these files into the Nexiora repository root.
 
-- `Include/Nexiora/NCP/Research/NxPromotion.h`
-- `Source/NCP/Research/NxPromotion.c`
-- `Tests/Unit/NxPromotionTests.c`
-- `SPEC/SPEC-0006-Promotion-Pipeline.md`
-- `RFC/RFC-0027-Promotion-Pipeline.md`
-- `LABBOOK/LAB-0006-Promotion-Pipeline.md`
-- `BOOK/01_CURRENT_STATE.md`
-- `BOOK/18_AI_CONTEXT.md`
+## Files
 
-## CMake additions
+- Include/Nexiora/Research/NxAutonomousResearchPipeline.h
+- Source/Research/NxAutonomousResearchPipeline.c
+- Tests/Unit/NxAutonomousResearchPipelineTests.c
+- Patches/CMakeLists.NRL-0007.patch
+- BOOK updates
 
-Add inside `add_library(NexioraNCP STATIC ...)`:
+## CMake integration
+
+Apply the CMake patch manually or add:
 
 ```cmake
-Source/NCP/Research/NxPromotion.c
+Source/Research/NxAutonomousResearchPipeline.c
 ```
 
-Add inside `if(NEXIORA_BUILD_TESTS)`:
+to `add_library(NexioraNCP STATIC ...)`.
+
+Then add:
 
 ```cmake
-add_executable(NxPromotionTests
-    Tests/Unit/NxPromotionTests.c
+add_executable(NxAutonomousResearchPipelineTests
+    Tests/Unit/NxAutonomousResearchPipelineTests.c
 )
-target_link_libraries(NxPromotionTests PRIVATE NexioraNCP)
-add_test(NAME NxPromotionTests COMMAND NxPromotionTests)
+target_link_libraries(NxAutonomousResearchPipelineTests PRIVATE NexioraNCP)
+add_test(NAME NxAutonomousResearchPipelineTests COMMAND NxAutonomousResearchPipelineTests)
 ```
 
-## Build
+inside `if(NEXIORA_BUILD_TESTS)`.
+
+## Verify
 
 ```powershell
 cmake --build --preset release
 ctest --test-dir .\Build\windows-msvc-release --output-on-failure
+```
+
+## Commit
+
+```txt
+NRL-0007: add autonomous research pipeline orchestrator
 ```
