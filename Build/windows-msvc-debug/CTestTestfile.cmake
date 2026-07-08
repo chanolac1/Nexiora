@@ -5,6 +5,6 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 add_test("NexioraCoreTests" "D:/Nexiora/Build/windows-msvc-debug/bin/nexiora_tests.exe")
-set_tests_properties("NexioraCoreTests" PROPERTIES  _BACKTRACE_TRIPLES "D:/Nexiora/CMakeLists.txt;129;add_test;D:/Nexiora/CMakeLists.txt;0;")
+set_tests_properties("NexioraCoreTests" PROPERTIES  _BACKTRACE_TRIPLES "D:/Nexiora/CMakeLists.txt;71;add_test;D:/Nexiora/CMakeLists.txt;0;")
 add_test("NxVectorTests" "D:/Nexiora/Build/windows-msvc-debug/bin/NxVectorTests.exe")
-set_tests_properties("NxVectorTests" PROPERTIES  _BACKTRACE_TRIPLES "D:/Nexiora/CMakeLists.txt;140;add_test;D:/Nexiora/CMakeLists.txt;0;")
+set_tests_properties("NxVectorTests" PROPERTIES  _BACKTRACE_TRIPLES "D:/Nexiora/CMakeLists.txt;75;add_test;D:/Nexiora/CMakeLists.txt;0;")

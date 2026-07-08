@@ -1,10 +1,10 @@
 Nexiora Evidence Report
-Generated: 2026-07-07 17:52:06
+Generated: 2026-07-07 18:19:29
 Benchmark: nx_vector_at_i32
 Iterations: 1000000
-TotalSeconds: 0.002271000
-CurrentAverageNs: 2.271
-PreviousAverageNs: none
-ChangePercent: none
-Status: no-baseline
-HumanApprovalRequired: no
+TotalSeconds: 0.004087700
+CurrentAverageNs: 4.088
+PreviousAverageNs: 10.221
+ChangePercent: 60.007
+Status: improved
+HumanApprovalRequired: yes

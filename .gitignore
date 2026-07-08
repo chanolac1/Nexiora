@@ -1,8 +1,4 @@
-# ==========================================
-# Nexiora - Git Ignore
-# ==========================================
-
-# Build
+# Build output
 Build/
 build/
 out/
@@ -26,37 +22,40 @@ CTestTestfile.cmake
 compile_commands.json
 Makefile
 
-# Objetos y ejecutables
+# Objects and binaries
 *.obj
 *.o
 *.exe
 *.dll
 *.lib
+*.a
 *.exp
 *.pdb
 *.ilk
 
-# Logs
+# Logs and generated evidence
 Logs/
 *.log
+Benchmarks/Reports/*
+Benchmarks/History/*
+Benchmarks/Approvals/*
+!Benchmarks/Reports/.gitkeep
+!Benchmarks/History/.gitkeep
+!Benchmarks/Approvals/.gitkeep
 
-# Benchmarks generados
-Benchmarks/Reports/
-Benchmarks/History/
-
-# Archivos temporales
+# Temporary files
 *.tmp
 *.bak
 *.cache
 
-# Sistema
+# OS
 Thumbs.db
 Desktop.ini
 
-# Python (para futuras herramientas)
+# Python tools
 __pycache__/
 *.pyc
 
-# Modelos grandes (no subir al repositorio)
+# Large future artifacts
 Models/Checkpoints/
 Datasets/Processed/
