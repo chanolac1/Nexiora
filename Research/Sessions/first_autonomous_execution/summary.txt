@@ -1,0 +1,12 @@
+Nexiora First Autonomous Research Execution
+==========================================
+
+Experiments discovered : 3
+Experiments executed   : 3
+Evidence generated     : 3
+Promotion candidates   : 3
+Knowledge graph nodes  : 10
+Knowledge graph edges  : 9
+
+Human approval gate    : ACTIVE
+Runtime promotion      : NOT AUTOMATIC

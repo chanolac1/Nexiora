@@ -1,0 +1,27 @@
+{
+  "node_count": 10,
+  "edge_count": 9,
+  "nodes": [
+    {"id": 1, "type": "manifest", "name": "First Autonomous Execution Manifest"},
+    {"id": 2, "type": "experiment", "name": "EXP-VECTOR-001"},
+    {"id": 3, "type": "evidence", "name": "EXP-VECTOR-001"},
+    {"id": 4, "type": "promotion_recommendation", "name": "EXP-VECTOR-001"},
+    {"id": 5, "type": "experiment", "name": "EXP-EVIDENCE-001"},
+    {"id": 6, "type": "evidence", "name": "EXP-EVIDENCE-001"},
+    {"id": 7, "type": "promotion_recommendation", "name": "EXP-EVIDENCE-001"},
+    {"id": 8, "type": "experiment", "name": "EXP-GRAPH-001"},
+    {"id": 9, "type": "evidence", "name": "EXP-GRAPH-001"},
+    {"id": 10, "type": "promotion_recommendation", "name": "EXP-GRAPH-001"}
+  ],
+  "edges": [
+    {"id": 1, "from": 1, "to": 2, "type": "declares", "label": "declares"},
+    {"id": 2, "from": 2, "to": 3, "type": "produces", "label": "produces"},
+    {"id": 3, "from": 3, "to": 4, "type": "supports", "label": "supports"},
+    {"id": 4, "from": 1, "to": 5, "type": "declares", "label": "declares"},
+    {"id": 5, "from": 5, "to": 6, "type": "produces", "label": "produces"},
+    {"id": 6, "from": 6, "to": 7, "type": "supports", "label": "supports"},
+    {"id": 7, "from": 1, "to": 8, "type": "declares", "label": "declares"},
+    {"id": 8, "from": 8, "to": 9, "type": "produces", "label": "produces"},
+    {"id": 9, "from": 9, "to": 10, "type": "supports", "label": "supports"}
+  ]
+}

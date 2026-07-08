@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.25)
+﻿cmake_minimum_required(VERSION 3.25)
 
 project(Nexiora
     VERSION 0.1.0
@@ -53,6 +53,7 @@ add_library(NexioraNCP STATIC
     Source/Research/NxResearchGraphExporter.c
     Source/Research/NxResearchGraphQuery.c
     Source/Research/NxResearchScheduler.c
+    Source/Research/NxAutonomousExecution.c
     Source/Research/NxResearchQueue.c
     Source/Research/NxResearchPolicy.c
     Source/Research/NxResearchSession.c
@@ -221,3 +222,15 @@ endif()
 
 add_executable(NxResearchGraphExportSample Tools/ResearchGraph/NxResearchGraphExportSample.c)
 target_link_libraries(NxResearchGraphExportSample PRIVATE NexioraNCP)
+
+# ============================================================
+# EPIC-0005 — First Autonomous Research Execution
+# ============================================================
+
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxAutonomousExecutionTests
+        Tests/Unit/NxAutonomousExecutionTests.c
+    )
+    target_link_libraries(NxAutonomousExecutionTests PRIVATE NexioraNCP)
+    add_test(NAME NxAutonomousExecutionTests COMMAND NxAutonomousExecutionTests)
+endif()
