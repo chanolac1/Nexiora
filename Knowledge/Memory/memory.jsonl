@@ -1,0 +1,4 @@
+{"id":1,"type":1,"title":"Primera ejecucion autonoma","body":"Nexiora ejecuto una sesion autonoma completa y genero evidencia, grafo y dashboard.","source":"EPIC-0005/EPIC-0006","timestamp":"2026-07-08","confidence":95}
+{"id":2,"type":2,"title":"Runtime protegido","body":"La promocion al Runtime permanece bloqueada hasta aprobacion humana.","source":"BOOK","timestamp":"2026-07-08","confidence":100}
+{"id":3,"type":4,"title":"Memoria persistente","body":"La memoria guarda hechos, decisiones, hipotesis y conceptos para consultas futuras.","source":"EPIC-0008","timestamp":"2026-07-08","confidence":90}
+{"id":4,"type":3,"title":"Nexiora puede recordar","body":"Si la memoria persistente se mantiene entre ejecuciones, Nexiora podra explicar que aprendio antes.","source":"EPIC-0008","timestamp":"2026-07-08","confidence":82}
