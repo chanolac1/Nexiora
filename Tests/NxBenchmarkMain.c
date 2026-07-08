@@ -4,6 +4,8 @@
 #include "Nexiora/NCP/Hardware/NxHardware.h"
 #include "Nexiora/NCP/String/NxString.h"
 #include "Nexiora/NCP/Containers/NxVector.h"
+#include "Nexiora/Research/NxExperiment.h"
+#include "Nexiora/Research/NxResearchKernel.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -14,7 +16,8 @@ typedef enum NxBenchmarkModule {
     NX_BENCH_MODULE_MEMORY,
     NX_BENCH_MODULE_HARDWARE,
     NX_BENCH_MODULE_STRING,
-    NX_BENCH_MODULE_CONTAINERS
+    NX_BENCH_MODULE_CONTAINERS,
+    NX_BENCH_MODULE_RESEARCH
 } NxBenchmarkModule;
 
 typedef struct NxArenaBenchmarkContext {
@@ -25,6 +28,11 @@ typedef struct NxVectorBenchmarkContext {
     NxVector vector;
     int value;
 } NxVectorBenchmarkContext;
+
+typedef struct NxResearchBenchmarkContext {
+    NxResearchKernel kernel;
+    NxExperiment experiment;
+} NxResearchBenchmarkContext;
 
 static void benchmark_alloc_free(void* user_data) {
     (void)user_data;
@@ -86,6 +94,12 @@ static void benchmark_vector_at_i32(void* user_data) {
     }
 }
 
+static void benchmark_research_register_experiment(void* user_data) {
+    NxResearchBenchmarkContext* context = (NxResearchBenchmarkContext*)user_data;
+    context->kernel.experiment_count = 0;
+    (void)nx_research_kernel_create_experiment(&context->kernel, &context->experiment);
+}
+
 static uint64_t parse_iterations(int argc, char** argv) {
     for (int i = 1; i + 1 < argc; ++i) {
         if (strcmp(argv[i], "--iterations") == 0) {
@@ -113,6 +127,9 @@ static NxBenchmarkModule parse_module(int argc, char** argv) {
             }
             if (strcmp(module, "containers") == 0 || strcmp(module, "vector") == 0) {
                 return NX_BENCH_MODULE_CONTAINERS;
+            }
+            if (strcmp(module, "research") == 0 || strcmp(module, "lab") == 0 || strcmp(module, "nrl") == 0) {
+                return NX_BENCH_MODULE_RESEARCH;
             }
             if (strcmp(module, "all") == 0) {
                 return NX_BENCH_MODULE_ALL;
@@ -232,8 +249,37 @@ static int run_container_benchmarks(uint64_t iterations, const char* history_pat
     return final_status;
 }
 
+static int run_research_benchmarks(uint64_t iterations, const char* history_path, const char* report_path) {
+    int final_status = 0;
+    NxResearchBenchmarkContext context;
+    NxResearchKernelConfig config;
+    config.root_path = "Research";
+    config.registry_path = "Research/Registry/benchmark_registry.nxr";
+    config.journal_path = "Research/Journals/benchmark_journal.log";
+
+    if (nx_research_kernel_initialize(&context.kernel, &config) != NX_OK) {
+        printf("Research benchmark setup failed.\n");
+        return 1;
+    }
+    if (nx_experiment_initialize(&context.experiment,
+                                 "LAB-BENCH-0001",
+                                 "Research Register Benchmark",
+                                 "Nexiora",
+                                 "Research",
+                                 "Measure the cost of registering one experiment in the NRL kernel.",
+                                 "Research") != NX_OK) {
+        nx_research_kernel_shutdown(&context.kernel);
+        printf("Research benchmark setup failed.\n");
+        return 1;
+    }
+
+    final_status |= run_one("nx_research_register_experiment", benchmark_research_register_experiment, &context, iterations, history_path, report_path);
+    nx_research_kernel_shutdown(&context.kernel);
+    return final_status;
+}
+
 static void print_usage(const char* executable) {
-    printf("Usage: %s [--iterations N] [--module all|memory|hardware|string|containers]\n", executable);
+    printf("Usage: %s [--iterations N] [--module all|memory|hardware|string|containers|research]\n", executable);
 }
 
 int main(int argc, char** argv) {
@@ -267,6 +313,10 @@ int main(int argc, char** argv) {
 
     if (should_run(module, NX_BENCH_MODULE_CONTAINERS)) {
         final_status |= run_container_benchmarks(iterations, history_path, report_path);
+    }
+
+    if (should_run(module, NX_BENCH_MODULE_RESEARCH)) {
+        final_status |= run_research_benchmarks(iterations, history_path, report_path);
     }
 
     nx_memory_print_stats();

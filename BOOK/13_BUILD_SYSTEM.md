@@ -1,0 +1,3 @@
+# Build System
+
+CMake + nxbuild.

@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_NexioraNCP: phony || .
 
 build CMakeFiles/NexioraNCP.dir/Source/NCP/Common/NxResult.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Common/NxResult.c || cmake_object_order_depends_target_NexioraNCP
   CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=7
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=8
   DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Common\NxResult.c.obj.d
   FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
   INCLUDES = -ID:/Nexiora/Include
@@ -63,7 +63,7 @@ build CMakeFiles/NexioraNCP.dir/Source/NCP/Common/NxResult.c.obj: C_COMPILER__Ne
 
 build CMakeFiles/NexioraNCP.dir/Source/NCP/Runtime/NxRuntime.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Runtime/NxRuntime.c || cmake_object_order_depends_target_NexioraNCP
   CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=7
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=8
   DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Runtime\NxRuntime.c.obj.d
   FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
   INCLUDES = -ID:/Nexiora/Include
@@ -75,7 +75,7 @@ build CMakeFiles/NexioraNCP.dir/Source/NCP/Runtime/NxRuntime.c.obj: C_COMPILER__
 
 build CMakeFiles/NexioraNCP.dir/Source/NCP/Memory/NxMemory.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Memory/NxMemory.c || cmake_object_order_depends_target_NexioraNCP
   CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=7
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=8
   DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Memory\NxMemory.c.obj.d
   FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
   INCLUDES = -ID:/Nexiora/Include
@@ -87,7 +87,7 @@ build CMakeFiles/NexioraNCP.dir/Source/NCP/Memory/NxMemory.c.obj: C_COMPILER__Ne
 
 build CMakeFiles/NexioraNCP.dir/Source/NCP/Logging/NxLog.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Logging/NxLog.c || cmake_object_order_depends_target_NexioraNCP
   CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=7
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=8
   DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Logging\NxLog.c.obj.d
   FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
   INCLUDES = -ID:/Nexiora/Include
@@ -99,7 +99,7 @@ build CMakeFiles/NexioraNCP.dir/Source/NCP/Logging/NxLog.c.obj: C_COMPILER__Nexi
 
 build CMakeFiles/NexioraNCP.dir/Source/NCP/Hardware/NxHardware.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Hardware/NxHardware.c || cmake_object_order_depends_target_NexioraNCP
   CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=7
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=8
   DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Hardware\NxHardware.c.obj.d
   FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
   INCLUDES = -ID:/Nexiora/Include
@@ -111,7 +111,7 @@ build CMakeFiles/NexioraNCP.dir/Source/NCP/Hardware/NxHardware.c.obj: C_COMPILER
 
 build CMakeFiles/NexioraNCP.dir/Source/NCP/String/NxString.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/String/NxString.c || cmake_object_order_depends_target_NexioraNCP
   CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=7
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=8
   DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\String\NxString.c.obj.d
   FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
   INCLUDES = -ID:/Nexiora/Include
@@ -123,7 +123,7 @@ build CMakeFiles/NexioraNCP.dir/Source/NCP/String/NxString.c.obj: C_COMPILER__Ne
 
 build CMakeFiles/NexioraNCP.dir/Source/NCP/Containers/NxVector.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Containers/NxVector.c || cmake_object_order_depends_target_NexioraNCP
   CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=7
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=8
   DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Containers\NxVector.c.obj.d
   FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
   INCLUDES = -ID:/Nexiora/Include
@@ -135,7 +135,7 @@ build CMakeFiles/NexioraNCP.dir/Source/NCP/Containers/NxVector.c.obj: C_COMPILER
 
 build CMakeFiles/NexioraNCP.dir/Source/NCP/Benchmark/NxBenchmark.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Benchmark/NxBenchmark.c || cmake_object_order_depends_target_NexioraNCP
   CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=7
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=8
   DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Benchmark\NxBenchmark.c.obj.d
   FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
   INCLUDES = -ID:/Nexiora/Include
@@ -147,12 +147,36 @@ build CMakeFiles/NexioraNCP.dir/Source/NCP/Benchmark/NxBenchmark.c.obj: C_COMPIL
 
 build CMakeFiles/NexioraNCP.dir/Source/NCP/Evidence/NxEvidence.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/NCP/Evidence/NxEvidence.c || cmake_object_order_depends_target_NexioraNCP
   CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=7
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=8
   DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\NCP\Evidence\NxEvidence.c.obj.d
   FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
   INCLUDES = -ID:/Nexiora/Include
   OBJECT_DIR = CMakeFiles\NexioraNCP.dir
   OBJECT_FILE_DIR = CMakeFiles\NexioraNCP.dir\Source\NCP\Evidence
+  TARGET_COMPILE_PDB = CMakeFiles\NexioraNCP.dir\NexioraNCP.pdb
+  TARGET_PDB = lib\libNexioraNCP.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\NexioraNCP.dir
+
+build CMakeFiles/NexioraNCP.dir/Source/Research/NxExperiment.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/Research/NxExperiment.c || cmake_object_order_depends_target_NexioraNCP
+  CONFIG = Debug
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=8
+  DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\Research\NxExperiment.c.obj.d
+  FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
+  INCLUDES = -ID:/Nexiora/Include
+  OBJECT_DIR = CMakeFiles\NexioraNCP.dir
+  OBJECT_FILE_DIR = CMakeFiles\NexioraNCP.dir\Source\Research
+  TARGET_COMPILE_PDB = CMakeFiles\NexioraNCP.dir\NexioraNCP.pdb
+  TARGET_PDB = lib\libNexioraNCP.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\NexioraNCP.dir
+
+build CMakeFiles/NexioraNCP.dir/Source/Research/NxResearchKernel.c.obj: C_COMPILER__NexioraNCP_unscanned_Debug D$:/Nexiora/Source/Research/NxResearchKernel.c || cmake_object_order_depends_target_NexioraNCP
+  CONFIG = Debug
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=8
+  DEP_FILE = CMakeFiles\NexioraNCP.dir\Source\Research\NxResearchKernel.c.obj.d
+  FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic -mxsave
+  INCLUDES = -ID:/Nexiora/Include
+  OBJECT_DIR = CMakeFiles\NexioraNCP.dir
+  OBJECT_FILE_DIR = CMakeFiles\NexioraNCP.dir\Source\Research
   TARGET_COMPILE_PDB = CMakeFiles\NexioraNCP.dir\NexioraNCP.pdb
   TARGET_PDB = lib\libNexioraNCP.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\NexioraNCP.dir
@@ -165,7 +189,7 @@ build CMakeFiles/NexioraNCP.dir/Source/NCP/Evidence/NxEvidence.c.obj: C_COMPILER
 #############################################
 # Link the static library lib\libNexioraNCP.a
 
-build lib/libNexioraNCP.a: C_STATIC_LIBRARY_LINKER__NexioraNCP_Debug CMakeFiles/NexioraNCP.dir/Source/NCP/Common/NxResult.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Runtime/NxRuntime.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Memory/NxMemory.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Logging/NxLog.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Hardware/NxHardware.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/String/NxString.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Containers/NxVector.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Benchmark/NxBenchmark.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Evidence/NxEvidence.c.obj
+build lib/libNexioraNCP.a: C_STATIC_LIBRARY_LINKER__NexioraNCP_Debug CMakeFiles/NexioraNCP.dir/Source/NCP/Common/NxResult.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Runtime/NxRuntime.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Memory/NxMemory.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Logging/NxLog.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Hardware/NxHardware.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/String/NxString.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Containers/NxVector.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Benchmark/NxBenchmark.c.obj CMakeFiles/NexioraNCP.dir/Source/NCP/Evidence/NxEvidence.c.obj CMakeFiles/NexioraNCP.dir/Source/Research/NxExperiment.c.obj CMakeFiles/NexioraNCP.dir/Source/Research/NxResearchKernel.c.obj
   CONFIG = Debug
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles\NexioraNCP.dir
@@ -187,7 +211,7 @@ build cmake_object_order_depends_target_nexiora: phony || cmake_object_order_dep
 
 build CMakeFiles/nexiora.dir/Source/NxBootstrap.c.obj: C_COMPILER__nexiora_unscanned_Debug D$:/Nexiora/Source/NxBootstrap.c || cmake_object_order_depends_target_nexiora
   CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=7
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=8
   DEP_FILE = CMakeFiles\nexiora.dir\Source\NxBootstrap.c.obj.d
   FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic
   INCLUDES = -ID:/Nexiora/Include
@@ -229,7 +253,7 @@ build cmake_object_order_depends_target_nexiora_bench: phony || cmake_object_ord
 
 build CMakeFiles/nexiora_bench.dir/Tests/NxBenchmarkMain.c.obj: C_COMPILER__nexiora_bench_unscanned_Debug D$:/Nexiora/Tests/NxBenchmarkMain.c || cmake_object_order_depends_target_nexiora_bench
   CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=7
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=8
   DEP_FILE = CMakeFiles\nexiora_bench.dir\Tests\NxBenchmarkMain.c.obj.d
   FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic
   INCLUDES = -ID:/Nexiora/Include
@@ -271,7 +295,7 @@ build cmake_object_order_depends_target_nexiora_tests: phony || cmake_object_ord
 
 build CMakeFiles/nexiora_tests.dir/Tests/NxCoreTests.c.obj: C_COMPILER__nexiora_tests_unscanned_Debug D$:/Nexiora/Tests/NxCoreTests.c || cmake_object_order_depends_target_nexiora_tests
   CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=7
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=8
   DEP_FILE = CMakeFiles\nexiora_tests.dir\Tests\NxCoreTests.c.obj.d
   FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic
   INCLUDES = -ID:/Nexiora/Include
@@ -313,7 +337,7 @@ build cmake_object_order_depends_target_NxVectorTests: phony || cmake_object_ord
 
 build CMakeFiles/NxVectorTests.dir/Tests/Unit/NxVectorTests.c.obj: C_COMPILER__NxVectorTests_unscanned_Debug D$:/Nexiora/Tests/Unit/NxVectorTests.c || cmake_object_order_depends_target_NxVectorTests
   CONFIG = Debug
-  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=7
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=8
   DEP_FILE = CMakeFiles\NxVectorTests.dir\Tests\Unit\NxVectorTests.c.obj.d
   FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic
   INCLUDES = -ID:/Nexiora/Include
@@ -343,6 +367,48 @@ build bin/NxVectorTests.exe: C_EXECUTABLE_LINKER__NxVectorTests_Debug CMakeFiles
   TARGET_IMPLIB = lib\libNxVectorTests.dll.a
   TARGET_PDB = bin\NxVectorTests.pdb
   TARGET_SUPPORT_DIR = CMakeFiles\NxVectorTests.dir
+
+# =============================================================================
+# Object build statements for EXECUTABLE target NxResearchTests
+
+
+#############################################
+# Order-only phony target for NxResearchTests
+
+build cmake_object_order_depends_target_NxResearchTests: phony || cmake_object_order_depends_target_NexioraNCP
+
+build CMakeFiles/NxResearchTests.dir/Tests/Unit/NxResearchTests.c.obj: C_COMPILER__NxResearchTests_unscanned_Debug D$:/Nexiora/Tests/Unit/NxResearchTests.c || cmake_object_order_depends_target_NxResearchTests
+  CONFIG = Debug
+  DEFINES = -DNEXIORA_VERSION_MAJOR=0 -DNEXIORA_VERSION_MINOR=0 -DNEXIORA_VERSION_PATCH=8
+  DEP_FILE = CMakeFiles\NxResearchTests.dir\Tests\Unit\NxResearchTests.c.obj.d
+  FLAGS = -g -std=c2x -Wall -Wextra -Wpedantic
+  INCLUDES = -ID:/Nexiora/Include
+  OBJECT_DIR = CMakeFiles\NxResearchTests.dir
+  OBJECT_FILE_DIR = CMakeFiles\NxResearchTests.dir\Tests\Unit
+  TARGET_COMPILE_PDB = CMakeFiles\NxResearchTests.dir\
+  TARGET_PDB = bin\NxResearchTests.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\NxResearchTests.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target NxResearchTests
+
+
+#############################################
+# Link the executable bin\NxResearchTests.exe
+
+build bin/NxResearchTests.exe: C_EXECUTABLE_LINKER__NxResearchTests_Debug CMakeFiles/NxResearchTests.dir/Tests/Unit/NxResearchTests.c.obj | lib/libNexioraNCP.a || lib/libNexioraNCP.a
+  CONFIG = Debug
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libNexioraNCP.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\NxResearchTests.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\NxResearchTests.dir\
+  TARGET_FILE = bin\NxResearchTests.exe
+  TARGET_IMPLIB = lib\libNxResearchTests.dll.a
+  TARGET_PDB = bin\NxResearchTests.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles\NxResearchTests.dir
 
 
 #############################################
@@ -385,6 +451,10 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build NexioraNCP: phony lib/libNexioraNCP.a
 
+build NxResearchTests: phony bin/NxResearchTests.exe
+
+build NxResearchTests.exe: phony bin/NxResearchTests.exe
+
 build NxVectorTests: phony bin/NxVectorTests.exe
 
 build NxVectorTests.exe: phony bin/NxVectorTests.exe
@@ -411,7 +481,7 @@ build nexiora_tests.exe: phony bin/nexiora_tests.exe
 #############################################
 # Folder: D:/Nexiora/Build/windows-msvc-debug
 
-build all: phony lib/libNexioraNCP.a bin/nexiora.exe bin/nexiora_bench.exe bin/nexiora_tests.exe bin/NxVectorTests.exe
+build all: phony lib/libNexioraNCP.a bin/nexiora.exe bin/nexiora_bench.exe bin/nexiora_tests.exe bin/NxVectorTests.exe bin/NxResearchTests.exe
 
 # =============================================================================
 # Built-in targets

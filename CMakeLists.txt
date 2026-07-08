@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.25)
 
 project(Nexiora
-    VERSION 0.0.7
-    DESCRIPTION "Nexiora Core Platform - Developer Platform"
+    VERSION 0.0.8
+    DESCRIPTION "Nexiora Research Lab - Laboratory Kernel"
     LANGUAGES C
 )
 
@@ -39,6 +39,8 @@ add_library(NexioraNCP STATIC
     Source/NCP/Containers/NxVector.c
     Source/NCP/Benchmark/NxBenchmark.c
     Source/NCP/Evidence/NxEvidence.c
+    Source/Research/NxExperiment.c
+    Source/Research/NxResearchKernel.c
 )
 
 target_include_directories(NexioraNCP PUBLIC
@@ -73,4 +75,8 @@ if(NEXIORA_BUILD_TESTS)
     add_executable(NxVectorTests Tests/Unit/NxVectorTests.c)
     target_link_libraries(NxVectorTests PRIVATE NexioraNCP)
     add_test(NAME NxVectorTests COMMAND NxVectorTests)
+
+    add_executable(NxResearchTests Tests/Unit/NxResearchTests.c)
+    target_link_libraries(NxResearchTests PRIVATE NexioraNCP)
+    add_test(NAME NxResearchTests COMMAND NxResearchTests)
 endif()

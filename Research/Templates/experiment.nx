@@ -1,0 +1,9 @@
+Experiment
+{
+    Id         : LAB-0000
+    Title      : Experiment Title
+    Author     : Jorge Hernandez
+    Module     : ModuleName
+    Target     : Runtime
+    Hypothesis : Describe the expected measurable improvement.
+}

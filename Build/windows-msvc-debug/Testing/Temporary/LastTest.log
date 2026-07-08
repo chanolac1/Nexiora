@@ -1,26 +1,26 @@
-Start testing: Jul 07 18:19 Central Standard Time (Mexico)
+Start testing: Jul 08 09:46 Central Standard Time (Mexico)
 ----------------------------------------------------------
-1/2 Testing: NexioraCoreTests
-1/2 Test: NexioraCoreTests
+1/3 Testing: NexioraCoreTests
+1/3 Test: NexioraCoreTests
 Command: "D:/Nexiora/Build/windows-msvc-debug/bin/nexiora_tests.exe"
 Directory: D:/Nexiora/Build/windows-msvc-debug
-"NexioraCoreTests" start time: Jul 07 18:19 Central Standard Time (Mexico)
+"NexioraCoreTests" start time: Jul 08 09:46 Central Standard Time (Mexico)
 Output:
 ----------------------------------------------------------
 Nexiora Core Tests: PASS
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"NexioraCoreTests" end time: Jul 07 18:19 Central Standard Time (Mexico)
+"NexioraCoreTests" end time: Jul 08 09:46 Central Standard Time (Mexico)
 "NexioraCoreTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/2 Testing: NxVectorTests
-2/2 Test: NxVectorTests
+2/3 Testing: NxVectorTests
+2/3 Test: NxVectorTests
 Command: "D:/Nexiora/Build/windows-msvc-debug/bin/NxVectorTests.exe"
 Directory: D:/Nexiora/Build/windows-msvc-debug
-"NxVectorTests" start time: Jul 07 18:19 Central Standard Time (Mexico)
+"NxVectorTests" start time: Jul 08 09:46 Central Standard Time (Mexico)
 Output:
 ----------------------------------------------------------
 NxVectorTests PASSED
@@ -28,8 +28,24 @@ NxVectorTests PASSED
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"NxVectorTests" end time: Jul 07 18:19 Central Standard Time (Mexico)
+"NxVectorTests" end time: Jul 08 09:46 Central Standard Time (Mexico)
 "NxVectorTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jul 07 18:19 Central Standard Time (Mexico)
+3/3 Testing: NxResearchTests
+3/3 Test: NxResearchTests
+Command: "D:/Nexiora/Build/windows-msvc-debug/bin/NxResearchTests.exe"
+Directory: D:/Nexiora/Build/windows-msvc-debug
+"NxResearchTests" start time: Jul 08 09:46 Central Standard Time (Mexico)
+Output:
+----------------------------------------------------------
+Nexiora Research Tests: PASS
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"NxResearchTests" end time: Jul 08 09:46 Central Standard Time (Mexico)
+"NxResearchTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 08 09:46 Central Standard Time (Mexico)
