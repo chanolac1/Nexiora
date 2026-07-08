@@ -6,6 +6,6 @@
 - RFC-0019 — Knowledge Never Dies
 - RFC-0020 — Failed Experiments Are Assets
 - RFC-0021 — Reproducible Science
-
-- RFC-0022 Experiment Manifests
-- RFC-0023 Registry Is An Index
+- RFC-0022 — Experiment Manifests
+- RFC-0023 — Registry Is An Index
+- RFC-0024 — Research Graph Foundation

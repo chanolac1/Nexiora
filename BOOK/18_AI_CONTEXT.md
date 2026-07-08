@@ -3,24 +3,27 @@
 Project: Nexiora
 
 Current Version:
-0.0.15 — Experiment Discovery Engine
+0.0.16 — Research Graph Foundation
 
 Current Sprint:
 Sprint 3 — Autonomous Research Pipeline
 
 Completed Recently:
+- Evidence Generator
 - Promotion Pipeline
-- Autonomous Research Pipeline Orchestrator
+- Autonomous Research Pipeline
 - Experiment Discovery Engine
+- Research Graph Foundation
 
 Next Task:
-NRL-0009 — Discovery Engine integration with the Autonomous Research Pipeline
+NRL-0010 — Graph Query Engine
 
 Development Philosophy:
 - Evidence Before Opinion
 - Human Guided Evolution
 - Runtime is Sacred
 - Research First Development
+- Documentation is the Source of Truth
 
-Safety Rule:
+Core Rule:
 Nexiora may recommend. Only a human may promote.

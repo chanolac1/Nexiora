@@ -1,7 +1,7 @@
 # Current State
 
 ## Version
-0.0.15 — Experiment Discovery Engine
+0.0.16 — Research Graph Foundation
 
 ## Current Sprint
 Sprint 3 — Autonomous Research Pipeline
@@ -13,11 +13,12 @@ Sprint 3 — Autonomous Research Pipeline
 - NRL-0004 Experiment Runner
 - NRL-0005 Evidence Generator Integration
 - NRL-0006 Promotion Pipeline
-- NRL-0007 Autonomous Research Pipeline Orchestrator
+- NRL-0007 Autonomous Research Pipeline command integration
 - NRL-0008 Experiment Discovery Engine
+- NRL-0009 Research Graph Foundation
 
 ## Next Objective
-NRL-0009 — Discovery Engine integration with the Autonomous Research Pipeline.
+NRL-0010 — Graph Query Engine.
 
 ## Rule
 Nexiora may recommend. Only a human may promote.

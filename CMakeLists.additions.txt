@@ -1,0 +1,15 @@
+# Add inside add_library(NexioraNCP STATIC ...)
+Source/Research/NxResearchGraph.c
+
+# Add inside if(NEXIORA_BUILD_TESTS) after existing unit tests
+add_executable(NxResearchGraphTests
+    Tests/Unit/NxResearchGraphTests.c
+)
+target_link_libraries(NxResearchGraphTests PRIVATE NexioraNCP)
+add_test(NAME NxResearchGraphTests COMMAND NxResearchGraphTests)
+
+# Optional benchmark target. Add near other benchmark targets if desired.
+add_executable(NxResearchGraphBenchmark
+    Tests/Benchmark/NxResearchGraphBenchmark.c
+)
+target_link_libraries(NxResearchGraphBenchmark PRIVATE NexioraNCP)

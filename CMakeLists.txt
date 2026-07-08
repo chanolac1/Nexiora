@@ -47,6 +47,7 @@ add_library(NexioraNCP STATIC
     Source/Research/NxResearchKernel.c
     Source/Research/NxManifest.c
     Source/Research/NxRegistry.c
+    Source/Research/NxResearchGraph.c
 )
 
 target_include_directories(NexioraNCP PUBLIC
@@ -111,5 +112,17 @@ if(NEXIORA_BUILD_TESTS)
     
     target_link_libraries(NxPromotionTests PRIVATE NexioraNCP)
     add_test(NAME NxPromotionTests COMMAND NxPromotionTests)
+    add_executable(NxResearchGraphTests
+        Tests/Unit/NxResearchGraphTests.c
+    )
+    target_link_libraries(NxResearchGraphTests PRIVATE NexioraNCP)
+    add_test(NAME NxResearchGraphTests COMMAND NxResearchGraphTests)
 
+endif()
+
+if(NEXIORA_ENABLE_BENCHMARKS)
+    add_executable(NxResearchGraphBenchmark
+        Tests/Benchmark/NxResearchGraphBenchmark.c
+    )
+    target_link_libraries(NxResearchGraphBenchmark PRIVATE NexioraNCP)
 endif()
