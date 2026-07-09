@@ -1,4 +1,4 @@
-﻿cmake_minimum_required(VERSION 3.25)
+cmake_minimum_required(VERSION 3.25)
 
 project(Nexiora
     VERSION 0.1.0
@@ -71,6 +71,8 @@ add_library(NexioraNCP STATIC
     Source/Research/NxKnowledgeAcquisition.c
     Source/NCOS/NxCompilerEngine.c
     Source/NCOS/NxBuildLogAnalyzer.c
+    
+    Source/NCOS/NxAutoFixProposalEngine.c
     Source/Research/NxKnowledgeStore.c
     Source/Research/NxLearningCore.c
     Source/Research/NxTopicQuestion.c
@@ -572,3 +574,14 @@ if(NEXIORA_BUILD_TESTS)
     add_test(NAME NxBuildLogAnalyzerTests COMMAND NxBuildLogAnalyzerTests)
 endif()
 
+
+
+# NCOS-011 Auto-Fix Proposal Engine
+add_executable(nexiora_fix_proposal Tools/nexiora_fix_proposal.c)
+target_link_libraries(nexiora_fix_proposal PRIVATE NexioraNCP)
+set_target_properties(nexiora_fix_proposal PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+add_executable(NxAutoFixProposalEngineTests Tests/Unit/NxAutoFixProposalEngineTests.c)
+target_link_libraries(NxAutoFixProposalEngineTests PRIVATE NexioraNCP)
+set_target_properties(NxAutoFixProposalEngineTests PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+add_test(NAME NxAutoFixProposalEngineTests COMMAND NxAutoFixProposalEngineTests)
