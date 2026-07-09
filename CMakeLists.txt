@@ -441,3 +441,27 @@ if(NEXIORA_BUILD_TESTS)
     target_link_libraries(NxConceptRegistryTests PRIVATE NexioraNCP)
     add_test(NAME NxConceptRegistryTests COMMAND NxConceptRegistryTests)
 endif()
+
+# ============================================================
+# NCOS-004 — Concept Graph
+# ============================================================
+
+if(NOT TARGET nexiora_graph)
+    target_sources(NexioraNCP PRIVATE
+        Source/NCOS/NxConceptGraph.c
+    )
+
+    add_executable(nexiora_graph
+        Tools/NCOS/NxConceptGraphTool.c
+    )
+    target_link_libraries(nexiora_graph PRIVATE NexioraNCP)
+
+    if(NEXIORA_BUILD_TESTS)
+        add_executable(NxConceptGraphTests
+            Tests/Unit/NxConceptGraphTests.c
+        )
+        target_link_libraries(NxConceptGraphTests PRIVATE NexioraNCP)
+        add_test(NAME NxConceptGraphTests COMMAND NxConceptGraphTests)
+        set_tests_properties(NxConceptGraphTests PROPERTIES WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+    endif()
+endif()
