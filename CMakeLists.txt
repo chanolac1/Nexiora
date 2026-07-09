@@ -585,3 +585,17 @@ add_executable(NxAutoFixProposalEngineTests Tests/Unit/NxAutoFixProposalEngineTe
 target_link_libraries(NxAutoFixProposalEngineTests PRIVATE NexioraNCP)
 set_target_properties(NxAutoFixProposalEngineTests PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 add_test(NAME NxAutoFixProposalEngineTests COMMAND NxAutoFixProposalEngineTests)
+
+# NCOS-012 Safe Patch Engine
+target_sources(NexioraNCP PRIVATE
+    Source/NCOS/NxSafePatchEngine.c
+)
+
+add_executable(nexiora_safe_patch Tools/nexiora_safe_patch.c)
+target_link_libraries(nexiora_safe_patch PRIVATE NexioraNCP)
+
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxSafePatchEngineTests Tests/Unit/NxSafePatchEngineTests.c)
+    target_link_libraries(NxSafePatchEngineTests PRIVATE NexioraNCP)
+    add_test(NAME NxSafePatchEngineTests COMMAND NxSafePatchEngineTests)
+endif()
