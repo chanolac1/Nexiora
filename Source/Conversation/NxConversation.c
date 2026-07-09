@@ -1,4 +1,5 @@
 #include "Nexiora/Conversation/NxConversation.h"
+#include "Nexiora/Research/NxKnowledgeStore.h"
 
 #include <ctype.h>
 #include <stdio.h>
@@ -58,6 +59,14 @@ static NxConversationIntent nx_conversation_detect_intent(const char* input)
         nx_conversation_contains(text, "sorpréndeme"))
     {
         return NX_CONVERSATION_INTENT_SURPRISE;
+    }
+
+    if (nx_conversation_contains(text, "que sabes sobre") ||
+        nx_conversation_contains(text, "qué sabes sobre") ||
+        nx_conversation_contains(text, "que es ") ||
+        nx_conversation_contains(text, "qué es "))
+    {
+        return NX_CONVERSATION_INTENT_KNOWLEDGE_QUERY;
     }
 
     if (nx_conversation_contains(text, "aprend") ||
@@ -135,6 +144,45 @@ static NxConversationStatus nx_conversation_write(
     }
 
     return NX_CONVERSATION_OK;
+}
+
+
+static void nx_conversation_extract_topic(char* dst, size_t dst_size, const char* input)
+{
+    char lower[512];
+    const char* p;
+    size_t i;
+
+    if (dst == 0 || dst_size == 0)
+    {
+        return;
+    }
+    dst[0] = '\0';
+    nx_conversation_lower_ascii(lower, sizeof(lower), input);
+
+    p = strstr(lower, "sobre ");
+    if (p != 0)
+    {
+        p += 6;
+    }
+    else
+    {
+        p = strstr(lower, "que es ");
+        if (p != 0) p += 7;
+    }
+    if (p == 0)
+    {
+        snprintf(dst, dst_size, "%s", input == 0 ? "" : input);
+        dst[dst_size - 1] = '\0';
+        return;
+    }
+
+    while (*p == ' ' || *p == '\t') ++p;
+    for (i = 0; i + 1 < dst_size && p[i] != '\0' && p[i] != '\n' && p[i] != '\r' && p[i] != '?'; ++i)
+    {
+        dst[i] = p[i];
+    }
+    dst[i] = '\0';
 }
 
 NxConversationStatus NxConversation_Respond(
@@ -218,6 +266,32 @@ NxConversationStatus NxConversation_Respond(
                 "Si quieres verla, ejecuta:\n"
                 "  nexiora research dashboard\n\n"
                 "Confianza: 88 %\n");
+
+        case NX_CONVERSATION_INTENT_KNOWLEDGE_QUERY:
+        {
+            char topic[128];
+            char answer_text[2048];
+            NxKnowledgeAnswer answer;
+            NxKnowledgeStoreStatus ks_status;
+
+            nx_conversation_extract_topic(topic, sizeof(topic), input);
+            ks_status = NxKnowledgeStore_Query(".", topic, &answer);
+            if (ks_status != NX_KS_OK)
+            {
+                return nx_conversation_write(response_out, intent, 60, 0,
+                    "Todavia no tengo conocimiento suficiente sobre ese tema.\n\n"
+                    "Puedes iniciar una investigacion con:\n\n"
+                    "  nexiora investiga SQLite\n\n"
+                    "Despues podre responder preguntas sobre lo aprendido.\n\n"
+                    "Confianza: 60 %\n");
+            }
+
+            if (NxKnowledgeStore_FormatAnswerSpanish(&answer, answer_text, sizeof(answer_text)) != NX_KS_OK)
+            {
+                return NX_CONVERSATION_OUTPUT_TOO_SMALL;
+            }
+            return nx_conversation_write(response_out, intent, answer.confidence_percent, 0, answer_text);
+        }
 
         case NX_CONVERSATION_INTENT_LEARNED:
             return nx_conversation_write(response_out, intent, 80, 0,
@@ -346,6 +420,7 @@ const char* NxConversation_IntentToString(NxConversationIntent intent)
         case NX_CONVERSATION_INTENT_RECOMMENDATIONS: return "RECOMMENDATIONS";
         case NX_CONVERSATION_INTENT_SURPRISE: return "SURPRISE";
         case NX_CONVERSATION_INTENT_EXIT: return "EXIT";
+        case NX_CONVERSATION_INTENT_KNOWLEDGE_QUERY: return "KNOWLEDGE_QUERY";
         default: return "UNKNOWN";
     }
 }

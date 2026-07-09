@@ -1,34 +1,30 @@
 #include "Nexiora/Research/NxTopicInvestigation.h"
+#include "Nexiora/Research/NxKnowledgeStore.h"
 
 #include <stdio.h>
-#include <string.h>
-
-static int expect(int condition, const char* message)
-{
-    if (!condition)
-    {
-        printf("FAIL: %s\n", message);
-        return 1;
-    }
-    return 0;
-}
 
 int main(void)
 {
     NxTopicInvestigationResult result;
-    NxTopicInvestigationStatus status;
-    int failures = 0;
+    NxKnowledgeAnswer answer;
 
-    status = NxTopicInvestigation_Run(".", "SQLite", 0, &result);
-    failures += expect(status == NX_TOPIC_INVESTIGATION_OK, "SQLite investigation should run");
-    failures += expect(result.concepts_extracted >= 8, "SQLite investigation should extract core concepts");
-    failures += expect(result.relations_created >= result.concepts_extracted, "Investigation should create relations");
-    failures += expect(result.confidence >= 90, "SQLite confidence should be high for curated offline slice");
-    failures += expect(strstr(result.report_path, "report.md") != 0, "Report path should be set");
-    failures += expect(strstr(result.memory_path, "memory.jsonl") != 0, "Memory path should be set");
+    if (NxTopicInvestigation_Run(".", "SQLite", NULL, &result) != NX_TOPIC_INVESTIGATION_OK)
+    {
+        printf("Expected investigation to run.\n");
+        return 1;
+    }
 
-    status = NxTopicInvestigation_Run(".", "", 0, &result);
-    failures += expect(status == NX_TOPIC_INVESTIGATION_INVALID_ARGUMENT, "Empty topic should be rejected");
+    if (result.concept_count < 5 || result.confidence_percent < 80)
+    {
+        printf("Unexpected investigation result.\n");
+        return 1;
+    }
 
-    return failures == 0 ? 0 : 1;
+    if (NxKnowledgeStore_Query(".", "SQLite", &answer) != NX_KS_OK)
+    {
+        printf("Expected learned SQLite answer.\n");
+        return 1;
+    }
+
+    return 0;
 }

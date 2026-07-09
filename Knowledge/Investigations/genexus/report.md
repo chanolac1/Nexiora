@@ -1,4 +1,4 @@
-# Investigacion: SQLite
+# Investigacion: Genexus
 
 ## Resumen
 
