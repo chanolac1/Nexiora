@@ -65,6 +65,7 @@ add_library(NexioraNCP STATIC
     Source/Research/NxReasoningEngine.c
     Source/Research/NxEvidenceCorrelation.c
     Source/Research/NxConflictDetector.c
+    Source/Research/NxProgressEngine.c
     Source/Conversation/NxConversation.c
     Source/Research/NxPersistentMemory.c
     Source/Research/NxKnowledgeAcquisition.c
@@ -279,3 +280,23 @@ if(NEXIORA_BUILD_TESTS)
     target_link_libraries(NxKnowledgeAcquisitionTests PRIVATE NexioraNCP)
     add_test(NAME NxKnowledgeAcquisitionTests COMMAND NxKnowledgeAcquisitionTests)
 endif()
+
+
+# ============================================================
+# EPIC-0010 — Research Progress Framework
+# ============================================================
+
+add_executable(nexiora_progress_demo
+    Tools/Research/NxProgressDemo.c
+)
+target_link_libraries(nexiora_progress_demo PRIVATE NexioraNCP)
+
+
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxProgressEngineTests
+        Tests/Unit/NxProgressEngineTests.c
+    )
+    target_link_libraries(NxProgressEngineTests PRIVATE NexioraNCP)
+    add_test(NAME NxProgressEngineTests COMMAND NxProgressEngineTests)
+endif()
+
