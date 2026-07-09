@@ -1,0 +1,5 @@
+Data Provider
+
+Un Data Provider en GeneXus sirve para construir y devolver estructuras de datos. Se usa cuando se necesita cargar SDTs, colecciones o respuestas estructuradas para servicios, pantallas o procesos.
+
+A diferencia de un Procedure, un Data Provider se enfoca en declarar como se arma la estructura de salida.

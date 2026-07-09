@@ -1,0 +1,5 @@
+GeneXus Knowledge Base
+
+Una Knowledge Base en GeneXus es el repositorio central del conocimiento de una aplicacion. Contiene objetos como Transactions, Procedures, Data Providers, Panels, APIs y reglas de negocio.
+
+La Knowledge Base permite que GeneXus genere codigo para diferentes plataformas y tecnologias a partir del modelo definido por el desarrollador.
