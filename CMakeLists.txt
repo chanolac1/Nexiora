@@ -503,3 +503,17 @@ set_target_properties(NxAnswerComposerTests PROPERTIES RUNTIME_OUTPUT_DIRECTORY 
 add_executable(nexiora_answer Source/Tools/nexiora_answer.c)
 target_link_libraries(nexiora_answer PRIVATE NexioraNCP)
 set_target_properties(nexiora_answer PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+# NCOS-007: Intent-to-Plan Bridge
+if(TARGET NexioraNCP)
+    target_sources(NexioraNCP PRIVATE Source/NCOS/NxIntentPlanner.c)
+endif()
+
+add_executable(NxIntentPlannerTests Tests/Unit/NxIntentPlannerTests.c)
+target_link_libraries(NxIntentPlannerTests PRIVATE NexioraNCP)
+add_test(NAME NxIntentPlannerTests COMMAND NxIntentPlannerTests)
+set_target_properties(NxIntentPlannerTests PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+add_executable(nexiora_intent_plan Source/Tools/nexiora_intent_plan.c)
+target_link_libraries(nexiora_intent_plan PRIVATE NexioraNCP)
+set_target_properties(nexiora_intent_plan PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)

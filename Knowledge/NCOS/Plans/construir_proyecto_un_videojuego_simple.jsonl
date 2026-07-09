@@ -1,0 +1,7 @@
+{"type":"plan","id":"construir_proyecto_un_videojuego_simple","goal":"Construir proyecto: un videojuego simple","status":"active","created":1783625321}
+{"type":"step","index":1,"status":"pending","title":"Entender el objetivo y restricciones"}
+{"type":"step","index":2,"status":"pending","title":"Revisar conocimiento y evidencia disponible"}
+{"type":"step","index":3,"status":"pending","title":"Dividir el trabajo en tareas verificables"}
+{"type":"step","index":4,"status":"pending","title":"Ejecutar la primera tarea funcional"}
+{"type":"step","index":5,"status":"pending","title":"Validar resultados y registrar aprendizaje"}
+{"type":"note","text":"Intento detectado: build_project | Objetivo original: crear un videojuego simple"}
