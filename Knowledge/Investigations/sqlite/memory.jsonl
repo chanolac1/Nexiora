@@ -1,0 +1,11 @@
+{"type":"investigation","id":"INV-HIST-0001","topic":"SQLite","confidence":92}
+{"type":"concept","topic":"SQLite","name":"SQLite","source":"INV-HIST-0001"}
+{"type":"concept","topic":"SQLite","name":"Pager","source":"INV-HIST-0001"}
+{"type":"concept","topic":"SQLite","name":"B-Tree","source":"INV-HIST-0001"}
+{"type":"concept","topic":"SQLite","name":"WAL","source":"INV-HIST-0001"}
+{"type":"concept","topic":"SQLite","name":"Transaction","source":"INV-HIST-0001"}
+{"type":"concept","topic":"SQLite","name":"Journal","source":"INV-HIST-0001"}
+{"type":"concept","topic":"SQLite","name":"Storage Engine","source":"INV-HIST-0001"}
+{"type":"concept","topic":"SQLite","name":"Query Planner","source":"INV-HIST-0001"}
+{"type":"concept","topic":"SQLite","name":"Virtual Machine","source":"INV-HIST-0001"}
+{"type":"concept","topic":"SQLite","name":"ACID","source":"INV-HIST-0001"}

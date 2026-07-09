@@ -4,6 +4,7 @@
 #include "Nexiora/Research/NxResearchDashboard.h"
 #include "Nexiora/Research/NxPersistentMemory.h"
 #include "Nexiora/Conversation/NxConversation.h"
+#include "Nexiora/Research/NxTopicInvestigation.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -99,6 +100,38 @@ int main(int argc, char** argv)
     if (argc == 1)
     {
         return nx_run_conversation(&runtime);
+    }
+
+
+    if (argc >= 3 && (strcmp(argv[1], "investigate") == 0 || strcmp(argv[1], "investiga") == 0))
+    {
+        char topic[256];
+        size_t i;
+        NxTopicInvestigationResult investigation_result;
+        NxTopicInvestigationStatus investigation_status;
+
+        topic[0] = '\0';
+        for (i = 2; i < (size_t)argc; ++i)
+        {
+            if (i > 2)
+            {
+                (void)strncat(topic, " ", sizeof(topic) - strlen(topic) - 1U);
+            }
+            (void)strncat(topic, argv[i], sizeof(topic) - strlen(topic) - 1U);
+        }
+
+        investigation_status = NxTopicInvestigation_Run(".", topic, stdout, &investigation_result);
+        if (investigation_status != NX_TOPIC_INVESTIGATION_OK)
+        {
+            fprintf(stderr,
+                "Topic investigation failed: %s\n",
+                NxTopicInvestigation_StatusToString(investigation_status));
+            nx_runtime_shutdown(&runtime);
+            return 8;
+        }
+
+        nx_runtime_shutdown(&runtime);
+        return 0;
     }
 
     if (argc >= 3 && strcmp(argv[1], "research") == 0 && strcmp(argv[2], "run") == 0)
@@ -203,6 +236,7 @@ int main(int argc, char** argv)
     printf("  nexiora research dashboard    Generate dashboard.html for the latest session\n");
     printf("  nexiora memory seed           Create persistent memory from current research state\n");
     printf("  nexiora memory summary        Show persistent memory summary\n");
+    printf("  nexiora investiga SQLite      Ejecutar investigacion observable de tema\n");
 
     nx_runtime_shutdown(&runtime);
     return 0;

@@ -1,4 +1,4 @@
-﻿cmake_minimum_required(VERSION 3.25)
+cmake_minimum_required(VERSION 3.25)
 
 project(Nexiora
     VERSION 0.1.0
@@ -69,6 +69,7 @@ add_library(NexioraNCP STATIC
     Source/Conversation/NxConversation.c
     Source/Research/NxPersistentMemory.c
     Source/Research/NxKnowledgeAcquisition.c
+    Source/Research/NxTopicInvestigation.c
 )
 
 target_include_directories(NexioraNCP PUBLIC
@@ -300,3 +301,21 @@ if(NEXIORA_BUILD_TESTS)
     add_test(NAME NxProgressEngineTests COMMAND NxProgressEngineTests)
 endif()
 
+
+
+# ============================================================
+# HIST-0001 — Investiga SQLite / Topic Investigation Slice
+# ============================================================
+
+add_executable(nexiora_investigate
+    Tools/Research/NxInvestigateTool.c
+)
+target_link_libraries(nexiora_investigate PRIVATE NexioraNCP)
+
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxTopicInvestigationTests
+        Tests/Unit/NxTopicInvestigationTests.c
+    )
+    target_link_libraries(NxTopicInvestigationTests PRIVATE NexioraNCP)
+    add_test(NAME NxTopicInvestigationTests COMMAND NxTopicInvestigationTests)
+endif()
