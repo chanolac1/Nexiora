@@ -1,0 +1,16 @@
+﻿Tema: Kubernetes
+Titulo detectado: Kubernetes
+Idioma de respuesta: Espanol (es-MX)
+Confianza: 75 %
+
+Resumen:
+Kubernetes es una plataforma de código abierto para la orquestación de contenedores. Permite desplegar y automatizar la gestión de sistemas distribuidos de manera que sean capaces de escalar y auto-repararse. Fue originalmente diseñado por Google y donado a la Cloud Native Computing Foundation. Soporta diferentes entornos para la ejecución de contenedores, incluido Docker.
+
+Conceptos relacionados:
+Kubernetes, Permite, Fue, Google, Cloud, Native, Computing, Foundation, Soporta, Docker, K8s, LXC
+
+Fuentes:
+- Kubernetes: https://es.wikipedia.org/wiki/Kubernetes
+- Kubernetes: https://es.wikipedia.org/wiki/Kubernetes
+
+Nota: Esta respuesta proviene de la memoria local de Nexiora. Si la fuente original estaba en otro idioma, Nexiora conserva la explicacion en espanol siempre que sea posible.

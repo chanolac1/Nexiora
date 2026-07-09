@@ -1,0 +1,25 @@
+﻿{"type":"topic","language":"es-MX","name":"Kubernetes","title":"Kubernetes","confidence":75}
+{"type":"source","language":"es-MX","topic":"Kubernetes","source_type":"wikipedia-es","title":"Kubernetes","url":"https://es.wikipedia.org/wiki/Kubernetes"}
+{"type":"source","language":"es-MX","topic":"Kubernetes","source_type":"duckduckgo","title":"Kubernetes","url":"https://es.wikipedia.org/wiki/Kubernetes"}
+{"type":"concept","language":"es-MX","topic":"Kubernetes","name":"Kubernetes","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Kubernetes","name":"Permite","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Kubernetes","name":"Fue","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Kubernetes","name":"Google","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Kubernetes","name":"Cloud","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Kubernetes","name":"Native","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Kubernetes","name":"Computing","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Kubernetes","name":"Foundation","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Kubernetes","name":"Soporta","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Kubernetes","name":"Docker","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Kubernetes","name":"K8s","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Kubernetes","name":"LXC","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Kubernetes","name":"LinuX","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Kubernetes","name":"Containers","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Kubernetes","name":"Linux","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Kubernetes","name":"Computación","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Kubernetes","name":"Software","confidence":72}
+{"type":"fact","language":"es-MX","topic":"Kubernetes","text":"Kubernetes es una plataforma de código abierto para la orquestación de contenedores. Permite desplegar y automatizar la gestión de sistemas distribuidos de manera que sean capaces de escalar y auto-repararse. Fue originalmente diseñado por Google y donado a la Cloud Native Computing Foundation. Soporta diferentes entornos para la ejecución de contenedores, incluido Docker.","confidence":70}
+{"type":"fact","language":"es-MX","topic":"Kubernetes","text":"Kubernetes es una plataforma de sistema distribuido de código libre para la automatización del despliegue, ajuste de escala y manejo de aplicaciones en contenedores que fue originalmente diseñado por Google y donado a la Cloud Native Computing Foundation. Soporta diferentes entornos para la ejecución de contenedores, incluido Docker. Es habitual abreviar el nombre como «K8s» al tomar la primera y última letras y el número de letras omitidas.","confidence":70}
+{"type":"fact","language":"es-MX","topic":"Kubernetes","text":"LXC - LinuX Containers, también conocido por el acrónimo LXC, es una tecnología de virtualización a nivel de sistema operativo para Linux.","confidence":70}
+{"type":"fact","language":"es-MX","topic":"Kubernetes","text":"Computación en nube","confidence":70}
+{"type":"fact","language":"es-MX","topic":"Kubernetes","text":"Software libre","confidence":70}

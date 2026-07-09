@@ -1,0 +1,5 @@
+﻿GeneXus es una plataforma low-code orientada al desarrollo de aplicaciones empresariales.
+Una Knowledge Base sirve como repositorio central del conocimiento de una aplicacion.
+En una Knowledge Base se definen Transactions, Procedures, Data Providers, APIs, reglas y objetos.
+Una Transaction representa una entidad de negocio y ayuda a GeneXus a inferir tablas, relaciones y pantallas.
+Un Data Provider sirve para construir y devolver estructuras de datos de forma declarativa.

@@ -346,3 +346,24 @@ if(NEXIORA_BUILD_TESTS)
     target_link_libraries(NxTopicQuestionTests PRIVATE NexioraNCP)
     add_test(NAME NxTopicQuestionTests COMMAND NxTopicQuestionTests)
 endif()
+
+# ============================================================
+# COGNITIVE-0001 — Cognitive Core: local file ingestion + QA
+# ============================================================
+
+target_sources(NexioraNCP PRIVATE
+    Source/Cognitive/NxCognitiveCore.c
+)
+
+add_executable(nexiora_cognitive
+    Tools/Cognitive/NxCognitiveTool.c
+)
+target_link_libraries(nexiora_cognitive PRIVATE NexioraNCP)
+
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxCognitiveCoreTests
+        Tests/Unit/NxCognitiveCoreTests.c
+    )
+    target_link_libraries(NxCognitiveCoreTests PRIVATE NexioraNCP)
+    add_test(NAME NxCognitiveCoreTests COMMAND NxCognitiveCoreTests)
+endif()

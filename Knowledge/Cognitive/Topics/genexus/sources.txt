@@ -1,0 +1,2 @@
+source|.\Samples\Cognitive\genexus_intro.txt|textual|bytes=481
+source|.\Samples\Cognitive\genexus_intro.txt|textual|bytes=481
