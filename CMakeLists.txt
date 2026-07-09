@@ -70,6 +70,7 @@ add_library(NexioraNCP STATIC
     Source/Research/NxPersistentMemory.c
     Source/Research/NxKnowledgeAcquisition.c
     Source/NCOS/NxCompilerEngine.c
+    Source/NCOS/NxBuildLogAnalyzer.c
     Source/Research/NxKnowledgeStore.c
     Source/Research/NxLearningCore.c
     Source/Research/NxTopicQuestion.c
@@ -553,5 +554,21 @@ if(NEXIORA_BUILD_TESTS)
     )
     target_link_libraries(NxCompilerEngineTests PRIVATE NexioraNCP)
     add_test(NAME NxCompilerEngineTests COMMAND NxCompilerEngineTests)
+endif()
+# ============================================================
+# NCOS-010 — Build Error Analyzer
+# ============================================================
+
+add_executable(nexiora_analyze_log
+    Tools/NCOS/NxBuildLogAnalyzerTool.c
+)
+target_link_libraries(nexiora_analyze_log PRIVATE NexioraNCP)
+
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxBuildLogAnalyzerTests
+        Tests/Unit/NxBuildLogAnalyzerTests.c
+    )
+    target_link_libraries(NxBuildLogAnalyzerTests PRIVATE NexioraNCP)
+    add_test(NAME NxBuildLogAnalyzerTests COMMAND NxBuildLogAnalyzerTests)
 endif()
 
