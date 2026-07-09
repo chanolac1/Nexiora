@@ -1,0 +1,8 @@
+domain=Genexus
+name=DataSelector
+normalized=dataselector
+definition=Un DataSelector define una consulta reutilizable sobre datos.
+purpose=Sirve para evitar repetir filtros y reglas de seleccion.
+relationships=Data Provider,Transaction,Procedure
+confidence=0.85
+version=3

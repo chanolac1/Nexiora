@@ -420,3 +420,24 @@ if(NEXIORA_BUILD_TESTS)
     target_link_libraries(NxPlanningEngineTests PRIVATE NexioraNCP)
     add_test(NAME NxPlanningEngineTests COMMAND NxPlanningEngineTests)
 endif()
+
+# ============================================================
+# NCOS-003 — Concept Registry
+# ============================================================
+
+target_sources(NexioraNCP PRIVATE
+    Source/NCOS/NxConceptRegistry.c
+)
+
+add_executable(nexiora_concept
+    Tools/NCOS/NxConceptTool.c
+)
+target_link_libraries(nexiora_concept PRIVATE NexioraNCP)
+
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxConceptRegistryTests
+        Tests/Unit/NxConceptRegistryTests.c
+    )
+    target_link_libraries(NxConceptRegistryTests PRIVATE NexioraNCP)
+    add_test(NAME NxConceptRegistryTests COMMAND NxConceptRegistryTests)
+endif()
