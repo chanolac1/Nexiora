@@ -489,3 +489,17 @@ if(NOT TARGET nexiora_reason)
         set_tests_properties(NxGraphReasonerTests PROPERTIES WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
     endif()
 endif()
+
+# NCOS-006: Answer Composer
+if(TARGET NexioraNCP)
+    target_sources(NexioraNCP PRIVATE Source/NCOS/NxAnswerComposer.c)
+endif()
+
+add_executable(NxAnswerComposerTests Tests/Unit/NxAnswerComposerTests.c)
+target_link_libraries(NxAnswerComposerTests PRIVATE NexioraNCP)
+add_test(NAME NxAnswerComposerTests COMMAND NxAnswerComposerTests)
+set_target_properties(NxAnswerComposerTests PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+add_executable(nexiora_answer Source/Tools/nexiora_answer.c)
+target_link_libraries(nexiora_answer PRIVATE NexioraNCP)
+set_target_properties(nexiora_answer PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)

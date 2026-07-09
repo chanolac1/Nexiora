@@ -1,0 +1,20 @@
+Dominio: Genexus
+Origen: DataSelector
+Destino: KnowledgeBase
+Intencion: relacion
+
+Respuesta estructurada:
+
+Definicion de DataSelector:
+Sin definicion registrada.
+
+No encontre una relacion directa o indirecta registrada entre DataSelector y KnowledgeBase.
+
+Recomendacion:
+Crear o investigar relaciones antes de emitir una conclusion fuerte.
+
+Evidencia usada:
+- Tarjeta: ./Knowledge/NCOS/Concepts/genexus/dataselector.card
+- Grafo consultado: ./Knowledge/NCOS/ConceptGraphs/genexus/edges.jsonl
+
+Confianza: 35 %

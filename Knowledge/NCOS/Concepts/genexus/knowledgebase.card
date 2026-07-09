@@ -1,0 +1,8 @@
+domain=Genexus
+name=KnowledgeBase
+normalized=knowledgebase
+definition=La Knowledge Base es el repositorio central del conocimiento.
+purpose=Sirve para generar aplicaciones desde el modelo.
+relationships=Transaction,Procedure
+confidence=0.85
+version=1

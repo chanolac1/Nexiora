@@ -1,0 +1,8 @@
+domain=Genexus
+name=DataProvider
+normalized=dataprovider
+definition=Un Data Provider construye y devuelve estructuras de datos.
+purpose=Sirve para preparar datos consumibles por otros objetos.
+relationships=KnowledgeBase
+confidence=0.85
+version=1
