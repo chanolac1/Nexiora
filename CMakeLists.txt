@@ -599,3 +599,17 @@ if(NEXIORA_BUILD_TESTS)
     target_link_libraries(NxSafePatchEngineTests PRIVATE NexioraNCP)
     add_test(NAME NxSafePatchEngineTests COMMAND NxSafePatchEngineTests)
 endif()
+
+# NCOS-013 Patch Approval Engine
+target_sources(NexioraNCP PRIVATE
+    Source/NCOS/NxPatchApprovalEngine.c
+)
+
+add_executable(nexiora_patch_approval Tools/nexiora_patch_approval.c)
+target_link_libraries(nexiora_patch_approval PRIVATE NexioraNCP)
+
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxPatchApprovalEngineTests Tests/Unit/NxPatchApprovalEngineTests.c)
+    target_link_libraries(NxPatchApprovalEngineTests PRIVATE NexioraNCP)
+    add_test(NAME NxPatchApprovalEngineTests COMMAND NxPatchApprovalEngineTests)
+endif()
