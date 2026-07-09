@@ -399,3 +399,24 @@ if(NEXIORA_BUILD_TESTS)
     target_link_libraries(NxSessionEngineTests PRIVATE NexioraNCP)
     add_test(NAME NxSessionEngineTests COMMAND NxSessionEngineTests)
 endif()
+
+# ============================================================
+# NCOS-002 — Planning Engine
+# ============================================================
+
+target_sources(NexioraNCP PRIVATE
+    Source/NCOS/NxPlanningEngine.c
+)
+
+add_executable(nexiora_plan
+    Tools/NCOS/NxPlanningTool.c
+)
+target_link_libraries(nexiora_plan PRIVATE NexioraNCP)
+
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxPlanningEngineTests
+        Tests/Unit/NxPlanningEngineTests.c
+    )
+    target_link_libraries(NxPlanningEngineTests PRIVATE NexioraNCP)
+    add_test(NAME NxPlanningEngineTests COMMAND NxPlanningEngineTests)
+endif()
