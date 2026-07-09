@@ -6,3 +6,6 @@ source|.\Samples\Cognitive\Batch\genexus_transaction.md|textual|bytes=266
 source|.\Samples\Cognitive\Batch\genexus_dataprovider.txt|textual|bytes=321
 source|.\Samples\Cognitive\Batch\genexus_kb.txt|textual|bytes=360
 source|.\Samples\Cognitive\Batch\genexus_transaction.md|textual|bytes=266
+source|.\Samples\Cognitive\Batch\genexus_dataprovider.txt|textual|bytes=321
+source|.\Samples\Cognitive\Batch\genexus_kb.txt|textual|bytes=360
+source|.\Samples\Cognitive\Batch\genexus_transaction.md|textual|bytes=266

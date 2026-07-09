@@ -1,13 +1,14 @@
 Tema: Genexus
-Pregunta: Que es un Data Provider?
+Pregunta: Para que sirve una Knowledge Base?
 
 Con base en la memoria local sobre Genexus:
 
-1) Data Provider  Un Data Provider en GeneXus sirve para construir y devolver estructuras de datos.
-
-2) Data Provider  Un Data Provider en GeneXus sirve para construir y devolver estructuras de datos.
-
-3)  En una Knowledge Base se definen Transactions, Procedures, Data Providers, APIs, reglas y objetos.
+1) GeneXus Knowledge Base  Una Knowledge Base en GeneXus es el repositorio central del conocimiento de una aplicacion.
+2) La Knowledge Base permite que GeneXus genere codigo para diferentes plataformas y tecnologias a partir del modelo definido por el desarrollador.
+3) Una Knowledge Base sirve como repositorio central del conocimiento de una aplicacion.
+4) En una Knowledge Base se definen Transactions, Procedures, Data Providers, APIs, reglas y objetos.
+5) ﻿GeneXus es una plataforma low-code orientada al desarrollo de aplicaciones empresariales.
 
 Confianza: 78 %
+Fragmentos unicos usados: 5
 Fuente: Knowledge/Cognitive/Topics/genexus/chunks.txt

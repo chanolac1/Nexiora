@@ -26,3 +26,12 @@ chunk|  La Knowledge Base permite que GeneXus genere codigo para diferentes plat
 chunk|# Transaction en GeneXus  Una Transaction representa una entidad de negocio.
 chunk| Sirve para modelar datos persistentes como clientes, productos, facturas o pedidos.
 chunk|  GeneXus puede inferir tablas, relaciones, reglas, validaciones y pantallas a partir de una Transaction.
+chunk|Data Provider  Un Data Provider en GeneXus sirve para construir y devolver estructuras de datos.
+chunk| Se usa cuando se necesita cargar SDTs, colecciones o respuestas estructuradas para servicios, pantallas o procesos.
+chunk|  A diferencia de un Procedure, un Data Provider se enfoca en declarar como se arma la estructura de salida.
+chunk|GeneXus Knowledge Base  Una Knowledge Base en GeneXus es el repositorio central del conocimiento de una aplicacion.
+chunk| Contiene objetos como Transactions, Procedures, Data Providers, Panels, APIs y reglas de negocio.
+chunk|  La Knowledge Base permite que GeneXus genere codigo para diferentes plataformas y tecnologias a partir del modelo definido por el desarrollador.
+chunk|# Transaction en GeneXus  Una Transaction representa una entidad de negocio.
+chunk| Sirve para modelar datos persistentes como clientes, productos, facturas o pedidos.
+chunk|  GeneXus puede inferir tablas, relaciones, reglas, validaciones y pantallas a partir de una Transaction.
