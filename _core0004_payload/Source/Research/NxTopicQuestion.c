@@ -126,12 +126,12 @@ static int nx_tq_try_builtin_concept_answer(
         nx_tq_question_has(question, "kb"))
     {
         (void)snprintf(answer_out, answer_out_size,
-            "Una Knowledge Base en GeneXus sirve como el Repositorio central del conocimiento de una aplicacion.\n\n"
+            "Una Knowledge Base en GeneXus sirve como el repositorio central del conocimiento de una aplicacion.\n\n"
             "En ella se modelan objetos como Transactions, Procedures, Data Providers, Panels, APIs, reglas y generadores. "
             "GeneXus usa esa base de conocimiento para entender el dominio del negocio y generar codigo para distintas tecnologias.\n\n"
             "En terminos practicos, la Knowledge Base concentra el modelo, las reglas, la navegacion, la estructura de datos y la logica que luego GeneXus transforma en una aplicacion ejecutable.\n\n"
             "Confianza: 86 %%\n"
-            "Fuentes registradas:\n- Memoria local de GeneXus\n- Conceptos aprendidos\n");
+            "Fuente: memoria local de GeneXus + conceptos aprendidos.\n");
         return 1;
     }
 
@@ -144,7 +144,7 @@ static int nx_tq_try_builtin_concept_answer(
             "Sirve para modelar informacion como clientes, productos, facturas o pedidos. A partir de una Transaction, GeneXus puede inferir tablas, relaciones, reglas, validaciones y pantallas asociadas.\n\n"
             "En resumen: una Transaction no es solo una pantalla; es una declaracion de conocimiento del negocio que GeneXus usa para generar partes importantes de la aplicacion.\n\n"
             "Confianza: 84 %%\n"
-            "Fuentes registradas:\n- Memoria local de GeneXus\n- Conceptos aprendidos\n");
+            "Fuente: memoria local de GeneXus + conceptos aprendidos.\n");
         return 1;
     }
 
@@ -157,7 +157,7 @@ static int nx_tq_try_builtin_concept_answer(
             "Es util cuando necesitas preparar informacion para servicios, APIs, reportes, integraciones o procesos internos.\n\n"
             "Diferencia practica: una Transaction modela y persiste entidades de negocio; un Data Provider arma datos de salida para consumo o procesamiento.\n\n"
             "Confianza: 82 %%\n"
-            "Fuentes registradas:\n- Memoria local de GeneXus\n- Conceptos aprendidos\n");
+            "Fuente: memoria local de GeneXus + conceptos aprendidos.\n");
         return 1;
     }
 
@@ -170,7 +170,7 @@ static int nx_tq_try_builtin_concept_answer(
             "Se utiliza para procesos batch, actualizaciones, calculos, integraciones, generacion de reportes o tareas donde necesitas controlar paso a paso la ejecucion.\n\n"
             "Diferencia practica: un Data Provider se orienta a producir datos estructurados; un Procedure se orienta a ejecutar acciones o procesos.\n\n"
             "Confianza: 80 %%\n"
-            "Fuentes registradas:\n- Memoria local de GeneXus\n- Conceptos aprendidos\n");
+            "Fuente: memoria local de GeneXus + conceptos aprendidos.\n");
         return 1;
     }
 
@@ -182,7 +182,7 @@ static int nx_tq_try_builtin_concept_answer(
             "Sirve para insertar, actualizar, borrar o validar datos aplicando las reglas asociadas a la Transaction, sin depender necesariamente de una pantalla generada.\n\n"
             "Es util para integraciones, APIs, procesos automatizados y logica de negocio reutilizable.\n\n"
             "Confianza: 80 %%\n"
-            "Fuentes registradas:\n- Memoria local de GeneXus\n- Conceptos aprendidos\n");
+            "Fuente: memoria local de GeneXus + conceptos aprendidos.\n");
         return 1;
     }
 
