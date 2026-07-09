@@ -1,2 +1,2 @@
 {"domain":"genexus","from":"dataselector","relation":"related_to","to":"dataprovider","source":"cli","confidence":85}
-{"domain":"genexus","from":"dataselector","relation":"used_by","to":"procedure","source":"cli","confidence":85}
+{"domain":"genexus","from":"dataprovider","relation":"belongs_to","to":"knowledgebase","source":"cli","confidence":85}

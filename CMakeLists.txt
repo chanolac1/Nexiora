@@ -465,3 +465,27 @@ if(NOT TARGET nexiora_graph)
         set_tests_properties(NxConceptGraphTests PROPERTIES WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
     endif()
 endif()
+
+# ============================================================
+# NCOS-005 — Graph Reasoning
+# ============================================================
+
+if(NOT TARGET nexiora_reason)
+    target_sources(NexioraNCP PRIVATE
+        Source/NCOS/NxGraphReasoner.c
+    )
+
+    add_executable(nexiora_reason
+        Tools/NCOS/NxGraphReasonerTool.c
+    )
+    target_link_libraries(nexiora_reason PRIVATE NexioraNCP)
+
+    if(NEXIORA_BUILD_TESTS)
+        add_executable(NxGraphReasonerTests
+            Tests/Unit/NxGraphReasonerTests.c
+        )
+        target_link_libraries(NxGraphReasonerTests PRIVATE NexioraNCP)
+        add_test(NAME NxGraphReasonerTests COMMAND NxGraphReasonerTests)
+        set_tests_properties(NxGraphReasonerTests PROPERTIES WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+    endif()
+endif()
