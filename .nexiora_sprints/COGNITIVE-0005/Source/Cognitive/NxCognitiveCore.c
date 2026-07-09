@@ -937,101 +937,6 @@ static int nx_chunk_relevance_score(const char* text, const char* normalized_top
     return score;
 }
 
-
-static int nx_is_comparison_question(const char* question)
-{
-    return nx_contains_word(question, "diferencia") || nx_contains_word(question, "compar") ||
-           nx_contains_word(question, "versus") || nx_contains_word(question, "contra") ||
-           nx_contains_word(question, " vs ");
-}
-
-static int nx_is_definition_question(const char* question)
-{
-    return nx_contains_word(question, "que es") || nx_contains_word(question, "qué es") ||
-           nx_contains_word(question, "define") || nx_contains_word(question, "definicion") ||
-           nx_contains_word(question, "definición");
-}
-
-static int nx_is_purpose_question(const char* question)
-{
-    return nx_contains_word(question, "para que") || nx_contains_word(question, "para qué") ||
-           nx_contains_word(question, "sirve") || nx_contains_word(question, "uso") ||
-           nx_contains_word(question, "utilidad");
-}
-
-static int nx_select_primary_concept(char terms[][64], size_t term_count, char* primary, size_t primary_size)
-{
-    size_t i;
-    size_t best_len = 0;
-    if (primary == 0 || primary_size == 0) return 0;
-    primary[0] = '\0';
-    for (i = 0; i < term_count; ++i)
-    {
-        size_t len;
-        if (!nx_term_is_specific(terms[i])) continue;
-        len = strlen(terms[i]);
-        if (len > best_len)
-        {
-            best_len = len;
-            nx_copy_string(primary, primary_size, terms[i]);
-        }
-    }
-    return primary[0] != '\0';
-}
-
-static int nx_match_contains_primary(const NxChunkMatch* match, const char* primary)
-{
-    if (match == 0 || primary == 0 || primary[0] == '\0') return 0;
-    return match->text[0] != '\0' && nx_contains_word(match->text, primary);
-}
-
-static size_t nx_filter_matches_by_primary(NxChunkMatch* matches, size_t max_matches, const char* primary)
-{
-    NxChunkMatch filtered[5];
-    size_t i;
-    size_t n = 0;
-    if (matches == 0 || primary == 0 || primary[0] == '\0') return 0;
-    for (i = 0; i < max_matches && i < 5; ++i)
-    {
-        filtered[i].text[0] = '\0';
-        filtered[i].score = 0;
-    }
-    for (i = 0; i < max_matches && i < 5; ++i)
-    {
-        if (nx_match_contains_primary(&matches[i], primary))
-        {
-            filtered[n++] = matches[i];
-        }
-    }
-    for (i = 0; i < max_matches && i < 5; ++i)
-    {
-        matches[i] = filtered[i];
-    }
-    return n;
-}
-
-static const char* nx_intent_label(const char* question)
-{
-    if (nx_is_comparison_question(question)) return "comparacion";
-    if (nx_is_purpose_question(question)) return "proposito";
-    if (nx_is_definition_question(question)) return "definicion";
-    return "consulta";
-}
-
-static void nx_append_structured_evidence(char* dst, size_t dst_size, size_t* used, const NxChunkMatch* matches, size_t match_count)
-{
-    size_t i;
-    for (i = 0; i < match_count && used != 0 && *used + 96 < dst_size; ++i)
-    {
-        if (matches[i].text[0] != '\0')
-        {
-            char prefix[64];
-            (void)snprintf(prefix, sizeof(prefix), "  %lu. [relevancia %d] %%s\n", (unsigned long)(i + 1), matches[i].score);
-            nx_append_answer_line(dst, dst_size, used, prefix, matches[i].text);
-        }
-    }
-}
-
 NxCognitiveStatus NxCognitive_Ask(
     const char* workspace_root,
     const char* topic,
@@ -1044,7 +949,6 @@ NxCognitiveStatus NxCognitive_Ask(
     char answer_path[512];
     char root[8] = ".";
     char terms[16][64];
-    char primary[64];
     size_t term_count;
     FILE* f;
     char line[1024];
@@ -1052,9 +956,7 @@ NxCognitiveStatus NxCognitive_Ask(
     size_t i;
     size_t candidate_count = 0;
     size_t unique_count = 0;
-    size_t strict_count = 0;
     int best_score = 0;
-    int comparison_mode;
     size_t used = 0;
 
     if (topic == 0 || question == 0 || answer_out == 0)
@@ -1063,7 +965,6 @@ NxCognitiveStatus NxCognitive_Ask(
     }
 
     memset(answer_out, 0, sizeof(*answer_out));
-    primary[0] = '\0';
     (void)NxCognitive_NormalizeTopic(topic, normalized, sizeof(normalized));
     nx_make_topic_dirs(workspace_root == 0 ? root : workspace_root, normalized, topic_dir, sizeof(topic_dir));
     nx_join(chunks_path, sizeof(chunks_path), topic_dir, "chunks.txt");
@@ -1076,9 +977,6 @@ NxCognitiveStatus NxCognitive_Ask(
     }
 
     term_count = nx_extract_question_terms(question, terms, 16);
-    (void)nx_select_primary_concept(terms, term_count, primary, sizeof(primary));
-    comparison_mode = nx_is_comparison_question(question);
-
     f = fopen(chunks_path, "rb");
     if (f == 0)
     {
@@ -1109,11 +1007,6 @@ NxCognitiveStatus NxCognitive_Ask(
     }
     fclose(f);
 
-    if (!comparison_mode && primary[0] != '\0')
-    {
-        strict_count = nx_filter_matches_by_primary(matches, 5, primary);
-    }
-
     best_score = matches[0].score;
     for (i = 0; i < 5; ++i)
     {
@@ -1123,7 +1016,8 @@ NxCognitiveStatus NxCognitive_Ask(
         }
     }
 
-    if (unique_count == 0 || (primary[0] != '\0' && strict_count == 0 && !comparison_mode))
+
+    if (unique_count == 0 || !nx_answer_has_specific_term(matches, 5, terms, term_count))
     {
         char used_source[512];
         if (nx_try_auto_research_from_local_sources(workspace_root, normalized, terms, term_count, used_source, sizeof(used_source)))
@@ -1138,76 +1032,42 @@ NxCognitiveStatus NxCognitive_Ask(
     answer_out->matched_chunks = unique_count;
     answer_out->confidence = best_score >= 38 ? 88 : (best_score >= 22 ? 74 : (best_score >= 8 ? 52 : 20));
 
-    if (best_score <= 0 || unique_count == 0 || (primary[0] != '\0' && strict_count == 0 && !comparison_mode))
+    if (best_score <= 0 || !nx_answer_has_specific_term(matches, 5, terms, term_count))
     {
         (void)snprintf(answer_out->answer, sizeof(answer_out->answer),
             "No tengo evidencia suficiente sobre el concepto especifico preguntado dentro de '%s'.\n\n"
-            "Concepto principal detectado: %s\n\n"
             "Accion realizada:\n"
             "- Busque una fuente local de auto-investigacion en Knowledge/Cognitive/AutoResearch/%s/.\n"
             "- No encontre una fuente suficiente para completar la respuesta.\n\n"
             "Siguiente paso:\n"
             "Agrega un archivo .txt con informacion del concepto en esa carpeta o ejecuta una investigacion especifica del tema. No voy a improvisar una respuesta con evidencia lateral.",
             topic,
-            primary[0] == '\0' ? "no identificado" : primary,
             normalized);
         answer_out->confidence = 0;
     }
     else
     {
-        const char* intent = nx_intent_label(question);
         used += (size_t)snprintf(answer_out->answer + used, sizeof(answer_out->answer) - used,
-            "Respuesta estructurada desde Cognitive Core v2.\n\n");
+            "Respuesta priorizada desde memoria local sobre %s.\n\n", topic);
         used += (size_t)snprintf(answer_out->answer + used, sizeof(answer_out->answer) - used,
-            "Tema: %s\nPregunta: %s\nIntencion: %s\nConcepto principal: %s\n\n",
-            topic,
-            question,
-            intent,
-            primary[0] == '\0' ? topic : primary);
-
-        if (strcmp(intent, "definicion") == 0)
-        {
-            used += (size_t)snprintf(answer_out->answer + used, sizeof(answer_out->answer) - used,
-                "Definicion:\n");
-        }
-        else if (strcmp(intent, "proposito") == 0)
-        {
-            used += (size_t)snprintf(answer_out->answer + used, sizeof(answer_out->answer) - used,
-                "Para que sirve:\n");
-        }
-        else if (strcmp(intent, "comparacion") == 0)
-        {
-            used += (size_t)snprintf(answer_out->answer + used, sizeof(answer_out->answer) - used,
-                "Comparacion:\n");
-        }
-        else
-        {
-            used += (size_t)snprintf(answer_out->answer + used, sizeof(answer_out->answer) - used,
-                "Respuesta:\n");
-        }
-
-        nx_append_structured_evidence(answer_out->answer, sizeof(answer_out->answer), &used, matches, unique_count);
-
+            "Pregunta: %s\n\n", question);
         used += (size_t)snprintf(answer_out->answer + used, sizeof(answer_out->answer) - used,
-            "\nFiltro aplicado:\n");
-        if (!comparison_mode && primary[0] != '\0')
+            "Evidencia usada:\n");
+
+        for (i = 0; i < 5 && used + 96 < sizeof(answer_out->answer); ++i)
         {
-            used += (size_t)snprintf(answer_out->answer + used, sizeof(answer_out->answer) - used,
-                "Use solo evidencia que menciona explicitamente el concepto principal '%s'. No mezcle evidencia lateral.\n", primary);
-        }
-        else if (comparison_mode)
-        {
-            used += (size_t)snprintf(answer_out->answer + used, sizeof(answer_out->answer) - used,
-                "La pregunta pide comparacion; se permite evidencia de conceptos relacionados.\n");
-        }
-        else
-        {
-            used += (size_t)snprintf(answer_out->answer + used, sizeof(answer_out->answer) - used,
-                "No se detecto concepto especifico; se uso la evidencia mas relevante del tema.\n");
+            if (matches[i].text[0] != '\0')
+            {
+                char prefix[64];
+                (void)snprintf(prefix, sizeof(prefix), "  %lu. [relevancia %d] %%s\n", (unsigned long)(i + 1), matches[i].score);
+                nx_append_answer_line(answer_out->answer, sizeof(answer_out->answer), &used, prefix, matches[i].text);
+            }
         }
 
         used += (size_t)snprintf(answer_out->answer + used, sizeof(answer_out->answer) - used,
-            "\nConfianza: %d %%\nCandidatos revisados: %lu\nFragmentos usados: %lu\nFuente: Knowledge/Cognitive/Topics/%s/chunks.txt",
+            "\nResumen:\nLa respuesta se genero usando los fragmentos mas relevantes para los terminos de la pregunta. "
+            "Se eliminaron fragmentos duplicados o casi duplicados antes de responder.\n\n"
+            "Confianza: %d %%\nCandidatos revisados: %lu\nFragmentos unicos usados: %lu\nFuente: Knowledge/Cognitive/Topics/%s/chunks.txt",
             answer_out->confidence,
             (unsigned long)candidate_count,
             (unsigned long)unique_count,

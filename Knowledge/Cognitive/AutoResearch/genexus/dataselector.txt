@@ -1,0 +1,7 @@
+DataSelector en GeneXus
+
+Un DataSelector en GeneXus es un objeto que permite definir una consulta reutilizable sobre datos. Sirve para centralizar criterios de seleccion, filtros, ordenamientos y condiciones que pueden ser consumidos desde otros objetos de la Knowledge Base.
+
+A diferencia de un Data Provider, que construye y devuelve estructuras de datos, un DataSelector se enfoca en seleccionar registros o conjuntos de datos aplicando condiciones declarativas. Es util cuando varios objetos necesitan compartir el mismo criterio de seleccion.
+
+Un DataSelector ayuda a mantener consistencia porque evita repetir filtros y reglas de seleccion en distintos Procedures, Panels, Transactions u otros objetos.

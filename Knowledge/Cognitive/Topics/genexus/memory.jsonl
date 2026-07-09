@@ -12,3 +12,4 @@
 {"type":"ingest","topic":"genexus","source":".\Samples\Cognitive\Batch\genexus_dataprovider.txt","bytes":321,"chunks":3,"concepts":23}
 {"type":"ingest","topic":"genexus","source":".\Samples\Cognitive\Batch\genexus_kb.txt","bytes":360,"chunks":3,"concepts":27}
 {"type":"ingest","topic":"genexus","source":".\Samples\Cognitive\Batch\genexus_transaction.md","bytes":266,"chunks":3,"concepts":19}
+{"type":"auto-research","topic":"genexus","source":".\Knowledge\Cognitive\AutoResearch\genexus\dataselector.txt","bytes":709,"chunks":5}
