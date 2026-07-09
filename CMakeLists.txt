@@ -69,6 +69,7 @@ add_library(NexioraNCP STATIC
     Source/Conversation/NxConversation.c
     Source/Research/NxPersistentMemory.c
     Source/Research/NxKnowledgeAcquisition.c
+    Source/NCOS/NxCompilerEngine.c
     Source/Research/NxKnowledgeStore.c
     Source/Research/NxLearningCore.c
     Source/Research/NxTopicQuestion.c
@@ -537,3 +538,20 @@ if(NEXIORA_BUILD_TESTS)
     target_link_libraries(NxTaskExecutionEngineTests PRIVATE NexioraNCP)
     add_test(NAME NxTaskExecutionEngineTests COMMAND NxTaskExecutionEngineTests)
 endif()
+# ============================================================
+# NCOS-009 — Compiler Engine
+# ============================================================
+
+add_executable(nexiora_compile
+    Tools/NCOS/NxCompilerTool.c
+)
+target_link_libraries(nexiora_compile PRIVATE NexioraNCP)
+
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxCompilerEngineTests
+        Tests/Unit/NxCompilerEngineTests.c
+    )
+    target_link_libraries(NxCompilerEngineTests PRIVATE NexioraNCP)
+    add_test(NAME NxCompilerEngineTests COMMAND NxCompilerEngineTests)
+endif()
+
