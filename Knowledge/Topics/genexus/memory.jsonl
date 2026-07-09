@@ -1,0 +1,36 @@
+﻿{"type":"topic","language":"es-MX","name":"Genexus","title":"Genexus","confidence":75}
+{"type":"source","language":"es-MX","topic":"Genexus","source_type":"official","title":"Documentacion oficial de GeneXus","url":"https://docs.genexus.com/"}
+{"type":"source","language":"es-MX","topic":"Genexus","source_type":"wikipedia-es","title":"Genexus","url":"https://es.wikipedia.org/wiki/GeneXus"}
+{"type":"source","language":"es-MX","topic":"Genexus","source_type":"duckduckgo","title":"GeneXus","url":"https://es.wikipedia.org/wiki/GeneXus"}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"Base de conocimiento","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"Transaccion","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"Reglas","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"Generadores","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"Low-code","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"WorkWithPlus","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"Procedimientos","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"APIs","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"Modelado de negocio","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"Genexus","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"GeneXus","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"Para","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"Nexiora","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"Windows","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"Los","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"Official","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"For","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"Mobile","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"Devices","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"Marketplace","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"Community","confidence":72}
+{"type":"concept","language":"es-MX","topic":"Genexus","name":"Wiki","confidence":72}
+{"type":"fact","language":"es-MX","topic":"Genexus","text":"GeneXus es una plataforma low-code orientada a crear, mantener y evolucionar aplicaciones empresariales a partir de una base de conocimiento.","confidence":70}
+{"type":"fact","language":"es-MX","topic":"Genexus","text":"En GeneXus, la base de conocimiento describe objetos como transacciones, reglas, procedimientos, paneles, APIs y generadores para producir aplicaciones en distintas plataformas.","confidence":70}
+{"type":"fact","language":"es-MX","topic":"Genexus","text":"El enfoque principal de GeneXus es modelar conocimiento de negocio y generar codigo para multiples tecnologias, reduciendo trabajo manual repetitivo.","confidence":70}
+{"type":"fact","language":"es-MX","topic":"Genexus","text":"Para Nexiora, GeneXus es relevante como tema de investigacion por su enfoque de modelado, generacion automatica, bases de conocimiento y productividad empresarial.","confidence":70}
+{"type":"fact","language":"es-MX","topic":"Genexus","text":"GeneXus es una herramienta de desarrollo multiplataforma basada en la representación del conocimiento, principalmente orientada al entorno empresarial para aplicaciones web, dispositivos móviles y aplicaciones para escritorio de Windows. Los desarrolladores describen la aplicación en un lenguaje de alto nivel, principalmente declarativo, a partir del cual se genera código nativo para múltiples entornos.","confidence":70}
+{"type":"fact","language":"es-MX","topic":"Genexus","text":"http://www.genexus.com Official site","confidence":70}
+{"type":"fact","language":"es-MX","topic":"Genexus","text":"http://www.genexus.com/sd?en GeneXus For Mobile Devices","confidence":70}
+{"type":"fact","language":"es-MX","topic":"Genexus","text":"http://marketplace.genexus.com/?en GeneXus Marketplace","confidence":70}
+{"type":"fact","language":"es-MX","topic":"Genexus","text":"http://www.gxopen.com/forumsr/servlet/forumlist Community forum","confidence":70}
+{"type":"fact","language":"es-MX","topic":"Genexus","text":"https://wiki.genexus.com GeneXus Community Wiki","confidence":70}

@@ -1,0 +1,15 @@
+﻿Tema: Jscript
+Titulo detectado: JScript
+Confianza: 72 %
+
+Resumen:
+JScript is Microsoft's legacy dialect of the ECMAScript standard that is used in Microsoft's Internet Explorer web browser and HTML Applications, and as a standalone Windows scripting language. It is proprietary software.
+
+Conceptos relacionados:
+JScript, Microsoft, ECMAScript, Internet, Explorer, HTML, Applications, Windows, Active, Scripting, This, OLE
+
+Fuentes:
+- JScript: https://en.wikipedia.org/wiki/JScript
+- JScript: https://en.wikipedia.org/wiki/JScript
+
+Nota: Esta respuesta proviene de la memoria local generada por Nexiora.

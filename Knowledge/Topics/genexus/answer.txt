@@ -1,0 +1,17 @@
+﻿Tema: Genexus
+Titulo detectado: Genexus
+Idioma de respuesta: Espanol (es-MX)
+Confianza: 75 %
+
+Resumen:
+GeneXus es una plataforma low-code orientada a crear, mantener y evolucionar aplicaciones empresariales a partir de una base de conocimiento.
+
+Conceptos relacionados:
+Base de conocimiento, Transaccion, Reglas, Generadores, Low-code, WorkWithPlus, Procedimientos, APIs, Modelado de negocio, Genexus, GeneXus, Para
+
+Fuentes:
+- Documentacion oficial de GeneXus: https://docs.genexus.com/
+- Genexus: https://es.wikipedia.org/wiki/GeneXus
+- GeneXus: https://es.wikipedia.org/wiki/GeneXus
+
+Nota: Esta respuesta proviene de la memoria local de Nexiora. Si la fuente original estaba en otro idioma, Nexiora conserva la explicacion en espanol siempre que sea posible.

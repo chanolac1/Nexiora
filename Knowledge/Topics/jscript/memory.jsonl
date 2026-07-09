@@ -1,0 +1,28 @@
+﻿{"type":"topic","name":"Jscript","title":"JScript","confidence":72}
+{"type":"source","topic":"Jscript","source_type":"wikipedia","title":"JScript","url":"https://en.wikipedia.org/wiki/JScript"}
+{"type":"source","topic":"Jscript","source_type":"duckduckgo","title":"JScript","url":"https://en.wikipedia.org/wiki/JScript"}
+{"type":"concept","topic":"Jscript","name":"JScript","confidence":70}
+{"type":"concept","topic":"Jscript","name":"Microsoft","confidence":70}
+{"type":"concept","topic":"Jscript","name":"ECMAScript","confidence":70}
+{"type":"concept","topic":"Jscript","name":"Internet","confidence":70}
+{"type":"concept","topic":"Jscript","name":"Explorer","confidence":70}
+{"type":"concept","topic":"Jscript","name":"HTML","confidence":70}
+{"type":"concept","topic":"Jscript","name":"Applications","confidence":70}
+{"type":"concept","topic":"Jscript","name":"Windows","confidence":70}
+{"type":"concept","topic":"Jscript","name":"Active","confidence":70}
+{"type":"concept","topic":"Jscript","name":"Scripting","confidence":70}
+{"type":"concept","topic":"Jscript","name":"This","confidence":70}
+{"type":"concept","topic":"Jscript","name":"OLE","confidence":70}
+{"type":"concept","topic":"Jscript","name":"Automation","confidence":70}
+{"type":"concept","topic":"Jscript","name":"Server","confidence":70}
+{"type":"concept","topic":"Jscript","name":"Pages","confidence":70}
+{"type":"fact","topic":"Jscript","text":"JScript is Microsoft's legacy dialect of the ECMAScript standard that is used in Microsoft's Internet Explorer web browser and HTML Applications, and as a standalone Windows scripting language. It is proprietary software.","confidence":68}
+{"type":"fact","topic":"Jscript","text":"JScript is Microsoft's legacy dialect of the ECMAScript standard that is used in Microsoft's Internet Explorer web browser and HTML Applications, and as a standalone Windows scripting language. It is proprietary software. JScript is implemented as an Active Scripting engine. This means that it can be \"plugged in\" to OLE Automation applications that support Active Scripting, such as Internet Explorer, Active Server Pages, and Windows Script Host. It also means such applications can use multiple Active Scripting languages, e.g., JScript, VBScript or PerlScript. JScript was first supported in the Internet Explorer 3.0 browser released in August 1996. Its most recent version is JScript 9.0, included in Internet Explorer 9. JScript 10.0 is a separate dialect, also known as JScript.NET, which adds several new features from the abandoned fourth edition of the ECMAScript standard. It must be compiled for.NET Framework version 2 or version 4, but static type annotations are optional.","confidence":68}
+{"type":"fact","topic":"Jscript","text":"JScript.Encode - JScript.Encode is a method created by Microsoft used to obfuscate both server and Client-side JavaScript or VB Script source code in order to protect the source code from copying.","confidence":68}
+{"type":"fact","topic":"Jscript","text":"Windows Script File - A Windows Script File is a file type used by the Microsoft Windows Script Host. It allows mixing the scripting languages JScript and VBScript within a single file, or other scripting languages such as Perl, Object REXX, Python, or Kixtart if installed by the user.","confidence":68}
+{"type":"fact","topic":"Jscript","text":"Windows Script Host - The Microsoft Windows Script Host is an automation technology for Microsoft Windows operating systems that provides scripting abilities comparable to batch files, but with a wider range of supported features.","confidence":68}
+{"type":"fact","topic":"Jscript","text":"WinJS - The Windows Library for JavaScript is an open-source JavaScript library developed by Microsoft.","confidence":68}
+{"type":"fact","topic":"Jscript","text":"Object-based programming languages","confidence":68}
+{"type":"fact","topic":"Jscript","text":"JavaScript programming language family","confidence":68}
+{"type":"fact","topic":"Jscript","text":"Prototype-based programming languages","confidence":68}
+{"type":"fact","topic":"Jscript","text":"JavaScript dialect engines","confidence":68}

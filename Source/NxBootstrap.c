@@ -1,4 +1,4 @@
-#include "Nexiora/NCP/Logging/NxLog.h"
+﻿#include "Nexiora/NCP/Logging/NxLog.h"
 #include "Nexiora/NCP/Runtime/NxRuntime.h"
 #include "Nexiora/Research/NxAutonomousExecution.h"
 #include "Nexiora/Research/NxResearchDashboard.h"
@@ -6,6 +6,7 @@
 #include "Nexiora/Conversation/NxConversation.h"
 #include "Nexiora/Research/NxTopicInvestigation.h"
 #include "Nexiora/Research/NxKnowledgeStore.h"
+#include "Nexiora/Research/NxLearningCore.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -103,6 +104,60 @@ int main(int argc, char** argv)
         return nx_run_conversation(&runtime);
     }
 
+
+    /* CORE-0001 real learning command */
+    if (argc >= 3 && (strcmp(argv[1], "aprende") == 0 || strcmp(argv[1], "investiga") == 0))
+    {
+        char topic[256];
+        NxLearningCoreResult learning_result;
+        NxLearningCoreStatus learning_status;
+        int i;
+
+        topic[0] = '\0';
+        for (i = 2; i < argc; ++i)
+        {
+            if (i > 2)
+            {
+                (void)strncat(topic, " ", sizeof(topic) - strlen(topic) - 1);
+            }
+            (void)strncat(topic, argv[i], sizeof(topic) - strlen(topic) - 1);
+        }
+
+        learning_status = NxLearningCore_Learn(topic, &learning_result);
+        if (learning_status != NX_LEARNING_CORE_OK && learning_status != NX_LEARNING_CORE_SCRIPT_FAILED)
+        {
+            fprintf(stderr, "Learning failed: %s\n", NxLearningCore_StatusToString(learning_status));
+            nx_runtime_shutdown(&runtime);
+            return 8;
+        }
+
+        nx_runtime_shutdown(&runtime);
+        return 0;
+    }
+
+    /* CORE-0001 memory query command */
+    if (argc >= 4 && strcmp(argv[1], "que") == 0 && strcmp(argv[2], "sabes") == 0)
+    {
+        char topic[256];
+        char answer[8192];
+        NxLearningCoreStatus query_status;
+        int i;
+
+        topic[0] = '\0';
+        for (i = 3; i < argc; ++i)
+        {
+            if (i > 3)
+            {
+                (void)strncat(topic, " ", sizeof(topic) - strlen(topic) - 1);
+            }
+            (void)strncat(topic, argv[i], sizeof(topic) - strlen(topic) - 1);
+        }
+
+        query_status = NxLearningCore_Query(topic, answer, sizeof(answer));
+        printf("%s\n", answer);
+        nx_runtime_shutdown(&runtime);
+        return query_status == NX_LEARNING_CORE_OK ? 0 : 10;
+    }
     if (argc >= 3 && strcmp(argv[1], "research") == 0 && strcmp(argv[2], "run") == 0)
     {
         NxAutonomousExecutionResult run_result;
@@ -247,9 +302,12 @@ int main(int argc, char** argv)
     printf("  nexiora research dashboard    Generate dashboard.html for the latest session\n");
     printf("  nexiora memory seed           Create persistent memory from current research state\n");
     printf("  nexiora memory summary        Show persistent memory summary\n");
+    printf("  nexiora aprende <tema>        Aprende un tema usando conectores reales\n");
+    printf("  nexiora que sabes <tema>      Consulta lo aprendido sobre un tema\n");
     printf("  nexiora investiga <tema>      Ejecutar aprendizaje observable sobre un tema\n");
     printf("  nexiora que sabes <tema>      Consultar memoria aprendida\n");
 
     nx_runtime_shutdown(&runtime);
     return 0;
 }
+

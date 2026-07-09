@@ -1,0 +1,15 @@
+﻿{"type":"topic","name":"C","title":"C","confidence":72}
+{"type":"source","topic":"C","source_type":"wikipedia","title":"C","url":"https://en.wikipedia.org/wiki/C"}
+{"type":"concept","topic":"C","name":"C","confidence":70}
+{"type":"concept","topic":"C","name":"Latin","confidence":70}
+{"type":"concept","topic":"C","name":"English","confidence":70}
+{"type":"concept","topic":"C","name":"European","confidence":70}
+{"type":"concept","topic":"C","name":"Its","confidence":70}
+{"type":"concept","topic":"C","name":"The","confidence":70}
+{"type":"concept","topic":"C","name":"Dennis","confidence":70}
+{"type":"concept","topic":"C","name":"Ritchie","confidence":70}
+{"type":"concept","topic":"C","name":"Carbon","confidence":70}
+{"type":"fact","topic":"C","text":"C is the third letter of the Latin alphabet, used in the modern English alphabet, the alphabets of other western European languages and others worldwide. Its name in English is cee, plural cees.","confidence":68}
+{"type":"fact","topic":"C","text":"C The third letter of the Latin alphabet, used in the modern English alphabet, the alphabets of...","confidence":68}
+{"type":"fact","topic":"C","text":"C (programming language) A general-purpose programming language created in the 1970s by Dennis Ritchie.","confidence":68}
+{"type":"fact","topic":"C","text":"Carbon A chemical element; it has symbol C and atomic number 6.","confidence":68}

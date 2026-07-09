@@ -70,6 +70,7 @@ add_library(NexioraNCP STATIC
     Source/Research/NxPersistentMemory.c
     Source/Research/NxKnowledgeAcquisition.c
     Source/Research/NxKnowledgeStore.c
+    Source/Research/NxLearningCore.c
     Source/Research/NxTopicInvestigation.c
 )
 
@@ -321,3 +322,15 @@ if(NEXIORA_BUILD_TESTS)
     target_link_libraries(NxTopicInvestigationTests PRIVATE NexioraNCP)
     add_test(NAME NxTopicInvestigationTests COMMAND NxTopicInvestigationTests)
 endif()
+# ============================================================
+# CORE-0001 — Real Learning Core
+# ============================================================
+
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxLearningCoreTests
+        Tests/Unit/NxLearningCoreTests.c
+    )
+    target_link_libraries(NxLearningCoreTests PRIVATE NexioraNCP)
+    add_test(NAME NxLearningCoreTests COMMAND NxLearningCoreTests)
+endif()
+

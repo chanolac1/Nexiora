@@ -1,0 +1,17 @@
+﻿[
+    {
+        "type":  "official",
+        "title":  "Documentacion oficial de GeneXus",
+        "url":  "https://docs.genexus.com/"
+    },
+    {
+        "type":  "wikipedia-es",
+        "title":  "Genexus",
+        "url":  "https://es.wikipedia.org/wiki/GeneXus"
+    },
+    {
+        "type":  "duckduckgo",
+        "title":  "GeneXus",
+        "url":  "https://es.wikipedia.org/wiki/GeneXus"
+    }
+]
