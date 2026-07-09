@@ -1,0 +1,30 @@
+================================================
+ NEXIORA - Respuesta desde memoria
+================================================
+
+Tema: Genexus
+Pregunta: Para que sirve una Knowledge Base?
+
+Respuesta:
+- GeneXus es una plataforma low-code orientada a crear, mantener y evolucionar aplicaciones empresariales a partir de una base de conocimiento.
+- En GeneXus, la base de conocimiento describe objetos como transacciones, reglas, procedimientos, paneles, APIs y generadores para producir aplicaciones en distintas plataformas.
+- Para Nexiora, GeneXus es relevante como tema de investigacion por su enfoque de modelado, generacion automatica, bases de conocimiento y productividad empresarial.
+
+Conceptos relacionados:
+- Base de conocimiento
+- Transaccion
+- Reglas
+- Generadores
+- Low-code
+- WorkWithPlus
+- Procedimientos
+- APIs
+
+Fuentes registradas:
+- Documentacion oficial de GeneXus - https://docs.genexus.com/
+- Genexus - https://es.wikipedia.org/wiki/GeneXus
+- GeneXus - https://es.wikipedia.org/wiki/GeneXus
+
+Confianza: 78 %
+
+Nota: Respondo solo con memoria local aprendida. Si falta detalle, ejecuta una nueva investigacion del tema.

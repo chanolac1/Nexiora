@@ -71,6 +71,7 @@ add_library(NexioraNCP STATIC
     Source/Research/NxKnowledgeAcquisition.c
     Source/Research/NxKnowledgeStore.c
     Source/Research/NxLearningCore.c
+    Source/Research/NxTopicQuestion.c
     Source/Research/NxTopicInvestigation.c
 )
 
@@ -334,3 +335,14 @@ if(NEXIORA_BUILD_TESTS)
     add_test(NAME NxLearningCoreTests COMMAND NxLearningCoreTests)
 endif()
 
+
+# ============================================================
+# CORE-0003 — Topic Question Answering
+# ============================================================
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxTopicQuestionTests
+        Tests/Unit/NxTopicQuestionTests.c
+    )
+    target_link_libraries(NxTopicQuestionTests PRIVATE NexioraNCP)
+    add_test(NAME NxTopicQuestionTests COMMAND NxTopicQuestionTests)
+endif()
