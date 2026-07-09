@@ -67,6 +67,7 @@ add_library(NexioraNCP STATIC
     Source/Research/NxConflictDetector.c
     Source/Conversation/NxConversation.c
     Source/Research/NxPersistentMemory.c
+    Source/Research/NxKnowledgeAcquisition.c
 )
 
 target_include_directories(NexioraNCP PUBLIC
@@ -262,3 +263,19 @@ endif()
 
 
 
+
+# ============================================================
+# EPIC-0009 — Knowledge Acquisition Engine
+# ============================================================
+
+add_executable(nexiora_acquire
+    Tools/Knowledge/NxKnowledgeAcquireTool.c
+)
+target_link_libraries(nexiora_acquire PRIVATE NexioraNCP)
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxKnowledgeAcquisitionTests
+        Tests/Unit/NxKnowledgeAcquisitionTests.c
+    )
+    target_link_libraries(NxKnowledgeAcquisitionTests PRIVATE NexioraNCP)
+    add_test(NAME NxKnowledgeAcquisitionTests COMMAND NxKnowledgeAcquisitionTests)
+endif()

@@ -1,0 +1,20 @@
+{
+  "topic": "SQLite",
+  "kind": "software",
+  "estimated_minutes": 25,
+  "expected_confidence": 84,
+  "sources": [
+    {"type": "documentacion oficial", "name": "Documentacion oficial", "trust": 92, "priority": 1},
+    {"type": "repositorio GitHub", "name": "Repositorio oficial", "trust": 86, "priority": 2},
+    {"type": "paper", "name": "Papers y publicaciones tecnicas", "trust": 82, "priority": 3},
+    {"type": "articulo tecnico", "name": "Articulos tecnicos", "trust": 68, "priority": 4}
+  ],
+  "steps": [
+    "Definir el objetivo y las preguntas que debe responder la investigacion.",
+    "Reunir fuentes candidatas y priorizarlas por confiabilidad.",
+    "Extraer conceptos, decisiones de diseño, restricciones y riesgos.",
+    "Buscar contradicciones entre fuentes y marcar confianza baja si existen.",
+    "Relacionar lo aprendido con Nexiora y su BOOK.",
+    "Generar reporte, conocimiento persistente e hipotesis de seguimiento."
+  ]
+}
