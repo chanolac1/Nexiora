@@ -658,16 +658,37 @@ if(NEXIORA_BUILD_TESTS)
     add_test(NAME NxPackageManagerTests COMMAND NxPackageManagerTests)
 endif()
 
-# DOCS-002 - Documentation Manager
+# ============================================================
+# DOCS-002-REPAIR — Documentation Manager build integration
+# ============================================================
+
 target_sources(NexioraNCP PRIVATE
     Source/NCOS/NxDocumentationManager.c
 )
 
-add_executable(nexiora_docs Tools/NCOS/NxDocumentationTool.c)
+add_executable(nexiora_docs
+    Tools/NCOS/NxDocumentationTool.c
+)
 target_link_libraries(nexiora_docs PRIVATE NexioraNCP)
+set_target_properties(nexiora_docs PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
+)
 
-if(BUILD_TESTING)
-    add_executable(NxDocumentationManagerTests Tests/Unit/NxDocumentationManagerTests.c)
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxDocumentationManagerTests
+        Tests/Unit/NxDocumentationManagerTests.c
+    )
     target_link_libraries(NxDocumentationManagerTests PRIVATE NexioraNCP)
     add_test(NAME NxDocumentationManagerTests COMMAND NxDocumentationManagerTests)
+    set_tests_properties(NxDocumentationManagerTests PROPERTIES
+        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+    )
+
+    add_test(
+        NAME NxDocumentationCliValidation
+        COMMAND $<TARGET_FILE:nexiora_docs> validate ${CMAKE_CURRENT_SOURCE_DIR}
+    )
+    set_tests_properties(NxDocumentationCliValidation PROPERTIES
+        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+    )
 endif()

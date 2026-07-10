@@ -657,17 +657,16 @@ if(NEXIORA_BUILD_TESTS)
     target_link_libraries(NxPackageManagerTests PRIVATE NexioraNCP)
     add_test(NAME NxPackageManagerTests COMMAND NxPackageManagerTests)
 endif()
-
-# DOCS-002 - Documentation Manager
+# DOCS-001 — Documentation Governance Engine
 target_sources(NexioraNCP PRIVATE
-    Source/NCOS/NxDocumentationManager.c
+    Source/NCOS/NxDocumentationGovernance.c
 )
 
 add_executable(nexiora_docs Tools/NCOS/NxDocumentationTool.c)
 target_link_libraries(nexiora_docs PRIVATE NexioraNCP)
 
-if(BUILD_TESTING)
-    add_executable(NxDocumentationManagerTests Tests/Unit/NxDocumentationManagerTests.c)
-    target_link_libraries(NxDocumentationManagerTests PRIVATE NexioraNCP)
-    add_test(NAME NxDocumentationManagerTests COMMAND NxDocumentationManagerTests)
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxDocumentationGovernanceTests Tests/Unit/NxDocumentationGovernanceTests.c)
+    target_link_libraries(NxDocumentationGovernanceTests PRIVATE NexioraNCP)
+    add_test(NAME NxDocumentationGovernanceTests COMMAND NxDocumentationGovernanceTests)
 endif()

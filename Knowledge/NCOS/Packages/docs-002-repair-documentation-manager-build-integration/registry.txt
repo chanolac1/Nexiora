@@ -1,0 +1,7 @@
+id=docs-002-repair-documentation-manager-build-integration
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/docs-002-repair-documentation-manager-build-integration/transaction.log
+files_installed=2
+files_skipped=0
+files_rolled_back=0

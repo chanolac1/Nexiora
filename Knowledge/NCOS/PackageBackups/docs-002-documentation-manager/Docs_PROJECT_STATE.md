@@ -307,23 +307,13 @@ Auto aprendizaje
 Nunca disminuir la calidad del proyecto.
 
 Cada Sprint debe dejar el proyecto mejor de lo que estaba antes.
----
 
-# Documentation Manager
+<!-- NEXIORA:SPRINT_HISTORY:BEGIN -->
+<!-- Las finalizaciones automáticas se agregan debajo. -->
+<!-- NEXIORA:SPRINT_HISTORY:END -->
 
-Estado:
+## Gobierno documental
 
-✔ Implementado como capacidad DOCS-002
+Estado: Preparado para instalación mediante DOCS-001-REPAIR.
 
-Responsabilidades:
-
-- actualización transaccional de PROJECT_STATE.md, CHANGELOG.md y DECISIONS.md;
-- validación de los nueve documentos rectores;
-- comprobación de referencias entre documentación y código;
-- rechazo de cierres documentales inconsistentes;
-- ejecución automática por los procesos de entrega de Nexiora.
-
-<!-- NX-CODE: Include/Nexiora/NCOS/NxDocumentationManager.h -->
-<!-- NX-CODE: Source/NCOS/NxDocumentationManager.c -->
-<!-- NX-CODE: Tools/NCOS/NxDocumentationTool.c -->
-<!-- NX-CODE: Tests/Unit/NxDocumentationManagerTests.c -->
+Política operativa: Nexiora actualizará la documentación durante la construcción de cada Sprint y la distribuirá dentro del paquete transaccional. El usuario no realizará mantenimiento documental manual.

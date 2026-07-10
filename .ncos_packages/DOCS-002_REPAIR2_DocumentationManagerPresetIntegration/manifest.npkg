@@ -1,0 +1,4 @@
+id=DOCS-002-REPAIR2 Documentation Manager Preset Integration
+version=1.0.0
+requires=DOCS-002-REPAIR Documentation Manager Build Integration
+file=Payload/Docs/NCOS/DOCS-002_REPAIR2_QUE_LOGRAMOS.md=>Docs/NCOS/DOCS-002_REPAIR2_QUE_LOGRAMOS.md

@@ -1,0 +1,9 @@
+sprint_id=DOCS-002
+sprint_name=Documentation Manager
+completion_date=2026-07-10
+next_sprint_id=Sprint 20
+next_sprint_name=Self Validation Engine
+capabilities=Gestión documental autónoma, transaccional y verificable.
+decision_id=ADR-0002
+decision_title=Documentación como contrato transaccional de entrega
+decision_body=Nexiora actualiza y valida su documentación como parte indivisible de cada entrega.
