@@ -1,0 +1,8 @@
+id=CAPABILITY-01 Sprint-01 Repair5 Direct Cognitive Integration
+version=1.0.0
+requires=CAPABILITY-01 Sprint-01 Repair4 Optional JS Runtime
+file=Payload/Include/Nexiora/CognitivePipeline/NxWebCognitivePipeline.h=>Include/Nexiora/CognitivePipeline/NxWebCognitivePipeline.h
+file=Payload/Source/CognitivePipeline/NxWebCognitivePipeline.c=>Source/CognitivePipeline/NxWebCognitivePipeline.c
+file=Payload/Tools/CognitivePipeline/NxWebCognitivePipelineTool.c=>Tools/CognitivePipeline/NxWebCognitivePipelineTool.c
+file=Payload/Tests/Unit/NxWebCognitivePipelineTests.c=>Tests/Unit/NxWebCognitivePipelineTests.c
+file=Payload/Docs/NCOS/CAPABILITY-01_SPRINT-01_REPAIR5_QUE_LOGRAMOS.md=>Docs/NCOS/CAPABILITY-01_SPRINT-01_REPAIR5_QUE_LOGRAMOS.md

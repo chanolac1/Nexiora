@@ -1,0 +1,7 @@
+id=ui-001-repair1-win32-entry-point
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/ui-001-repair1-win32-entry-point/transaction.log
+files_installed=2
+files_skipped=0
+files_rolled_back=0

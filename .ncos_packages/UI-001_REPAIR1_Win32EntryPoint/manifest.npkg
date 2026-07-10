@@ -1,0 +1,5 @@
+id=UI-001 Repair1 Win32 Entry Point
+version=1.0.0
+requires=UI-001 Nexiora Control Center
+file=Payload/Apps/ControlCenter/CMakeLists.txt=>Apps/ControlCenter/CMakeLists.txt
+file=Payload/Docs/NCOS/UI-001_REPAIR1_QUE_LOGRAMOS.md=>Docs/NCOS/UI-001_REPAIR1_QUE_LOGRAMOS.md

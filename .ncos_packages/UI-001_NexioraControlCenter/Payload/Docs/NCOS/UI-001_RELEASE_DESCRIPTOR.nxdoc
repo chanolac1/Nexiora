@@ -1,0 +1,9 @@
+sprint_id=UI-001
+sprint_name=Nexiora Control Center
+completion_date=2026-07-10
+next_sprint_id=CAPABILITY-01 Sprint-02
+next_sprint_name=Web Metadata Transcript Confidence and Source Policies
+capabilities=Interfaz nativa de Windows, navegación por capacidades, ejecución asíncrona, progreso observable y consola integrada.
+decision_id=ADR-UI-001
+decision_title=Native Windows Control Center
+decision_body=Nexiora incorpora una interfaz Win32 nativa que orquesta las herramientas existentes sin eliminar las interfaces CLI ni instalar frameworks gráficos externos.

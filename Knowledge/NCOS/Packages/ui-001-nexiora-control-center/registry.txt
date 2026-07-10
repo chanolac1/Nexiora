@@ -1,0 +1,7 @@
+id=ui-001-nexiora-control-center
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/ui-001-nexiora-control-center/transaction.log
+files_installed=8
+files_skipped=0
+files_rolled_back=0

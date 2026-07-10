@@ -1,0 +1,6 @@
+id=CAPABILITY-01 Sprint-01 Repair8 Compile Correction
+version=1.0.0
+requires=CAPABILITY-01 Sprint-01 Repair7 Subtitle Only Acquisition
+file=Payload/Source/CognitivePipeline/NxWebCognitivePipeline.c=>Source/CognitivePipeline/NxWebCognitivePipeline.c
+file=Payload/Tests/Unit/NxWebCognitivePipelineTests.c=>Tests/Unit/NxWebCognitivePipelineTests.c
+file=Payload/Docs/NCOS/CAPABILITY-01_SPRINT-01_REPAIR8_QUE_LOGRAMOS.md=>Docs/NCOS/CAPABILITY-01_SPRINT-01_REPAIR8_QUE_LOGRAMOS.md

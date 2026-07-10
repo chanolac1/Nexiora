@@ -1,0 +1,11 @@
+id=UI-001 Nexiora Control Center
+version=1.0.0
+requires=TOOL-001 Repair2 Observable Progress
+file=Payload/Apps/ControlCenter/NxControlCenterModel.h=>Apps/ControlCenter/NxControlCenterModel.h
+file=Payload/Apps/ControlCenter/NxControlCenterModel.c=>Apps/ControlCenter/NxControlCenterModel.c
+file=Payload/Apps/ControlCenter/NxControlCenterWin.c=>Apps/ControlCenter/NxControlCenterWin.c
+file=Payload/Apps/ControlCenter/NxControlCenterTests.c=>Apps/ControlCenter/NxControlCenterTests.c
+file=Payload/Apps/ControlCenter/CMakeLists.txt=>Apps/ControlCenter/CMakeLists.txt
+file=Payload/Docs/NEXIORA_CONTROL_CENTER.md=>Docs/NEXIORA_CONTROL_CENTER.md
+file=Payload/Docs/NCOS/UI-001_QUE_LOGRAMOS.md=>Docs/NCOS/UI-001_QUE_LOGRAMOS.md
+file=Payload/Docs/NCOS/UI-001_RELEASE_DESCRIPTOR.nxdoc=>Docs/NCOS/UI-001_RELEASE_DESCRIPTOR.nxdoc

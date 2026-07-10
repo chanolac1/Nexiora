@@ -1,0 +1,8 @@
+id=CAPABILITY-01 Sprint-01 Repair1 YouTube Runtime Resilience
+version=1.0.0
+requires=TOOL-001 Repair2 Observable Progress
+file=Payload/Source/CognitivePipeline/NxWebCognitivePipeline.c=>Source/CognitivePipeline/NxWebCognitivePipeline.c
+file=Payload/Config/Tools/catalog.psd1=>Config/Tools/catalog.psd1
+file=Payload/Tools/ToolManager/install_tool.ps1=>Tools/ToolManager/install_tool.ps1
+file=Payload/Tests/Unit/NxWebCognitivePipelineTests.c=>Tests/Unit/NxWebCognitivePipelineTests.c
+file=Payload/Docs/NCOS/CAPABILITY-01_SPRINT-01_REPAIR1_QUE_LOGRAMOS.md=>Docs/NCOS/CAPABILITY-01_SPRINT-01_REPAIR1_QUE_LOGRAMOS.md

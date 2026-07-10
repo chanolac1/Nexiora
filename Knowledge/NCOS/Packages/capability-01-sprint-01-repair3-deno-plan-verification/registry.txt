@@ -1,0 +1,7 @@
+id=capability-01-sprint-01-repair3-deno-plan-verification
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/capability-01-sprint-01-repair3-deno-plan-verification/transaction.log
+files_installed=2
+files_skipped=3
+files_rolled_back=0

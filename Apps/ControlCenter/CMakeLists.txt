@@ -1,0 +1,42 @@
+cmake_minimum_required(VERSION 3.25)
+project(NexioraControlCenter LANGUAGES C)
+
+set(CMAKE_C_STANDARD 23)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+set(CMAKE_C_EXTENSIONS OFF)
+
+if(NOT WIN32)
+    message(FATAL_ERROR "Nexiora Control Center requires Windows")
+endif()
+
+if(NOT DEFINED NEXIORA_OUTPUT_DIR OR NEXIORA_OUTPUT_DIR STREQUAL "")
+    message(FATAL_ERROR "NEXIORA_OUTPUT_DIR must be an absolute output directory")
+endif()
+
+if(NOT IS_ABSOLUTE "${NEXIORA_OUTPUT_DIR}")
+    message(FATAL_ERROR "NEXIORA_OUTPUT_DIR must be absolute: ${NEXIORA_OUTPUT_DIR}")
+endif()
+
+add_library(NxControlCenterModel STATIC NxControlCenterModel.c)
+target_include_directories(NxControlCenterModel PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_compile_options(NxControlCenterModel PRIVATE -Wall -Wextra -Wpedantic -Werror)
+
+add_executable(nexiora_control_center WIN32 NxControlCenterWin.c)
+target_link_libraries(nexiora_control_center PRIVATE NxControlCenterModel user32 comctl32 shell32)
+target_compile_options(nexiora_control_center PRIVATE -Wall -Wextra -Wpedantic -Werror)
+if(MINGW)
+    target_link_options(nexiora_control_center PRIVATE -municode)
+endif()
+set_target_properties(nexiora_control_center PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY "${NEXIORA_OUTPUT_DIR}"
+)
+
+add_executable(NxControlCenterTests NxControlCenterTests.c)
+target_link_libraries(NxControlCenterTests PRIVATE NxControlCenterModel)
+target_compile_options(NxControlCenterTests PRIVATE -Wall -Wextra -Wpedantic -Werror)
+set_target_properties(NxControlCenterTests PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY "${NEXIORA_OUTPUT_DIR}"
+)
+
+enable_testing()
+add_test(NAME NxControlCenterTests COMMAND "$<TARGET_FILE:NxControlCenterTests>")

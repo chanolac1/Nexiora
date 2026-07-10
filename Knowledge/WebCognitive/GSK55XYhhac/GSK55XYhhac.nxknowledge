@@ -1,0 +1,378 @@
+nxknowledge/1
+source_type=web-video
+source_url=https://www.youtube.com/watch?v=GSK55XYhhac&list=PLKWXsy_1oMoKoHLNw9Sx13Jrp4A_sRNdi
+title=GSK55XYhhac
+content_begin
+Kind: captions
+Language: es
+Hola hola Bienvenidos en este primer
+video queremos contarles cómo va a ser
+el desarrollo de este curso en los
+siguientes módulos Cuáles van a ser los
+objetivos Qué herramientas vamos a ir
+viendo y cuál va a ser el resultado
+final después de todo este
+trayecto empecemos por presentarnos como
+se habrán dado cuenta tenemos Elmo
+nombre así que para diferenciarnos a lo
+largo del curso nos vamos a llamar
+Cecilia chechu la diseñadora que soy yo
+y Cecilia ce la
+fronten que soy
+yo bien Yo soy chechu y durante muchos
+años estudié diseño gráfico pero siempre
+me interesó mucho la tecnología y el
+diseño en tecnología hace un par de años
+empecé a trabajar en genexus y me fui
+especializando en Cómo incluir diseño y
+las diferentes formas de incluir diseño
+dentro de nuestra
+plataforma les presento ahora a mi doble
+que es cei que no está especializada
+específicamente en nada Pero sí es una
+gran desarrolladora genexus y de eso nos
+va a hablar Bueno ya ahora me tira
+flores pero antes dijo no está
+especializada en nada este bueno es
+verdad en realidad yo tengo un perfil
+más e sí de desarrollo en genexus eh más
+amplio digamos y e por por lo tanto Está
+bueno eso porque tuve que aprender un
+montón de cuestiones que van a ser
+justamente las cuestiones centrales que
+vamos a estar viendo en este curso que
+están volcadas hacia
+el Cómo llevar un diseño visual y de
+interacciones a Gen Nexus para que para
+obtener una aplicación que luzca y se
+comporte como se espera bien pero a
+pesar de que nos vamos a estar enfocando
+en ese rol en el rol del de velop per
+genexus que es el rol de ci es necesario
+que entendamos Que el frontend está en
+el área gris entre diseño y desarrollo y
+que necesitamos como Front Ender conocer
+el modelo mental del diseñador cuáles
+son sus herramientas para expresar
+determinadas decisiones Cómo toma
+determinadas decisiones y sobre todo su
+herramienta de trabajo que en este caso
+va a ser
+figma Entonces lo vamos a ir explicando
+a partir de forma práctica a través de
+un eh ejemplo que va a ser una
+aplicación facing que se va a llamar
+Travel agency es de una agencia de
+viajes bien
+y a ese respecto en realidad la
+aplicación puede tener puede ser de dos
+tipos o podemos Construir la aplicación
+de
+backoffice o también tenemos la
+aplicación customer facing que es la
+aplicación para el cliente
+final pensando en la de backoffice acá
+por ejemplo estamos viendo tres transac
+las tres transacciones con las que vamos
+a trabajar que tienen aplicadas el
+pattern work with el trabajar con
+entonces acá estamos viendo por ejemplo
+el trabajar con las atracciones
+turísticas e vemos que la información
+está estructurada acá vemos el trabajar
+con las categorías de las atracciones
+turísticas y los
+países vemos que tenemos las acciones de
+inserción actualización eliminación para
+las tres acá particularmente incluso
+podemos visualizar la información de una
+atracción turística reparemos en esa
+foto que estamos ahí de una de las
+atracciones turísticas ese rating que
+aparece ahí ese título porque ahora lo
+vamos a ver en segunditos esta
+información eh También podemos ver esta
+estas otras estas fotos también
+relacionadas con esa atracción
+turística y bueno por qué todo esto acá
+vemos las fotos en general de todas las
+atracciones turísticas Bueno Este esta
+aplicación entonces la de backoffice
+estructura está centralizada en el
+manejo de los datos de un modo muy
+estructurado y por otro lado tenemos la
+aplicación que es la aplicación que va
+dirigida al cliente final acá estamos
+viendo la página home eh de esta
+aplicación acá podemos ver las
+atracciones turísticas y ahí o
+casualidad estamos viendo las mismas
+fotos de las atracciones turísticas que
+veíamos eh hace instantes en la de bac
+Office acá por ejemplo este rating de
+esta atracción turística
+y si sigo
+adelante vemos que cliqueando ahí
+estamos viendo esa información que
+también es la que acabábamos de ver acá
+un formulario de contacto donde el
+usuario va a ingresar eh
+información bueno Y entonces tendríamos
+esas esos dos tipos de aplicaciones como
+decíamos la de backoffice está eh
+focalizada en el manejo de los datos y
+la de la customer facing para el cliente
+final el manejo de datos es mucho más
+pobre pero el foco eh donde se tiene que
+destacar es en la experiencia de usuario
+sin embargo hoy en día la experiencia de
+usuario es un mast que deben cumplir
+todas las aplicaciones no solo las
+dirigidas al cliente final también las
+de backoffice y ese va a ser el tema
+central de nuestro curso sí como lograr
+una buena Cómo diseñar una buena
+experiencia de usuario o más bien a
+partir de un buen diseño de una
+experiencia de usuario Cómo llevar eso
+genexus Entonces
+e el proceso para llegar a un buen
+diseño de experiencia de usuario es una
+tarea del diseñador en este caso de
+chechu y no va a ser abordada en este
+curso más que tangencialmente lo que
+vamos a ver es el resultado de esa etapa
+eh en otro video de de otro curso yo
+había había expresado todo esto de esta
+manera vamos a verlo a ver qué es lo que
+decía es que el desarrollo de una
+aplicación no comienza con el desarrollo
+propiamente dicho comienza después de
+una etapa importantísima previa que es
+el diseño de la experiencia de usuario
+Allí se se organiza primero la
+estructura conceptual de la aplicación
+como un todo para obtener un producto
+que cumpla con las expectativas tanto
+del usuario como del negocio que
+comunique lo que tiene que comunicar y
+de la manera más efectiva y económica
+posible esto incluye tanto el diseño de
+la interfaz como de la navegación como
+de la
+información el diseño visual que vemos
+en el producto terminado está construido
+sobre este esqueleto
+organizativo aquí no entraremos en los
+detalles de esta importantísima tarea
+pero podemos apreciar que lo que
+terminaremos viendo es el resultado de
+los cimientos de estas etapas anteriores
+cada una base de la
+siguiente recién teniendo como resultado
+la etapa de la superficie tendremos el
+diseño visual como para empezar ahora sí
+el desarrollo concreto como decía cei
+recién esta eh etapa o estas etapas
+previas al diseño visual o el diseño de
+interacción son competenci del diseñador
+pero también de otros agentes Sí porque
+es necesario un profundo análisis del
+mercado de lo que quiero comunicar de
+las necesidades que tengo y también
+sobre todo de los usuarios que van a
+estar interactuando con ese producto a
+partir de toda esa etapa de
+investigación Es que yo como diseñador
+empiezo a tomar decisiones y las empiezo
+a plasmar en el diseño que después va a
+quedar impactado en el
+desarrollo luego de todas estas etapas
+eh En las cuales no vamos a andar ahora
+en el en el
+en el curso yo tengo la información
+suficiente como para ponerme a diseñar
+en mi herramienta de trabajo que como
+había comentado anteriormente va a ser
+figma después en otros videos vamos a
+abar un poco más en esa herramienta pero
+una vez que termino el diseño visual y
+el diseño de las pantallas y de
+interacción estoy en condiciones yo como
+diseñadora de pasarle a Cesi como
+frender el archivo para que ella de ahí
+empiece a tomar determinados elementos y
+empiece a ver cómo los empieza a machar
+en genexus con los jugadores que tiene
+del otro lado por lo tanto vamos a decir
+que es fundamental para el rol del
+frontend que conozca el modelo mental
+del diseñador y además sus herramientas
+dónde expresa las decisiones cómo las
+toma qué conversaciones tengo que tener
+qué acuerdos tengo que tener qué
+discusiones tengo que tener para poder
+generar el mejor producto posible a
+partir de Ese diseño Y de esa
+investigación de experiencia de usuario
+discusiones vamos a tener varias vamos a
+adelantar discusiones vamos a tener
+varias y las van a escuchar porque vamos
+a ir La idea es que en este curso y
+módulo a módulo ustedes puedan ir
+también se puede ir permeando lo que es
+la el vínculo entre un diseñador y un
+frontend porque realmente nosotros tanto
+para hacer el curso como para trabajar
+Nos tenemos que sentar un montón de
+veces a discutir o a preguntarnos
+directamente Che esto acá por qué lo
+pusiste Qué quiere decir de dónde sale
+eh es la la única forma de que sea
+eficiente nuestro desarrollo y que nos
+quede un producto más solvente ahí está
+y aparte es parte de lo que queremos
+Mostrar justamente que no es que termina
+la la tarea de uno y le pasa el paquete
+al otro y el otro sigue y que haga lo
+que pueda sino que es una tarea que va a
+requerir de múltiples conversaciones ías
+y vueltas de estar como en una
+interacción continua no Y eso se va se
+va a notar en los videos del curso Sí de
+hecho nosotros decimos siempre que como
+diseñadores nuestro trabajo No termina
+cuando le paso el archivo al frontend
+sino que termina cuando ese producto
+está liberado Y sale al mundo real eh
+deberíamos como diseñadores estar
+involucrados durante todo el proceso
+justamente para ir afinando
+determinados procesos o determinadas
+cuestiones para hacerlo más eficiente y
+sobre todo más sostenible y mantenible
+al futuro que es como el objetivo y
+también un poco eh el Core de genexus no
+de tener un producto que yo lo pueda
+actualizar fácil y que lo pueda hacer
+crecer Si necesito bueno para hacer todo
+eso necesito hacer todo esto antes
+Exactamente Bueno y entonces vamos a ver
+el scope el alcance de lo que va a ser
+este curso la intención va a ser
+entonces adquirir un poco todo el
+conocimiento necesario para poder
+implementar en genexus la aplicación
+customer facing de Travel agency que nos
+va a diseñar
+chechu la va a diseñar en en principio
+para tamaño desktop
+eh la aplicación web en modo light luego
+vamos a tener también la aplicación
+también para tamaño desktop en modo Dark
+y por otra parte también chechu haciendo
+todo su trabajo completo también nos va
+a haber diseñado la aplicación para
+tamaño tablet tanto web como nativa la
+aplicación como para tamaño phone como
+por algo hay que empezar y no vamos a
+empezar no vamos a hacer todo a la vez
+bueno en general uno elige cuál de estas
+Este variaciones va a ser la que en la
+que se va a centrar al principio del
+desarrollo en general eso también
+depende de lo que el cliente requiera
+primero en nuestro caso lo que vamos a
+hacer es empezar por la aplicación web
+tamaño desktop y la vamos a implementar
+para angular entonces buena parte del
+desarrollo del curso toda la primera
+parte va a ser centrada en eso y después
+vamos a ir haciendo intervenir las los
+otros el modo Dark y también los otros
+tamaños de pantalla y así como la
+variación de plataforma entre web y
+nativa esperemos llegar a eso al final
+del curso no quiero prometer nada porque
+no sé si nos darán los tiempos pero
+bueno Vamos a intentarlo nos va a dar
+nos va a dar bien eh antes de de ir
+cerrando este esta introducción que
+queríamos hacerles sobre el curso a mí
+me parecía importante comentarles que
+dentro de genexus contamos con varias
+estrategias para colocar diseño a un
+producto que estamos generando nosotros
+vamos a enfocarnos en la implementación
+manual ahora vamos a ver por qué nos
+vamos a enfocar en la implementación
+manual pero existen otras formas por
+ejemplo los aceleradores a partir de
+design systems como puede ser un ánimo
+de genus o los generados por los
+partners de la comunidad Tenemos también
+la herramienta import from design que
+generalmente lo usamos con figma o con
+sketch a partir de Un diseño generado
+con determinadas eh convenciones lo
+puedo importar directamente en genexus y
+después puedo utilizar esos elementos eh
+Y también tenemos algunos aceleradores
+con Inteligencia artificial del proceso
+de diseño para trabajar justamente en
+genexus sobre todo esto hay una charla
+que se dio en el marco del evento del
+gx30 que se las vamos a compartir porque
+es muy interesante y me parece que eh si
+nos interesa este mundo tenemos que
+conocer todo las herramientas que
+tenemos a disposición para poder empezar
+a elegir con cuál me siento más cómodo O
+cuál aplica en cada uno de los casos no
+siempre puedo usarlas todas pero es
+importante conocer el abanico de
+opciones que tengo ahora por qué
+elegimos hacer este curso con
+eh sobre la implementación manual porque
+cualquiera de las otras estrategias en
+un punto va a necesitar que yo
+implemente manualmente ya sea que
+importe ya sea que use un dco ya sea que
+use un plugin de figma como acelerador
+en algún momento yo me voy a terminar
+desvinculando esos aceleradores y voy a
+tener que ir a genexus y voy a tener que
+trabajar con los objetos genexus
+Entonces qué mejor manera que aprender a
+resolver problemas de los aceleradores
+que implementando manualmente por eso el
+el centro de este de este curso y y nos
+esforzamos un montón en trabajar
+justamente bien eh granulado e
+los elementos dentro de genexus para que
+después ustedes sea la estrategia que
+sea que elijan puedan resolver los
+problemas que les vayan surgiendo en el
+camino Ahí está para eso por lo menos
+hay que haber implementado una vez el
+sistema con eso ya tenemos un muy buen
+camino
+andado entonces a modo resumen de esta
+pequeña introducción del curso les
+queremos contar que en los siguientes
+vos lo que van a ir haciendo es ir
+conmigo viendo el diseño en figma y con
+cei viendo Cómo traduce Ese diseño a Gen
+Nexus para generar un producto digital
+dentro de Gen Nexus que tenga en cuenta
+toda la etapa de análisis de experiencia
+de usuario todas las decisiones que tomó
+el diseñador en su herramienta y también
+Cómo puedo efectivizar y economizar Ese
+diseño para que me quede un producto
+digital eficiente Bueno y con esto dicho
+esto ya estaríamos no esperamos que nos
+acompañen y que les sea útil el curso y
+cualquier cosa nos escriben Gracias chao
+chao
+content_end

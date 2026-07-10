@@ -1,0 +1,7 @@
+id=capability-01-sprint-01-repair5-direct-cognitive-integration
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/capability-01-sprint-01-repair5-direct-cognitive-integration/transaction.log
+files_installed=4
+files_skipped=1
+files_rolled_back=0

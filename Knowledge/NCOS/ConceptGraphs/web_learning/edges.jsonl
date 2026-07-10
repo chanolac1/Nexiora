@@ -1,0 +1,11 @@
+{"domain":"web_learning","from":"aplicaci","relation":"co_occurs_with","to":"dise","source":"D:\Nexiora/Knowledge/WebCognitive/GSK55XYhhac/GSK55XYhhac.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"dise","relation":"co_occurs_with","to":"vamos","source":"D:\Nexiora/Knowledge/WebCognitive/GSK55XYhhac/GSK55XYhhac.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"vamos","relation":"co_occurs_with","to":"viendo","source":"D:\Nexiora/Knowledge/WebCognitive/GSK55XYhhac/GSK55XYhhac.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"viendo","relation":"co_occurs_with","to":"atracciones","source":"D:\Nexiora/Knowledge/WebCognitive/GSK55XYhhac/GSK55XYhhac.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"atracciones","relation":"co_occurs_with","to":"bueno","source":"D:\Nexiora/Knowledge/WebCognitive/GSK55XYhhac/GSK55XYhhac.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"bueno","relation":"co_occurs_with","to":"estamos","source":"D:\Nexiora/Knowledge/WebCognitive/GSK55XYhhac/GSK55XYhhac.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"estamos","relation":"co_occurs_with","to":"sticas","source":"D:\Nexiora/Knowledge/WebCognitive/GSK55XYhhac/GSK55XYhhac.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"sticas","relation":"co_occurs_with","to":"backoffice","source":"D:\Nexiora/Knowledge/WebCognitive/GSK55XYhhac/GSK55XYhhac.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"backoffice","relation":"co_occurs_with","to":"final","source":"D:\Nexiora/Knowledge/WebCognitive/GSK55XYhhac/GSK55XYhhac.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"final","relation":"co_occurs_with","to":"informaci","source":"D:\Nexiora/Knowledge/WebCognitive/GSK55XYhhac/GSK55XYhhac.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"informaci","relation":"co_occurs_with","to":"tambi","source":"D:\Nexiora/Knowledge/WebCognitive/GSK55XYhhac/GSK55XYhhac.nxknowledge","confidence":60}

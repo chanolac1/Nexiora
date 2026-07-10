@@ -1,0 +1,7 @@
+id=capability-01-sprint-01-repair7-subtitle-only-acquisition
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/capability-01-sprint-01-repair7-subtitle-only-acquisition/transaction.log
+files_installed=3
+files_skipped=0
+files_rolled_back=0
