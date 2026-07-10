@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.25)
+﻿cmake_minimum_required(VERSION 3.25)
 
 project(Nexiora
     VERSION 0.1.0
@@ -617,6 +617,7 @@ endif()
 # NCOS-014 Approved Patch Apply Engine
 target_sources(NexioraNCP PRIVATE
     Source/NCOS/NxApprovedPatchApplyEngine.c
+    Source/NCOS/NxPatchVerificationGate.c
 )
 
 add_executable(nexiora_apply_approved_patch Tools/nexiora_apply_approved_patch.c)
@@ -627,3 +628,14 @@ if(NEXIORA_BUILD_TESTS)
     target_link_libraries(NxApprovedPatchApplyEngineTests PRIVATE NexioraNCP)
     add_test(NAME NxApprovedPatchApplyEngineTests COMMAND NxApprovedPatchApplyEngineTests)
 endif()
+
+add_executable(nexiora_patch_verify
+    Tools/nexiora_patch_verify.c
+)
+target_link_libraries(nexiora_patch_verify PRIVATE NexioraNCP)
+
+add_executable(NxPatchVerificationGateTests
+    Tests/Unit/NxPatchVerificationGateTests.c
+)
+target_link_libraries(NxPatchVerificationGateTests PRIVATE NexioraNCP)
+add_test(NAME NxPatchVerificationGateTests COMMAND NxPatchVerificationGateTests)
