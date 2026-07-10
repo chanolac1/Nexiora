@@ -1,0 +1,18 @@
+id=DOCS-001 Documentation Governance
+version=1.0.0
+requires=NCOS-020 Package History Recovery
+file=Payload/CMakeLists.txt=>CMakeLists.txt
+file=Payload/Include/Nexiora/NCOS/NxDocumentationGovernance.h=>Include/Nexiora/NCOS/NxDocumentationGovernance.h
+file=Payload/Source/NCOS/NxDocumentationGovernance.c=>Source/NCOS/NxDocumentationGovernance.c
+file=Payload/Tools/NCOS/NxDocumentationTool.c=>Tools/NCOS/NxDocumentationTool.c
+file=Payload/Tests/Unit/NxDocumentationGovernanceTests.c=>Tests/Unit/NxDocumentationGovernanceTests.c
+file=Payload/Docs/MASTER_CONTEXT.md=>Docs/MASTER_CONTEXT.md
+file=Payload/Docs/PROJECT_STATE.md=>Docs/PROJECT_STATE.md
+file=Payload/Docs/ROADMAP.md=>Docs/ROADMAP.md
+file=Payload/Docs/CHANGELOG.md=>Docs/CHANGELOG.md
+file=Payload/Docs/DECISIONS.md=>Docs/DECISIONS.md
+file=Payload/Docs/ARCHITECTURE.md=>Docs/ARCHITECTURE.md
+file=Payload/Docs/CODING_STANDARD.md=>Docs/CODING_STANDARD.md
+file=Payload/Docs/TESTING_STANDARD.md=>Docs/TESTING_STANDARD.md
+file=Payload/Docs/PACKAGE_STANDARD.md=>Docs/PACKAGE_STANDARD.md
+file=Payload/Docs/NCOS/DOCS-001_QUE_LOGRAMOS.md=>Docs/NCOS/DOCS-001_QUE_LOGRAMOS.md

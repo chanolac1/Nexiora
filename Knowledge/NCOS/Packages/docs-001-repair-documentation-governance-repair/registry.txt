@@ -1,0 +1,7 @@
+id=docs-001-repair-documentation-governance-repair
+version=1.0.1
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/docs-001-repair-documentation-governance-repair/transaction.log
+files_installed=0
+files_skipped=15
+files_rolled_back=0

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.25)
+﻿cmake_minimum_required(VERSION 3.25)
 
 project(Nexiora
     VERSION 0.1.0
@@ -657,16 +657,21 @@ if(NEXIORA_BUILD_TESTS)
     target_link_libraries(NxPackageManagerTests PRIVATE NexioraNCP)
     add_test(NAME NxPackageManagerTests COMMAND NxPackageManagerTests)
 endif()
-# DOCS-001 — Documentation Governance Engine
+
+# EPIC-01 Sprint-19 - Autonomous Workspace Engine
 target_sources(NexioraNCP PRIVATE
-    Source/NCOS/NxDocumentationGovernance.c
+    Source/NCOS/NxWorkspaceEngine.c
 )
 
-add_executable(nexiora_docs Tools/NCOS/NxDocumentationTool.c)
-target_link_libraries(nexiora_docs PRIVATE NexioraNCP)
+add_executable(nexiora_workspace
+    Tools/NCOS/NxWorkspaceTool.c
+)
+target_link_libraries(nexiora_workspace PRIVATE NexioraNCP)
 
 if(NEXIORA_BUILD_TESTS)
-    add_executable(NxDocumentationGovernanceTests Tests/Unit/NxDocumentationGovernanceTests.c)
-    target_link_libraries(NxDocumentationGovernanceTests PRIVATE NexioraNCP)
-    add_test(NAME NxDocumentationGovernanceTests COMMAND NxDocumentationGovernanceTests)
+    add_executable(NxWorkspaceEngineTests
+        Tests/Unit/NxWorkspaceEngineTests.c
+    )
+    target_link_libraries(NxWorkspaceEngineTests PRIVATE NexioraNCP)
+    add_test(NAME NxWorkspaceEngineTests COMMAND NxWorkspaceEngineTests)
 endif()
