@@ -1,0 +1,7 @@
+id=epic-03-sprint-01-repair-zero-warnings
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/epic-03-sprint-01-repair-zero-warnings/transaction.log
+files_installed=3
+files_skipped=0
+files_rolled_back=0

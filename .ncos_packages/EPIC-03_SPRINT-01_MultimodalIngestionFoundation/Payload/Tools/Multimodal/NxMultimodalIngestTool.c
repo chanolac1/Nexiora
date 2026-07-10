@@ -1,0 +1,4 @@
+#include "Nexiora/Multimodal/NxMultimodalIngestion.h"
+#include <stdio.h>
+#include <string.h>
+int main(int argc,char** argv){ NxMediaProbe p; NxIngestionResult r; NxMultimodalStatus s; if(argc<3){fprintf(stderr,"Uso: nexiora_ingest probe <archivo> | ingest <raiz> <archivo> <titulo>\n");return 2;} if(strcmp(argv[1],"probe")==0){s=NxMultimodal_Probe(argv[2],&p); printf("status=%s\ntype=%s\nbytes=%llu\ntranscript=%s\n",NxMultimodal_StatusToString(s),NxMultimodal_MediaTypeToString(p.type),p.file_size,p.transcript_available?"available":"missing");return s==NX_MM_OK?0:1;} if(strcmp(argv[1],"ingest")==0&&argc>=5){s=NxMultimodal_Ingest(argv[2],argv[3],argv[4],&r); printf("status=%s\ntype=%s\nknowledge=%s\nextracted=%zu\nmessage=%s\n",NxMultimodal_StatusToString(s),NxMultimodal_MediaTypeToString(r.type),r.knowledge_path,r.extracted_bytes,r.message);return (s==NX_MM_OK||s==NX_MM_PARTIAL)?0:1;} fprintf(stderr,"Comando invalido.\n");return 2; }

@@ -1,0 +1,18 @@
+id=EPIC-03 Sprint-01 Repair2 Global Zero Warnings
+version=1.0.0
+requires=EPIC-03 Sprint-01 Repair Zero Warnings
+file=Payload/Source/Research/NxAutonomousExecution.c=>Source/Research/NxAutonomousExecution.c
+file=Payload/Source/NCOS/NxCompilerEngine.c=>Source/NCOS/NxCompilerEngine.c
+file=Payload/Source/NCOS/NxBuildLogAnalyzer.c=>Source/NCOS/NxBuildLogAnalyzer.c
+file=Payload/Source/Research/NxTopicInvestigation.c=>Source/Research/NxTopicInvestigation.c
+file=Payload/Source/Research/NxLearningCore.c=>Source/Research/NxLearningCore.c
+file=Payload/Source/NCOS/NxSessionEngine.c=>Source/NCOS/NxSessionEngine.c
+file=Payload/Source/Research/NxKnowledgeAcquisition.c=>Source/Research/NxKnowledgeAcquisition.c
+file=Payload/Source/NCOS/NxPlanningEngine.c=>Source/NCOS/NxPlanningEngine.c
+file=Payload/Source/NCOS/NxGraphReasoner.c=>Source/NCOS/NxGraphReasoner.c
+file=Payload/Source/NCOS/NxAnswerComposer.c=>Source/NCOS/NxAnswerComposer.c
+file=Payload/Source/Research/NxTopicQuestion.c=>Source/Research/NxTopicQuestion.c
+file=Payload/Source/NCOS/NxTaskExecutionEngine.c=>Source/NCOS/NxTaskExecutionEngine.c
+file=Payload/Source/Cognitive/NxCognitiveCore.c=>Source/Cognitive/NxCognitiveCore.c
+file=Payload/Tests/NxBenchmarkMain.c=>Tests/NxBenchmarkMain.c
+file=Payload/Docs/NCOS/EPIC-03_SPRINT-01_REPAIR2_QUE_LOGRAMOS.md=>Docs/NCOS/EPIC-03_SPRINT-01_REPAIR2_QUE_LOGRAMOS.md

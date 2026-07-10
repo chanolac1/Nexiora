@@ -1,0 +1,5 @@
+id=EPIC-03 Sprint-01 Repair4 Hermetic Multimodal Tests
+version=1.0.0
+requires=EPIC-03 Sprint-01 Repair3 Bootstrap Global Zero Warnings
+file=Payload/Tests/Unit/NxMultimodalIngestionTests.c=>Tests/Unit/NxMultimodalIngestionTests.c
+file=Payload/Docs/NCOS/EPIC-03_SPRINT-01_REPAIR4_QUE_LOGRAMOS.md=>Docs/NCOS/EPIC-03_SPRINT-01_REPAIR4_QUE_LOGRAMOS.md

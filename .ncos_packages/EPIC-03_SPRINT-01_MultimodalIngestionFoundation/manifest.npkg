@@ -1,0 +1,18 @@
+id=EPIC-03 Sprint-01 Multimodal Ingestion Foundation
+version=1.0.0
+requires=DOCS-002-REPAIR2 Documentation Manager Preset Integration
+file=Payload/CMakeLists.txt=>CMakeLists.txt
+file=Payload/Docs/ARCHITECTURE.md=>Docs/ARCHITECTURE.md
+file=Payload/Docs/CHANGELOG.md=>Docs/CHANGELOG.md
+file=Payload/Docs/CODING_STANDARD.md=>Docs/CODING_STANDARD.md
+file=Payload/Docs/DECISIONS.md=>Docs/DECISIONS.md
+file=Payload/Docs/MASTER_CONTEXT.md=>Docs/MASTER_CONTEXT.md
+file=Payload/Docs/NCOS/EPIC-03_SPRINT-01_QUE_LOGRAMOS.md=>Docs/NCOS/EPIC-03_SPRINT-01_QUE_LOGRAMOS.md
+file=Payload/Docs/PACKAGE_STANDARD.md=>Docs/PACKAGE_STANDARD.md
+file=Payload/Docs/PROJECT_STATE.md=>Docs/PROJECT_STATE.md
+file=Payload/Docs/ROADMAP.md=>Docs/ROADMAP.md
+file=Payload/Docs/TESTING_STANDARD.md=>Docs/TESTING_STANDARD.md
+file=Payload/Include/Nexiora/Multimodal/NxMultimodalIngestion.h=>Include/Nexiora/Multimodal/NxMultimodalIngestion.h
+file=Payload/Source/Multimodal/NxMultimodalIngestion.c=>Source/Multimodal/NxMultimodalIngestion.c
+file=Payload/Tests/Unit/NxMultimodalIngestionTests.c=>Tests/Unit/NxMultimodalIngestionTests.c
+file=Payload/Tools/Multimodal/NxMultimodalIngestTool.c=>Tools/Multimodal/NxMultimodalIngestTool.c

@@ -1,0 +1,6 @@
+id=EPIC-03 Sprint-01 Repair Zero Warnings
+version=1.0.0
+requires=EPIC-03 Sprint-01 Multimodal Ingestion Foundation
+file=Payload/Tests/Unit/NxMultimodalIngestionTests.c=>Tests/Unit/NxMultimodalIngestionTests.c
+file=Payload/Docs/NCOS/EPIC-03_SPRINT-01_REPAIR_QUE_LOGRAMOS.md=>Docs/NCOS/EPIC-03_SPRINT-01_REPAIR_QUE_LOGRAMOS.md
+file=Payload/Docs/CHANGELOG.md=>Docs/CHANGELOG.md
