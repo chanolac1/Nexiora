@@ -1,0 +1,7 @@
+id=capability-02-sprint-02-contradiction-and-hypothesis-reasoning
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/capability-02-sprint-02-contradiction-and-hypothesis-reasoning/transaction.log
+files_installed=10
+files_skipped=0
+files_rolled_back=0

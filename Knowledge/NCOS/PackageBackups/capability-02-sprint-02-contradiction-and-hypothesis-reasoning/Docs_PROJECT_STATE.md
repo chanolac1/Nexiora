@@ -18,5 +18,5 @@ Recuperación, ranking, fusión y respuesta explicable sobre múltiples fragment
 ## Próximo Sprint
 CAPABILITY-02 Sprint-02 — Contradiction and Hypothesis Reasoning
 
-## CAPABILITY-02 Sprint-02
-Contradiction and Hypothesis Reasoning implemented: competing hypotheses, support/opposition evidence, confidence and explicit knowledge gaps.
+## Test Suite Materialization
+The full CTest suite must be preceded by building the `nexiora_test_suite` target.
