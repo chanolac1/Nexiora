@@ -20,9 +20,20 @@ typedef struct NxPackageInstallResult
     int files_rolled_back;
     int transaction_committed;
     char transaction_path[512];
+    char transaction_id[32];
+    char history_path[512];
+    int history_entries;
     int success;
 } NxPackageInstallResult;
 
+
+typedef struct NxPackageHistoryResult
+{
+    char package_id[128];
+    char history_path[512];
+    int entries;
+    int success;
+} NxPackageHistoryResult;
 
 typedef struct
 {
@@ -50,6 +61,15 @@ int NxPackageManager_Rollback(const char* repo_root,
 int NxPackageManager_Status(const char* repo_root,
                             const char* package_id,
                             NxPackageInstallResult* out_result);
+
+int NxPackageManager_History(const char* repo_root,
+                             const char* package_id,
+                             NxPackageHistoryResult* out_result);
+
+int NxPackageManager_RollbackTransaction(const char* repo_root,
+                                         const char* package_id,
+                                         const char* transaction_id,
+                                         NxPackageInstallResult* out_result);
 
 int NxPackageManager_VerifyPackage(const char* package_dir, NxPackageVerifyResult* out_result);
 

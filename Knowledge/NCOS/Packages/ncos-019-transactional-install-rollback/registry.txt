@@ -1,6 +1,7 @@
 id=ncos-019-transactional-install-rollback
-version=1.0.0
+version=1.0.1
 status=installed
 transaction=./Knowledge/NCOS/PackageTransactions/ncos-019-transactional-install-rollback/transaction.log
 files_installed=0
+files_skipped=5
 files_rolled_back=0

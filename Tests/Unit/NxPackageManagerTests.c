@@ -153,9 +153,35 @@ int main(void)
         expect(NxPackageManager_Install(root,txpkg,&tx)==1,"transactional install should succeed");
         expect(tx.transaction_committed==1,"transaction should commit");
         expect(file_exists(tx.transaction_path),"transaction journal should exist");
+        expect(tx.transaction_id[0] != '\0', "install should assign transaction id");
+        {
+            NxPackageHistoryResult history;
+            memset(&history, 0, sizeof(history));
+            expect(NxPackageManager_History(root, "NCOS Transaction Test", &history) == 1,
+                   "history should expose committed transaction");
+            expect(history.entries >= 1, "history should contain at least one entry");
+            expect(file_exists(history.history_path), "history index should exist");
+        }
+
+        /* Regression: a second idempotent install must preserve the rollback journal. */
         memset(&tx,0,sizeof(tx));
-        expect(NxPackageManager_Rollback(root,"NCOS Transaction Test",&tx)==1,"manual rollback should succeed");
-        expect(tx.files_rolled_back>=1,"rollback should restore at least one file");
+        expect(NxPackageManager_Install(root,txpkg,&tx)==1,"second transactional install should succeed");
+        expect(tx.files_skipped==1,"second transactional install should be a no-op");
+        expect(file_exists(tx.transaction_path),"no-op install should preserve transaction journal");
+
+        {
+            char transaction_id[32];
+            NxPackageHistoryResult history;
+            memset(&history, 0, sizeof(history));
+            expect(NxPackageManager_History(root, "NCOS Transaction Test", &history) == 1,
+                   "history should survive no-op install");
+            expect(history.entries >= 1, "no-op install should not erase history");
+            snprintf(transaction_id, sizeof(transaction_id), "%s", "000001");
+            memset(&tx,0,sizeof(tx));
+            expect(NxPackageManager_RollbackTransaction(root,"NCOS Transaction Test",transaction_id,&tx)==1,
+                   "historical rollback should succeed");
+            expect(tx.files_rolled_back>=1,"historical rollback should restore at least one file");
+        }
     }
 
     return failures == 0 ? 0 : 1;

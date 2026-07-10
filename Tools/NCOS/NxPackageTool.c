@@ -13,6 +13,8 @@ static void nx_print_usage(void)
     puts("  nexiora_package status <package_id>");
     puts("  nexiora_package deps <package_dir>");
     puts("  nexiora_package rollback <package_id>");
+    puts("  nexiora_package history <package_id>");
+    puts("  nexiora_package rollback-tx <package_id> <transaction_id>");
 }
 
 int main(int argc, char** argv)
@@ -71,6 +73,8 @@ int main(int argc, char** argv)
         printf("Backups         : %d\n", install_result.files_backed_up);
         printf("Rollback        : %d\n", install_result.files_rolled_back);
         printf("Transaccion     : %s\n", install_result.transaction_path);
+        printf("Transaction ID  : %s\n", install_result.transaction_id);
+        printf("Historial       : %s\n", install_result.history_path);
         printf("Registro        : %s\n", install_result.registry_path);
         printf("Log             : %s\n", install_result.install_log_path);
         return ok ? 0 : 3;
@@ -86,6 +90,38 @@ int main(int argc, char** argv)
         printf("Archivos revertidos: %d\n", install_result.files_rolled_back);
         printf("Transaccion      : %s\n", install_result.transaction_path);
         return ok ? 0 : 6;
+    }
+
+
+    if (strcmp(argv[1], "history") == 0) {
+        NxPackageHistoryResult history;
+        int ok = NxPackageManager_History(".", argv[2], &history);
+        printf("================================================\n");
+        printf(" NEXIORA - Package History\n");
+        printf("================================================\n\n");
+        printf("Package ID : %s\n", history.package_id);
+        printf("Estado     : %s\n", ok ? "AVAILABLE" : "EMPTY");
+        printf("Entradas   : %d\n", history.entries);
+        printf("Indice     : %s\n", history.history_path);
+        return ok ? 0 : 7;
+    }
+
+    if (strcmp(argv[1], "rollback-tx") == 0) {
+        int ok;
+        if (argc < 4) {
+            nx_print_usage();
+            return 1;
+        }
+        ok = NxPackageManager_RollbackTransaction(".", argv[2], argv[3], &install_result);
+        printf("================================================\n");
+        printf(" NEXIORA - Historical Transaction Rollback\n");
+        printf("================================================\n\n");
+        printf("Package ID        : %s\n", install_result.package_id);
+        printf("Transaction ID    : %s\n", install_result.transaction_id);
+        printf("Estado            : %s\n", ok ? "ROLLED BACK" : "FAILED");
+        printf("Archivos revertidos: %d\n", install_result.files_rolled_back);
+        printf("Transaccion       : %s\n", install_result.transaction_path);
+        return ok ? 0 : 8;
     }
 
     if (strcmp(argv[1], "status") == 0) {
