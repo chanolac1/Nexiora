@@ -106,5 +106,36 @@ int main(void)
         expect(strcmp(verify_result.package_id, "ncos-test-package") == 0, "verify should expose normalized package id");
     }
 
+    {
+        NxPackageVerifyResult deps;
+        const char* dep_pkg = "Build/ncos_package_dependency_pkg";
+        const char* dep_manifest = "Build/ncos_package_dependency_pkg/manifest.npkg";
+        const char* dep_registry_dir = "Build/ncos_package_manager_test_root_isolated/Knowledge/NCOS/Packages/ncos-required-package";
+        const char* dep_registry = "Build/ncos_package_manager_test_root_isolated/Knowledge/NCOS/Packages/ncos-required-package/registry.txt";
+
+        make_dir(dep_pkg);
+        write_text(dep_manifest,
+                   "id=NCOS Dependent Package\n"
+                   "version=1.0.0\n"
+                   "requires=NCOS Required Package\n");
+        remove_if_exists(dep_registry);
+        memset(&deps, 0, sizeof(deps));
+        expect(NxPackageManager_VerifyDependencies(root, dep_pkg, &deps) == 0,
+               "missing dependency should block package");
+        expect(deps.dependencies_declared == 1, "dependency should be declared");
+        expect(deps.dependencies_missing == 1, "dependency should be reported missing");
+
+        make_dir("Build/ncos_package_manager_test_root_isolated/Knowledge");
+        make_dir("Build/ncos_package_manager_test_root_isolated/Knowledge/NCOS");
+        make_dir("Build/ncos_package_manager_test_root_isolated/Knowledge/NCOS/Packages");
+        make_dir(dep_registry_dir);
+        write_text(dep_registry, "id=ncos-required-package\nstatus=installed\n");
+        memset(&deps, 0, sizeof(deps));
+        expect(NxPackageManager_VerifyDependencies(root, dep_pkg, &deps) == 1,
+               "installed dependency should satisfy package");
+        expect(deps.dependencies_satisfied == 1, "dependency should be reported satisfied");
+        expect(deps.dependencies_missing == 0, "no dependency should remain missing");
+    }
+
     return failures == 0 ? 0 : 1;
 }

@@ -28,6 +28,9 @@ typedef struct
     int files_declared;
     int payload_files_found;
     int payload_files_missing;
+    int dependencies_declared;
+    int dependencies_satisfied;
+    int dependencies_missing;
     char package_id[128];
     char package_version[64];
     char message[256];
@@ -42,6 +45,10 @@ int NxPackageManager_Status(const char* repo_root,
                             NxPackageInstallResult* out_result);
 
 int NxPackageManager_VerifyPackage(const char* package_dir, NxPackageVerifyResult* out_result);
+
+int NxPackageManager_VerifyDependencies(const char* repo_root,
+                                        const char* package_dir,
+                                        NxPackageVerifyResult* out_result);
 
 #ifdef __cplusplus
 }

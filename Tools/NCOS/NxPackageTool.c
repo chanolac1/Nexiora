@@ -11,6 +11,7 @@ static void nx_print_usage(void)
     puts("  nexiora_package verify <package_dir>");
     puts("  nexiora_package install <package_dir>");
     puts("  nexiora_package status <package_id>");
+    puts("  nexiora_package deps <package_dir>");
 }
 
 int main(int argc, char** argv)
@@ -37,6 +38,21 @@ int main(int argc, char** argv)
         printf("Payload faltantes   : %d\n", verify_result.payload_files_missing);
         printf("Mensaje             : %s\n", verify_result.message);
         return ok ? 0 : 2;
+    }
+
+    if (strcmp(argv[1], "deps") == 0) {
+        NxPackageVerifyResult dependency_result;
+        int ok = NxPackageManager_VerifyDependencies(".", argv[2], &dependency_result);
+        printf("================================================\n");
+        printf(" NEXIORA - Package Dependency Resolver\n");
+        printf("================================================\n\n");
+        printf("Package ID             : %s\n", dependency_result.package_id[0] != '\0' ? dependency_result.package_id : "desconocido");
+        printf("Estado                 : %s\n", ok ? "SATISFIED" : "BLOCKED");
+        printf("Dependencias declaradas: %d\n", dependency_result.dependencies_declared);
+        printf("Dependencias instaladas: %d\n", dependency_result.dependencies_satisfied);
+        printf("Dependencias faltantes : %d\n", dependency_result.dependencies_missing);
+        printf("Mensaje                : %s\n", dependency_result.message);
+        return ok ? 0 : 5;
     }
 
     if (strcmp(argv[1], "install") == 0) {

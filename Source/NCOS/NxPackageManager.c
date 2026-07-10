@@ -437,6 +437,89 @@ static int nx_pm_make_backup_path(const char* repo_root,
     return nx_pm_join(out, out_size, pkg_backups, safe_rel);
 }
 
+
+static int nx_pm_dependency_installed(const char* repo_root, const char* dependency_id)
+{
+    char normalized[128];
+    char registry_path[NX_PM_PATH_MAX];
+    char log_path[NX_PM_PATH_MAX];
+
+    nx_pm_normalize_id(normalized, sizeof(normalized), dependency_id);
+    if (normalized[0] == '\0') {
+        return 0;
+    }
+    if (!nx_pm_registry_paths(repo_root, normalized, registry_path, sizeof(registry_path), log_path, sizeof(log_path))) {
+        return 0;
+    }
+    return nx_pm_exists(registry_path);
+}
+
+int NxPackageManager_VerifyDependencies(const char* repo_root,
+                                        const char* package_dir,
+                                        NxPackageVerifyResult* out_result)
+{
+    NxPackageVerifyResult result;
+    char manifest_path[NX_PM_PATH_MAX];
+    FILE* manifest;
+    char line[NX_PM_LINE_MAX];
+
+    memset(&result, 0, sizeof(result));
+    nx_pm_copy_string(result.message, sizeof(result.message), "Dependency verification failed.");
+
+    if (repo_root == NULL || package_dir == NULL ||
+        !nx_pm_join(manifest_path, sizeof(manifest_path), package_dir, "manifest.npkg") ||
+        !nx_pm_exists(manifest_path)) {
+        if (out_result != NULL) {
+            *out_result = result;
+        }
+        return 0;
+    }
+
+    result.manifest_found = 1;
+    if (!nx_pm_read_manifest_identity(manifest_path, result.package_id, sizeof(result.package_id),
+                                      result.package_version, sizeof(result.package_version))) {
+        if (out_result != NULL) {
+            *out_result = result;
+        }
+        return 0;
+    }
+
+    manifest = fopen(manifest_path, "rb");
+    if (manifest == NULL) {
+        if (out_result != NULL) {
+            *out_result = result;
+        }
+        return 0;
+    }
+
+    while (fgets(line, sizeof(line), manifest) != NULL) {
+        char* trimmed = nx_pm_trim(line);
+        if (nx_pm_starts_with(trimmed, "requires=")) {
+            char* dependency = nx_pm_trim(trimmed + 9);
+            result.dependencies_declared++;
+            if (nx_pm_dependency_installed(repo_root, dependency)) {
+                result.dependencies_satisfied++;
+            } else {
+                result.dependencies_missing++;
+            }
+        }
+    }
+    fclose(manifest);
+
+    result.success = result.dependencies_missing == 0;
+    if (result.success) {
+        nx_pm_copy_string(result.message, sizeof(result.message),
+                          result.dependencies_declared == 0 ? "Package has no dependencies." : "All package dependencies are installed.");
+    } else {
+        nx_pm_copy_string(result.message, sizeof(result.message), "Package has missing dependencies.");
+    }
+
+    if (out_result != NULL) {
+        *out_result = result;
+    }
+    return result.success;
+}
+
 int NxPackageManager_Install(const char* repo_root,
                              const char* package_dir,
                              NxPackageInstallResult* out_result)
@@ -458,6 +541,17 @@ int NxPackageManager_Install(const char* repo_root,
             *out_result = result;
         }
         return 0;
+    }
+
+    {
+        NxPackageVerifyResult dependency_result;
+        memset(&dependency_result, 0, sizeof(dependency_result));
+        if (!NxPackageManager_VerifyDependencies(repo_root, package_dir, &dependency_result)) {
+            if (out_result != NULL) {
+                *out_result = result;
+            }
+            return 0;
+        }
     }
 
     if (!nx_pm_join(manifest_path, sizeof(manifest_path), package_dir, "manifest.npkg")) {
