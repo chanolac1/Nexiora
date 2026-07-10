@@ -657,21 +657,3 @@ if(NEXIORA_BUILD_TESTS)
     target_link_libraries(NxPackageManagerTests PRIVATE NexioraNCP)
     add_test(NAME NxPackageManagerTests COMMAND NxPackageManagerTests)
 endif()
-
-# EPIC-01 Sprint-19 - Autonomous Workspace Engine
-target_sources(NexioraNCP PRIVATE
-    Source/NCOS/NxWorkspaceEngine.c
-)
-
-add_executable(nexiora_workspace
-    Tools/NCOS/NxWorkspaceTool.c
-)
-target_link_libraries(nexiora_workspace PRIVATE NexioraNCP)
-
-if(NEXIORA_BUILD_TESTS)
-    add_executable(NxWorkspaceEngineTests
-        Tests/Unit/NxWorkspaceEngineTests.c
-    )
-    target_link_libraries(NxWorkspaceEngineTests PRIVATE NexioraNCP)
-    add_test(NAME NxWorkspaceEngineTests COMMAND NxWorkspaceEngineTests)
-endif()

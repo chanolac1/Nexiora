@@ -1,0 +1,10 @@
+id=EPIC-01 Sprint-19 Autonomous Workspace Engine
+version=1.0.0
+requires=NCOS-020 Package History Recovery
+file=Payload/Include/Nexiora/NCOS/NxWorkspaceEngine.h=>Include/Nexiora/NCOS/NxWorkspaceEngine.h
+file=Payload/Source/NCOS/NxWorkspaceEngine.c=>Source/NCOS/NxWorkspaceEngine.c
+file=Payload/Tools/NCOS/NxWorkspaceTool.c=>Tools/NCOS/NxWorkspaceTool.c
+file=Payload/Tests/Unit/NxWorkspaceEngineTests.c=>Tests/Unit/NxWorkspaceEngineTests.c
+file=Payload/Docs/NCOS/AUTONOMOUS_WORKSPACE_ENGINE.md=>Docs/NCOS/AUTONOMOUS_WORKSPACE_ENGINE.md
+file=Payload/Scripts/verify-epic-01-sprint-19.ps1=>Scripts/verify-epic-01-sprint-19.ps1
+file=Payload/CMakeLists.txt=>CMakeLists.txt
