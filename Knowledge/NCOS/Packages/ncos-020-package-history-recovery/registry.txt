@@ -1,0 +1,7 @@
+id=ncos-020-package-history-recovery
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/ncos-020-package-history-recovery/transaction.log
+files_installed=0
+files_skipped=5
+files_rolled_back=0

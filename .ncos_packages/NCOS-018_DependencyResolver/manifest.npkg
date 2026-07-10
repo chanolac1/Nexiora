@@ -1,0 +1,8 @@
+id=NCOS-018 Dependency Resolver
+version=1.0.0
+requires=NCOS-017 Package Verification Workflow
+file=Payload/Include/Nexiora/NCOS/NxPackageManager.h=>Include/Nexiora/NCOS/NxPackageManager.h
+file=Payload/Source/NCOS/NxPackageManager.c=>Source/NCOS/NxPackageManager.c
+file=Payload/Tools/NCOS/NxPackageTool.c=>Tools/NCOS/NxPackageTool.c
+file=Payload/Tests/Unit/NxPackageManagerTests.c=>Tests/Unit/NxPackageManagerTests.c
+file=Payload/Docs/NCOS/PACKAGE_DEPENDENCY_RESOLUTION.md=>Docs/NCOS/PACKAGE_DEPENDENCY_RESOLUTION.md

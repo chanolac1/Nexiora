@@ -1,0 +1,8 @@
+id=NCOS-019 Transactional Install Rollback
+version=1.0.1
+requires=NCOS-018 Dependency Resolver
+file=Payload/Include/Nexiora/NCOS/NxPackageManager.h=>Include/Nexiora/NCOS/NxPackageManager.h
+file=Payload/Source/NCOS/NxPackageManager.c=>Source/NCOS/NxPackageManager.c
+file=Payload/Tools/NCOS/NxPackageTool.c=>Tools/NCOS/NxPackageTool.c
+file=Payload/Tests/Unit/NxPackageManagerTests.c=>Tests/Unit/NxPackageManagerTests.c
+file=Payload/Docs/NCOS/PACKAGE_TRANSACTION_ROLLBACK_REPAIR.md=>Docs/NCOS/PACKAGE_TRANSACTION_ROLLBACK_REPAIR.md
