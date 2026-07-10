@@ -20,6 +20,19 @@ typedef struct NxPackageInstallResult
     int success;
 } NxPackageInstallResult;
 
+
+typedef struct
+{
+    int success;
+    int manifest_found;
+    int files_declared;
+    int payload_files_found;
+    int payload_files_missing;
+    char package_id[128];
+    char package_version[64];
+    char message[256];
+} NxPackageVerifyResult;
+
 int NxPackageManager_Install(const char* repo_root,
                              const char* package_dir,
                              NxPackageInstallResult* out_result);
@@ -27,6 +40,8 @@ int NxPackageManager_Install(const char* repo_root,
 int NxPackageManager_Status(const char* repo_root,
                             const char* package_id,
                             NxPackageInstallResult* out_result);
+
+int NxPackageManager_VerifyPackage(const char* package_dir, NxPackageVerifyResult* out_result);
 
 #ifdef __cplusplus
 }

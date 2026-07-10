@@ -608,3 +608,97 @@ int NxPackageManager_Status(const char* repo_root,
     }
     return result.success;
 }
+
+
+int NxPackageManager_VerifyPackage(const char* package_dir, NxPackageVerifyResult* out_result)
+{
+    NxPackageVerifyResult result;
+    char manifest_path[NX_PM_PATH_MAX];
+    FILE* manifest;
+    char line[NX_PM_LINE_MAX];
+
+    memset(&result, 0, sizeof(result));
+    nx_pm_copy_string(result.message, sizeof(result.message), "Package verification failed.");
+
+    if (package_dir == NULL) {
+        if (out_result != NULL) {
+            *out_result = result;
+        }
+        return 0;
+    }
+
+    if (!nx_pm_join(manifest_path, sizeof(manifest_path), package_dir, "manifest.npkg")) {
+        if (out_result != NULL) {
+            *out_result = result;
+        }
+        return 0;
+    }
+
+    if (!nx_pm_exists(manifest_path)) {
+        nx_pm_copy_string(result.message, sizeof(result.message), "manifest.npkg not found.");
+        if (out_result != NULL) {
+            *out_result = result;
+        }
+        return 0;
+    }
+
+    result.manifest_found = 1;
+    if (!nx_pm_read_manifest_identity(manifest_path,
+                                      result.package_id,
+                                      sizeof(result.package_id),
+                                      result.package_version,
+                                      sizeof(result.package_version))) {
+        nx_pm_copy_string(result.message, sizeof(result.message), "Invalid package identity.");
+        if (out_result != NULL) {
+            *out_result = result;
+        }
+        return 0;
+    }
+
+    manifest = fopen(manifest_path, "rb");
+    if (manifest == NULL) {
+        if (out_result != NULL) {
+            *out_result = result;
+        }
+        return 0;
+    }
+
+    while (fgets(line, sizeof(line), manifest) != NULL) {
+        char* trimmed = nx_pm_trim(line);
+        char src_rel[NX_PM_PATH_MAX];
+        char dst_rel[NX_PM_PATH_MAX];
+        char src_path[NX_PM_PATH_MAX];
+
+        if (!nx_pm_parse_file_mapping(trimmed, src_rel, sizeof(src_rel), dst_rel, sizeof(dst_rel))) {
+            continue;
+        }
+
+        result.files_declared++;
+        if (!nx_pm_join(src_path, sizeof(src_path), package_dir, src_rel)) {
+            result.payload_files_missing++;
+            continue;
+        }
+
+        if (nx_pm_exists(src_path)) {
+            result.payload_files_found++;
+        } else {
+            result.payload_files_missing++;
+        }
+    }
+
+    fclose(manifest);
+
+    result.success = result.manifest_found && result.files_declared > 0 && result.payload_files_missing == 0;
+    if (result.success) {
+        nx_pm_copy_string(result.message, sizeof(result.message), "Package is valid and installable.");
+    } else if (result.files_declared == 0) {
+        nx_pm_copy_string(result.message, sizeof(result.message), "Package has no file mappings.");
+    } else {
+        nx_pm_copy_string(result.message, sizeof(result.message), "Package has missing payload files.");
+    }
+
+    if (out_result != NULL) {
+        *out_result = result;
+    }
+    return result.success;
+}
