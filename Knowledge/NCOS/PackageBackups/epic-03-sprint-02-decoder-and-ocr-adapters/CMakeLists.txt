@@ -690,24 +690,3 @@ if(NEXIORA_BUILD_TESTS)
     set_target_properties(NxMultimodalIngestionTests PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
     add_test(NAME NxMultimodalIngestionTests COMMAND NxMultimodalIngestionTests)
 endif()
-
-# ============================================================
-# EPIC-03 Sprint-02 — Decoder and OCR Adapters
-# ============================================================
-target_sources(NexioraNCP PRIVATE
-    Source/Multimodal/NxDecoderAdapters.c
-)
-
-add_executable(nexiora_decode
-    Tools/Multimodal/NxDecoderTool.c
-)
-target_link_libraries(nexiora_decode PRIVATE NexioraNCP)
-
-if(NEXIORA_BUILD_TESTS)
-    add_executable(NxDecoderAdaptersTests
-        Tests/Unit/NxDecoderAdaptersTests.c
-    )
-    target_link_libraries(NxDecoderAdaptersTests PRIVATE NexioraNCP)
-    add_test(NAME NxDecoderAdaptersTests COMMAND NxDecoderAdaptersTests)
-    set_tests_properties(NxDecoderAdaptersTests PROPERTIES WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
-endif()

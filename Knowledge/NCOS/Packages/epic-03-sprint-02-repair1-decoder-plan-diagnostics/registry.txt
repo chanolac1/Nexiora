@@ -1,0 +1,7 @@
+id=epic-03-sprint-02-repair1-decoder-plan-diagnostics
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/epic-03-sprint-02-repair1-decoder-plan-diagnostics/transaction.log
+files_installed=4
+files_skipped=0
+files_rolled_back=0

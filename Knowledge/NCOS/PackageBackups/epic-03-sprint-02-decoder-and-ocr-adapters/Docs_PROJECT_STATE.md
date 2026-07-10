@@ -321,7 +321,3 @@ Cada Sprint debe dejar el proyecto mejor de lo que estaba antes.
 ✔ Transcripciones sidecar deterministas
 
 ✔ CLI nexiora_ingest
-
-## Actualización EPIC-03 Sprint-02
-
-Decoder and OCR Adapters implementado. Nexiora puede descubrir Tesseract, FFmpeg y whisper-cli, planificar OCR/transcripción local y generar evidencia textual para la ingestión multimodal. Próximo objetivo: EPIC-03 Sprint-03, PDF Rasterization and Structured Extraction.

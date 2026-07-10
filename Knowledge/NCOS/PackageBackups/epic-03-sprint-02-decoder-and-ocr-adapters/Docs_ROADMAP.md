@@ -11,11 +11,3 @@
 ## Continuidad EPIC-01
 
 Self Validation Engine permanece pendiente y se retomará después del bloque multimodal acordado.
-
-### EPIC-03 Sprint-02 — Completado
-
-Decoder and OCR Adapters: Tesseract, FFmpeg y whisper-cli con evidencia textual verificable.
-
-### EPIC-03 Sprint-03 — Siguiente
-
-PDF Rasterization and Structured Extraction.

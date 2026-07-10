@@ -1,0 +1,7 @@
+id=EPIC-03 Sprint-02 Repair1 Decoder Plan Diagnostics
+version=1.0.0
+requires=EPIC-03 Sprint-02 Decoder and OCR Adapters
+file=Payload/Source/Multimodal/NxDecoderAdapters.c=>Source/Multimodal/NxDecoderAdapters.c
+file=Payload/Tools/Multimodal/NxDecoderTool.c=>Tools/Multimodal/NxDecoderTool.c
+file=Payload/Tests/Unit/NxDecoderAdaptersTests.c=>Tests/Unit/NxDecoderAdaptersTests.c
+file=Payload/Docs/NCOS/EPIC-03_SPRINT-02_REPAIR1_QUE_LOGRAMOS.md=>Docs/NCOS/EPIC-03_SPRINT-02_REPAIR1_QUE_LOGRAMOS.md

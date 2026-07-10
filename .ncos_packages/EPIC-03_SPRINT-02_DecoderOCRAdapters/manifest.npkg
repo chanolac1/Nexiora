@@ -1,0 +1,18 @@
+id=EPIC-03 Sprint-02 Decoder and OCR Adapters
+version=1.0.0
+requires=EPIC-03 Sprint-01 Repair4 Hermetic Multimodal Tests
+file=Payload/CMakeLists.txt=>CMakeLists.txt
+file=Payload/Include/Nexiora/Multimodal/NxDecoderAdapters.h=>Include/Nexiora/Multimodal/NxDecoderAdapters.h
+file=Payload/Source/Multimodal/NxDecoderAdapters.c=>Source/Multimodal/NxDecoderAdapters.c
+file=Payload/Tools/Multimodal/NxDecoderTool.c=>Tools/Multimodal/NxDecoderTool.c
+file=Payload/Tests/Unit/NxDecoderAdaptersTests.c=>Tests/Unit/NxDecoderAdaptersTests.c
+file=Payload/Docs/MASTER_CONTEXT.md=>Docs/MASTER_CONTEXT.md
+file=Payload/Docs/PROJECT_STATE.md=>Docs/PROJECT_STATE.md
+file=Payload/Docs/ROADMAP.md=>Docs/ROADMAP.md
+file=Payload/Docs/CHANGELOG.md=>Docs/CHANGELOG.md
+file=Payload/Docs/DECISIONS.md=>Docs/DECISIONS.md
+file=Payload/Docs/ARCHITECTURE.md=>Docs/ARCHITECTURE.md
+file=Payload/Docs/CODING_STANDARD.md=>Docs/CODING_STANDARD.md
+file=Payload/Docs/TESTING_STANDARD.md=>Docs/TESTING_STANDARD.md
+file=Payload/Docs/PACKAGE_STANDARD.md=>Docs/PACKAGE_STANDARD.md
+file=Payload/Docs/NCOS/EPIC-03_SPRINT-02_QUE_LOGRAMOS.md=>Docs/NCOS/EPIC-03_SPRINT-02_QUE_LOGRAMOS.md

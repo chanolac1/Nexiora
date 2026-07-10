@@ -409,6 +409,3 @@ Construir un sistema capaz de evolucionar continuamente y desarrollar software d
 Cada nueva capacidad debe aumentar la inteligencia del sistema y permitirle construir capacidades aún más complejas.
 
 Nexiora deberá llegar a ser capaz de crear sistemas completos, incluyendo videojuegos, aplicaciones empresariales y nuevos módulos para sí mismo.
-## Capacidad multimodal incorporada después de EPIC-03 Sprint-02
-
-Nexiora dispone de una capa de adaptadores locales verificables para OCR de imágenes, extracción de audio desde video y transcripción mediante modelos Whisper locales. Ninguna herramienta externa se considera disponible sin descubrimiento y ninguna ejecución se considera exitosa sin evidencia textual generada.

@@ -1,0 +1,7 @@
+id=epic-03-sprint-02-decoder-and-ocr-adapters
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/epic-03-sprint-02-decoder-and-ocr-adapters/transaction.log
+files_installed=12
+files_skipped=3
+files_rolled_back=0
