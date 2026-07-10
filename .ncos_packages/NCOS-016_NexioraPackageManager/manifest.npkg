@@ -1,0 +1,6 @@
+id=NCOS-016 Nexiora Package Manager
+version=1.0.0
+file=Payload/Include/Nexiora/NCOS/NxPackageManager.h=>Include/Nexiora/NCOS/NxPackageManager.h
+file=Payload/Source/NCOS/NxPackageManager.c=>Source/NCOS/NxPackageManager.c
+file=Payload/Tools/NCOS/NxPackageTool.c=>Tools/NCOS/NxPackageTool.c
+file=Payload/Tests/Unit/NxPackageManagerTests.c=>Tests/Unit/NxPackageManagerTests.c

@@ -639,3 +639,21 @@ add_executable(NxPatchVerificationGateTests
 )
 target_link_libraries(NxPatchVerificationGateTests PRIVATE NexioraNCP)
 add_test(NAME NxPatchVerificationGateTests COMMAND NxPatchVerificationGateTests)
+
+# NCOS-016 - Nexiora Package Manager
+target_sources(NexioraNCP PRIVATE
+    Source/NCOS/NxPackageManager.c
+)
+
+add_executable(nexiora_package
+    Tools/NCOS/NxPackageTool.c
+)
+target_link_libraries(nexiora_package PRIVATE NexioraNCP)
+
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxPackageManagerTests
+        Tests/Unit/NxPackageManagerTests.c
+    )
+    target_link_libraries(NxPackageManagerTests PRIVATE NexioraNCP)
+    add_test(NAME NxPackageManagerTests COMMAND NxPackageManagerTests)
+endif()
