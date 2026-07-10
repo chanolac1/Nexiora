@@ -1,0 +1,5 @@
+id=TOOL-001 Repair2 Observable Progress
+version=1.0.0
+requires=TOOL-001 Repair1 Direct Process Execution
+file=Payload/Source/CognitivePipeline/NxWebCognitivePipeline.c=>Source/CognitivePipeline/NxWebCognitivePipeline.c
+file=Payload/Docs/NCOS/TOOL-001_REPAIR2_QUE_LOGRAMOS.md=>Docs/NCOS/TOOL-001_REPAIR2_QUE_LOGRAMOS.md

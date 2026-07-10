@@ -1,0 +1,21 @@
+id=TOOL-001 Nexiora Tool Manager
+version=1.0.0
+requires=CAPABILITY-01 Sprint-01 Web Cognitive Pipeline Foundation
+file=Payload/CMakeLists.txt=>CMakeLists.txt
+file=Payload/Include/Nexiora/Tools/NxToolManager.h=>Include/Nexiora/Tools/NxToolManager.h
+file=Payload/Source/Tools/NxToolManager.c=>Source/Tools/NxToolManager.c
+file=Payload/Tools/ToolManager/NxToolManagerTool.c=>Tools/ToolManager/NxToolManagerTool.c
+file=Payload/Tools/ToolManager/install_tool.ps1=>Tools/ToolManager/install_tool.ps1
+file=Payload/Config/Tools/catalog.psd1=>Config/Tools/catalog.psd1
+file=Payload/Tests/Unit/NxToolManagerTests.c=>Tests/Unit/NxToolManagerTests.c
+file=Payload/Source/CognitivePipeline/NxWebCognitivePipeline.c=>Source/CognitivePipeline/NxWebCognitivePipeline.c
+file=Payload/Docs/MASTER_CONTEXT.md=>Docs/MASTER_CONTEXT.md
+file=Payload/Docs/PROJECT_STATE.md=>Docs/PROJECT_STATE.md
+file=Payload/Docs/ROADMAP.md=>Docs/ROADMAP.md
+file=Payload/Docs/CHANGELOG.md=>Docs/CHANGELOG.md
+file=Payload/Docs/DECISIONS.md=>Docs/DECISIONS.md
+file=Payload/Docs/ARCHITECTURE.md=>Docs/ARCHITECTURE.md
+file=Payload/Docs/CODING_STANDARD.md=>Docs/CODING_STANDARD.md
+file=Payload/Docs/TESTING_STANDARD.md=>Docs/TESTING_STANDARD.md
+file=Payload/Docs/PACKAGE_STANDARD.md=>Docs/PACKAGE_STANDARD.md
+file=Payload/Docs/NCOS/TOOL-001_QUE_LOGRAMOS.md=>Docs/NCOS/TOOL-001_QUE_LOGRAMOS.md

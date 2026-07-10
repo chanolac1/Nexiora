@@ -1,0 +1,9 @@
+nxknowledge/1
+source_type=web-video
+source_url=https://www.youtube.com/watch?v=demo_web_source
+title=Nexiora Web Cognitive Demo
+content:
+Nexiora transforma transcripciones de video en evidencia verificable.
+La evidencia se normaliza como conocimiento con procedencia de la URL.
+El motor cognitivo extrae conceptos, relaciones y respuestas fundamentadas.
+Cuando no existe evidencia suficiente, Nexiora debe rechazar la respuesta.

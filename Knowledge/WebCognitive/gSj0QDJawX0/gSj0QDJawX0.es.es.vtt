@@ -1,0 +1,2592 @@
+WEBVTT
+Kind: captions
+Language: es
+
+00:00:00.590 --> 00:00:12.830 align:start position:0%
+ 
+[Música]
+
+00:00:12.830 --> 00:00:12.840 align:start position:0%
+ 
+ 
+
+00:00:12.840 --> 00:00:14.930 align:start position:0%
+ 
+en<00:00:13.259><c> los</c><00:00:13.440><c> vídeos</c><00:00:13.620><c> anteriores</c><00:00:14.099><c> estuvimos</c>
+
+00:00:14.930 --> 00:00:14.940 align:start position:0%
+en los vídeos anteriores estuvimos
+ 
+
+00:00:14.940 --> 00:00:17.390 align:start position:0%
+en los vídeos anteriores estuvimos
+construyendo<00:00:15.719><c> desde</c><00:00:16.020><c> cero</c><00:00:16.440><c> una</c><00:00:16.980><c> solución</c><00:00:17.220><c> muy</c>
+
+00:00:17.390 --> 00:00:17.400 align:start position:0%
+construyendo desde cero una solución muy
+ 
+
+00:00:17.400 --> 00:00:19.010 align:start position:0%
+construyendo desde cero una solución muy
+parecida<00:00:17.880><c> a</c><00:00:18.300><c> la</c><00:00:18.420><c> que</c><00:00:18.539><c> construye</c>
+
+00:00:19.010 --> 00:00:19.020 align:start position:0%
+parecida a la que construye
+ 
+
+00:00:19.020 --> 00:00:21.590 align:start position:0%
+parecida a la que construye
+automáticamente<00:00:19.859><c> por</c><00:00:20.340><c> nosotros</c><00:00:20.760><c> el</c><00:00:21.300><c> patrón</c>
+
+00:00:21.590 --> 00:00:21.600 align:start position:0%
+automáticamente por nosotros el patrón
+ 
+
+00:00:21.600 --> 00:00:23.929 align:start position:0%
+automáticamente por nosotros el patrón
+work<00:00:22.380><c> with</c>
+
+00:00:23.929 --> 00:00:23.939 align:start position:0%
+work with
+ 
+
+00:00:23.939 --> 00:00:26.330 align:start position:0%
+work with
+así<00:00:24.420><c> Si</c><00:00:24.900><c> comparamos</c><00:00:25.260><c> en</c><00:00:25.619><c> ejecución</c><00:00:25.920><c> ambas</c>
+
+00:00:26.330 --> 00:00:26.340 align:start position:0%
+así Si comparamos en ejecución ambas
+ 
+
+00:00:26.340 --> 00:00:28.730 align:start position:0%
+así Si comparamos en ejecución ambas
+soluciones<00:00:26.779><c> vemos</c><00:00:27.779><c> primeramente</c><00:00:28.320><c> que</c>
+
+00:00:28.730 --> 00:00:28.740 align:start position:0%
+soluciones vemos primeramente que
+ 
+
+00:00:28.740 --> 00:00:31.370 align:start position:0%
+soluciones vemos primeramente que
+difieren<00:00:29.099><c> en</c><00:00:29.460><c> cuanto</c><00:00:29.699><c> al</c><00:00:29.880><c> diseño</c><00:00:30.199><c> es</c><00:00:31.199><c> que</c>
+
+00:00:31.370 --> 00:00:31.380 align:start position:0%
+difieren en cuanto al diseño es que
+ 
+
+00:00:31.380 --> 00:00:33.350 align:start position:0%
+difieren en cuanto al diseño es que
+hasta<00:00:31.740><c> ahora</c><00:00:31.920><c> nos</c><00:00:32.520><c> concentramos</c><00:00:32.880><c> en</c><00:00:33.180><c> la</c>
+
+00:00:33.350 --> 00:00:33.360 align:start position:0%
+hasta ahora nos concentramos en la
+ 
+
+00:00:33.360 --> 00:00:35.450 align:start position:0%
+hasta ahora nos concentramos en la
+lógica<00:00:33.600><c> y</c><00:00:33.960><c> dejamos</c><00:00:34.260><c> de</c><00:00:34.620><c> lado</c><00:00:34.739><c> la</c><00:00:35.040><c> user</c>
+
+00:00:35.450 --> 00:00:35.460 align:start position:0%
+lógica y dejamos de lado la user
+ 
+
+00:00:35.460 --> 00:00:37.130 align:start position:0%
+lógica y dejamos de lado la user
+interface<00:00:35.880><c> tema</c><00:00:36.540><c> en</c><00:00:36.780><c> el</c><00:00:36.780><c> que</c><00:00:36.899><c> entraremos</c>
+
+00:00:37.130 --> 00:00:37.140 align:start position:0%
+interface tema en el que entraremos
+ 
+
+00:00:37.140 --> 00:00:39.889 align:start position:0%
+interface tema en el que entraremos
+luego<00:00:37.700><c> pero</c><00:00:38.700><c> dejando</c><00:00:39.180><c> de</c><00:00:39.480><c> lado</c><00:00:39.660><c> esas</c>
+
+00:00:39.889 --> 00:00:39.899 align:start position:0%
+luego pero dejando de lado esas
+ 
+
+00:00:39.899 --> 00:00:42.470 align:start position:0%
+luego pero dejando de lado esas
+diferencias<00:00:40.140><c> visuales</c><00:00:40.520><c> en</c><00:00:41.520><c> ambos</c><00:00:41.760><c> webpanes</c>
+
+00:00:42.470 --> 00:00:42.480 align:start position:0%
+diferencias visuales en ambos webpanes
+ 
+
+00:00:42.480 --> 00:00:44.030 align:start position:0%
+diferencias visuales en ambos webpanes
+podemos<00:00:42.840><c> ver</c><00:00:43.079><c> un</c><00:00:43.320><c> grid</c><00:00:43.620><c> que</c><00:00:43.800><c> muestra</c>
+
+00:00:44.030 --> 00:00:44.040 align:start position:0%
+podemos ver un grid que muestra
+ 
+
+00:00:44.040 --> 00:00:45.110 align:start position:0%
+podemos ver un grid que muestra
+información<00:00:44.340><c> de</c><00:00:44.700><c> las</c><00:00:45.000><c> atracciones</c>
+
+00:00:45.110 --> 00:00:45.120 align:start position:0%
+información de las atracciones
+ 
+
+00:00:45.120 --> 00:00:50.029 align:start position:0%
+información de las atracciones
+turísticas<00:00:45.800><c> con</c><00:00:46.800><c> filtros</c>
+
+00:00:50.029 --> 00:00:50.039 align:start position:0%
+ 
+ 
+
+00:00:50.039 --> 00:00:52.069 align:start position:0%
+ 
+y<00:00:50.760><c> la</c><00:00:50.820><c> posibilidad</c><00:00:50.940><c> por</c><00:00:51.360><c> ejemplo</c><00:00:51.539><c> de</c>
+
+00:00:52.069 --> 00:00:52.079 align:start position:0%
+y la posibilidad por ejemplo de
+ 
+
+00:00:52.079 --> 00:00:54.350 align:start position:0%
+y la posibilidad por ejemplo de
+actualizar<00:00:52.500><c> la</c><00:00:52.860><c> información</c>
+
+00:00:54.350 --> 00:00:54.360 align:start position:0%
+actualizar la información
+ 
+
+00:00:54.360 --> 00:00:57.709 align:start position:0%
+actualizar la información
+en<00:00:54.719><c> las</c><00:00:55.020><c> dos</c><00:00:55.260><c> se</c><00:00:55.800><c> invoca</c><00:00:56.039><c> a</c><00:00:56.579><c> la</c><00:00:56.640><c> transacción</c><00:00:57.000><c> en</c>
+
+00:00:57.709 --> 00:00:57.719 align:start position:0%
+en las dos se invoca a la transacción en
+ 
+
+00:00:57.719 --> 00:00:59.630 align:start position:0%
+en las dos se invoca a la transacción en
+modo<00:00:58.020><c> update</c>
+
+00:00:59.630 --> 00:00:59.640 align:start position:0%
+modo update
+ 
+
+00:00:59.640 --> 00:01:01.850 align:start position:0%
+modo update
+algo<00:01:00.059><c> que</c><00:01:00.300><c> ya</c><00:01:00.480><c> puede</c><00:01:00.840><c> empezar</c><00:01:01.020><c> a</c><00:01:01.199><c> llamarnos</c><00:01:01.739><c> la</c>
+
+00:01:01.850 --> 00:01:01.860 align:start position:0%
+algo que ya puede empezar a llamarnos la
+ 
+
+00:01:01.860 --> 00:01:04.009 align:start position:0%
+algo que ya puede empezar a llamarnos la
+atención<00:01:02.039><c> es</c><00:01:02.340><c> una</c><00:01:02.820><c> constante</c><00:01:03.120><c> de</c><00:01:03.420><c> todas</c><00:01:03.840><c> las</c>
+
+00:01:04.009 --> 00:01:04.019 align:start position:0%
+atención es una constante de todas las
+ 
+
+00:01:04.019 --> 00:01:06.649 align:start position:0%
+atención es una constante de todas las
+pantallas<00:01:04.199><c> que</c><00:01:04.379><c> venimos</c><00:01:04.680><c> navegando</c><00:01:05.659><c> esta</c>
+
+00:01:06.649 --> 00:01:06.659 align:start position:0%
+pantallas que venimos navegando esta
+ 
+
+00:01:06.659 --> 00:01:09.469 align:start position:0%
+pantallas que venimos navegando esta
+barra<00:01:06.900><c> de</c><00:01:07.140><c> aquí</c><00:01:07.439><c> arriba</c><00:01:07.619><c> y</c><00:01:08.340><c> esta</c><00:01:08.760><c> otra</c><00:01:08.939><c> con</c><00:01:09.119><c> los</c>
+
+00:01:09.469 --> 00:01:09.479 align:start position:0%
+barra de aquí arriba y esta otra con los
+ 
+
+00:01:09.479 --> 00:01:12.530 align:start position:0%
+barra de aquí arriba y esta otra con los
+links<00:01:09.780><c> navegados</c><00:01:10.200><c> recientemente</c>
+
+00:01:12.530 --> 00:01:12.540 align:start position:0%
+links navegados recientemente
+ 
+
+00:01:12.540 --> 00:01:15.710 align:start position:0%
+links navegados recientemente
+vemos<00:01:13.080><c> Que</c><00:01:13.500><c> página</c><00:01:14.040><c> que</c><00:01:14.340><c> abrimos</c><00:01:14.580><c> página</c><00:01:15.360><c> que</c>
+
+00:01:15.710 --> 00:01:15.720 align:start position:0%
+vemos Que página que abrimos página que
+ 
+
+00:01:15.720 --> 00:01:19.010 align:start position:0%
+vemos Que página que abrimos página que
+tiene<00:01:16.080><c> esas</c><00:01:16.320><c> partes</c><00:01:16.580><c> por</c><00:01:17.580><c> ejemplo</c><00:01:18.020><c> si</c>
+
+00:01:19.010 --> 00:01:19.020 align:start position:0%
+tiene esas partes por ejemplo si
+ 
+
+00:01:19.020 --> 00:01:20.510 align:start position:0%
+tiene esas partes por ejemplo si
+invocamos<00:01:19.320><c> directamente</c><00:01:19.619><c> la</c><00:01:20.220><c> transacción</c>
+
+00:01:20.510 --> 00:01:20.520 align:start position:0%
+invocamos directamente la transacción
+ 
+
+00:01:20.520 --> 00:01:23.090 align:start position:0%
+invocamos directamente la transacción
+paralela<00:01:21.180><c> a</c><00:01:21.840><c> tracción</c><00:01:22.080><c> without</c><00:01:22.500><c> para</c><00:01:22.680><c> meterse</c>
+
+00:01:23.090 --> 00:01:23.100 align:start position:0%
+paralela a tracción without para meterse
+ 
+
+00:01:23.100 --> 00:01:27.530 align:start position:0%
+paralela a tracción without para meterse
+aquí<00:01:23.640><c> están</c><00:01:24.200><c> O</c><00:01:25.200><c> si</c><00:01:25.439><c> por</c><00:01:25.619><c> ejemplo</c><00:01:26.180><c> ahora</c><00:01:27.180><c> vamos</c>
+
+00:01:27.530 --> 00:01:27.540 align:start position:0%
+aquí están O si por ejemplo ahora vamos
+ 
+
+00:01:27.540 --> 00:01:30.130 align:start position:0%
+aquí están O si por ejemplo ahora vamos
+al<00:01:28.320><c> View</c><00:01:28.860><c> de</c><00:01:28.979><c> una</c><00:01:29.280><c> atracción</c>
+
+00:01:30.130 --> 00:01:30.140 align:start position:0%
+al View de una atracción
+ 
+
+00:01:30.140 --> 00:01:35.810 align:start position:0%
+al View de una atracción
+el<00:01:31.140><c> del</c><00:01:31.439><c> patter</c><00:01:31.920><c> primero</c>
+
+00:01:35.810 --> 00:01:35.820 align:start position:0%
+ 
+ 
+
+00:01:35.820 --> 00:01:38.030 align:start position:0%
+ 
+o<00:01:36.659><c> el</c><00:01:36.900><c> implementado</c><00:01:37.079><c> de</c><00:01:37.439><c> cero</c><00:01:37.680><c> por</c><00:01:37.860><c> nosotros</c>
+
+00:01:38.030 --> 00:01:38.040 align:start position:0%
+o el implementado de cero por nosotros
+ 
+
+00:01:38.040 --> 00:01:40.490 align:start position:0%
+o el implementado de cero por nosotros
+después
+
+00:01:40.490 --> 00:01:40.500 align:start position:0%
+después
+ 
+
+00:01:40.500 --> 00:01:42.649 align:start position:0%
+después
+vemos<00:01:40.979><c> que</c><00:01:41.220><c> más</c><00:01:41.640><c> allá</c><00:01:41.820><c> de</c><00:01:42.060><c> las</c><00:01:42.240><c> diferencias</c>
+
+00:01:42.649 --> 00:01:42.659 align:start position:0%
+vemos que más allá de las diferencias
+ 
+
+00:01:42.659 --> 00:01:46.910 align:start position:0%
+vemos que más allá de las diferencias
+siguen<00:01:43.500><c> manteniendo</c><00:01:43.920><c> esto</c><00:01:44.460><c> en</c><00:01:44.640><c> común</c>
+
+00:01:46.910 --> 00:01:46.920 align:start position:0%
+ 
+ 
+
+00:01:46.920 --> 00:01:49.789 align:start position:0%
+ 
+si<00:01:47.460><c> ahora</c><00:01:47.700><c> vamos</c><00:01:47.820><c> a</c><00:01:48.180><c> genexus</c><00:01:48.960><c> a</c><00:01:49.020><c> ver</c><00:01:49.140><c> el</c><00:01:49.259><c> form</c>
+
+00:01:49.789 --> 00:01:49.799 align:start position:0%
+si ahora vamos a genexus a ver el form
+ 
+
+00:01:49.799 --> 00:01:51.310 align:start position:0%
+si ahora vamos a genexus a ver el form
+de<00:01:49.860><c> este</c><00:01:50.100><c> View</c><00:01:50.460><c> que</c><00:01:50.520><c> implementamos</c><00:01:50.880><c> nosotros</c>
+
+00:01:51.310 --> 00:01:51.320 align:start position:0%
+de este View que implementamos nosotros
+ 
+
+00:01:51.320 --> 00:01:54.710 align:start position:0%
+de este View que implementamos nosotros
+dónde<00:01:52.320><c> está</c><00:01:52.500><c> esa</c><00:01:52.799><c> parte</c><00:01:52.920><c> común</c>
+
+00:01:54.710 --> 00:01:54.720 align:start position:0%
+dónde está esa parte común
+ 
+
+00:01:54.720 --> 00:01:57.289 align:start position:0%
+dónde está esa parte común
+o<00:01:55.140><c> si</c><00:01:55.500><c> abrimos</c><00:01:55.619><c> la</c><00:01:55.920><c> transacción</c><00:01:56.280><c> a</c><00:01:56.700><c> traction</c><00:01:56.880><c> o</c>
+
+00:01:57.289 --> 00:01:57.299 align:start position:0%
+o si abrimos la transacción a traction o
+ 
+
+00:01:57.299 --> 00:01:58.850 align:start position:0%
+o si abrimos la transacción a traction o
+la<00:01:57.540><c> transacción</c><00:01:57.720><c> paralela</c><00:01:58.259><c> que</c><00:01:58.500><c> no</c><00:01:58.619><c> recibe</c>
+
+00:01:58.850 --> 00:01:58.860 align:start position:0%
+la transacción paralela que no recibe
+ 
+
+00:01:58.860 --> 00:02:02.090 align:start position:0%
+la transacción paralela que no recibe
+parámetros<00:01:59.399><c> y</c><00:01:59.759><c> vamos</c><00:02:00.000><c> a</c><00:02:00.240><c> su</c><00:02:00.540><c> forma</c><00:02:00.720><c> tampoco</c><00:02:01.680><c> lo</c>
+
+00:02:02.090 --> 00:02:02.100 align:start position:0%
+parámetros y vamos a su forma tampoco lo
+ 
+
+00:02:02.100 --> 00:02:03.590 align:start position:0%
+parámetros y vamos a su forma tampoco lo
+vemos
+
+00:02:03.590 --> 00:02:03.600 align:start position:0%
+vemos
+ 
+
+00:02:03.600 --> 00:02:05.929 align:start position:0%
+vemos
+aquí<00:02:04.140><c> lo</c><00:02:04.500><c> que</c><00:02:04.680><c> estamos</c><00:02:04.860><c> viendo</c><00:02:05.100><c> Es</c><00:02:05.460><c> un</c><00:02:05.700><c> control</c>
+
+00:02:05.929 --> 00:02:05.939 align:start position:0%
+aquí lo que estamos viendo Es un control
+ 
+
+00:02:05.939 --> 00:02:08.150 align:start position:0%
+aquí lo que estamos viendo Es un control
+text<00:02:06.540><c> block</c><00:02:06.780><c> con</c><00:02:07.320><c> el</c><00:02:07.560><c> nombre</c><00:02:07.680><c> de</c><00:02:08.160><c> la</c>
+
+00:02:08.150 --> 00:02:08.160 align:start position:0%
+text block con el nombre de la
+ 
+
+00:02:08.160 --> 00:02:11.029 align:start position:0%
+text block con el nombre de la
+transacción<00:02:09.020><c> debajo</c><00:02:10.020><c> estamos</c><00:02:10.500><c> viendo</c><00:02:10.800><c> un</c>
+
+00:02:11.029 --> 00:02:11.039 align:start position:0%
+transacción debajo estamos viendo un
+ 
+
+00:02:11.039 --> 00:02:13.250 align:start position:0%
+transacción debajo estamos viendo un
+control<00:02:11.280><c> error</c><00:02:11.940><c> viewer</c><00:02:12.420><c> que</c><00:02:12.900><c> es</c><00:02:13.080><c> donde</c>
+
+00:02:13.250 --> 00:02:13.260 align:start position:0%
+control error viewer que es donde
+ 
+
+00:02:13.260 --> 00:02:15.170 align:start position:0%
+control error viewer que es donde
+aparecen<00:02:13.560><c> los</c><00:02:13.739><c> mensajes</c><00:02:13.980><c> por</c><00:02:14.520><c> ejemplo</c><00:02:14.760><c> de</c>
+
+00:02:15.170 --> 00:02:15.180 align:start position:0%
+aparecen los mensajes por ejemplo de
+ 
+
+00:02:15.180 --> 00:02:19.790 align:start position:0%
+aparecen los mensajes por ejemplo de
+éxito<00:02:15.599><c> o</c><00:02:15.959><c> fracaso</c>
+
+00:02:19.790 --> 00:02:19.800 align:start position:0%
+ 
+ 
+
+00:02:19.800 --> 00:02:25.309 align:start position:0%
+ 
+luego<00:02:20.280><c> tenemos</c><00:02:20.760><c> este</c><00:02:21.180><c> control</c><00:02:21.660><c> action</c><00:02:22.379><c> Group</c>
+
+00:02:25.309 --> 00:02:25.319 align:start position:0%
+ 
+ 
+
+00:02:25.319 --> 00:02:27.170 align:start position:0%
+ 
+que<00:02:25.800><c> es</c><00:02:25.920><c> el</c><00:02:25.980><c> que</c><00:02:26.160><c> presenta</c><00:02:26.400><c> los</c><00:02:26.760><c> botones</c><00:02:26.940><c> de</c>
+
+00:02:27.170 --> 00:02:27.180 align:start position:0%
+que es el que presenta los botones de
+ 
+
+00:02:27.180 --> 00:02:30.350 align:start position:0%
+que es el que presenta los botones de
+navegación<00:02:27.540><c> y</c><00:02:27.959><c> el</c><00:02:28.260><c> Select</c>
+
+00:02:30.350 --> 00:02:30.360 align:start position:0%
+navegación y el Select
+ 
+
+00:02:30.360 --> 00:02:33.290 align:start position:0%
+navegación y el Select
+luego<00:02:30.780><c> vienen</c><00:02:31.319><c> los</c><00:02:31.620><c> atributos</c>
+
+00:02:33.290 --> 00:02:33.300 align:start position:0%
+luego vienen los atributos
+ 
+
+00:02:33.300 --> 00:02:35.869 align:start position:0%
+luego vienen los atributos
+Y<00:02:33.599><c> por</c><00:02:33.959><c> último</c><00:02:34.140><c> tenemos</c><00:02:34.440><c> otro</c><00:02:35.160><c> action</c><00:02:35.520><c> Group</c>
+
+00:02:35.869 --> 00:02:35.879 align:start position:0%
+Y por último tenemos otro action Group
+ 
+
+00:02:35.879 --> 00:02:39.050 align:start position:0%
+Y por último tenemos otro action Group
+con<00:02:36.060><c> los</c><00:02:36.239><c> botones</c>
+
+00:02:39.050 --> 00:02:39.060 align:start position:0%
+ 
+ 
+
+00:02:39.060 --> 00:02:43.309 align:start position:0%
+ 
+Dónde<00:02:39.720><c> está</c><00:02:39.959><c> el</c><00:02:40.140><c> área</c><00:02:40.260><c> de</c><00:02:40.379><c> arriba</c>
+
+00:02:43.309 --> 00:02:43.319 align:start position:0%
+ 
+ 
+
+00:02:43.319 --> 00:02:45.589 align:start position:0%
+ 
+si<00:02:43.980><c> observamos</c><00:02:44.400><c> las</c><00:02:44.760><c> propiedades</c><00:02:45.000><c> de</c><00:02:45.540><c> la</c>
+
+00:02:45.589 --> 00:02:45.599 align:start position:0%
+si observamos las propiedades de la
+ 
+
+00:02:45.599 --> 00:02:47.869 align:start position:0%
+si observamos las propiedades de la
+transacción<00:02:45.959><c> vemos</c><00:02:46.800><c> un</c><00:02:47.160><c> grupo</c><00:02:47.280><c> web</c>
+
+00:02:47.869 --> 00:02:47.879 align:start position:0%
+transacción vemos un grupo web
+ 
+
+00:02:47.879 --> 00:02:49.910 align:start position:0%
+transacción vemos un grupo web
+transaction<00:02:48.540><c> con</c><00:02:48.900><c> tres</c><00:02:49.260><c> propiedades</c><00:02:49.500><c> muy</c>
+
+00:02:49.910 --> 00:02:49.920 align:start position:0%
+transaction con tres propiedades muy
+ 
+
+00:02:49.920 --> 00:02:54.110 align:start position:0%
+transaction con tres propiedades muy
+importantes<00:02:50.660><c> la</c><00:02:51.660><c> primera</c><00:02:52.019><c> SIM</c><00:02:52.940><c> controlará</c><00:02:53.940><c> el</c>
+
+00:02:54.110 --> 00:02:54.120 align:start position:0%
+importantes la primera SIM controlará el
+ 
+
+00:02:54.120 --> 00:02:57.589 align:start position:0%
+importantes la primera SIM controlará el
+diseño<00:02:54.360><c> de</c><00:02:54.780><c> los</c><00:02:54.840><c> controles</c><00:02:55.640><c> la</c><00:02:56.640><c> segunda</c><00:02:56.819><c> la</c>
+
+00:02:57.589 --> 00:02:57.599 align:start position:0%
+diseño de los controles la segunda la
+ 
+
+00:02:57.599 --> 00:03:00.229 align:start position:0%
+diseño de los controles la segunda la
+veremos<00:02:57.840><c> a</c><00:02:58.200><c> continuación</c><00:02:58.440><c> y</c><00:02:59.340><c> la</c><00:02:59.700><c> tercera</c><00:02:59.940><c> es</c>
+
+00:03:00.229 --> 00:03:00.239 align:start position:0%
+veremos a continuación y la tercera es
+ 
+
+00:03:00.239 --> 00:03:02.750 align:start position:0%
+veremos a continuación y la tercera es
+la<00:03:00.420><c> que</c><00:03:00.540><c> veremos</c><00:03:00.720><c> ahora</c><00:03:01.019><c> la</c><00:03:01.500><c> propiedad</c><00:03:01.920><c> Master</c>
+
+00:03:02.750 --> 00:03:02.760 align:start position:0%
+la que veremos ahora la propiedad Master
+ 
+
+00:03:02.760 --> 00:03:05.449 align:start position:0%
+la que veremos ahora la propiedad Master
+page<00:03:03.260><c> Allí</c><00:03:04.260><c> se</c><00:03:04.560><c> indica</c><00:03:04.680><c> Cuál</c><00:03:04.980><c> será</c><00:03:05.160><c> la</c><00:03:05.400><c> página</c>
+
+00:03:05.449 --> 00:03:05.459 align:start position:0%
+page Allí se indica Cuál será la página
+ 
+
+00:03:05.459 --> 00:03:07.910 align:start position:0%
+page Allí se indica Cuál será la página
+maestra<00:03:06.060><c> dentro</c><00:03:06.599><c> de</c><00:03:07.080><c> la</c><00:03:07.080><c> cual</c><00:03:07.200><c> la</c><00:03:07.620><c> página</c>
+
+00:03:07.910 --> 00:03:07.920 align:start position:0%
+maestra dentro de la cual la página
+ 
+
+00:03:07.920 --> 00:03:09.830 align:start position:0%
+maestra dentro de la cual la página
+correspondiente<00:03:08.819><c> a</c><00:03:09.239><c> este</c><00:03:09.599><c> objeto</c>
+
+00:03:09.830 --> 00:03:09.840 align:start position:0%
+correspondiente a este objeto
+ 
+
+00:03:09.840 --> 00:03:13.130 align:start position:0%
+correspondiente a este objeto
+transacción<00:03:10.500><c> se</c><00:03:11.040><c> cargará</c><00:03:11.659><c> vemos</c><00:03:12.659><c> que</c><00:03:12.840><c> nos</c>
+
+00:03:13.130 --> 00:03:13.140 align:start position:0%
+transacción se cargará vemos que nos
+ 
+
+00:03:13.140 --> 00:03:14.869 align:start position:0%
+transacción se cargará vemos que nos
+ofrece<00:03:13.319><c> algunas</c><00:03:13.800><c> posibilidades</c><00:03:14.040><c> que</c>
+
+00:03:14.869 --> 00:03:14.879 align:start position:0%
+ofrece algunas posibilidades que
+ 
+
+00:03:14.879 --> 00:03:16.729 align:start position:0%
+ofrece algunas posibilidades que
+corresponden<00:03:15.659><c> a</c><00:03:15.959><c> todas</c><00:03:16.319><c> las</c><00:03:16.620><c> páginas</c>
+
+00:03:16.729 --> 00:03:16.739 align:start position:0%
+corresponden a todas las páginas
+ 
+
+00:03:16.739 --> 00:03:19.250 align:start position:0%
+corresponden a todas las páginas
+maestras<00:03:17.340><c> definidas</c><00:03:18.000><c> por</c><00:03:18.300><c> ahora</c><00:03:18.540><c> en</c><00:03:18.959><c> nuestra</c>
+
+00:03:19.250 --> 00:03:19.260 align:start position:0%
+maestras definidas por ahora en nuestra
+ 
+
+00:03:19.260 --> 00:03:22.729 align:start position:0%
+maestras definidas por ahora en nuestra
+cabe<00:03:19.620><c> cuando</c><00:03:20.519><c> se</c><00:03:21.060><c> crea</c><00:03:21.239><c> una</c><00:03:21.720><c> kb</c><00:03:22.080><c> se</c><00:03:22.440><c> crean</c>
+
+00:03:22.729 --> 00:03:22.739 align:start position:0%
+cabe cuando se crea una kb se crean
+ 
+
+00:03:22.739 --> 00:03:24.770 align:start position:0%
+cabe cuando se crea una kb se crean
+estas<00:03:23.040><c> páginas</c><00:03:23.280><c> para</c><00:03:23.519><c> ya</c><00:03:24.000><c> contar</c><00:03:24.180><c> con</c><00:03:24.420><c> algunas</c>
+
+00:03:24.770 --> 00:03:24.780 align:start position:0%
+estas páginas para ya contar con algunas
+ 
+
+00:03:24.780 --> 00:03:27.130 align:start position:0%
+estas páginas para ya contar con algunas
+por<00:03:25.080><c> defecto</c><00:03:25.379><c> pero</c><00:03:25.860><c> podremos</c><00:03:26.400><c> crear</c><00:03:26.700><c> otras</c>
+
+00:03:27.130 --> 00:03:27.140 align:start position:0%
+por defecto pero podremos crear otras
+ 
+
+00:03:27.140 --> 00:03:30.290 align:start position:0%
+por defecto pero podremos crear otras
+vemos<00:03:28.140><c> que</c><00:03:28.560><c> por</c><00:03:28.860><c> defecto</c><00:03:29.220><c> la</c><00:03:29.640><c> transacción</c><00:03:30.060><c> fue</c>
+
+00:03:30.290 --> 00:03:30.300 align:start position:0%
+vemos que por defecto la transacción fue
+ 
+
+00:03:30.300 --> 00:03:33.890 align:start position:0%
+vemos que por defecto la transacción fue
+creada<00:03:30.659><c> asociada</c><00:03:31.560><c> a</c><00:03:31.920><c> esta</c><00:03:32.280><c> página</c><00:03:32.400><c> maestra</c>
+
+00:03:33.890 --> 00:03:33.900 align:start position:0%
+creada asociada a esta página maestra
+ 
+
+00:03:33.900 --> 00:03:36.229 align:start position:0%
+creada asociada a esta página maestra
+si<00:03:34.500><c> ahora</c><00:03:34.620><c> abrimos</c><00:03:35.040><c> los</c><00:03:35.400><c> demás</c><00:03:35.640><c> objetos</c><00:03:36.060><c> que</c>
+
+00:03:36.229 --> 00:03:36.239 align:start position:0%
+si ahora abrimos los demás objetos que
+ 
+
+00:03:36.239 --> 00:03:41.690 align:start position:0%
+si ahora abrimos los demás objetos que
+Estuvimos<00:03:36.480><c> viendo</c><00:03:36.840><c> en</c><00:03:37.140><c> ejecución</c>
+
+00:03:41.690 --> 00:03:41.700 align:start position:0%
+ 
+ 
+
+00:03:41.700 --> 00:03:44.089 align:start position:0%
+ 
+no<00:03:42.180><c> nos</c><00:03:42.659><c> sorprenderá</c><00:03:43.080><c> encontrar</c><00:03:43.500><c> que</c><00:03:43.860><c> también</c>
+
+00:03:44.089 --> 00:03:44.099 align:start position:0%
+no nos sorprenderá encontrar que también
+ 
+
+00:03:44.099 --> 00:03:46.490 align:start position:0%
+no nos sorprenderá encontrar que también
+tienen<00:03:44.580><c> página</c><00:03:45.060><c> maestra</c><00:03:45.540><c> y</c><00:03:45.780><c> que</c><00:03:46.019><c> es</c><00:03:46.260><c> esta</c>
+
+00:03:46.490 --> 00:03:46.500 align:start position:0%
+tienen página maestra y que es esta
+ 
+
+00:03:46.500 --> 00:03:51.949 align:start position:0%
+tienen página maestra y que es esta
+misma
+
+00:03:51.949 --> 00:03:51.959 align:start position:0%
+ 
+ 
+
+00:03:51.959 --> 00:03:54.410 align:start position:0%
+ 
+ya<00:03:52.440><c> de</c><00:03:52.739><c> paso</c><00:03:52.860><c> vemos</c><00:03:53.340><c> que</c><00:03:53.580><c> los</c><00:03:53.760><c> webpanels</c>
+
+00:03:54.410 --> 00:03:54.420 align:start position:0%
+ya de paso vemos que los webpanels
+ 
+
+00:03:54.420 --> 00:03:56.210 align:start position:0%
+ya de paso vemos que los webpanels
+también<00:03:54.599><c> cuentan</c><00:03:55.080><c> con</c><00:03:55.260><c> las</c><00:03:55.560><c> mismas</c><00:03:55.860><c> tres</c>
+
+00:03:56.210 --> 00:03:56.220 align:start position:0%
+también cuentan con las mismas tres
+ 
+
+00:03:56.220 --> 00:03:58.729 align:start position:0%
+también cuentan con las mismas tres
+propiedades
+
+00:03:58.729 --> 00:03:58.739 align:start position:0%
+ 
+ 
+
+00:03:58.739 --> 00:04:00.890 align:start position:0%
+ 
+vamos<00:03:59.099><c> a</c><00:03:59.459><c> buscar</c><00:03:59.580><c> esta</c><00:04:00.000><c> página</c><00:04:00.120><c> maestra</c><00:04:00.599><c> para</c>
+
+00:04:00.890 --> 00:04:00.900 align:start position:0%
+vamos a buscar esta página maestra para
+ 
+
+00:04:00.900 --> 00:04:04.550 align:start position:0%
+vamos a buscar esta página maestra para
+ver<00:04:01.260><c> de</c><00:04:01.500><c> qué</c><00:04:01.680><c> se</c><00:04:01.799><c> trata</c>
+
+00:04:04.550 --> 00:04:04.560 align:start position:0%
+ 
+ 
+
+00:04:04.560 --> 00:04:07.190 align:start position:0%
+ 
+si<00:04:05.099><c> no</c><00:04:05.280><c> sabemos</c><00:04:05.459><c> Dónde</c><00:04:06.360><c> se</c><00:04:06.540><c> encuentra</c><00:04:06.780><c> podemos</c>
+
+00:04:07.190 --> 00:04:07.200 align:start position:0%
+si no sabemos Dónde se encuentra podemos
+ 
+
+00:04:07.200 --> 00:04:11.270 align:start position:0%
+si no sabemos Dónde se encuentra podemos
+buscarla<00:04:07.920><c> aquí</c><00:04:08.099><c> y</c><00:04:08.519><c> abrirla</c>
+
+00:04:11.270 --> 00:04:11.280 align:start position:0%
+ 
+ 
+
+00:04:11.280 --> 00:04:13.550 align:start position:0%
+ 
+Y<00:04:11.939><c> si</c><00:04:12.000><c> queremos</c><00:04:12.120><c> ubicarla</c><00:04:12.900><c> en</c><00:04:13.080><c> el</c><00:04:13.200><c> cabe</c>
+
+00:04:13.550 --> 00:04:13.560 align:start position:0%
+Y si queremos ubicarla en el cabe
+ 
+
+00:04:13.560 --> 00:04:16.310 align:start position:0%
+Y si queremos ubicarla en el cabe
+Explorer<00:04:14.099><c> haciendo</c><00:04:14.939><c> botón</c><00:04:15.360><c> derecho</c><00:04:15.780><c> sobre</c><00:04:16.019><c> la</c>
+
+00:04:16.310 --> 00:04:16.320 align:start position:0%
+Explorer haciendo botón derecho sobre la
+ 
+
+00:04:16.320 --> 00:04:21.770 align:start position:0%
+Explorer haciendo botón derecho sobre la
+pestaña<00:04:16.620><c> tenemos</c><00:04:17.400><c> la</c><00:04:17.760><c> opción</c><00:04:17.940><c> para</c><00:04:18.239><c> ello</c>
+
+00:04:21.770 --> 00:04:21.780 align:start position:0%
+ 
+ 
+
+00:04:21.780 --> 00:04:24.590 align:start position:0%
+ 
+está<00:04:22.620><c> dentro</c><00:04:22.800><c> de</c><00:04:22.979><c> un</c><00:04:23.160><c> folder</c><00:04:23.639><c> web</c><00:04:24.240><c> donde</c>
+
+00:04:24.590 --> 00:04:24.600 align:start position:0%
+está dentro de un folder web donde
+ 
+
+00:04:24.600 --> 00:04:26.390 align:start position:0%
+está dentro de un folder web donde
+ginexus<00:04:25.259><c> coloca</c><00:04:25.380><c> objetos</c><00:04:25.800><c> que</c><00:04:26.040><c> tienen</c><00:04:26.280><c> que</c>
+
+00:04:26.390 --> 00:04:26.400 align:start position:0%
+ginexus coloca objetos que tienen que
+ 
+
+00:04:26.400 --> 00:04:30.170 align:start position:0%
+ginexus coloca objetos que tienen que
+ver<00:04:26.520><c> con</c><00:04:26.639><c> el</c><00:04:26.759><c> paterno</c><00:04:27.240><c> por</c><00:04:27.360><c> ejemplo</c><00:04:27.540><c> y</c><00:04:28.139><c> demás</c>
+
+00:04:30.170 --> 00:04:30.180 align:start position:0%
+ver con el paterno por ejemplo y demás
+ 
+
+00:04:30.180 --> 00:04:32.450 align:start position:0%
+ver con el paterno por ejemplo y demás
+si<00:04:30.720><c> observamos</c><00:04:31.020><c> sus</c><00:04:31.380><c> propiedades</c><00:04:31.620><c> vemos</c>
+
+00:04:32.450 --> 00:04:32.460 align:start position:0%
+si observamos sus propiedades vemos
+ 
+
+00:04:32.460 --> 00:04:35.570 align:start position:0%
+si observamos sus propiedades vemos
+también<00:04:32.820><c> la</c><00:04:33.240><c> de</c><00:04:33.540><c> nombres</c><00:04:33.720><c> SIM</c><00:04:34.199><c> y</c><00:04:35.040><c> la</c><00:04:35.340><c> de</c><00:04:35.460><c> nombre</c>
+
+00:04:35.570 --> 00:04:35.580 align:start position:0%
+también la de nombres SIM y la de nombre
+ 
+
+00:04:35.580 --> 00:04:39.129 align:start position:0%
+también la de nombres SIM y la de nombre
+type<00:04:36.120><c> y</c><00:04:36.840><c> ya</c><00:04:37.080><c> no</c><00:04:37.259><c> está</c><00:04:37.440><c> la</c><00:04:37.680><c> Master</c><00:04:37.979><c> page</c><00:04:38.280><c> Por</c><00:04:38.880><c> qué</c>
+
+00:04:39.129 --> 00:04:39.139 align:start position:0%
+type y ya no está la Master page Por qué
+ 
+
+00:04:39.139 --> 00:04:42.170 align:start position:0%
+type y ya no está la Master page Por qué
+Porque<00:04:40.139><c> se</c><00:04:40.440><c> trata</c><00:04:40.680><c> Ni</c><00:04:41.160><c> más</c><00:04:41.400><c> ni</c><00:04:41.520><c> menos</c><00:04:41.639><c> que</c><00:04:41.940><c> de</c>
+
+00:04:42.170 --> 00:04:42.180 align:start position:0%
+Porque se trata Ni más ni menos que de
+ 
+
+00:04:42.180 --> 00:04:44.450 align:start position:0%
+Porque se trata Ni más ni menos que de
+un<00:04:42.300><c> web</c><00:04:42.540><c> panel</c><00:04:42.840><c> de</c><00:04:43.020><c> un</c><00:04:43.320><c> tipo</c><00:04:43.500><c> especial</c><00:04:43.860><c> el</c><00:04:44.280><c> tipo</c>
+
+00:04:44.450 --> 00:04:44.460 align:start position:0%
+un web panel de un tipo especial el tipo
+ 
+
+00:04:44.460 --> 00:04:47.510 align:start position:0%
+un web panel de un tipo especial el tipo
+Master<00:04:45.060><c> page</c><00:04:45.440><c> un</c><00:04:46.440><c> web</c><00:04:46.800><c> panel</c><00:04:47.100><c> de</c><00:04:47.280><c> este</c><00:04:47.400><c> tipo</c>
+
+00:04:47.510 --> 00:04:47.520 align:start position:0%
+Master page un web panel de este tipo
+ 
+
+00:04:47.520 --> 00:04:50.050 align:start position:0%
+Master page un web panel de este tipo
+tendrá<00:04:48.240><c> un</c><00:04:48.419><c> control</c><00:04:48.600><c> especial</c><00:04:49.020><c> el</c><00:04:49.620><c> control</c>
+
+00:04:50.050 --> 00:04:50.060 align:start position:0%
+tendrá un control especial el control
+ 
+
+00:04:50.060 --> 00:04:54.350 align:start position:0%
+tendrá un control especial el control
+content<00:04:51.060><c> Place</c><00:04:51.360><c> holder</c><00:04:52.220><c> aquí</c><00:04:53.220><c> es</c><00:04:53.639><c> donde</c><00:04:53.880><c> toda</c>
+
+00:04:54.350 --> 00:04:54.360 align:start position:0%
+content Place holder aquí es donde toda
+ 
+
+00:04:54.360 --> 00:04:56.629 align:start position:0%
+content Place holder aquí es donde toda
+página<00:04:54.540><c> que</c><00:04:54.840><c> tenga</c><00:04:55.139><c> a</c><00:04:55.500><c> esta</c><00:04:55.800><c> como</c><00:04:56.160><c> su</c><00:04:56.460><c> página</c>
+
+00:04:56.629 --> 00:04:56.639 align:start position:0%
+página que tenga a esta como su página
+ 
+
+00:04:56.639 --> 00:04:59.689 align:start position:0%
+página que tenga a esta como su página
+maestra<00:04:57.180><c> va</c><00:04:57.720><c> a</c><00:04:57.900><c> cargarse</c>
+
+00:04:59.689 --> 00:04:59.699 align:start position:0%
+maestra va a cargarse
+ 
+
+00:04:59.699 --> 00:05:02.570 align:start position:0%
+maestra va a cargarse
+entonces<00:05:00.540><c> la</c><00:05:01.020><c> transacción</c><00:05:01.440><c> se</c><00:05:01.979><c> cargará</c><00:05:02.460><c> en</c>
+
+00:05:02.570 --> 00:05:02.580 align:start position:0%
+entonces la transacción se cargará en
+ 
+
+00:05:02.580 --> 00:05:09.050 align:start position:0%
+entonces la transacción se cargará en
+este<00:05:02.820><c> espacio</c><00:05:03.060><c> el</c><00:05:03.780><c> view</c><00:05:04.320><c> todo</c><00:05:04.560><c> lo</c><00:05:04.680><c> que</c><00:05:04.800><c> vimos</c>
+
+00:05:09.050 --> 00:05:09.060 align:start position:0%
+ 
+ 
+
+00:05:09.060 --> 00:05:11.629 align:start position:0%
+ 
+Aquí<00:05:09.540><c> vemos</c><00:05:09.900><c> el</c><00:05:10.139><c> control</c><00:05:10.500><c> text</c><00:05:11.280><c> block</c><00:05:11.520><c> que</c>
+
+00:05:11.629 --> 00:05:11.639 align:start position:0%
+Aquí vemos el control text block que
+ 
+
+00:05:11.639 --> 00:05:13.189 align:start position:0%
+Aquí vemos el control text block que
+vemos<00:05:11.820><c> en</c><00:05:12.120><c> ejecución</c><00:05:12.479><c> con</c><00:05:12.840><c> el</c><00:05:13.080><c> nombre</c>
+
+00:05:13.189 --> 00:05:13.199 align:start position:0%
+vemos en ejecución con el nombre
+ 
+
+00:05:13.199 --> 00:05:15.469 align:start position:0%
+vemos en ejecución con el nombre
+application<00:05:14.040><c> name</c>
+
+00:05:15.469 --> 00:05:15.479 align:start position:0%
+application name
+ 
+
+00:05:15.479 --> 00:05:17.510 align:start position:0%
+application name
+por<00:05:15.900><c> ejemplo</c><00:05:16.080><c> probemos</c><00:05:16.800><c> cambiarlo</c><00:05:17.460><c> por</c>
+
+00:05:17.510 --> 00:05:17.520 align:start position:0%
+por ejemplo probemos cambiarlo por
+ 
+
+00:05:17.520 --> 00:05:20.870 align:start position:0%
+por ejemplo probemos cambiarlo por
+travelations
+
+00:05:20.870 --> 00:05:20.880 align:start position:0%
+ 
+ 
+
+00:05:20.880 --> 00:05:23.090 align:start position:0%
+ 
+aquí<00:05:21.479><c> tenemos</c><00:05:21.720><c> una</c><00:05:22.199><c> imagen</c><00:05:22.440><c> que</c><00:05:22.800><c> también</c>
+
+00:05:23.090 --> 00:05:23.100 align:start position:0%
+aquí tenemos una imagen que también
+ 
+
+00:05:23.100 --> 00:05:25.070 align:start position:0%
+aquí tenemos una imagen que también
+podemos<00:05:23.340><c> cambiar</c><00:05:23.699><c> por</c><00:05:24.060><c> otra</c><00:05:24.360><c> que</c><00:05:24.600><c> previamente</c>
+
+00:05:25.070 --> 00:05:25.080 align:start position:0%
+podemos cambiar por otra que previamente
+ 
+
+00:05:25.080 --> 00:05:32.930 align:start position:0%
+podemos cambiar por otra que previamente
+insertamos<00:05:26.039><c> en</c><00:05:26.280><c> la</c><00:05:26.400><c> kb</c>
+
+00:05:32.930 --> 00:05:32.940 align:start position:0%
+ 
+ 
+
+00:05:32.940 --> 00:05:35.090 align:start position:0%
+ 
+pero<00:05:33.539><c> vemos</c><00:05:33.660><c> el</c><00:05:33.960><c> efecto</c><00:05:34.139><c> de</c><00:05:34.380><c> estos</c><00:05:34.680><c> cambios</c><00:05:34.800><c> en</c>
+
+00:05:35.090 --> 00:05:35.100 align:start position:0%
+pero vemos el efecto de estos cambios en
+ 
+
+00:05:35.100 --> 00:05:41.810 align:start position:0%
+pero vemos el efecto de estos cambios en
+nuestra<00:05:35.400><c> aplicación</c>
+
+00:05:41.810 --> 00:05:41.820 align:start position:0%
+ 
+ 
+
+00:05:41.820 --> 00:05:57.350 align:start position:0%
+ 
+aquí<00:05:42.539><c> Los</c><00:05:42.720><c> vemos</c>
+
+00:05:57.350 --> 00:05:57.360 align:start position:0%
+ 
+ 
+
+00:05:57.360 --> 00:06:00.110 align:start position:0%
+ 
+bien<00:05:57.780><c> con</c><00:05:58.380><c> esto</c><00:05:58.680><c> ya</c><00:05:59.039><c> vimos</c><00:05:59.280><c> dos</c><00:05:59.699><c> de</c><00:05:59.880><c> los</c><00:06:00.000><c> tres</c>
+
+00:06:00.110 --> 00:06:00.120 align:start position:0%
+bien con esto ya vimos dos de los tres
+ 
+
+00:06:00.120 --> 00:06:02.689 align:start position:0%
+bien con esto ya vimos dos de los tres
+tipos<00:06:00.240><c> de</c><00:06:00.360><c> pantallas</c><00:06:00.900><c> web</c><00:06:01.259><c> la</c><00:06:01.860><c> página</c><00:06:02.039><c> maestra</c>
+
+00:06:02.689 --> 00:06:02.699 align:start position:0%
+tipos de pantallas web la página maestra
+ 
+
+00:06:02.699 --> 00:06:04.969 align:start position:0%
+tipos de pantallas web la página maestra
+y<00:06:03.060><c> la</c><00:06:03.300><c> página</c><00:06:03.419><c> web</c><00:06:03.900><c> común</c><00:06:04.199><c> que</c><00:06:04.500><c> es</c><00:06:04.680><c> con</c><00:06:04.800><c> la</c><00:06:04.919><c> que</c>
+
+00:06:04.969 --> 00:06:04.979 align:start position:0%
+y la página web común que es con la que
+ 
+
+00:06:04.979 --> 00:06:06.409 align:start position:0%
+y la página web común que es con la que
+trabajamos<00:06:05.280><c> hasta</c><00:06:05.639><c> ahora</c><00:06:05.759><c> cada</c><00:06:06.120><c> vez</c><00:06:06.300><c> que</c>
+
+00:06:06.409 --> 00:06:06.419 align:start position:0%
+trabajamos hasta ahora cada vez que
+ 
+
+00:06:06.419 --> 00:06:08.529 align:start position:0%
+trabajamos hasta ahora cada vez que
+creamos<00:06:06.720><c> un</c><00:06:06.900><c> web</c><00:06:07.199><c> panel</c><00:06:07.500><c> o</c><00:06:07.680><c> una</c><00:06:07.919><c> transacción</c>
+
+00:06:08.529 --> 00:06:08.539 align:start position:0%
+creamos un web panel o una transacción
+ 
+
+00:06:08.539 --> 00:06:11.810 align:start position:0%
+creamos un web panel o una transacción
+nos<00:06:09.539><c> queda</c><00:06:09.780><c> ver</c><00:06:10.139><c> solamente</c><00:06:10.440><c> la</c><00:06:10.919><c> página</c><00:06:11.160><c> web</c><00:06:11.460><c> de</c>
+
+00:06:11.810 --> 00:06:11.820 align:start position:0%
+nos queda ver solamente la página web de
+ 
+
+00:06:11.820 --> 00:06:15.710 align:start position:0%
+nos queda ver solamente la página web de
+tipo<00:06:12.060><c> componente</c>
+
+00:06:15.710 --> 00:06:15.720 align:start position:0%
+ 
+ 
+
+00:06:15.720 --> 00:06:18.529 align:start position:0%
+ 
+para<00:06:16.380><c> eso</c><00:06:16.500><c> volvamos</c><00:06:17.100><c> un</c><00:06:17.460><c> poco</c><00:06:17.639><c> sobre</c><00:06:17.880><c> nuestros</c>
+
+00:06:18.529 --> 00:06:18.539 align:start position:0%
+para eso volvamos un poco sobre nuestros
+ 
+
+00:06:18.539 --> 00:06:20.390 align:start position:0%
+para eso volvamos un poco sobre nuestros
+pasos<00:06:18.720><c> y</c><00:06:19.020><c> recordemos</c><00:06:19.440><c> que</c><00:06:20.039><c> habíamos</c>
+
+00:06:20.390 --> 00:06:20.400 align:start position:0%
+pasos y recordemos que habíamos
+ 
+
+00:06:20.400 --> 00:06:22.450 align:start position:0%
+pasos y recordemos que habíamos
+implementado<00:06:20.880><c> en</c><00:06:21.180><c> los</c><00:06:21.240><c> videos</c><00:06:21.360><c> anteriores</c>
+
+00:06:22.450 --> 00:06:22.460 align:start position:0%
+implementado en los videos anteriores
+ 
+
+00:06:22.460 --> 00:06:25.249 align:start position:0%
+implementado en los videos anteriores
+teníamos<00:06:23.460><c> la</c><00:06:23.699><c> imitación</c><00:06:24.060><c> del</c><00:06:24.479><c> work</c><00:06:24.960><c> with</c><00:06:25.139><c> de</c>
+
+00:06:25.249 --> 00:06:25.259 align:start position:0%
+teníamos la imitación del work with de
+ 
+
+00:06:25.259 --> 00:06:27.590 align:start position:0%
+teníamos la imitación del work with de
+atracciones<00:06:25.560><c> en</c><00:06:26.280><c> el</c><00:06:26.460><c> cual</c><00:06:26.639><c> el</c><00:06:27.060><c> usuario</c><00:06:27.240><c> podía</c>
+
+00:06:27.590 --> 00:06:27.600 align:start position:0%
+atracciones en el cual el usuario podía
+ 
+
+00:06:27.600 --> 00:06:30.170 align:start position:0%
+atracciones en el cual el usuario podía
+filtrar<00:06:28.080><c> por</c><00:06:28.380><c> país</c><00:06:28.800><c> eligiendo</c><00:06:29.520><c> un</c><00:06:29.759><c> valor</c><00:06:30.000><c> en</c>
+
+00:06:30.170 --> 00:06:30.180 align:start position:0%
+filtrar por país eligiendo un valor en
+ 
+
+00:06:30.180 --> 00:06:32.270 align:start position:0%
+filtrar por país eligiendo un valor en
+esta<00:06:30.419><c> variable</c><00:06:30.660><c> que</c><00:06:31.380><c> estaba</c><00:06:31.979><c> siendo</c>
+
+00:06:32.270 --> 00:06:32.280 align:start position:0%
+esta variable que estaba siendo
+ 
+
+00:06:32.280 --> 00:06:34.249 align:start position:0%
+esta variable que estaba siendo
+utilizada<00:06:32.759><c> en</c><00:06:33.060><c> las</c><00:06:33.360><c> conditions</c><00:06:33.840><c> del</c><00:06:34.020><c> grid</c>
+
+00:06:34.249 --> 00:06:34.259 align:start position:0%
+utilizada en las conditions del grid
+ 
+
+00:06:34.259 --> 00:06:36.770 align:start position:0%
+utilizada en las conditions del grid
+para<00:06:34.560><c> filtrar</c><00:06:35.100><c> por</c><00:06:35.400><c> ese</c><00:06:35.759><c> país</c><00:06:35.940><c> si</c><00:06:36.479><c> la</c><00:06:36.660><c> variable</c>
+
+00:06:36.770 --> 00:06:36.780 align:start position:0%
+para filtrar por ese país si la variable
+ 
+
+00:06:36.780 --> 00:06:42.170 align:start position:0%
+para filtrar por ese país si la variable
+no<00:06:37.139><c> estaba</c><00:06:37.620><c> vacía</c>
+
+00:06:42.170 --> 00:06:42.180 align:start position:0%
+ 
+ 
+
+00:06:42.180 --> 00:06:45.590 align:start position:0%
+ 
+Pero<00:06:42.419><c> además</c><00:06:42.840><c> desde</c><00:06:43.440><c> este</c><00:06:43.919><c> panel</c><00:06:44.280><c> se</c><00:06:45.120><c> permitía</c>
+
+00:06:45.590 --> 00:06:45.600 align:start position:0%
+Pero además desde este panel se permitía
+ 
+
+00:06:45.600 --> 00:06:47.990 align:start position:0%
+Pero además desde este panel se permitía
+al<00:06:45.960><c> usuario</c><00:06:46.199><c> ver</c><00:06:46.620><c> la</c><00:06:46.979><c> información</c><00:06:47.160><c> de</c><00:06:47.639><c> una</c>
+
+00:06:47.990 --> 00:06:48.000 align:start position:0%
+al usuario ver la información de una
+ 
+
+00:06:48.000 --> 00:06:55.610 align:start position:0%
+al usuario ver la información de una
+atracción<00:06:48.680><c> haciendo</c><00:06:49.680><c> clic</c><00:06:50.160><c> sobre</c><00:06:50.400><c> su</c><00:06:50.699><c> nombre</c>
+
+00:06:55.610 --> 00:06:55.620 align:start position:0%
+ 
+ 
+
+00:06:55.620 --> 00:06:57.189 align:start position:0%
+ 
+y<00:06:56.460><c> a</c><00:06:56.520><c> su</c><00:06:56.580><c> vez</c>
+
+00:06:57.189 --> 00:06:57.199 align:start position:0%
+y a su vez
+ 
+
+00:06:57.199 --> 00:07:01.010 align:start position:0%
+y a su vez
+Desde<00:06:58.199><c> allí</c><00:06:58.560><c> se</c><00:06:59.460><c> presentaba</c><00:07:00.120><c> un</c><00:07:00.419><c> link</c><00:07:00.780><c> sobre</c>
+
+00:07:01.010 --> 00:07:01.020 align:start position:0%
+Desde allí se presentaba un link sobre
+ 
+
+00:07:01.020 --> 00:07:03.830 align:start position:0%
+Desde allí se presentaba un link sobre
+el<00:07:01.259><c> nombre</c><00:07:01.440><c> de</c><00:07:01.740><c> país</c><00:07:02.100><c> para</c><00:07:02.639><c> mostrar</c><00:07:03.120><c> toda</c><00:07:03.720><c> la</c>
+
+00:07:03.830 --> 00:07:03.840 align:start position:0%
+el nombre de país para mostrar toda la
+ 
+
+00:07:03.840 --> 00:07:06.529 align:start position:0%
+el nombre de país para mostrar toda la
+información<00:07:04.020><c> relevante</c><00:07:04.860><c> del</c><00:07:05.100><c> país</c>
+
+00:07:06.529 --> 00:07:06.539 align:start position:0%
+información relevante del país
+ 
+
+00:07:06.539 --> 00:07:09.770 align:start position:0%
+información relevante del país
+para<00:07:06.900><c> eso</c><00:07:07.280><c> llamábamos</c><00:07:08.280><c> a</c><00:07:08.580><c> este</c><00:07:08.819><c> web</c><00:07:09.120><c> panel</c><00:07:09.419><c> que</c>
+
+00:07:09.770 --> 00:07:09.780 align:start position:0%
+para eso llamábamos a este web panel que
+ 
+
+00:07:09.780 --> 00:07:11.809 align:start position:0%
+para eso llamábamos a este web panel que
+recibía<00:07:10.319><c> en</c><00:07:10.500><c> el</c><00:07:10.620><c> atributo</c><00:07:10.860><c> el</c><00:07:11.340><c> identificador</c>
+
+00:07:11.809 --> 00:07:11.819 align:start position:0%
+recibía en el atributo el identificador
+ 
+
+00:07:11.819 --> 00:07:15.710 align:start position:0%
+recibía en el atributo el identificador
+de<00:07:12.000><c> país</c><00:07:12.240><c> y</c><00:07:13.139><c> mostraba</c><00:07:13.680><c> su</c><00:07:13.919><c> nombre</c><00:07:14.100><c> y</c><00:07:15.060><c> luego</c><00:07:15.180><c> un</c>
+
+00:07:15.710 --> 00:07:15.720 align:start position:0%
+de país y mostraba su nombre y luego un
+ 
+
+00:07:15.720 --> 00:07:18.230 align:start position:0%
+de país y mostraba su nombre y luego un
+grid<00:07:16.139><c> idéntico</c><00:07:16.680><c> al</c><00:07:16.919><c> primero</c><00:07:17.100><c> con</c><00:07:17.580><c> los</c><00:07:17.940><c> mismos</c>
+
+00:07:18.230 --> 00:07:18.240 align:start position:0%
+grid idéntico al primero con los mismos
+ 
+
+00:07:18.240 --> 00:07:20.450 align:start position:0%
+grid idéntico al primero con los mismos
+filtros<00:07:18.600><c> por</c><00:07:19.020><c> nombre</c><00:07:19.199><c> de</c><00:07:19.500><c> atracción</c><00:07:19.740><c> con</c><00:07:20.160><c> las</c>
+
+00:07:20.450 --> 00:07:20.460 align:start position:0%
+filtros por nombre de atracción con las
+ 
+
+00:07:20.460 --> 00:07:23.150 align:start position:0%
+filtros por nombre de atracción con las
+mismas<00:07:20.639><c> columnas</c><00:07:21.120><c> y</c><00:07:21.479><c> acciones</c><00:07:21.900><c> e</c><00:07:22.620><c> info</c><00:07:23.039><c> en</c>
+
+00:07:23.150 --> 00:07:23.160 align:start position:0%
+mismas columnas y acciones e info en
+ 
+
+00:07:23.160 --> 00:07:26.210 align:start position:0%
+mismas columnas y acciones e info en
+general<00:07:23.360><c> y</c><00:07:24.360><c> además</c><00:07:24.720><c> información</c><00:07:25.500><c> de</c><00:07:25.919><c> las</c>
+
+00:07:26.210 --> 00:07:26.220 align:start position:0%
+general y además información de las
+ 
+
+00:07:26.220 --> 00:07:33.950 align:start position:0%
+general y además información de las
+ciudades
+
+00:07:33.950 --> 00:07:33.960 align:start position:0%
+ 
+ 
+
+00:07:33.960 --> 00:07:36.230 align:start position:0%
+ 
+vemos<00:07:34.740><c> claramente</c><00:07:34.979><c> que</c><00:07:35.400><c> hay</c><00:07:35.580><c> una</c><00:07:35.819><c> parte</c><00:07:35.940><c> de</c>
+
+00:07:36.230 --> 00:07:36.240 align:start position:0%
+vemos claramente que hay una parte de
+ 
+
+00:07:36.240 --> 00:07:38.450 align:start position:0%
+vemos claramente que hay una parte de
+este<00:07:36.479><c> panel</c><00:07:36.660><c> que</c><00:07:36.960><c> es</c><00:07:37.440><c> prácticamente</c><00:07:37.620><c> idéntica</c>
+
+00:07:38.450 --> 00:07:38.460 align:start position:0%
+este panel que es prácticamente idéntica
+ 
+
+00:07:38.460 --> 00:07:41.270 align:start position:0%
+este panel que es prácticamente idéntica
+a<00:07:38.819><c> la</c><00:07:38.940><c> del</c><00:07:39.120><c> otro</c>
+
+00:07:41.270 --> 00:07:41.280 align:start position:0%
+ 
+ 
+
+00:07:41.280 --> 00:07:43.790 align:start position:0%
+ 
+supongamos<00:07:42.060><c> que</c><00:07:42.240><c> ya</c><00:07:42.479><c> no</c><00:07:42.720><c> quisiéramos</c><00:07:43.319><c> que</c><00:07:43.500><c> la</c>
+
+00:07:43.790 --> 00:07:43.800 align:start position:0%
+supongamos que ya no quisiéramos que la
+ 
+
+00:07:43.800 --> 00:07:45.890 align:start position:0%
+supongamos que ya no quisiéramos que la
+opción<00:07:43.860><c> de</c><00:07:44.039><c> update</c><00:07:44.699><c> se</c><00:07:45.000><c> ofrezca</c><00:07:45.300><c> con</c><00:07:45.479><c> esta</c>
+
+00:07:45.890 --> 00:07:45.900 align:start position:0%
+opción de update se ofrezca con esta
+ 
+
+00:07:45.900 --> 00:07:48.710 align:start position:0%
+opción de update se ofrezca con esta
+imagen<00:07:46.340><c> sino</c><00:07:47.340><c> que</c><00:07:47.520><c> queremos</c><00:07:47.699><c> que</c><00:07:47.940><c> sea</c><00:07:48.180><c> como</c><00:07:48.479><c> es</c>
+
+00:07:48.710 --> 00:07:48.720 align:start position:0%
+imagen sino que queremos que sea como es
+ 
+
+00:07:48.720 --> 00:07:54.469 align:start position:0%
+imagen sino que queremos que sea como es
+en<00:07:48.840><c> el</c><00:07:48.900><c> patern</c><00:07:49.440><c> con</c><00:07:49.680><c> la</c><00:07:49.860><c> palabra</c><00:07:49.919><c> update</c>
+
+00:07:54.469 --> 00:07:54.479 align:start position:0%
+ 
+ 
+
+00:07:54.479 --> 00:07:59.510 align:start position:0%
+ 
+vamos<00:07:54.900><c> a</c><00:07:55.199><c> tener</c><00:07:55.380><c> que</c><00:07:55.500><c> sustituir</c><00:07:56.039><c> esta</c><00:07:56.520><c> imagen</c>
+
+00:07:59.510 --> 00:07:59.520 align:start position:0%
+ 
+ 
+
+00:07:59.520 --> 00:08:03.529 align:start position:0%
+ 
+por<00:08:00.300><c> un</c><00:08:00.419><c> text</c><00:08:00.960><c> block</c><00:08:01.199><c> en</c><00:08:01.560><c> ambos</c><00:08:01.740><c> paneles</c><00:08:02.539><c> para</c>
+
+00:08:03.529 --> 00:08:03.539 align:start position:0%
+por un text block en ambos paneles para
+ 
+
+00:08:03.539 --> 00:08:06.110 align:start position:0%
+por un text block en ambos paneles para
+evitar<00:08:04.020><c> estas</c><00:08:04.560><c> duplicaciones</c><00:08:05.039><c> y</c><00:08:05.639><c> programar</c>
+
+00:08:06.110 --> 00:08:06.120 align:start position:0%
+evitar estas duplicaciones y programar
+ 
+
+00:08:06.120 --> 00:08:08.510 align:start position:0%
+evitar estas duplicaciones y programar
+Solamente<00:08:06.539><c> una</c><00:08:07.020><c> vez</c><00:08:07.259><c> el</c><00:08:07.440><c> comportamiento</c><00:08:07.860><c> y</c>
+
+00:08:08.510 --> 00:08:08.520 align:start position:0%
+Solamente una vez el comportamiento y
+ 
+
+00:08:08.520 --> 00:08:11.270 align:start position:0%
+Solamente una vez el comportamiento y
+diseño<00:08:09.000><c> de</c><00:08:09.300><c> una</c><00:08:09.599><c> porción</c><00:08:09.840><c> del</c><00:08:10.080><c> panel</c><00:08:10.440><c> es</c><00:08:11.099><c> que</c>
+
+00:08:11.270 --> 00:08:11.280 align:start position:0%
+diseño de una porción del panel es que
+ 
+
+00:08:11.280 --> 00:08:13.430 align:start position:0%
+diseño de una porción del panel es que
+contamos<00:08:11.699><c> con</c><00:08:12.000><c> los</c><00:08:12.240><c> web</c><00:08:12.599><c> panels</c><00:08:13.020><c> de</c><00:08:13.199><c> tipo</c>
+
+00:08:13.430 --> 00:08:13.440 align:start position:0%
+contamos con los web panels de tipo
+ 
+
+00:08:13.440 --> 00:08:15.650 align:start position:0%
+contamos con los web panels de tipo
+componente
+
+00:08:15.650 --> 00:08:15.660 align:start position:0%
+componente
+ 
+
+00:08:15.660 --> 00:08:20.029 align:start position:0%
+componente
+qué<00:08:16.139><c> es</c><00:08:16.259><c> lo</c><00:08:16.380><c> que</c><00:08:16.500><c> en</c><00:08:16.740><c> nuestro</c><00:08:16.919><c> caso</c><00:08:17.160><c> se</c><00:08:17.580><c> repite</c>
+
+00:08:20.029 --> 00:08:20.039 align:start position:0%
+ 
+ 
+
+00:08:20.039 --> 00:08:23.270 align:start position:0%
+ 
+toda<00:08:20.699><c> esta</c><00:08:21.060><c> sección</c><00:08:21.300><c> de</c><00:08:21.539><c> la</c><00:08:21.660><c> pantalla</c><00:08:21.960><c> y</c><00:08:22.860><c> su</c>
+
+00:08:23.270 --> 00:08:23.280 align:start position:0%
+toda esta sección de la pantalla y su
+ 
+
+00:08:23.280 --> 00:08:27.830 align:start position:0%
+toda esta sección de la pantalla y su
+comportamiento
+
+00:08:27.830 --> 00:08:27.840 align:start position:0%
+ 
+ 
+
+00:08:27.840 --> 00:08:30.770 align:start position:0%
+ 
+entonces<00:08:28.319><c> lo</c><00:08:29.039><c> que</c><00:08:29.340><c> hicimos</c><00:08:29.520><c> fue</c><00:08:30.060><c> un</c><00:08:30.300><c> ceibass</c>
+
+00:08:30.770 --> 00:08:30.780 align:start position:0%
+entonces lo que hicimos fue un ceibass
+ 
+
+00:08:30.780 --> 00:08:33.949 align:start position:0%
+entonces lo que hicimos fue un ceibass
+de<00:08:31.080><c> este</c><00:08:31.139><c> web</c><00:08:31.379><c> panel</c><00:08:31.740><c> al</c><00:08:32.640><c> que</c><00:08:32.880><c> únicamente</c><00:08:33.360><c> le</c>
+
+00:08:33.949 --> 00:08:33.959 align:start position:0%
+de este web panel al que únicamente le
+ 
+
+00:08:33.959 --> 00:08:36.310 align:start position:0%
+de este web panel al que únicamente le
+quitamos<00:08:34.200><c> la</c><00:08:34.560><c> variable</c><00:08:34.800><c> country</c><00:08:35.459><c> ID</c><00:08:35.580><c> del</c><00:08:35.940><c> form</c>
+
+00:08:36.310 --> 00:08:36.320 align:start position:0%
+quitamos la variable country ID del form
+ 
+
+00:08:36.320 --> 00:08:41.510 align:start position:0%
+quitamos la variable country ID del form
+y<00:08:37.320><c> la</c><00:08:37.740><c> colocamos</c><00:08:38.039><c> en</c><00:08:38.520><c> cambio</c><00:08:38.820><c> como</c><00:08:39.240><c> parámetro</c>
+
+00:08:41.510 --> 00:08:41.520 align:start position:0%
+y la colocamos en cambio como parámetro
+ 
+
+00:08:41.520 --> 00:08:43.130 align:start position:0%
+y la colocamos en cambio como parámetro
+ya<00:08:42.240><c> no</c><00:08:42.479><c> lo</c><00:08:42.599><c> ingresar</c><00:08:42.779><c> al</c><00:08:42.959><c> usuario</c>
+
+00:08:43.130 --> 00:08:43.140 align:start position:0%
+ya no lo ingresar al usuario
+ 
+
+00:08:43.140 --> 00:08:45.550 align:start position:0%
+ya no lo ingresar al usuario
+directamente<00:08:43.440><c> en</c><00:08:43.860><c> el</c><00:08:43.979><c> form</c><00:08:44.399><c> de</c><00:08:44.640><c> esta</c><00:08:44.820><c> pantalla</c>
+
+00:08:45.550 --> 00:08:45.560 align:start position:0%
+directamente en el form de esta pantalla
+ 
+
+00:08:45.560 --> 00:08:50.750 align:start position:0%
+directamente en el form de esta pantalla
+sino<00:08:46.560><c> que</c><00:08:46.800><c> será</c><00:08:46.980><c> recibido</c><00:08:47.459><c> de</c><00:08:47.760><c> quien</c><00:08:48.120><c> lo</c><00:08:48.240><c> llame</c>
+
+00:08:50.750 --> 00:08:50.760 align:start position:0%
+ 
+ 
+
+00:08:50.760 --> 00:08:53.389 align:start position:0%
+ 
+vemos<00:08:51.360><c> que</c><00:08:51.540><c> las</c><00:08:52.019><c> condiciones</c><00:08:52.320><c> se</c><00:08:53.040><c> mantienen</c>
+
+00:08:53.389 --> 00:08:53.399 align:start position:0%
+vemos que las condiciones se mantienen
+ 
+
+00:08:53.399 --> 00:08:56.449 align:start position:0%
+vemos que las condiciones se mantienen
+idénticas
+
+00:08:56.449 --> 00:08:56.459 align:start position:0%
+ 
+ 
+
+00:08:56.459 --> 00:09:01.009 align:start position:0%
+ 
+así<00:08:56.940><c> como</c><00:08:57.240><c> los</c><00:08:57.720><c> eventos</c>
+
+00:09:01.009 --> 00:09:01.019 align:start position:0%
+ 
+ 
+
+00:09:01.019 --> 00:09:04.130 align:start position:0%
+ 
+y<00:09:01.320><c> todo</c><00:09:01.800><c> lo</c><00:09:01.920><c> demás</c>
+
+00:09:04.130 --> 00:09:04.140 align:start position:0%
+ 
+ 
+
+00:09:04.140 --> 00:09:07.009 align:start position:0%
+ 
+el<00:09:04.740><c> otro</c><00:09:04.980><c> cambio</c><00:09:05.339><c> Es</c><00:09:05.880><c> que</c><00:09:06.180><c> modificamos</c><00:09:06.660><c> la</c>
+
+00:09:07.009 --> 00:09:07.019 align:start position:0%
+el otro cambio Es que modificamos la
+ 
+
+00:09:07.019 --> 00:09:11.570 align:start position:0%
+el otro cambio Es que modificamos la
+propiedad<00:09:07.380><c> type</c><00:09:08.420><c> Pasándola</c><00:09:09.420><c> a</c><00:09:09.720><c> component</c><00:09:10.580><c> a</c>
+
+00:09:11.570 --> 00:09:11.580 align:start position:0%
+propiedad type Pasándola a component a
+ 
+
+00:09:11.580 --> 00:09:13.850 align:start position:0%
+propiedad type Pasándola a component a
+partir<00:09:11.700><c> de</c><00:09:11.880><c> ahora</c><00:09:12.060><c> este</c><00:09:12.720><c> web</c><00:09:13.080><c> panel</c><00:09:13.380><c> podrá</c><00:09:13.740><c> ser</c>
+
+00:09:13.850 --> 00:09:13.860 align:start position:0%
+partir de ahora este web panel podrá ser
+ 
+
+00:09:13.860 --> 00:09:15.949 align:start position:0%
+partir de ahora este web panel podrá ser
+un<00:09:13.980><c> componente</c><00:09:14.220><c> de</c><00:09:14.519><c> otro</c>
+
+00:09:15.949 --> 00:09:15.959 align:start position:0%
+un componente de otro
+ 
+
+00:09:15.959 --> 00:09:18.710 align:start position:0%
+un componente de otro
+así<00:09:16.860><c> lo</c><00:09:17.399><c> siguiente</c><00:09:17.519><c> que</c><00:09:17.760><c> hicimos</c><00:09:17.940><c> fue</c><00:09:18.360><c> un</c>
+
+00:09:18.710 --> 00:09:18.720 align:start position:0%
+así lo siguiente que hicimos fue un
+ 
+
+00:09:18.720 --> 00:09:22.130 align:start position:0%
+así lo siguiente que hicimos fue un
+saveás<00:09:19.260><c> de</c><00:09:19.440><c> nuestro</c><00:09:19.680><c> panel</c><00:09:19.980><c> original</c><00:09:21.140><c> y</c>
+
+00:09:22.130 --> 00:09:22.140 align:start position:0%
+saveás de nuestro panel original y
+ 
+
+00:09:22.140 --> 00:09:24.829 align:start position:0%
+saveás de nuestro panel original y
+sustituimos<00:09:22.740><c> todos</c><00:09:23.459><c> esos</c><00:09:23.700><c> controles</c><00:09:24.180><c> que</c>
+
+00:09:24.829 --> 00:09:24.839 align:start position:0%
+sustituimos todos esos controles que
+ 
+
+00:09:24.839 --> 00:09:26.449 align:start position:0%
+sustituimos todos esos controles que
+ahora<00:09:25.080><c> colocamos</c><00:09:25.500><c> en</c><00:09:25.740><c> el</c><00:09:25.800><c> Wepa</c><00:09:26.220><c> en</c><00:09:26.399><c> el</c>
+
+00:09:26.449 --> 00:09:26.459 align:start position:0%
+ahora colocamos en el Wepa en el
+ 
+
+00:09:26.459 --> 00:09:28.550 align:start position:0%
+ahora colocamos en el Wepa en el
+componente<00:09:26.760><c> por</c><00:09:27.720><c> un</c><00:09:27.899><c> control</c><00:09:28.140><c> de</c><00:09:28.380><c> tipo</c>
+
+00:09:28.550 --> 00:09:28.560 align:start position:0%
+componente por un control de tipo
+ 
+
+00:09:28.560 --> 00:09:31.190 align:start position:0%
+componente por un control de tipo
+component
+
+00:09:31.190 --> 00:09:31.200 align:start position:0%
+component
+ 
+
+00:09:31.200 --> 00:09:34.009 align:start position:0%
+component
+por<00:09:31.620><c> supuesto</c><00:09:31.920><c> eliminamos</c><00:09:32.820><c> aquí</c><00:09:33.600><c> dejamos</c>
+
+00:09:34.009 --> 00:09:34.019 align:start position:0%
+por supuesto eliminamos aquí dejamos
+ 
+
+00:09:34.019 --> 00:09:36.769 align:start position:0%
+por supuesto eliminamos aquí dejamos
+comentados<00:09:34.760><c> todos</c><00:09:35.760><c> los</c><00:09:35.880><c> eventos</c><00:09:36.060><c> que</c><00:09:36.480><c> ahora</c>
+
+00:09:36.769 --> 00:09:36.779 align:start position:0%
+comentados todos los eventos que ahora
+ 
+
+00:09:36.779 --> 00:09:38.410 align:start position:0%
+comentados todos los eventos que ahora
+estarán<00:09:37.140><c> en</c><00:09:37.320><c> el</c><00:09:37.500><c> componente</c>
+
+00:09:38.410 --> 00:09:38.420 align:start position:0%
+estarán en el componente
+ 
+
+00:09:38.420 --> 00:09:40.990 align:start position:0%
+estarán en el componente
+al<00:09:39.420><c> colocar</c><00:09:39.720><c> un</c><00:09:39.959><c> control</c><00:09:40.320><c> de</c><00:09:40.620><c> este</c><00:09:40.800><c> tipo</c>
+
+00:09:40.990 --> 00:09:41.000 align:start position:0%
+al colocar un control de este tipo
+ 
+
+00:09:41.000 --> 00:09:44.150 align:start position:0%
+al colocar un control de este tipo
+estamos<00:09:42.000><c> diciendo</c><00:09:42.540><c> que</c><00:09:42.779><c> allí</c><00:09:43.140><c> dentro</c><00:09:43.440><c> deberá</c>
+
+00:09:44.150 --> 00:09:44.160 align:start position:0%
+estamos diciendo que allí dentro deberá
+ 
+
+00:09:44.160 --> 00:09:46.190 align:start position:0%
+estamos diciendo que allí dentro deberá
+cargarse<00:09:44.700><c> y</c><00:09:44.940><c> ejecutarse</c><00:09:45.660><c> lo</c><00:09:45.959><c> que</c>
+
+00:09:46.190 --> 00:09:46.200 align:start position:0%
+cargarse y ejecutarse lo que
+ 
+
+00:09:46.200 --> 00:09:47.350 align:start position:0%
+cargarse y ejecutarse lo que
+especifiquemos
+
+00:09:47.350 --> 00:09:47.360 align:start position:0%
+especifiquemos
+ 
+
+00:09:47.360 --> 00:09:49.970 align:start position:0%
+especifiquemos
+tenemos<00:09:48.360><c> que</c><00:09:48.600><c> decirle</c><00:09:49.260><c> que</c><00:09:49.500><c> en</c><00:09:49.800><c> ese</c>
+
+00:09:49.970 --> 00:09:49.980 align:start position:0%
+tenemos que decirle que en ese
+ 
+
+00:09:49.980 --> 00:09:52.670 align:start position:0%
+tenemos que decirle que en ese
+componente<00:09:50.220><c> se</c><00:09:50.880><c> cree</c><00:09:51.180><c> una</c><00:09:51.660><c> instancia</c><00:09:51.899><c> del</c><00:09:52.260><c> web</c>
+
+00:09:52.670 --> 00:09:52.680 align:start position:0%
+componente se cree una instancia del web
+ 
+
+00:09:52.680 --> 00:09:54.050 align:start position:0%
+componente se cree una instancia del web
+component<00:09:53.220><c> que</c><00:09:53.399><c> acabamos</c><00:09:53.640><c> de</c><00:09:53.880><c> mostrar</c>
+
+00:09:54.050 --> 00:09:54.060 align:start position:0%
+component que acabamos de mostrar
+ 
+
+00:09:54.060 --> 00:09:57.530 align:start position:0%
+component que acabamos de mostrar
+country<00:09:54.959><c> atractions</c><00:09:55.680><c> info</c><00:09:56.100><c> lo</c><00:09:57.000><c> podemos</c><00:09:57.240><c> hacer</c>
+
+00:09:57.530 --> 00:09:57.540 align:start position:0%
+country atractions info lo podemos hacer
+ 
+
+00:09:57.540 --> 00:09:59.990 align:start position:0%
+country atractions info lo podemos hacer
+de<00:09:57.779><c> manera</c><00:09:57.899><c> estática</c><00:09:58.459><c> indicándolo</c><00:09:59.459><c> así</c><00:09:59.760><c> en</c>
+
+00:09:59.990 --> 00:10:00.000 align:start position:0%
+de manera estática indicándolo así en
+ 
+
+00:10:00.000 --> 00:10:02.269 align:start position:0%
+de manera estática indicándolo así en
+las<00:10:00.240><c> propiedades</c><00:10:00.380><c> donde</c><00:10:01.380><c> Aquí</c><00:10:01.740><c> indicamos</c>
+
+00:10:02.269 --> 00:10:02.279 align:start position:0%
+las propiedades donde Aquí indicamos
+ 
+
+00:10:02.279 --> 00:10:05.090 align:start position:0%
+las propiedades donde Aquí indicamos
+Cuál<00:10:02.760><c> será</c><00:10:02.940><c> el</c><00:10:03.240><c> objeto</c><00:10:03.360><c> de</c><00:10:03.600><c> tipo</c><00:10:03.839><c> componente</c><00:10:04.380><c> y</c>
+
+00:10:05.090 --> 00:10:05.100 align:start position:0%
+Cuál será el objeto de tipo componente y
+ 
+
+00:10:05.100 --> 00:10:08.269 align:start position:0%
+Cuál será el objeto de tipo componente y
+aquí<00:10:05.339><c> el</c><00:10:05.640><c> parámetro</c><00:10:06.060><c> enviado</c>
+
+00:10:08.269 --> 00:10:08.279 align:start position:0%
+aquí el parámetro enviado
+ 
+
+00:10:08.279 --> 00:10:14.630 align:start position:0%
+aquí el parámetro enviado
+probémoslo
+
+00:10:14.630 --> 00:10:14.640 align:start position:0%
+ 
+ 
+
+00:10:14.640 --> 00:10:17.750 align:start position:0%
+ 
+vemos<00:10:15.240><c> Exactamente</c><00:10:15.839><c> lo</c><00:10:16.500><c> mismo</c>
+
+00:10:17.750 --> 00:10:17.760 align:start position:0%
+vemos Exactamente lo mismo
+ 
+
+00:10:17.760 --> 00:10:21.050 align:start position:0%
+vemos Exactamente lo mismo
+si<00:10:18.300><c> filtramos</c><00:10:18.660><c> por</c><00:10:18.899><c> nombre</c><00:10:19.140><c> de</c><00:10:19.380><c> atracción</c>
+
+00:10:21.050 --> 00:10:21.060 align:start position:0%
+si filtramos por nombre de atracción
+ 
+
+00:10:21.060 --> 00:10:24.949 align:start position:0%
+si filtramos por nombre de atracción
+está<00:10:21.779><c> funcionando</c><00:10:22.019><c> perfecto</c><00:10:23.000><c> Ahora</c><00:10:24.000><c> qué</c><00:10:24.660><c> pasa</c>
+
+00:10:24.949 --> 00:10:24.959 align:start position:0%
+está funcionando perfecto Ahora qué pasa
+ 
+
+00:10:24.959 --> 00:10:27.889 align:start position:0%
+está funcionando perfecto Ahora qué pasa
+si<00:10:25.380><c> queremos</c><00:10:25.560><c> filtrar</c><00:10:25.980><c> por</c><00:10:26.220><c> país</c>
+
+00:10:27.889 --> 00:10:27.899 align:start position:0%
+si queremos filtrar por país
+ 
+
+00:10:27.899 --> 00:10:30.470 align:start position:0%
+si queremos filtrar por país
+no<00:10:28.260><c> pasa</c><00:10:28.740><c> nada</c>
+
+00:10:30.470 --> 00:10:30.480 align:start position:0%
+no pasa nada
+ 
+
+00:10:30.480 --> 00:10:32.810 align:start position:0%
+no pasa nada
+por<00:10:30.959><c> qué</c>
+
+00:10:32.810 --> 00:10:32.820 align:start position:0%
+por qué
+ 
+
+00:10:32.820 --> 00:10:35.269 align:start position:0%
+por qué
+la<00:10:33.360><c> variable</c><00:10:33.660><c> cantry</c><00:10:34.380><c> está</c><00:10:34.920><c> en</c><00:10:35.040><c> un</c><00:10:35.100><c> panel</c>
+
+00:10:35.269 --> 00:10:35.279 align:start position:0%
+la variable cantry está en un panel
+ 
+
+00:10:35.279 --> 00:10:37.550 align:start position:0%
+la variable cantry está en un panel
+distinto<00:10:35.700><c> que</c><00:10:36.000><c> de</c><00:10:36.660><c> atracciones</c><00:10:36.959><c> por</c><00:10:37.320><c> el</c><00:10:37.440><c> que</c>
+
+00:10:37.550 --> 00:10:37.560 align:start position:0%
+distinto que de atracciones por el que
+ 
+
+00:10:37.560 --> 00:10:40.310 align:start position:0%
+distinto que de atracciones por el que
+se<00:10:37.680><c> filtra</c>
+
+00:10:40.310 --> 00:10:40.320 align:start position:0%
+ 
+ 
+
+00:10:40.320 --> 00:10:42.230 align:start position:0%
+ 
+aquí<00:10:41.100><c> lo</c><00:10:41.220><c> que</c><00:10:41.339><c> tenemos</c><00:10:41.459><c> que</c><00:10:41.640><c> hacer</c><00:10:41.880><c> es</c>
+
+00:10:42.230 --> 00:10:42.240 align:start position:0%
+aquí lo que tenemos que hacer es
+ 
+
+00:10:42.240 --> 00:10:45.230 align:start position:0%
+aquí lo que tenemos que hacer es
+utilizar<00:10:42.660><c> el</c><00:10:43.140><c> evento</c><00:10:43.320><c> control</c><00:10:44.160><c> value</c><00:10:44.880><c> change</c>
+
+00:10:45.230 --> 00:10:45.240 align:start position:0%
+utilizar el evento control value change
+ 
+
+00:10:45.240 --> 00:10:47.509 align:start position:0%
+utilizar el evento control value change
+que<00:10:46.140><c> captura</c><00:10:46.380><c> el</c><00:10:46.680><c> momento</c><00:10:46.800><c> en</c><00:10:47.160><c> que</c><00:10:47.339><c> se</c>
+
+00:10:47.509 --> 00:10:47.519 align:start position:0%
+que captura el momento en que se
+ 
+
+00:10:47.519 --> 00:10:49.670 align:start position:0%
+que captura el momento en que se
+modifica<00:10:47.880><c> el</c><00:10:48.120><c> valor</c><00:10:48.240><c> del</c><00:10:48.420><c> control</c><00:10:48.899><c> variable</c>
+
+00:10:49.670 --> 00:10:49.680 align:start position:0%
+modifica el valor del control variable
+ 
+
+00:10:49.680 --> 00:10:51.650 align:start position:0%
+modifica el valor del control variable
+country
+
+00:10:51.650 --> 00:10:51.660 align:start position:0%
+country
+ 
+
+00:10:51.660 --> 00:10:54.410 align:start position:0%
+country
+y<00:10:52.260><c> pedir</c><00:10:52.500><c> que</c><00:10:52.800><c> se</c><00:10:53.220><c> cree</c><00:10:53.399><c> una</c><00:10:53.760><c> nueva</c><00:10:54.000><c> instancia</c>
+
+00:10:54.410 --> 00:10:54.420 align:start position:0%
+y pedir que se cree una nueva instancia
+ 
+
+00:10:54.420 --> 00:10:57.829 align:start position:0%
+y pedir que se cree una nueva instancia
+del<00:10:54.779><c> componente</c><00:10:55.760><c> pasándole</c><00:10:56.760><c> ahora</c><00:10:57.120><c> el</c><00:10:57.540><c> nuevo</c>
+
+00:10:57.829 --> 00:10:57.839 align:start position:0%
+del componente pasándole ahora el nuevo
+ 
+
+00:10:57.839 --> 00:11:14.509 align:start position:0%
+del componente pasándole ahora el nuevo
+valor<00:10:58.140><c> de</c><00:10:58.500><c> la</c><00:10:58.620><c> variable</c>
+
+00:11:14.509 --> 00:11:14.519 align:start position:0%
+ 
+ 
+
+00:11:14.519 --> 00:11:19.970 align:start position:0%
+ 
+probémoslo
+
+00:11:19.970 --> 00:11:19.980 align:start position:0%
+ 
+ 
+
+00:11:19.980 --> 00:11:24.290 align:start position:0%
+ 
+refrescamos
+
+00:11:24.290 --> 00:11:24.300 align:start position:0%
+ 
+ 
+
+00:11:24.300 --> 00:11:27.730 align:start position:0%
+ 
+intentamos<00:11:25.140><c> filtrar</c><00:11:25.500><c> por</c><00:11:25.860><c> Francia</c><00:11:26.480><c> perfecto</c>
+
+00:11:27.730 --> 00:11:27.740 align:start position:0%
+intentamos filtrar por Francia perfecto
+ 
+
+00:11:27.740 --> 00:11:31.730 align:start position:0%
+intentamos filtrar por Francia perfecto
+y<00:11:28.740><c> allí</c><00:11:29.160><c> dentro</c><00:11:29.339><c> por</c><00:11:29.700><c> nombre</c><00:11:29.880><c> de</c><00:11:30.120><c> atracción</c>
+
+00:11:31.730 --> 00:11:31.740 align:start position:0%
+y allí dentro por nombre de atracción
+ 
+
+00:11:31.740 --> 00:11:34.190 align:start position:0%
+y allí dentro por nombre de atracción
+perfecto<00:11:32.399><c> también</c>
+
+00:11:34.190 --> 00:11:34.200 align:start position:0%
+perfecto también
+ 
+
+00:11:34.200 --> 00:11:37.069 align:start position:0%
+perfecto también
+Y<00:11:34.620><c> por</c><00:11:34.980><c> supuesto</c><00:11:35.220><c> hicimos</c><00:11:35.940><c> algo</c><00:11:36.240><c> similar</c><00:11:36.720><c> con</c>
+
+00:11:37.069 --> 00:11:37.079 align:start position:0%
+Y por supuesto hicimos algo similar con
+ 
+
+00:11:37.079 --> 00:11:38.990 align:start position:0%
+Y por supuesto hicimos algo similar con
+el<00:11:37.260><c> panel</c><00:11:37.620><c> que</c><00:11:37.800><c> mostraba</c><00:11:38.220><c> la</c><00:11:38.459><c> información</c><00:11:38.640><c> del</c>
+
+00:11:38.990 --> 00:11:39.000 align:start position:0%
+el panel que mostraba la información del
+ 
+
+00:11:39.000 --> 00:11:40.910 align:start position:0%
+el panel que mostraba la información del
+país
+
+00:11:40.910 --> 00:11:40.920 align:start position:0%
+país
+ 
+
+00:11:40.920 --> 00:11:44.509 align:start position:0%
+país
+hicimos<00:11:41.640><c> un</c><00:11:42.060><c> ceibas</c><00:11:42.600><c> de</c><00:11:42.779><c> este</c><00:11:43.019><c> panel</c><00:11:43.279><c> al</c><00:11:44.279><c> que</c>
+
+00:11:44.509 --> 00:11:44.519 align:start position:0%
+hicimos un ceibas de este panel al que
+ 
+
+00:11:44.519 --> 00:11:47.750 align:start position:0%
+hicimos un ceibas de este panel al que
+le<00:11:44.820><c> reemplazamos</c><00:11:45.180><c> toda</c><00:11:45.899><c> esta</c><00:11:46.200><c> sección</c>
+
+00:11:47.750 --> 00:11:47.760 align:start position:0%
+le reemplazamos toda esta sección
+ 
+
+00:11:47.760 --> 00:11:50.990 align:start position:0%
+le reemplazamos toda esta sección
+por<00:11:48.420><c> un</c><00:11:48.540><c> componente</c><00:11:48.959><c> que</c><00:11:49.800><c> se</c><00:11:50.220><c> cargará</c><00:11:50.519><c> con</c>
+
+00:11:50.990 --> 00:11:51.000 align:start position:0%
+por un componente que se cargará con
+ 
+
+00:11:51.000 --> 00:11:54.410 align:start position:0%
+por un componente que se cargará con
+este<00:11:51.300><c> panel</c>
+
+00:11:54.410 --> 00:11:54.420 align:start position:0%
+ 
+ 
+
+00:11:54.420 --> 00:11:58.190 align:start position:0%
+ 
+así<00:11:54.959><c> en</c><00:11:55.500><c> el</c><00:11:55.680><c> nuevo</c><00:11:55.920><c> panel</c>
+
+00:11:58.190 --> 00:11:58.200 align:start position:0%
+así en el nuevo panel
+ 
+
+00:11:58.200 --> 00:12:01.610 align:start position:0%
+así en el nuevo panel
+el<00:11:58.800><c> country</c><00:11:59.399><c> ID</c><00:11:59.640><c> no</c><00:11:59.940><c> es</c><00:12:00.060><c> variable</c><00:12:00.480><c> sino</c><00:12:01.200><c> que</c><00:12:01.380><c> se</c>
+
+00:12:01.610 --> 00:12:01.620 align:start position:0%
+el country ID no es variable sino que se
+ 
+
+00:12:01.620 --> 00:12:04.790 align:start position:0%
+el country ID no es variable sino que se
+recibe<00:12:01.860><c> por</c><00:12:02.100><c> parámetro</c>
+
+00:12:04.790 --> 00:12:04.800 align:start position:0%
+ 
+ 
+
+00:12:04.800 --> 00:12:07.130 align:start position:0%
+ 
+y<00:12:05.160><c> por</c><00:12:05.459><c> ello</c><00:12:05.640><c> podemos</c><00:12:06.120><c> crear</c><00:12:06.540><c> la</c><00:12:06.899><c> instancia</c>
+
+00:12:07.130 --> 00:12:07.140 align:start position:0%
+y por ello podemos crear la instancia
+ 
+
+00:12:07.140 --> 00:12:09.889 align:start position:0%
+y por ello podemos crear la instancia
+del<00:12:07.380><c> componente</c><00:12:07.860><c> de</c><00:12:08.339><c> manera</c><00:12:08.519><c> estática</c><00:12:09.120><c> una</c>
+
+00:12:09.889 --> 00:12:09.899 align:start position:0%
+del componente de manera estática una
+ 
+
+00:12:09.899 --> 00:12:12.230 align:start position:0%
+del componente de manera estática una
+única<00:12:10.320><c> vez</c><00:12:10.560><c> dentro</c><00:12:11.040><c> de</c><00:12:11.459><c> la</c><00:12:11.579><c> ejecución</c><00:12:11.760><c> de</c><00:12:12.000><c> este</c>
+
+00:12:12.230 --> 00:12:12.240 align:start position:0%
+única vez dentro de la ejecución de este
+ 
+
+00:12:12.240 --> 00:12:13.569 align:start position:0%
+única vez dentro de la ejecución de este
+web<00:12:12.480><c> panel</c>
+
+00:12:13.569 --> 00:12:13.579 align:start position:0%
+web panel
+ 
+
+00:12:13.579 --> 00:12:16.490 align:start position:0%
+web panel
+pasándole<00:12:14.579><c> aquí</c><00:12:14.880><c> el</c><00:12:15.300><c> parámetro</c><00:12:15.779><c> que</c><00:12:16.140><c> en</c><00:12:16.440><c> este</c>
+
+00:12:16.490 --> 00:12:16.500 align:start position:0%
+pasándole aquí el parámetro que en este
+ 
+
+00:12:16.500 --> 00:12:18.590 align:start position:0%
+pasándole aquí el parámetro que en este
+caso<00:12:16.680><c> viene</c><00:12:17.040><c> en</c><00:12:17.220><c> el</c><00:12:17.339><c> atributo</c><00:12:17.640><c> recibido</c><00:12:18.180><c> en</c><00:12:18.420><c> la</c>
+
+00:12:18.590 --> 00:12:18.600 align:start position:0%
+caso viene en el atributo recibido en la
+ 
+
+00:12:18.600 --> 00:12:21.829 align:start position:0%
+caso viene en el atributo recibido en la
+regla<00:12:18.720><c> parm</c>
+
+00:12:21.829 --> 00:12:21.839 align:start position:0%
+ 
+ 
+
+00:12:21.839 --> 00:12:23.870 align:start position:0%
+ 
+observemos<00:12:22.740><c> que</c><00:12:22.920><c> del</c><00:12:23.160><c> panel</c><00:12:23.459><c> original</c>
+
+00:12:23.870 --> 00:12:23.880 align:start position:0%
+observemos que del panel original
+ 
+
+00:12:23.880 --> 00:12:26.630 align:start position:0%
+observemos que del panel original
+quitamos<00:12:24.480><c> los</c><00:12:24.839><c> controles</c><00:12:25.260><c> y</c><00:12:26.040><c> la</c><00:12:26.339><c> programación</c>
+
+00:12:26.630 --> 00:12:26.640 align:start position:0%
+quitamos los controles y la programación
+ 
+
+00:12:26.640 --> 00:12:29.650 align:start position:0%
+quitamos los controles y la programación
+de<00:12:27.120><c> eventos</c><00:12:27.360><c> asociados</c><00:12:28.079><c> a</c><00:12:28.380><c> las</c><00:12:28.740><c> abstracciones</c>
+
+00:12:29.650 --> 00:12:29.660 align:start position:0%
+de eventos asociados a las abstracciones
+ 
+
+00:12:29.660 --> 00:12:36.490 align:start position:0%
+de eventos asociados a las abstracciones
+y<00:12:30.660><c> solo</c><00:12:30.839><c> dejamos</c><00:12:31.260><c> las</c><00:12:31.740><c> de</c><00:12:32.040><c> las</c><00:12:32.339><c> ciudades</c>
+
+00:12:36.490 --> 00:12:36.500 align:start position:0%
+ 
+ 
+
+00:12:36.500 --> 00:12:39.949 align:start position:0%
+ 
+probemoslo<00:12:37.500><c> en</c><00:12:37.620><c> ejecución</c>
+
+00:12:39.949 --> 00:12:39.959 align:start position:0%
+ 
+ 
+
+00:12:39.959 --> 00:12:43.250 align:start position:0%
+ 
+para<00:12:40.260><c> ello</c><00:12:40.740><c> invocamos</c><00:12:41.279><c> a</c><00:12:41.579><c> este</c><00:12:41.820><c> panel</c><00:12:42.120><c> y</c><00:12:42.779><c> no</c><00:12:43.139><c> al</c>
+
+00:12:43.250 --> 00:12:43.260 align:start position:0%
+para ello invocamos a este panel y no al
+ 
+
+00:12:43.260 --> 00:13:06.530 align:start position:0%
+para ello invocamos a este panel y no al
+anterior
+
+00:13:06.530 --> 00:13:06.540 align:start position:0%
+ 
+ 
+
+00:13:06.540 --> 00:13:12.530 align:start position:0%
+ 
+perfecto<00:13:07.320><c> filtramos</c>
+
+00:13:12.530 --> 00:13:12.540 align:start position:0%
+ 
+ 
+
+00:13:12.540 --> 00:13:14.710 align:start position:0%
+ 
+filtramos<00:13:13.380><c> por</c><00:13:13.620><c> ciudad</c>
+
+00:13:14.710 --> 00:13:14.720 align:start position:0%
+filtramos por ciudad
+ 
+
+00:13:14.720 --> 00:13:18.170 align:start position:0%
+filtramos por ciudad
+todo<00:13:15.720><c> está</c><00:13:15.839><c> funcionando</c><00:13:16.019><c> correctamente</c>
+
+00:13:18.170 --> 00:13:18.180 align:start position:0%
+todo está funcionando correctamente
+ 
+
+00:13:18.180 --> 00:13:20.569 align:start position:0%
+todo está funcionando correctamente
+ahora<00:13:18.740><c> modifiquemos</c><00:13:19.740><c> la</c><00:13:19.980><c> imagen</c><00:13:20.220><c> para</c>
+
+00:13:20.569 --> 00:13:20.579 align:start position:0%
+ahora modifiquemos la imagen para
+ 
+
+00:13:20.579 --> 00:13:23.329 align:start position:0%
+ahora modifiquemos la imagen para
+realizar<00:13:21.060><c> el</c><00:13:21.540><c> update</c>
+
+00:13:23.329 --> 00:13:23.339 align:start position:0%
+realizar el update
+ 
+
+00:13:23.339 --> 00:13:27.829 align:start position:0%
+realizar el update
+y<00:13:23.760><c> coloquemos</c><00:13:24.360><c> en</c><00:13:24.839><c> su</c><00:13:25.019><c> lugar</c><00:13:25.139><c> el</c><00:13:25.680><c> texto</c><00:13:25.980><c> update</c>
+
+00:13:27.829 --> 00:13:27.839 align:start position:0%
+y coloquemos en su lugar el texto update
+ 
+
+00:13:27.839 --> 00:13:30.410 align:start position:0%
+y coloquemos en su lugar el texto update
+para<00:13:28.260><c> ello</c><00:13:28.620><c> en</c><00:13:29.040><c> el</c><00:13:29.220><c> web</c><00:13:29.579><c> panel</c><00:13:29.940><c> componente</c>
+
+00:13:30.410 --> 00:13:30.420 align:start position:0%
+para ello en el web panel componente
+ 
+
+00:13:30.420 --> 00:13:33.290 align:start position:0%
+para ello en el web panel componente
+creamos<00:13:31.079><c> una</c><00:13:31.440><c> variable</c><00:13:31.680><c> de</c><00:13:32.040><c> tipo</c><00:13:32.279><c> carácter</c><00:13:33.060><c> de</c>
+
+00:13:33.290 --> 00:13:33.300 align:start position:0%
+creamos una variable de tipo carácter de
+ 
+
+00:13:33.300 --> 00:13:34.730 align:start position:0%
+creamos una variable de tipo carácter de
+20
+
+00:13:34.730 --> 00:13:34.740 align:start position:0%
+20
+ 
+
+00:13:34.740 --> 00:13:41.569 align:start position:0%
+20
+la<00:13:35.220><c> insertamos</c><00:13:35.880><c> en</c><00:13:36.180><c> el</c><00:13:36.480><c> grid</c>
+
+00:13:41.569 --> 00:13:41.579 align:start position:0%
+ 
+ 
+
+00:13:41.579 --> 00:13:44.810 align:start position:0%
+ 
+en<00:13:42.000><c> el</c><00:13:42.300><c> evento</c><00:13:42.540><c> Start</c>
+
+00:13:44.810 --> 00:13:44.820 align:start position:0%
+en el evento Start
+ 
+
+00:13:44.820 --> 00:13:47.870 align:start position:0%
+en el evento Start
+le<00:13:45.660><c> asignamos</c><00:13:45.839><c> el</c><00:13:46.079><c> valor</c><00:13:46.399><c> update</c><00:13:47.399><c> que</c><00:13:47.700><c> es</c><00:13:47.820><c> lo</c>
+
+00:13:47.870 --> 00:13:47.880 align:start position:0%
+le asignamos el valor update que es lo
+ 
+
+00:13:47.880 --> 00:13:52.430 align:start position:0%
+le asignamos el valor update que es lo
+que<00:13:48.000><c> queremos</c><00:13:48.180><c> que</c><00:13:48.420><c> el</c><00:13:48.660><c> usuario</c><00:13:48.779><c> vea</c>
+
+00:13:52.430 --> 00:13:52.440 align:start position:0%
+ 
+ 
+
+00:13:52.440 --> 00:13:55.610 align:start position:0%
+ 
+eliminamos<00:13:53.399><c> la</c><00:13:53.940><c> asignación</c><00:13:54.120><c> de</c><00:13:54.300><c> una</c><00:13:54.480><c> imagen</c><00:13:54.720><c> a</c>
+
+00:13:55.610 --> 00:13:55.620 align:start position:0%
+eliminamos la asignación de una imagen a
+ 
+
+00:13:55.620 --> 00:13:57.129 align:start position:0%
+eliminamos la asignación de una imagen a
+la<00:13:55.740><c> variable</c><00:13:55.860><c> que</c><00:13:56.100><c> teníamos</c>
+
+00:13:57.129 --> 00:13:57.139 align:start position:0%
+la variable que teníamos
+ 
+
+00:13:57.139 --> 00:14:01.129 align:start position:0%
+la variable que teníamos
+porque<00:13:58.139><c> la</c><00:13:58.440><c> vamos</c><00:13:58.620><c> a</c><00:13:58.740><c> eliminar</c><00:13:59.100><c> del</c><00:13:59.519><c> grid</c>
+
+00:14:01.129 --> 00:14:01.139 align:start position:0%
+porque la vamos a eliminar del grid
+ 
+
+00:14:01.139 --> 00:14:04.310 align:start position:0%
+porque la vamos a eliminar del grid
+y<00:14:01.560><c> ahora</c><00:14:02.000><c> quitémosle</c><00:14:03.000><c> el</c><00:14:03.180><c> título</c><00:14:03.480><c> a</c><00:14:04.019><c> la</c><00:14:04.139><c> nueva</c>
+
+00:14:04.310 --> 00:14:04.320 align:start position:0%
+y ahora quitémosle el título a la nueva
+ 
+
+00:14:04.320 --> 00:14:07.569 align:start position:0%
+y ahora quitémosle el título a la nueva
+variable<00:14:04.620><c> y</c><00:14:05.459><c> hagamos</c><00:14:05.880><c> la</c><00:14:06.240><c> red</c><00:14:06.660><c> only</c>
+
+00:14:07.569 --> 00:14:07.579 align:start position:0%
+variable y hagamos la red only
+ 
+
+00:14:07.579 --> 00:14:11.030 align:start position:0%
+variable y hagamos la red only
+intentemos<00:14:08.579><c> ejecutar</c><00:14:09.320><c> nos</c><00:14:10.320><c> indica</c><00:14:10.560><c> que</c><00:14:10.800><c> el</c>
+
+00:14:11.030 --> 00:14:11.040 align:start position:0%
+intentemos ejecutar nos indica que el
+ 
+
+00:14:11.040 --> 00:14:13.970 align:start position:0%
+intentemos ejecutar nos indica que el
+clic<00:14:11.339><c> no</c><00:14:11.639><c> es</c><00:14:11.760><c> un</c><00:14:11.940><c> evento</c><00:14:12.060><c> válido</c><00:14:12.860><c> es</c><00:14:13.860><c> que</c>
+
+00:14:13.970 --> 00:14:13.980 align:start position:0%
+clic no es un evento válido es que
+ 
+
+00:14:13.980 --> 00:14:16.430 align:start position:0%
+clic no es un evento válido es que
+olvidamos<00:14:14.639><c> modificarlo</c><00:14:15.540><c> para</c><00:14:15.660><c> que</c><00:14:15.899><c> sea</c><00:14:16.200><c> el</c>
+
+00:14:16.430 --> 00:14:16.440 align:start position:0%
+olvidamos modificarlo para que sea el
+ 
+
+00:14:16.440 --> 00:14:18.590 align:start position:0%
+olvidamos modificarlo para que sea el
+clic<00:14:16.620><c> de</c><00:14:16.920><c> la</c><00:14:17.040><c> nueva</c><00:14:17.220><c> variable</c><00:14:17.579><c> y</c><00:14:18.000><c> no</c><00:14:18.180><c> de</c><00:14:18.480><c> la</c>
+
+00:14:18.590 --> 00:14:18.600 align:start position:0%
+clic de la nueva variable y no de la
+ 
+
+00:14:18.600 --> 00:14:19.910 align:start position:0%
+clic de la nueva variable y no de la
+vieja
+
+00:14:19.910 --> 00:14:19.920 align:start position:0%
+vieja
+ 
+
+00:14:19.920 --> 00:14:40.730 align:start position:0%
+vieja
+ahora<00:14:20.519><c> sí</c><00:14:20.760><c> ejecutemos</c>
+
+00:14:40.730 --> 00:14:40.740 align:start position:0%
+ 
+ 
+
+00:14:40.740 --> 00:14:43.370 align:start position:0%
+ 
+si<00:14:41.220><c> ahora</c><00:14:41.399><c> vamos</c><00:14:41.519><c> a</c><00:14:41.760><c> observar</c><00:14:42.000><c> Cómo</c><00:14:42.899><c> quedó</c><00:14:43.139><c> en</c>
+
+00:14:43.370 --> 00:14:43.380 align:start position:0%
+si ahora vamos a observar Cómo quedó en
+ 
+
+00:14:43.380 --> 00:14:47.269 align:start position:0%
+si ahora vamos a observar Cómo quedó en
+el<00:14:43.500><c> patter</c>
+
+00:14:47.269 --> 00:14:47.279 align:start position:0%
+ 
+ 
+
+00:14:47.279 --> 00:14:49.850 align:start position:0%
+ 
+por<00:14:48.060><c> qué</c><00:14:48.060><c> Aquí</c><00:14:48.300><c> tiene</c><00:14:48.660><c> este</c><00:14:48.839><c> diseño</c><00:14:49.019><c> tanto</c><00:14:49.500><c> más</c>
+
+00:14:49.850 --> 00:14:49.860 align:start position:0%
+por qué Aquí tiene este diseño tanto más
+ 
+
+00:14:49.860 --> 00:14:53.810 align:start position:0%
+por qué Aquí tiene este diseño tanto más
+lindo
+
+00:14:53.810 --> 00:14:53.820 align:start position:0%
+ 
+ 
+
+00:14:53.820 --> 00:14:56.689 align:start position:0%
+ 
+ubiquemos<00:14:54.779><c> las</c><00:14:54.959><c> propiedades</c><00:14:55.139><c> del</c><00:14:55.680><c> control</c><00:14:56.279><c> en</c>
+
+00:14:56.689 --> 00:14:56.699 align:start position:0%
+ubiquemos las propiedades del control en
+ 
+
+00:14:56.699 --> 00:14:59.389 align:start position:0%
+ubiquemos las propiedades del control en
+el<00:14:56.820><c> web</c><00:14:57.180><c> panel</c><00:14:57.540><c> generado</c><00:14:57.779><c> por</c><00:14:57.899><c> el</c><00:14:57.959><c> paterno</c>
+
+00:14:59.389 --> 00:14:59.399 align:start position:0%
+el web panel generado por el paterno
+ 
+
+00:14:59.399 --> 00:15:04.250 align:start position:0%
+el web panel generado por el paterno
+veamos<00:15:00.180><c> estas</c><00:15:00.540><c> dos</c><00:15:00.779><c> Class</c><00:15:01.620><c> y</c><00:15:01.800><c> colon</c><00:15:02.339><c> Class</c>
+
+00:15:04.250 --> 00:15:04.260 align:start position:0%
+veamos estas dos Class y colon Class
+ 
+
+00:15:04.260 --> 00:15:06.650 align:start position:0%
+veamos estas dos Class y colon Class
+y<00:15:04.800><c> veamos</c><00:15:05.040><c> los</c><00:15:05.279><c> valores</c><00:15:05.459><c> que</c><00:15:05.699><c> tienen</c><00:15:06.000><c> esas</c>
+
+00:15:06.650 --> 00:15:06.660 align:start position:0%
+y veamos los valores que tienen esas
+ 
+
+00:15:06.660 --> 00:15:09.050 align:start position:0%
+y veamos los valores que tienen esas
+propiedades<00:15:06.899><c> para</c><00:15:07.260><c> nuestro</c><00:15:07.860><c> control</c><00:15:08.279><c> el</c><00:15:08.760><c> que</c>
+
+00:15:09.050 --> 00:15:09.060 align:start position:0%
+propiedades para nuestro control el que
+ 
+
+00:15:09.060 --> 00:15:10.610 align:start position:0%
+propiedades para nuestro control el que
+insertamos<00:15:09.300><c> nosotros</c><00:15:09.600><c> a</c><00:15:10.019><c> mano</c><00:15:10.199><c> en</c><00:15:10.500><c> nuestro</c>
+
+00:15:10.610 --> 00:15:10.620 align:start position:0%
+insertamos nosotros a mano en nuestro
+ 
+
+00:15:10.620 --> 00:15:12.769 align:start position:0%
+insertamos nosotros a mano en nuestro
+webpanel
+
+00:15:12.769 --> 00:15:12.779 align:start position:0%
+webpanel
+ 
+
+00:15:12.779 --> 00:15:15.069 align:start position:0%
+webpanel
+son<00:15:13.260><c> distintas</c>
+
+00:15:15.069 --> 00:15:15.079 align:start position:0%
+son distintas
+ 
+
+00:15:15.079 --> 00:15:17.269 align:start position:0%
+son distintas
+asignémosles<00:15:16.079><c> las</c><00:15:16.440><c> mismas</c><00:15:16.620><c> que</c><00:15:16.860><c> las</c><00:15:17.160><c> del</c>
+
+00:15:17.269 --> 00:15:17.279 align:start position:0%
+asignémosles las mismas que las del
+ 
+
+00:15:17.279 --> 00:15:20.509 align:start position:0%
+asignémosles las mismas que las del
+patter
+
+00:15:20.509 --> 00:15:20.519 align:start position:0%
+ 
+ 
+
+00:15:20.519 --> 00:15:24.889 align:start position:0%
+ 
+y<00:15:21.120><c> probemos</c>
+
+00:15:24.889 --> 00:15:24.899 align:start position:0%
+ 
+ 
+
+00:15:24.899 --> 00:15:28.430 align:start position:0%
+ 
+ahí<00:15:25.680><c> lo</c><00:15:25.800><c> vemos</c><00:15:26.180><c> con</c><00:15:27.180><c> esto</c><00:15:27.360><c> ya</c><00:15:27.720><c> empezamos</c><00:15:27.959><c> a</c>
+
+00:15:28.430 --> 00:15:28.440 align:start position:0%
+ahí lo vemos con esto ya empezamos a
+ 
+
+00:15:28.440 --> 00:15:30.470 align:start position:0%
+ahí lo vemos con esto ya empezamos a
+entender<00:15:28.560><c> cómo</c><00:15:29.100><c> se</c><00:15:29.399><c> manipula</c><00:15:29.760><c> el</c><00:15:29.940><c> diseño</c><00:15:30.180><c> de</c>
+
+00:15:30.470 --> 00:15:30.480 align:start position:0%
+entender cómo se manipula el diseño de
+ 
+
+00:15:30.480 --> 00:15:33.250 align:start position:0%
+entender cómo se manipula el diseño de
+nuestras<00:15:30.959><c> pantallas</c>
+
+00:15:33.250 --> 00:15:33.260 align:start position:0%
+nuestras pantallas
+ 
+
+00:15:33.260 --> 00:15:37.129 align:start position:0%
+nuestras pantallas
+resumiendo<00:15:34.519><c> vimos</c><00:15:35.519><c> tres</c><00:15:35.880><c> tipos</c><00:15:36.060><c> de</c><00:15:36.180><c> webpanels</c>
+
+00:15:37.129 --> 00:15:37.139 align:start position:0%
+resumiendo vimos tres tipos de webpanels
+ 
+
+00:15:37.139 --> 00:15:39.949 align:start position:0%
+resumiendo vimos tres tipos de webpanels
+que<00:15:37.260><c> están</c><00:15:37.500><c> relacionados</c><00:15:37.920><c> entre</c><00:15:38.399><c> sí</c><00:15:38.779><c> el</c><00:15:39.779><c> de</c>
+
+00:15:39.949 --> 00:15:39.959 align:start position:0%
+que están relacionados entre sí el de
+ 
+
+00:15:39.959 --> 00:15:42.110 align:start position:0%
+que están relacionados entre sí el de
+tipo<00:15:40.079><c> Master</c><00:15:40.560><c> page</c><00:15:40.920><c> que</c><00:15:41.220><c> ofrece</c><00:15:41.579><c> un</c><00:15:41.880><c> marco</c>
+
+00:15:42.110 --> 00:15:42.120 align:start position:0%
+tipo Master page que ofrece un marco
+ 
+
+00:15:42.120 --> 00:15:43.850 align:start position:0%
+tipo Master page que ofrece un marco
+común<00:15:42.480><c> a</c><00:15:42.779><c> todas</c><00:15:43.139><c> las</c><00:15:43.260><c> páginas</c><00:15:43.380><c> de</c><00:15:43.800><c> la</c>
+
+00:15:43.850 --> 00:15:43.860 align:start position:0%
+común a todas las páginas de la
+ 
+
+00:15:43.860 --> 00:15:45.949 align:start position:0%
+común a todas las páginas de la
+aplicación<00:15:44.040><c> o</c><00:15:44.459><c> de</c><00:15:44.699><c> una</c><00:15:44.820><c> parte</c><00:15:44.940><c> de</c><00:15:45.180><c> ella</c><00:15:45.360><c> para</c>
+
+00:15:45.949 --> 00:15:45.959 align:start position:0%
+aplicación o de una parte de ella para
+ 
+
+00:15:45.959 --> 00:15:48.050 align:start position:0%
+aplicación o de una parte de ella para
+no<00:15:46.320><c> tener</c><00:15:46.500><c> que</c><00:15:46.680><c> repetir</c><00:15:46.980><c> lo</c><00:15:47.339><c> mismo</c><00:15:47.519><c> cada</c><00:15:47.820><c> vez</c>
+
+00:15:48.050 --> 00:15:48.060 align:start position:0%
+no tener que repetir lo mismo cada vez
+ 
+
+00:15:48.060 --> 00:15:50.569 align:start position:0%
+no tener que repetir lo mismo cada vez
+para<00:15:48.240><c> cada</c><00:15:48.600><c> página</c><00:15:48.899><c> por</c><00:15:49.620><c> ejemplo</c><00:15:49.860><c> los</c><00:15:50.339><c> menús</c>
+
+00:15:50.569 --> 00:15:50.579 align:start position:0%
+para cada página por ejemplo los menús
+ 
+
+00:15:50.579 --> 00:15:53.629 align:start position:0%
+para cada página por ejemplo los menús
+suelen<00:15:51.120><c> ir</c><00:15:51.360><c> allí</c><00:15:51.620><c> este</c><00:15:52.620><c> objeto</c><00:15:52.920><c> tiene</c><00:15:53.220><c> la</c>
+
+00:15:53.629 --> 00:15:53.639 align:start position:0%
+suelen ir allí este objeto tiene la
+ 
+
+00:15:53.639 --> 00:15:55.850 align:start position:0%
+suelen ir allí este objeto tiene la
+particularidad<00:15:54.120><c> de</c><00:15:54.540><c> contener</c><00:15:55.019><c> en</c><00:15:55.320><c> su</c><00:15:55.620><c> forma</c>
+
+00:15:55.850 --> 00:15:55.860 align:start position:0%
+particularidad de contener en su forma
+ 
+
+00:15:55.860 --> 00:15:58.370 align:start position:0%
+particularidad de contener en su forma
+un<00:15:56.160><c> control</c><00:15:56.399><c> especial</c><00:15:56.760><c> el</c><00:15:57.420><c> content</c><00:15:58.199><c> Place</c>
+
+00:15:58.370 --> 00:15:58.380 align:start position:0%
+un control especial el content Place
+ 
+
+00:15:58.380 --> 00:16:00.470 align:start position:0%
+un control especial el content Place
+holder<00:15:58.680><c> que</c><00:15:59.399><c> es</c><00:15:59.579><c> donde</c><00:15:59.760><c> se</c><00:15:59.880><c> cargarán</c><00:16:00.300><c> las</c>
+
+00:16:00.470 --> 00:16:00.480 align:start position:0%
+holder que es donde se cargarán las
+ 
+
+00:16:00.480 --> 00:16:02.329 align:start position:0%
+holder que es donde se cargarán las
+páginas<00:16:00.660><c> web</c>
+
+00:16:02.329 --> 00:16:02.339 align:start position:0%
+páginas web
+ 
+
+00:16:02.339 --> 00:16:04.730 align:start position:0%
+páginas web
+el<00:16:03.060><c> de</c><00:16:03.180><c> tipo</c><00:16:03.240><c> web</c><00:16:03.720><c> page</c><00:16:04.079><c> que</c><00:16:04.380><c> es</c><00:16:04.560><c> el</c><00:16:04.560><c> que</c>
+
+00:16:04.730 --> 00:16:04.740 align:start position:0%
+el de tipo web page que es el que
+ 
+
+00:16:04.740 --> 00:16:07.189 align:start position:0%
+el de tipo web page que es el que
+veníamos<00:16:04.980><c> estudiando</c><00:16:05.480><c> podrá</c><00:16:06.480><c> tener</c><00:16:06.660><c> asociado</c>
+
+00:16:07.189 --> 00:16:07.199 align:start position:0%
+veníamos estudiando podrá tener asociado
+ 
+
+00:16:07.199 --> 00:16:09.470 align:start position:0%
+veníamos estudiando podrá tener asociado
+a<00:16:07.440><c> una</c><00:16:07.440><c> Master</c><00:16:07.800><c> page</c><00:16:08.100><c> determinada</c><00:16:08.579><c> y</c><00:16:08.880><c> solo</c><00:16:09.180><c> una</c>
+
+00:16:09.470 --> 00:16:09.480 align:start position:0%
+a una Master page determinada y solo una
+ 
+
+00:16:09.480 --> 00:16:11.930 align:start position:0%
+a una Master page determinada y solo una
+puesto<00:16:10.019><c> que</c><00:16:10.260><c> se</c><00:16:10.440><c> cargará</c><00:16:10.860><c> en</c><00:16:11.040><c> el</c><00:16:11.160><c> content</c>
+
+00:16:11.930 --> 00:16:11.940 align:start position:0%
+puesto que se cargará en el content
+ 
+
+00:16:11.940 --> 00:16:14.269 align:start position:0%
+puesto que se cargará en el content
+Place<00:16:12.120><c> holder</c><00:16:12.420><c> de</c><00:16:12.720><c> esta</c>
+
+00:16:14.269 --> 00:16:14.279 align:start position:0%
+Place holder de esta
+ 
+
+00:16:14.279 --> 00:16:17.329 align:start position:0%
+Place holder de esta
+y<00:16:14.639><c> el</c><00:16:14.880><c> de</c><00:16:15.180><c> tipo</c><00:16:15.500><c> welcomet</c><00:16:16.500><c> que</c><00:16:17.100><c> sirve</c>
+
+00:16:17.329 --> 00:16:17.339 align:start position:0%
+y el de tipo welcomet que sirve
+ 
+
+00:16:17.339 --> 00:16:20.329 align:start position:0%
+y el de tipo welcomet que sirve
+justamente<00:16:17.760><c> para</c><00:16:18.300><c> reutilizar</c><00:16:19.079><c> diseño</c><00:16:19.920><c> y</c>
+
+00:16:20.329 --> 00:16:20.339 align:start position:0%
+justamente para reutilizar diseño y
+ 
+
+00:16:20.339 --> 00:16:23.210 align:start position:0%
+justamente para reutilizar diseño y
+programación<00:16:20.820><c> en</c><00:16:21.240><c> distintos</c><00:16:21.660><c> objetos</c><00:16:22.220><c> para</c>
+
+00:16:23.210 --> 00:16:23.220 align:start position:0%
+programación en distintos objetos para
+ 
+
+00:16:23.220 --> 00:16:25.370 align:start position:0%
+programación en distintos objetos para
+poder<00:16:23.579><c> hacer</c><00:16:24.000><c> que</c><00:16:24.240><c> un</c><00:16:24.480><c> objeto</c><00:16:24.600><c> definido</c><00:16:25.079><c> como</c>
+
+00:16:25.370 --> 00:16:25.380 align:start position:0%
+poder hacer que un objeto definido como
+ 
+
+00:16:25.380 --> 00:16:28.610 align:start position:0%
+poder hacer que un objeto definido como
+web<00:16:25.800><c> panel</c><00:16:26.220><c> de</c><00:16:26.399><c> tipo</c><00:16:26.579><c> componente</c><00:16:27.440><c> si</c><00:16:28.440><c> cargue</c>
+
+00:16:28.610 --> 00:16:28.620 align:start position:0%
+web panel de tipo componente si cargue
+ 
+
+00:16:28.620 --> 00:16:31.550 align:start position:0%
+web panel de tipo componente si cargue
+dentro<00:16:28.920><c> de</c><00:16:29.100><c> otro</c><00:16:29.579><c> objeto</c><00:16:29.760><c> web</c><00:16:30.120><c> se</c><00:16:30.959><c> utiliza</c><00:16:31.139><c> el</c>
+
+00:16:31.550 --> 00:16:31.560 align:start position:0%
+dentro de otro objeto web se utiliza el
+ 
+
+00:16:31.560 --> 00:16:34.490 align:start position:0%
+dentro de otro objeto web se utiliza el
+control<00:16:31.800><c> de</c><00:16:32.160><c> tipo</c><00:16:32.459><c> component</c><00:16:33.420><c> que</c><00:16:33.899><c> podrá</c><00:16:34.199><c> ser</c>
+
+00:16:34.490 --> 00:16:34.500 align:start position:0%
+control de tipo component que podrá ser
+ 
+
+00:16:34.500 --> 00:16:37.329 align:start position:0%
+control de tipo component que podrá ser
+cargado<00:16:34.680><c> estática</c><00:16:35.459><c> o</c><00:16:35.760><c> dinámicamente</c>
+
+00:16:37.329 --> 00:16:37.339 align:start position:0%
+cargado estática o dinámicamente
+ 
+
+00:16:37.339 --> 00:16:40.550 align:start position:0%
+cargado estática o dinámicamente
+cuantos<00:16:38.339><c> más</c><00:16:38.519><c> componentes</c><00:16:39.139><c> identifiquemos</c><00:16:40.139><c> y</c>
+
+00:16:40.550 --> 00:16:40.560 align:start position:0%
+cuantos más componentes identifiquemos y
+ 
+
+00:16:40.560 --> 00:16:43.129 align:start position:0%
+cuantos más componentes identifiquemos y
+utilicemos<00:16:41.100><c> mejor</c><00:16:42.000><c> calidad</c><00:16:42.360><c> tendrá</c><00:16:42.959><c> la</c>
+
+00:16:43.129 --> 00:16:43.139 align:start position:0%
+utilicemos mejor calidad tendrá la
+ 
+
+00:16:43.139 --> 00:16:46.129 align:start position:0%
+utilicemos mejor calidad tendrá la
+aplicación<00:16:43.320><c> resultante</c><00:16:44.360><c> por</c><00:16:45.360><c> supuesto</c><00:16:45.600><c> hay</c>
+
+00:16:46.129 --> 00:16:46.139 align:start position:0%
+aplicación resultante por supuesto hay
+ 
+
+00:16:46.139 --> 00:16:47.749 align:start position:0%
+aplicación resultante por supuesto hay
+mucho<00:16:46.440><c> más</c><00:16:46.620><c> para</c><00:16:46.800><c> estudiar</c><00:16:47.100><c> sobre</c><00:16:47.279><c> este</c><00:16:47.519><c> tema</c>
+
+00:16:47.749 --> 00:16:47.759 align:start position:0%
+mucho más para estudiar sobre este tema
+ 
+
+00:16:47.759 --> 00:16:50.210 align:start position:0%
+mucho más para estudiar sobre este tema
+por<00:16:48.240><c> ejemplo</c><00:16:48.420><c> qué</c><00:16:49.199><c> pasa</c><00:16:49.320><c> con</c><00:16:49.440><c> la</c><00:16:49.680><c> ejecución</c><00:16:49.800><c> de</c>
+
+00:16:50.210 --> 00:16:50.220 align:start position:0%
+por ejemplo qué pasa con la ejecución de
+ 
+
+00:16:50.220 --> 00:16:52.069 align:start position:0%
+por ejemplo qué pasa con la ejecución de
+los<00:16:50.279><c> eventos</c><00:16:50.519><c> en</c><00:16:50.880><c> un</c><00:16:51.060><c> panel</c><00:16:51.300><c> con</c><00:16:51.600><c> componentes</c>
+
+00:16:52.069 --> 00:16:52.079 align:start position:0%
+los eventos en un panel con componentes
+ 
+
+00:16:52.079 --> 00:16:54.730 align:start position:0%
+los eventos en un panel con componentes
+como<00:16:53.040><c> se</c><00:16:53.279><c> refresca</c><00:16:53.519><c> un</c><00:16:53.699><c> componente</c><00:16:54.060><c> etcétera</c>
+
+00:16:54.730 --> 00:16:54.740 align:start position:0%
+como se refresca un componente etcétera
+ 
+
+00:16:54.740 --> 00:16:59.600 align:start position:0%
+como se refresca un componente etcétera
+por<00:16:55.740><c> ahora</c><00:16:55.920><c> con</c><00:16:56.399><c> esto</c><00:16:56.579><c> es</c><00:16:56.880><c> más</c><00:16:57.120><c> que</c><00:16:57.240><c> suficiente</c>
+

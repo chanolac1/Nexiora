@@ -1,0 +1,7 @@
+id=capability-01-sprint-01-web-cognitive-pipeline-foundation
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/capability-01-sprint-01-web-cognitive-pipeline-foundation/transaction.log
+files_installed=13
+files_skipped=3
+files_rolled_back=0

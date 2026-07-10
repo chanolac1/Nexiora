@@ -1,0 +1,6 @@
+id=TOOL-001 Repair1 Direct Process Execution
+version=1.0.0
+requires=TOOL-001 Nexiora Tool Manager
+file=Payload/Source/CognitivePipeline/NxWebCognitivePipeline.c=>Source/CognitivePipeline/NxWebCognitivePipeline.c
+file=Payload/Tests/Unit/NxWebCognitivePipelineTests.c=>Tests/Unit/NxWebCognitivePipelineTests.c
+file=Payload/Docs/NCOS/TOOL-001_REPAIR1_QUE_LOGRAMOS.md=>Docs/NCOS/TOOL-001_REPAIR1_QUE_LOGRAMOS.md

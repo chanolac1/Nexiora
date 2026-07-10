@@ -1,0 +1,19 @@
+id=CAPABILITY-01 Sprint-01 Web Cognitive Pipeline Foundation
+version=1.0.0
+requires=EPIC-03 Sprint-03 Repair1 Dependency Correction
+file=Payload/CMakeLists.txt=>CMakeLists.txt
+file=Payload/Include/Nexiora/CognitivePipeline/NxWebCognitivePipeline.h=>Include/Nexiora/CognitivePipeline/NxWebCognitivePipeline.h
+file=Payload/Source/CognitivePipeline/NxWebCognitivePipeline.c=>Source/CognitivePipeline/NxWebCognitivePipeline.c
+file=Payload/Tools/CognitivePipeline/NxWebCognitivePipelineTool.c=>Tools/CognitivePipeline/NxWebCognitivePipelineTool.c
+file=Payload/Tests/Unit/NxWebCognitivePipelineTests.c=>Tests/Unit/NxWebCognitivePipelineTests.c
+file=Payload/Samples/Web/youtube_demo.es.vtt=>Samples/Web/youtube_demo.es.vtt
+file=Payload/Docs/MASTER_CONTEXT.md=>Docs/MASTER_CONTEXT.md
+file=Payload/Docs/PROJECT_STATE.md=>Docs/PROJECT_STATE.md
+file=Payload/Docs/ROADMAP.md=>Docs/ROADMAP.md
+file=Payload/Docs/CHANGELOG.md=>Docs/CHANGELOG.md
+file=Payload/Docs/DECISIONS.md=>Docs/DECISIONS.md
+file=Payload/Docs/ARCHITECTURE.md=>Docs/ARCHITECTURE.md
+file=Payload/Docs/CODING_STANDARD.md=>Docs/CODING_STANDARD.md
+file=Payload/Docs/TESTING_STANDARD.md=>Docs/TESTING_STANDARD.md
+file=Payload/Docs/PACKAGE_STANDARD.md=>Docs/PACKAGE_STANDARD.md
+file=Payload/Docs/NCOS/CAPABILITY-01_SPRINT-01_QUE_LOGRAMOS.md=>Docs/NCOS/CAPABILITY-01_SPRINT-01_QUE_LOGRAMOS.md
