@@ -1,0 +1,8 @@
+format=nxknowledge/1
+title=Memoria cognitiva
+media_type=text
+source=Samples/Multimodal/memory_demo.txt
+source_bytes=326
+content_begin
+La memoria episodica conserva experiencias personales asociadas con tiempo y contexto. La memoria semantica conserva hechos, conceptos y relaciones generales. La memoria procedimental conserva habilidades y secuencias de accion. La consolidacion conecta experiencias nuevas con conocimiento previo y fortalece el aprendizaje.
+content_end

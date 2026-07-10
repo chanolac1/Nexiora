@@ -1,0 +1,8 @@
+domain=memoria
+name=asociadas
+normalized=asociadas
+definition=La memoria episodica conserva experiencias personales asociadas con tiempo y contexto
+purpose=Concepto extraido de evidencia multimodal: .\Samples\Multimodal\memory_demo.nxknowledge
+relationships=extraido_de evidencia_multimodal
+confidence=0.66
+version=1

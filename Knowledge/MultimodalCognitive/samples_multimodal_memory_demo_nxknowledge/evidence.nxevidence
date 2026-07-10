@@ -1,0 +1,16 @@
+chunk=1
+source=.\Samples\Multimodal\memory_demo.nxknowledge
+text=La memoria episodica conserva experiencias personales asociadas con tiempo y contexto
+---
+chunk=2
+source=.\Samples\Multimodal\memory_demo.nxknowledge
+text=La memoria semantica conserva hechos, conceptos y relaciones generales
+---
+chunk=3
+source=.\Samples\Multimodal\memory_demo.nxknowledge
+text=La memoria procedimental conserva habilidades y secuencias de accion
+---
+chunk=4
+source=.\Samples\Multimodal\memory_demo.nxknowledge
+text=La consolidacion conecta experiencias nuevas con conocimiento previo y fortalece el aprendizaje
+---

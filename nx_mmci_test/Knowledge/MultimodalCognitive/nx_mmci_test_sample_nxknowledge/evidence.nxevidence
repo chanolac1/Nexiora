@@ -1,0 +1,12 @@
+chunk=1
+source=nx_mmci_test/sample.nxknowledge
+text=La memoria episodica conserva experiencias personales
+---
+chunk=2
+source=nx_mmci_test/sample.nxknowledge
+text=La memoria semantica conserva hechos y conceptos
+---
+chunk=3
+source=nx_mmci_test/sample.nxknowledge
+text=La consolidacion conecta memoria episodica y aprendizaje
+---

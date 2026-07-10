@@ -1,0 +1,8 @@
+domain=memoria
+name=semantica
+normalized=semantica
+definition=La memoria semantica conserva hechos y conceptos
+purpose=Concepto extraido de evidencia multimodal: nx_mmci_test/sample.nxknowledge
+relationships=extraido_de evidencia_multimodal
+confidence=0.66
+version=1

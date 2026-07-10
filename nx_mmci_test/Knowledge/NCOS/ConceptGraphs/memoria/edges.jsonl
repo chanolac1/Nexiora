@@ -1,0 +1,10 @@
+{"domain":"memoria","from":"memoria","relation":"co_occurs_with","to":"conserva","source":"nx_mmci_test/sample.nxknowledge","confidence":60}
+{"domain":"memoria","from":"conserva","relation":"co_occurs_with","to":"episodica","source":"nx_mmci_test/sample.nxknowledge","confidence":60}
+{"domain":"memoria","from":"episodica","relation":"co_occurs_with","to":"aprendizaje","source":"nx_mmci_test/sample.nxknowledge","confidence":60}
+{"domain":"memoria","from":"aprendizaje","relation":"co_occurs_with","to":"conceptos","source":"nx_mmci_test/sample.nxknowledge","confidence":60}
+{"domain":"memoria","from":"conceptos","relation":"co_occurs_with","to":"conecta","source":"nx_mmci_test/sample.nxknowledge","confidence":60}
+{"domain":"memoria","from":"conecta","relation":"co_occurs_with","to":"consolidacion","source":"nx_mmci_test/sample.nxknowledge","confidence":60}
+{"domain":"memoria","from":"consolidacion","relation":"co_occurs_with","to":"experiencias","source":"nx_mmci_test/sample.nxknowledge","confidence":60}
+{"domain":"memoria","from":"experiencias","relation":"co_occurs_with","to":"hechos","source":"nx_mmci_test/sample.nxknowledge","confidence":60}
+{"domain":"memoria","from":"hechos","relation":"co_occurs_with","to":"personales","source":"nx_mmci_test/sample.nxknowledge","confidence":60}
+{"domain":"memoria","from":"personales","relation":"co_occurs_with","to":"semantica","source":"nx_mmci_test/sample.nxknowledge","confidence":60}

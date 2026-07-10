@@ -1,0 +1,7 @@
+id=epic-03-sprint-03-repair1-dependency-correction
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/epic-03-sprint-03-repair1-dependency-correction/transaction.log
+files_installed=14
+files_skipped=3
+files_rolled_back=0

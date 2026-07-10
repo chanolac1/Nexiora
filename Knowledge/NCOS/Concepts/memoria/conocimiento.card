@@ -1,0 +1,8 @@
+domain=memoria
+name=conocimiento
+normalized=conocimiento
+definition=La consolidacion conecta experiencias nuevas con conocimiento previo y fortalece el aprendizaje
+purpose=Concepto extraido de evidencia multimodal: .\Samples\Multimodal\memory_demo.nxknowledge
+relationships=extraido_de evidencia_multimodal
+confidence=0.66
+version=1

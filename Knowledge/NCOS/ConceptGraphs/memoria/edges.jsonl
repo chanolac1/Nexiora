@@ -1,0 +1,11 @@
+{"domain":"memoria","from":"conserva","relation":"co_occurs_with","to":"memoria","source":".\Samples\Multimodal\memory_demo.nxknowledge","confidence":60}
+{"domain":"memoria","from":"memoria","relation":"co_occurs_with","to":"experiencias","source":".\Samples\Multimodal\memory_demo.nxknowledge","confidence":60}
+{"domain":"memoria","from":"experiencias","relation":"co_occurs_with","to":"accion","source":".\Samples\Multimodal\memory_demo.nxknowledge","confidence":60}
+{"domain":"memoria","from":"accion","relation":"co_occurs_with","to":"aprendizaje","source":".\Samples\Multimodal\memory_demo.nxknowledge","confidence":60}
+{"domain":"memoria","from":"aprendizaje","relation":"co_occurs_with","to":"asociadas","source":".\Samples\Multimodal\memory_demo.nxknowledge","confidence":60}
+{"domain":"memoria","from":"asociadas","relation":"co_occurs_with","to":"conceptos","source":".\Samples\Multimodal\memory_demo.nxknowledge","confidence":60}
+{"domain":"memoria","from":"conceptos","relation":"co_occurs_with","to":"conecta","source":".\Samples\Multimodal\memory_demo.nxknowledge","confidence":60}
+{"domain":"memoria","from":"conecta","relation":"co_occurs_with","to":"conocimiento","source":".\Samples\Multimodal\memory_demo.nxknowledge","confidence":60}
+{"domain":"memoria","from":"conocimiento","relation":"co_occurs_with","to":"consolidacion","source":".\Samples\Multimodal\memory_demo.nxknowledge","confidence":60}
+{"domain":"memoria","from":"consolidacion","relation":"co_occurs_with","to":"contexto","source":".\Samples\Multimodal\memory_demo.nxknowledge","confidence":60}
+{"domain":"memoria","from":"contexto","relation":"co_occurs_with","to":"episodica","source":".\Samples\Multimodal\memory_demo.nxknowledge","confidence":60}
