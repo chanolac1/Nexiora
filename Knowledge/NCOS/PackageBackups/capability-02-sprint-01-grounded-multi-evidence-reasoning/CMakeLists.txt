@@ -754,89 +754,15 @@ if(NEXIORA_BUILD_TESTS)
     set_tests_properties(NxWebCognitivePipelineTests PROPERTIES WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 endif()
 
-# CAPABILITY-02 Sprint-01 - Grounded Multi-Evidence Reasoning
-target_sources(NexioraNCP PRIVATE
-    Source/Reasoning/NxGroundedReasoning.c
-)
-add_executable(nexiora_reason_grounded
-    Tools/Reasoning/NxGroundedReasoningTool.c
-)
-target_link_libraries(nexiora_reason_grounded PRIVATE NexioraNCP)
-set_target_properties(nexiora_reason_grounded PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+# TOOL-001 - Nexiora Tool Manager
+target_sources(NexioraNCP PRIVATE Source/Tools/NxToolManager.c)
+add_executable(nexiora_tool Tools/ToolManager/NxToolManagerTool.c)
+target_link_libraries(nexiora_tool PRIVATE NexioraNCP)
+set_target_properties(nexiora_tool PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 if(NEXIORA_BUILD_TESTS)
-    add_executable(NxGroundedReasoningTests
-        Tests/Unit/NxGroundedReasoningTests.c
-    )
-    target_link_libraries(NxGroundedReasoningTests PRIVATE NexioraNCP)
-    set_target_properties(NxGroundedReasoningTests PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-    add_test(NAME NxGroundedReasoningTests COMMAND NxGroundedReasoningTests)
-    set_tests_properties(NxGroundedReasoningTests PROPERTIES WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
-endif()
-
-
-# CAPABILITY-02 Sprint-01 Repair1: materialize every registered test binary
-if(NEXIORA_BUILD_TESTS)
-    set(NEXIORA_FULL_TEST_TARGETS
-        nexiora_tests
-        NxVectorTests
-        NxResearchTests
-        NxJournalTests
-        NxExperimentRunnerTests
-        NxResearchEvidenceTests
-        NxPromotionTests
-        NxAutonomousResearchPipelineTests
-        NxDiscoveryEngineTests
-        NxResearchGraphTests
-        NxResearchGraphExporterTests
-        NxResearchGraphQueryTests
-        NxResearchSchedulerTests
-        NxResearchQueueTests
-        NxResearchPolicyTests
-        NxResearchSessionTests
-        NxAutonomousResearchLoopTests
-        NxKnowledgeBaseTests
-        NxKnowledgeQueryTests
-        NxHypothesisEngineTests
-        NxReasoningEngineTests
-        NxEvidenceCorrelationTests
-        NxConflictDetectorTests
-        NxPersistentMemoryTests
-        NxConversationTests
-        NxAutonomousExecutionTests
-        NxResearchDashboardTests
-        NxKnowledgeAcquisitionTests
-        NxProgressEngineTests
-        NxKnowledgeStoreTests
-        NxTopicInvestigationTests
-        NxLearningCoreTests
-        NxTopicQuestionTests
-        NxCognitiveCoreTests
-        NxSessionEngineTests
-        NxPlanningEngineTests
-        NxConceptRegistryTests
-        NxConceptGraphTests
-        NxGraphReasonerTests
-        NxAnswerComposerTests
-        NxIntentPlannerTests
-        NxTaskExecutionEngineTests
-        NxCompilerEngineTests
-        NxBuildLogAnalyzerTests
-        NxAutoFixProposalEngineTests
-        NxSafePatchEngineTests
-        NxPatchApprovalEngineTests
-        NxApprovedPatchApplyEngineTests
-        NxPatchVerificationGateTests
-        NxPackageManagerTests
-        NxWorkspaceEngineTests
-        NxMultimodalIngestionTests
-        NxDecoderAdaptersTests
-        NxMultimodalCognitiveIntegrationTests
-        NxWebCognitivePipelineTests
-        NxGroundedReasoningTests
-    )
-
-    add_custom_target(nexiora_test_suite
-        DEPENDS ${NEXIORA_FULL_TEST_TARGETS}
-        COMMENT "Materializing all Nexiora test executables before CTest"
-    )
+    add_executable(NxToolManagerTests Tests/Unit/NxToolManagerTests.c)
+    target_link_libraries(NxToolManagerTests PRIVATE NexioraNCP)
+    set_target_properties(NxToolManagerTests PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+    add_test(NAME NxToolManagerTests COMMAND NxToolManagerTests)
+    set_tests_properties(NxToolManagerTests PROPERTIES WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 endif()

@@ -1,0 +1,7 @@
+id=capability-02-sprint-01-repair1-full-test-materialization
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/capability-02-sprint-01-repair1-full-test-materialization/transaction.log
+files_installed=5
+files_skipped=0
+files_rolled_back=0

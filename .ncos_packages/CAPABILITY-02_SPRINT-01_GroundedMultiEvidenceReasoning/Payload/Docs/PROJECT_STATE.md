@@ -17,6 +17,3 @@ Recuperación, ranking, fusión y respuesta explicable sobre múltiples fragment
 
 ## Próximo Sprint
 CAPABILITY-02 Sprint-02 — Contradiction and Hypothesis Reasoning
-
-## Test Suite Materialization
-The full CTest suite must be preceded by building the `nexiora_test_suite` target.

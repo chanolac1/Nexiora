@@ -1,0 +1,16 @@
+chunk=1
+source=memory_demo@00:01:10
+text=La memoria episodica conserva experiencias personales asociadas con acontecimientos vividos.
+---
+chunk=2
+source=memory_demo@00:02:05
+text=Las experiencias episodicas incluyen tiempo lugar y contexto personal.
+---
+chunk=3
+source=memory_demo@00:03:20
+text=La memoria semantica conserva conceptos y conocimientos generales que no dependen de un episodio concreto.
+---
+chunk=4
+source=memory_demo@00:04:15
+text=La consolidacion integra nueva informacion con conocimientos previos para fortalecer el aprendizaje.
+---

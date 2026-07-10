@@ -1,0 +1,8 @@
+id=CAPABILITY-02 Sprint-01 Repair1 Full Test Materialization
+version=1.0.0
+requires=CAPABILITY-02 Sprint-01 Grounded Multi-Evidence Reasoning
+file=Payload/CMakeLists.txt=>CMakeLists.txt
+file=Payload/Docs/PROJECT_STATE.md=>Docs/PROJECT_STATE.md
+file=Payload/Docs/CHANGELOG.md=>Docs/CHANGELOG.md
+file=Payload/Docs/DECISIONS.md=>Docs/DECISIONS.md
+file=Payload/Docs/NCOS/CAPABILITY-02_SPRINT-01_REPAIR1_QUE_LOGRAMOS.md=>Docs/NCOS/CAPABILITY-02_SPRINT-01_REPAIR1_QUE_LOGRAMOS.md
