@@ -520,145 +520,108 @@ int NxPackageManager_VerifyDependencies(const char* repo_root,
     return result.success;
 }
 
+
+static int nx_pm_remove_file(const char* path)
+{
+    return path != NULL && remove(path) == 0;
+}
+
+static int nx_pm_transaction_path(const char* repo_root, const char* package_id, char* out, size_t out_size)
+{
+    char knowledge[NX_PM_PATH_MAX], ncos[NX_PM_PATH_MAX], tx[NX_PM_PATH_MAX], pkg[NX_PM_PATH_MAX];
+    if (!nx_pm_join(knowledge, sizeof(knowledge), repo_root, "Knowledge") ||
+        !nx_pm_join(ncos, sizeof(ncos), knowledge, "NCOS") ||
+        !nx_pm_join(tx, sizeof(tx), ncos, "PackageTransactions") ||
+        !nx_pm_join(pkg, sizeof(pkg), tx, package_id) ||
+        !nx_pm_mkdir_chain(pkg)) { return 0; }
+    return nx_pm_join(out, out_size, pkg, "transaction.log");
+}
+
+static int nx_pm_rollback_transaction(const char* tx_path, NxPackageInstallResult* result)
+{
+    FILE* f; char line[NX_PM_LINE_MAX]; int ok = 1;
+    f = fopen(tx_path, "rb"); if (f == NULL) return 0;
+    while (fgets(line, sizeof(line), f) != NULL) {
+        char* t = nx_pm_trim(line);
+        if (nx_pm_starts_with(t, "RESTORE|")) {
+            char* sep = strchr(t + 8, '|');
+            if (sep != NULL) { *sep='\0'; if (!nx_pm_copy_file(t+8, sep+1)) ok=0; else result->files_rolled_back++; }
+        } else if (nx_pm_starts_with(t, "DELETE|")) {
+            if (nx_pm_exists(t+7) && !nx_pm_remove_file(t+7)) ok=0; else result->files_rolled_back++;
+        }
+    }
+    fclose(f); return ok;
+}
 int NxPackageManager_Install(const char* repo_root,
                              const char* package_dir,
                              NxPackageInstallResult* out_result)
 {
-    NxPackageInstallResult result;
-    char manifest_path[NX_PM_PATH_MAX];
-    char package_id[128];
-    char package_version[64];
-    char registry_path[NX_PM_PATH_MAX];
-    char log_path[NX_PM_PATH_MAX];
-    FILE* manifest;
-    char line[NX_PM_LINE_MAX];
-    int ok = 1;
-
-    memset(&result, 0, sizeof(result));
-
-    if (repo_root == NULL || package_dir == NULL) {
-        if (out_result != NULL) {
-            *out_result = result;
-        }
-        return 0;
-    }
-
-    {
-        NxPackageVerifyResult dependency_result;
-        memset(&dependency_result, 0, sizeof(dependency_result));
-        if (!NxPackageManager_VerifyDependencies(repo_root, package_dir, &dependency_result)) {
-            if (out_result != NULL) {
-                *out_result = result;
-            }
-            return 0;
-        }
-    }
-
-    if (!nx_pm_join(manifest_path, sizeof(manifest_path), package_dir, "manifest.npkg")) {
-        return 0;
-    }
-
-    if (!nx_pm_read_manifest_identity(manifest_path, package_id, sizeof(package_id), package_version, sizeof(package_version))) {
-        return 0;
-    }
-
-    if (!nx_pm_registry_paths(repo_root, package_id, registry_path, sizeof(registry_path), log_path, sizeof(log_path))) {
-        return 0;
-    }
-
-    (void)nx_pm_copy_string(result.package_id, sizeof(result.package_id), package_id);
-    (void)nx_pm_copy_string(result.package_version, sizeof(result.package_version), package_version);
-    (void)nx_pm_copy_string(result.registry_path, sizeof(result.registry_path), registry_path);
-    (void)nx_pm_copy_string(result.install_log_path, sizeof(result.install_log_path), log_path);
-
-    (void)nx_pm_write_text(log_path, "Nexiora Package Manager install log\n");
-
-    manifest = fopen(manifest_path, "rb");
-    if (manifest == NULL) {
-        return 0;
-    }
-
-    while (fgets(line, sizeof(line), manifest) != NULL) {
-        char* trimmed = nx_pm_trim(line);
-        char src_rel[NX_PM_PATH_MAX];
-        char dst_rel[NX_PM_PATH_MAX];
-        char src_path[NX_PM_PATH_MAX];
-        char dst_path[NX_PM_PATH_MAX];
-        char parent[NX_PM_PATH_MAX];
-        unsigned long long src_hash;
-        unsigned long long dst_hash;
-
-        if (!nx_pm_parse_file_mapping(trimmed, src_rel, sizeof(src_rel), dst_rel, sizeof(dst_rel))) {
-            continue;
-        }
-
+    NxPackageInstallResult result; NxPackageVerifyResult verify_result;
+    char manifest_path[NX_PM_PATH_MAX], package_id[128], package_version[64];
+    char registry_path[NX_PM_PATH_MAX], log_path[NX_PM_PATH_MAX], tx_path[NX_PM_PATH_MAX];
+    FILE* manifest; char line[NX_PM_LINE_MAX]; int ok = 1;
+    memset(&result,0,sizeof(result)); memset(&verify_result,0,sizeof(verify_result));
+    if (repo_root==NULL || package_dir==NULL || !NxPackageManager_VerifyPackage(package_dir,&verify_result) ||
+        !NxPackageManager_VerifyDependencies(repo_root,package_dir,&verify_result)) goto done;
+    if (!nx_pm_join(manifest_path,sizeof(manifest_path),package_dir,"manifest.npkg") ||
+        !nx_pm_read_manifest_identity(manifest_path,package_id,sizeof(package_id),package_version,sizeof(package_version)) ||
+        !nx_pm_registry_paths(repo_root,package_id,registry_path,sizeof(registry_path),log_path,sizeof(log_path)) ||
+        !nx_pm_transaction_path(repo_root,package_id,tx_path,sizeof(tx_path))) goto done;
+    nx_pm_copy_string(result.package_id,sizeof(result.package_id),package_id);
+    nx_pm_copy_string(result.package_version,sizeof(result.package_version),package_version);
+    nx_pm_copy_string(result.registry_path,sizeof(result.registry_path),registry_path);
+    nx_pm_copy_string(result.install_log_path,sizeof(result.install_log_path),log_path);
+    nx_pm_copy_string(result.transaction_path,sizeof(result.transaction_path),tx_path);
+    nx_pm_write_text(log_path,"Nexiora Package Manager transactional install log\n");
+    nx_pm_write_text(tx_path,"BEGIN\n");
+    manifest=fopen(manifest_path,"rb"); if(manifest==NULL) goto done;
+    while(fgets(line,sizeof(line),manifest)!=NULL){
+        char *trimmed=nx_pm_trim(line), src_rel[NX_PM_PATH_MAX], dst_rel[NX_PM_PATH_MAX];
+        char src_path[NX_PM_PATH_MAX], dst_path[NX_PM_PATH_MAX], parent[NX_PM_PATH_MAX], journal[NX_PM_LINE_MAX];
+        unsigned long long sh,dh;
+        if(!nx_pm_parse_file_mapping(trimmed,src_rel,sizeof(src_rel),dst_rel,sizeof(dst_rel))) continue;
         result.files_declared++;
-
-        if (!nx_pm_join(src_path, sizeof(src_path), package_dir, src_rel)) {
-            ok = 0;
-            continue;
-        }
-        if (!nx_pm_join(dst_path, sizeof(dst_path), repo_root, dst_rel)) {
-            ok = 0;
-            continue;
-        }
-        if (!nx_pm_parent_dir(dst_path, parent, sizeof(parent)) || !nx_pm_mkdir_chain(parent)) {
-            ok = 0;
-            continue;
-        }
-
-        src_hash = nx_pm_hash_file(src_path);
-        dst_hash = nx_pm_hash_file(dst_path);
-
-        if (src_hash != 0ull && src_hash == dst_hash) {
-            result.files_skipped++;
-            (void)nx_pm_append_text(log_path, "SKIP identical file\n");
-            continue;
-        }
-
-        if (nx_pm_exists(dst_path)) {
-            char backup_path[NX_PM_PATH_MAX];
-            if (nx_pm_make_backup_path(repo_root, package_id, dst_rel, backup_path, sizeof(backup_path))) {
-                if (nx_pm_copy_file(dst_path, backup_path)) {
-                    result.files_backed_up++;
-                }
-            }
-        }
-
-        if (!nx_pm_copy_file(src_path, dst_path)) {
-            ok = 0;
-            (void)nx_pm_append_text(log_path, "ERROR copy failed\n");
-            continue;
-        }
-
+        if(!nx_pm_join(src_path,sizeof(src_path),package_dir,src_rel) || !nx_pm_join(dst_path,sizeof(dst_path),repo_root,dst_rel) ||
+           !nx_pm_parent_dir(dst_path,parent,sizeof(parent)) || !nx_pm_mkdir_chain(parent)){ok=0;break;}
+        sh=nx_pm_hash_file(src_path); dh=nx_pm_hash_file(dst_path);
+        if(sh!=0ull && sh==dh){result.files_skipped++;continue;}
+        if(nx_pm_exists(dst_path)){
+            char backup[NX_PM_PATH_MAX];
+            if(!nx_pm_make_backup_path(repo_root,package_id,dst_rel,backup,sizeof(backup)) || !nx_pm_copy_file(dst_path,backup)){ok=0;break;}
+            result.files_backed_up++;
+            snprintf(journal,sizeof(journal),"RESTORE|%s|%s\n",backup,dst_path); nx_pm_append_text(tx_path,journal);
+        } else { snprintf(journal,sizeof(journal),"DELETE|%s\n",dst_path); nx_pm_append_text(tx_path,journal); }
+        if(!nx_pm_copy_file(src_path,dst_path)){ok=0;break;}
         result.files_installed++;
-        (void)nx_pm_append_text(log_path, "INSTALL file\n");
     }
-
     fclose(manifest);
-
-    result.success = ok;
-
+    if(!ok){ nx_pm_rollback_transaction(tx_path,&result); nx_pm_append_text(tx_path,"ROLLED_BACK\n"); }
+    else { result.transaction_committed=1; nx_pm_append_text(tx_path,"COMMIT\n"); }
+    result.success=ok;
     {
-        char registry_text[1024];
-        int written = snprintf(registry_text,
-                               sizeof(registry_text),
-                               "id=%s\nversion=%s\nstatus=%s\nfiles_declared=%d\nfiles_installed=%d\nfiles_skipped=%d\nfiles_backed_up=%d\n",
-                               result.package_id,
-                               result.package_version,
-                               result.success ? "installed" : "failed",
-                               result.files_declared,
-                               result.files_installed,
-                               result.files_skipped,
-                               result.files_backed_up);
-        if (written > 0 && (size_t)written < sizeof(registry_text)) {
-            (void)nx_pm_write_text(registry_path, registry_text);
-        }
+      char text[1200]; int w=snprintf(text,sizeof(text),"id=%s\nversion=%s\nstatus=%s\ntransaction=%s\nfiles_installed=%d\nfiles_rolled_back=%d\n",result.package_id,result.package_version,ok?"installed":"rolled_back",tx_path,result.files_installed,result.files_rolled_back);
+      if(w>0 && (size_t)w<sizeof(text)) nx_pm_write_text(registry_path,text);
     }
+done:
+    if(out_result!=NULL)*out_result=result;
+    return result.success;
+}
 
-    if (out_result != NULL) {
-        *out_result = result;
-    }
+int NxPackageManager_Rollback(const char* repo_root,
+                              const char* package_id,
+                              NxPackageInstallResult* out_result)
+{
+    NxPackageInstallResult result; char safe[128], tx[NX_PM_PATH_MAX];
+    memset(&result,0,sizeof(result));
+    if(repo_root==NULL || package_id==NULL) goto done;
+    nx_pm_normalize_id(safe,sizeof(safe),package_id);
+    nx_pm_copy_string(result.package_id,sizeof(result.package_id),safe);
+    if(!nx_pm_transaction_path(repo_root,safe,tx,sizeof(tx))) goto done;
+    nx_pm_copy_string(result.transaction_path,sizeof(result.transaction_path),tx);
+    result.success=nx_pm_rollback_transaction(tx,&result);
+    if(result.success) nx_pm_append_text(tx,"MANUAL_ROLLBACK\n");
+done:
+    if(out_result!=NULL)*out_result=result;
     return result.success;
 }
 

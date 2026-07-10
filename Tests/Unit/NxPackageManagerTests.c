@@ -137,5 +137,26 @@ int main(void)
         expect(deps.dependencies_missing == 0, "no dependency should remain missing");
     }
 
+
+    {
+        NxPackageInstallResult tx;
+        const char* txpkg = "Build/ncos_package_tx_pkg";
+        const char* txmanifest = "Build/ncos_package_tx_pkg/manifest.npkg";
+        const char* txpayload = "Build/ncos_package_tx_pkg/Payload/value.txt";
+        const char* target = "Build/ncos_package_manager_test_root_isolated/transaction/value.txt";
+        make_dir(txpkg); make_dir("Build/ncos_package_tx_pkg/Payload");
+        make_dir("Build/ncos_package_manager_test_root_isolated/transaction");
+        write_text(target,"original\n");
+        write_text(txpayload,"updated\n");
+        write_text(txmanifest,"id=NCOS Transaction Test\nversion=1.0.0\nfile=Payload/value.txt=>transaction/value.txt\n");
+        memset(&tx,0,sizeof(tx));
+        expect(NxPackageManager_Install(root,txpkg,&tx)==1,"transactional install should succeed");
+        expect(tx.transaction_committed==1,"transaction should commit");
+        expect(file_exists(tx.transaction_path),"transaction journal should exist");
+        memset(&tx,0,sizeof(tx));
+        expect(NxPackageManager_Rollback(root,"NCOS Transaction Test",&tx)==1,"manual rollback should succeed");
+        expect(tx.files_rolled_back>=1,"rollback should restore at least one file");
+    }
+
     return failures == 0 ? 0 : 1;
 }

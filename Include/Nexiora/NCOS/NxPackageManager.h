@@ -17,6 +17,9 @@ typedef struct NxPackageInstallResult
     int files_installed;
     int files_skipped;
     int files_backed_up;
+    int files_rolled_back;
+    int transaction_committed;
+    char transaction_path[512];
     int success;
 } NxPackageInstallResult;
 
@@ -39,6 +42,10 @@ typedef struct
 int NxPackageManager_Install(const char* repo_root,
                              const char* package_dir,
                              NxPackageInstallResult* out_result);
+
+int NxPackageManager_Rollback(const char* repo_root,
+                              const char* package_id,
+                              NxPackageInstallResult* out_result);
 
 int NxPackageManager_Status(const char* repo_root,
                             const char* package_id,
