@@ -1,0 +1,7 @@
+id=ncos-017-package-verification-workflow
+version=1.0.0
+status=installed
+files_declared=7
+files_installed=0
+files_skipped=7
+files_backed_up=0

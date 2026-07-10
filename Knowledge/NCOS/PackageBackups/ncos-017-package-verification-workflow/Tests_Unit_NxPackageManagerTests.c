@@ -42,40 +42,24 @@ static int file_exists(const char* path)
     return stat(path, &st) == 0;
 }
 
-static void remove_if_exists(const char* path)
-{
-    (void)remove(path);
-}
-
 int main(void)
 {
     NxPackageInstallResult first;
     NxPackageInstallResult second;
     NxPackageInstallResult status;
-
-    const char* root = "Build/ncos_package_manager_test_root_isolated";
-    const char* pkg = "Build/ncos_package_manager_test_pkg_isolated";
-    const char* manifest = "Build/ncos_package_manager_test_pkg_isolated/manifest.npkg";
-    const char* payload = "Build/ncos_package_manager_test_pkg_isolated/Payload/sample.txt";
-    const char* installed = "Build/ncos_package_manager_test_root_isolated/Knowledge/NCOS/PackageManagerTests/sample.txt";
-    const char* registry = "Build/ncos_package_manager_test_root_isolated/Knowledge/NCOS/Packages/ncos-test-package/registry.txt";
-    const char* log = "Build/ncos_package_manager_test_root_isolated/Knowledge/NCOS/Packages/ncos-test-package/install.log";
+    const char* root = "Build/ncos_package_manager_test_root";
+    const char* pkg = "Build/ncos_package_manager_test_pkg";
 
     make_dir("Build");
     make_dir(root);
     make_dir(pkg);
-    make_dir("Build/ncos_package_manager_test_pkg_isolated/Payload");
+    make_dir("Build/ncos_package_manager_test_pkg/Payload");
 
-    /* Ensure the test is repeatable even after previous executions or package payload extraction. */
-    remove_if_exists(installed);
-    remove_if_exists(registry);
-    remove_if_exists(log);
-
-    write_text(manifest,
+    write_text("Build/ncos_package_manager_test_pkg/manifest.npkg",
                "id=NCOS Test Package\n"
                "version=1.0.0\n"
                "file=Payload/sample.txt=>Knowledge/NCOS/PackageManagerTests/sample.txt\n");
-    write_text(payload, "sample payload\n");
+    write_text("Build/ncos_package_manager_test_pkg/Payload/sample.txt", "sample payload\n");
 
     memset(&first, 0, sizeof(first));
     memset(&second, 0, sizeof(second));
@@ -85,7 +69,8 @@ int main(void)
     expect(strcmp(first.package_id, "ncos-test-package") == 0, "package id should be normalized");
     expect(first.files_declared == 1, "one file should be declared");
     expect(first.files_installed == 1, "first install should copy file");
-    expect(file_exists(installed), "installed file should exist");
+    expect(file_exists("Build/ncos_package_manager_test_root/Knowledge/NCOS/PackageManagerTests/sample.txt"),
+           "installed file should exist");
     expect(file_exists(first.registry_path), "registry should exist");
 
     expect(NxPackageManager_Install(root, pkg, &second) == 1, "second install should succeed");
@@ -95,16 +80,6 @@ int main(void)
 
     expect(NxPackageManager_Status(root, "NCOS Test Package", &status) == 1, "status should find installed package");
     expect(strcmp(status.package_id, "ncos-test-package") == 0, "status should normalize id");
-
-
-    {
-        NxPackageVerifyResult verify_result;
-        memset(&verify_result, 0, sizeof(verify_result));
-        expect(NxPackageManager_VerifyPackage(pkg, &verify_result) == 1, "verify should accept complete package");
-        expect(verify_result.files_declared == 1, "verify should count declared files");
-        expect(verify_result.payload_files_missing == 0, "verify should not report missing payload files");
-        expect(strcmp(verify_result.package_id, "ncos-test-package") == 0, "verify should expose normalized package id");
-    }
 
     return failures == 0 ? 0 : 1;
 }

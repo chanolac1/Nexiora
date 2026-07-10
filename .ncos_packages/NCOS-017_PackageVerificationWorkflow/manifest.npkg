@@ -1,0 +1,10 @@
+id=NCOS-017 Package Verification Workflow
+version=1.0.0
+requires=NCOS-016 Nexiora Package Manager
+file=Payload/Include/Nexiora/NCOS/NxPackageManager.h=>Include/Nexiora/NCOS/NxPackageManager.h
+file=Payload/Source/NCOS/NxPackageManager.c=>Source/NCOS/NxPackageManager.c
+file=Payload/Tools/NCOS/NxPackageTool.c=>Tools/NCOS/NxPackageTool.c
+file=Payload/Tests/Unit/NxPackageManagerTests.c=>Tests/Unit/NxPackageManagerTests.c
+file=Payload/Docs/NCOS/PACKAGE_DEPLOYMENT_WORKFLOW.md=>Docs/NCOS/PACKAGE_DEPLOYMENT_WORKFLOW.md
+file=Payload/Samples/NCOS/PackageWorkflow/manifest.npkg=>Samples/NCOS/PackageWorkflow/manifest.npkg
+file=Payload/Samples/NCOS/PackageWorkflow/Payload/hello.txt=>Samples/NCOS/PackageWorkflow/Payload/hello.txt

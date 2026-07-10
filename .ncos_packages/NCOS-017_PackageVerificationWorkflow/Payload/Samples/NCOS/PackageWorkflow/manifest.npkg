@@ -1,0 +1,3 @@
+id=NCOS Sample Package
+version=1.0.0
+file=Payload/hello.txt=>Knowledge/NCOS/PackageSamples/hello.txt
