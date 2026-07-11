@@ -1,12 +1,9 @@
 #include "Nexiora/NCOS/NxPackageManager.h"
-#include "Nexiora/NCOS/NxPackageApply.h"
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sys/stat.h>
-
-_Static_assert(sizeof(NxPackageApplyResult) > 0U, "NxPackageApplyResult must be defined exactly once");
 
 #if defined(_WIN32)
 #include <direct.h>
@@ -187,5 +184,29 @@ int main(void)
         }
     }
 
+
+    {
+        const char* clean_log = "Build/ncos_package_clean_apply.log";
+        const char* warning_log = "Build/ncos_package_warning_apply.log";
+        write_text(clean_log, "[1/2] Building C object\n100% tests passed\n");
+        write_text(warning_log, "file.c:10: warning: unused variable\n");
+        expect(NxPackageManager_ApplyLogHasWarnings(clean_log) == 0,
+               "clean apply log must pass warning gate");
+        expect(NxPackageManager_ApplyLogHasWarnings(warning_log) == 1,
+               "warning apply log must fail warning gate");
+        remove_if_exists(clean_log);
+        remove_if_exists(warning_log);
+    }
+
+    {
+        NxPackageApplyResult apply_result;
+        memset(&apply_result, 0, sizeof(apply_result));
+        expect(sizeof(apply_result.transaction_id) >= 16u,
+               "apply result must retain transaction id for exact rollback");
+        expect(sizeof(apply_result.failed_phase) >= 32u,
+               "apply result must expose failed phase");
+    }
+
+    printf("NxPackageManagerTests: %s\n", failures == 0 ? "PASS" : "FAIL");
     return failures == 0 ? 0 : 1;
 }

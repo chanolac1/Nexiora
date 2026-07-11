@@ -643,7 +643,6 @@ add_test(NAME NxPatchVerificationGateTests COMMAND NxPatchVerificationGateTests)
 # NCOS-016 - Nexiora Package Manager
 target_sources(NexioraNCP PRIVATE
     Source/NCOS/NxPackageManager.c
-    Source/NCOS/NxPackageApply.c
 )
 
 add_executable(nexiora_package
@@ -675,4 +674,203 @@ if(NEXIORA_BUILD_TESTS)
     )
     target_link_libraries(NxWorkspaceEngineTests PRIVATE NexioraNCP)
     add_test(NAME NxWorkspaceEngineTests COMMAND NxWorkspaceEngineTests)
+endif()
+
+
+# EPIC-03 Sprint-01 - Multimodal Ingestion Foundation
+target_sources(NexioraNCP PRIVATE
+    Source/Multimodal/NxMultimodalIngestion.c
+)
+add_executable(nexiora_ingest Tools/Multimodal/NxMultimodalIngestTool.c)
+target_link_libraries(nexiora_ingest PRIVATE NexioraNCP)
+set_target_properties(nexiora_ingest PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxMultimodalIngestionTests Tests/Unit/NxMultimodalIngestionTests.c)
+    target_link_libraries(NxMultimodalIngestionTests PRIVATE NexioraNCP)
+    set_target_properties(NxMultimodalIngestionTests PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+    add_test(NAME NxMultimodalIngestionTests COMMAND NxMultimodalIngestionTests)
+endif()
+
+# ============================================================
+# EPIC-03 Sprint-02 — Decoder and OCR Adapters
+# ============================================================
+target_sources(NexioraNCP PRIVATE
+    Source/Multimodal/NxDecoderAdapters.c
+)
+
+add_executable(nexiora_decode
+    Tools/Multimodal/NxDecoderTool.c
+)
+target_link_libraries(nexiora_decode PRIVATE NexioraNCP)
+
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxDecoderAdaptersTests
+        Tests/Unit/NxDecoderAdaptersTests.c
+    )
+    target_link_libraries(NxDecoderAdaptersTests PRIVATE NexioraNCP)
+    add_test(NAME NxDecoderAdaptersTests COMMAND NxDecoderAdaptersTests)
+    set_tests_properties(NxDecoderAdaptersTests PROPERTIES WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+endif()
+
+# EPIC-03 Sprint-03 - Multimodal Cognitive Integration Engine
+target_sources(NexioraNCP PRIVATE
+    Source/Multimodal/NxMultimodalCognitiveIntegration.c
+)
+
+add_executable(nexiora_multimodal_cognitive
+    Tools/Multimodal/NxMultimodalCognitiveTool.c
+)
+target_link_libraries(nexiora_multimodal_cognitive PRIVATE NexioraNCP)
+set_target_properties(nexiora_multimodal_cognitive PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxMultimodalCognitiveIntegrationTests
+        Tests/Unit/NxMultimodalCognitiveIntegrationTests.c
+    )
+    target_link_libraries(NxMultimodalCognitiveIntegrationTests PRIVATE NexioraNCP)
+    set_target_properties(NxMultimodalCognitiveIntegrationTests PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+    add_test(NAME NxMultimodalCognitiveIntegrationTests COMMAND NxMultimodalCognitiveIntegrationTests)
+    set_tests_properties(NxMultimodalCognitiveIntegrationTests PROPERTIES WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+endif()
+
+# CAPABILITY-01 Sprint-01 - Web Cognitive Pipeline Foundation
+target_sources(NexioraNCP PRIVATE
+    Source/CognitivePipeline/NxWebCognitivePipeline.c
+)
+
+add_executable(nexiora_web_cognitive
+    Tools/CognitivePipeline/NxWebCognitivePipelineTool.c
+)
+target_link_libraries(nexiora_web_cognitive PRIVATE NexioraNCP)
+set_target_properties(nexiora_web_cognitive PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxWebCognitivePipelineTests
+        Tests/Unit/NxWebCognitivePipelineTests.c
+    )
+    target_link_libraries(NxWebCognitivePipelineTests PRIVATE NexioraNCP)
+    set_target_properties(NxWebCognitivePipelineTests PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+    add_test(NAME NxWebCognitivePipelineTests COMMAND NxWebCognitivePipelineTests)
+    set_tests_properties(NxWebCognitivePipelineTests PROPERTIES WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+endif()
+
+# CAPABILITY-02 Sprint-01 - Grounded Multi-Evidence Reasoning
+target_sources(NexioraNCP PRIVATE
+    Source/Reasoning/NxGroundedReasoning.c
+)
+add_executable(nexiora_reason_grounded
+    Tools/Reasoning/NxGroundedReasoningTool.c
+)
+target_link_libraries(nexiora_reason_grounded PRIVATE NexioraNCP)
+set_target_properties(nexiora_reason_grounded PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxGroundedReasoningTests
+        Tests/Unit/NxGroundedReasoningTests.c
+    )
+    target_link_libraries(NxGroundedReasoningTests PRIVATE NexioraNCP)
+    set_target_properties(NxGroundedReasoningTests PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+    add_test(NAME NxGroundedReasoningTests COMMAND NxGroundedReasoningTests)
+    set_tests_properties(NxGroundedReasoningTests PROPERTIES WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+endif()
+
+
+# CAPABILITY-02 Sprint-01 Repair1: materialize every registered test binary
+if(NEXIORA_BUILD_TESTS)
+    set(NEXIORA_FULL_TEST_TARGETS
+        nexiora_tests
+        NxVectorTests
+        NxResearchTests
+        NxJournalTests
+        NxExperimentRunnerTests
+        NxResearchEvidenceTests
+        NxPromotionTests
+        NxAutonomousResearchPipelineTests
+        NxDiscoveryEngineTests
+        NxResearchGraphTests
+        NxResearchGraphExporterTests
+        NxResearchGraphQueryTests
+        NxResearchSchedulerTests
+        NxResearchQueueTests
+        NxResearchPolicyTests
+        NxResearchSessionTests
+        NxAutonomousResearchLoopTests
+        NxKnowledgeBaseTests
+        NxKnowledgeQueryTests
+        NxHypothesisEngineTests
+        NxReasoningEngineTests
+        NxEvidenceCorrelationTests
+        NxConflictDetectorTests
+        NxPersistentMemoryTests
+        NxConversationTests
+        NxAutonomousExecutionTests
+        NxResearchDashboardTests
+        NxKnowledgeAcquisitionTests
+        NxProgressEngineTests
+        NxKnowledgeStoreTests
+        NxTopicInvestigationTests
+        NxLearningCoreTests
+        NxTopicQuestionTests
+        NxCognitiveCoreTests
+        NxSessionEngineTests
+        NxPlanningEngineTests
+        NxConceptRegistryTests
+        NxConceptGraphTests
+        NxGraphReasonerTests
+        NxAnswerComposerTests
+        NxIntentPlannerTests
+        NxTaskExecutionEngineTests
+        NxCompilerEngineTests
+        NxBuildLogAnalyzerTests
+        NxAutoFixProposalEngineTests
+        NxSafePatchEngineTests
+        NxPatchApprovalEngineTests
+        NxApprovedPatchApplyEngineTests
+        NxPatchVerificationGateTests
+        NxPackageManagerTests
+        NxWorkspaceEngineTests
+        NxMultimodalIngestionTests
+        NxDecoderAdaptersTests
+        NxMultimodalCognitiveIntegrationTests
+        NxWebCognitivePipelineTests
+        NxGroundedReasoningTests
+    )
+
+    add_custom_target(nexiora_test_suite
+        DEPENDS ${NEXIORA_FULL_TEST_TARGETS}
+        COMMENT "Materializing all Nexiora test executables before CTest"
+    )
+endif()
+
+# CAPABILITY-02 Sprint-02 — Contradiction and Hypothesis Reasoning
+if(TARGET NexioraNCP)
+    target_sources(NexioraNCP PRIVATE Source/Reasoning/NxContradictionHypothesis.c)
+endif()
+add_executable(nexiora_hypothesis Tools/Reasoning/NxContradictionHypothesisTool.c)
+target_link_libraries(nexiora_hypothesis PRIVATE NexioraNCP)
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxContradictionHypothesisTests Tests/Unit/NxContradictionHypothesisTests.c)
+    target_link_libraries(NxContradictionHypothesisTests PRIVATE NexioraNCP)
+    add_test(NAME NxContradictionHypothesisTests COMMAND NxContradictionHypothesisTests)
+    set_tests_properties(NxContradictionHypothesisTests PROPERTIES WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+    if(TARGET nexiora_test_suite)
+        add_dependencies(nexiora_test_suite NxContradictionHypothesisTests)
+    endif()
+endif()
+
+# CAPABILITY-02 Sprint-03 — Conversational Memory and Context
+if(TARGET NexioraNCP)
+    target_sources(NexioraNCP PRIVATE Source/Reasoning/NxConversationalContext.c)
+endif()
+add_executable(nexiora_dialogue Tools/Reasoning/NxConversationalContextTool.c)
+target_link_libraries(nexiora_dialogue PRIVATE NexioraNCP)
+set_target_properties(nexiora_dialogue PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+if(NEXIORA_BUILD_TESTS)
+    add_executable(NxConversationalContextTests Tests/Unit/NxConversationalContextTests.c)
+    target_link_libraries(NxConversationalContextTests PRIVATE NexioraNCP)
+    set_target_properties(NxConversationalContextTests PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+    add_test(NAME NxConversationalContextTests COMMAND NxConversationalContextTests)
+    set_tests_properties(NxConversationalContextTests PROPERTIES WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+    if(TARGET nexiora_test_suite)
+        add_dependencies(nexiora_test_suite NxConversationalContextTests)
+    endif()
 endif()

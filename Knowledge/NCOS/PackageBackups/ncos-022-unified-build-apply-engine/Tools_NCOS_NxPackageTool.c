@@ -1,5 +1,4 @@
 #include "Nexiora/NCOS/NxPackageManager.h"
-#include "Nexiora/NCOS/NxPackageApply.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -31,14 +30,12 @@ int main(int argc, char** argv)
 
     if (strcmp(argv[1], "apply") == 0) {
         NxPackageApplyResult apply_result;
-        int ok;
-        memset(&apply_result, 0, sizeof(apply_result));
-        ok = NxPackageManager_Apply(".", argv[2], &apply_result);
+        int ok = NxPackageManager_Apply(".", argv[2], &apply_result);
         printf("================================================\n");
         printf(" NEXIORA - Native Package Apply\n");
         printf("================================================\n\n");
-        printf("Package ID       : %s\n", apply_result.package_id);
-        printf("Version          : %s\n", apply_result.package_version);
+        printf("Package ID       : %s\n", apply_result.package_id[0] != '\0' ? apply_result.package_id : "desconocido");
+        printf("Version          : %s\n", apply_result.package_version[0] != '\0' ? apply_result.package_version : "desconocida");
         printf("Estado           : %s\n", ok ? "APPLIED" : "FAILED");
         printf("Verify           : %s\n", apply_result.verify_passed ? "PASS" : "FAIL");
         printf("Dependencies     : %s\n", apply_result.dependencies_passed ? "PASS" : "FAIL");
@@ -49,9 +46,9 @@ int main(int argc, char** argv)
         printf("Tests            : %s\n", apply_result.tests_passed ? "PASS" : "FAIL");
         printf("Documentation    : %s\n", apply_result.documentation_passed ? "PASS" : "FAIL");
         printf("Rollback         : %s\n", apply_result.rolled_back ? "DONE" : "NOT REQUIRED");
-        printf("Failed phase     : %s\n", apply_result.failed_phase);
-        printf("Transaction ID   : %s\n", apply_result.transaction_id);
-        printf("Apply log        : %s\n", apply_result.apply_log_path);
+        printf("Failed phase     : %s\n", apply_result.failed_phase[0] != '\0' ? apply_result.failed_phase : "none");
+        printf("Transaction ID   : %s\n", apply_result.transaction_id[0] != '\0' ? apply_result.transaction_id : "none");
+        printf("Apply log        : %s\n", apply_result.apply_log_path[0] != '\0' ? apply_result.apply_log_path : "none");
         printf("Message          : %s\n", apply_result.message);
         return ok ? 0 : 9;
     }

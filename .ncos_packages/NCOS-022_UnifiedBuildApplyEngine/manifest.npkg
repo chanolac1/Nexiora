@@ -1,0 +1,9 @@
+id=NCOS-022 Unified Build Apply Engine
+version=1.0.0
+requires=NCOS-021 Native Package Apply Workflow
+file=Payload/Include/Nexiora/NCOS/NxPackageApply.h=>Include/Nexiora/NCOS/NxPackageApply.h
+file=Payload/Source/NCOS/NxPackageApply.c=>Source/NCOS/NxPackageApply.c
+file=Payload/Tools/NCOS/NxPackageTool.c=>Tools/NCOS/NxPackageTool.c
+file=Payload/Tests/Unit/NxPackageManagerTests.c=>Tests/Unit/NxPackageManagerTests.c
+file=Payload/Docs/NCOS/NCOS-022_QUE_LOGRAMOS.md=>Docs/NCOS/NCOS-022_QUE_LOGRAMOS.md
+file=Payload/CMakeLists.txt=>CMakeLists.txt

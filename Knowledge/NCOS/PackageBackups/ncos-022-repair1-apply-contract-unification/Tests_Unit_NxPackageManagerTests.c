@@ -6,8 +6,6 @@
 #include <string.h>
 #include <sys/stat.h>
 
-_Static_assert(sizeof(NxPackageApplyResult) > 0U, "NxPackageApplyResult must be defined exactly once");
-
 #if defined(_WIN32)
 #include <direct.h>
 #define NX_TEST_MKDIR(path) _mkdir(path)
