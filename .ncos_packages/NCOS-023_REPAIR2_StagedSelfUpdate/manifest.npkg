@@ -1,0 +1,14 @@
+id=NCOS-023 Repair2 Staged Self Update
+version=1.0.0
+requires=NCOS-022 Repair1 Apply Contract Unification
+apply.configure_preset=windows-msvc-release
+apply.build_preset=release
+apply.test_target=nexiora_test_suite_staged
+apply.test_preset=release-tests
+file=Payload/CMakeLists.txt=>CMakeLists.txt
+file=Payload/Include/Nexiora/NCOS/NxPackageApply.h=>Include/Nexiora/NCOS/NxPackageApply.h
+file=Payload/Source/NCOS/NxPackageApply.c=>Source/NCOS/NxPackageApply.c
+file=Payload/Tools/NCOS/NxPackageTool.c=>Tools/NCOS/NxPackageTool.c
+file=Payload/Tools/NCOS/NxPackageSelfUpdate.c=>Tools/NCOS/NxPackageSelfUpdate.c
+file=Payload/Tests/Unit/NxPackageManagerTests.c=>Tests/Unit/NxPackageManagerTests.c
+file=Payload/Docs/NCOS/NCOS-023_REPAIR2_QUE_LOGRAMOS.md=>Docs/NCOS/NCOS-023_REPAIR2_QUE_LOGRAMOS.md

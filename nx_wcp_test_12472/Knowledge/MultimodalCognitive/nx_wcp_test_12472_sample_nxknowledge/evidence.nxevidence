@@ -1,0 +1,12 @@
+chunk=1
+source=nx_wcp_test_12472/sample.nxknowledge
+text=Nexiora aprende de evidencia verificable
+---
+chunk=2
+source=nx_wcp_test_12472/sample.nxknowledge
+text=La memoria semantica conserva conceptos y relaciones
+---
+chunk=3
+source=nx_wcp_test_12472/sample.nxknowledge
+text=La evidencia permite responder sin inventar
+---

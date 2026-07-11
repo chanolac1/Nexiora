@@ -1,0 +1,7 @@
+id=ncos-023-repair4-hermetic-discovery-tests
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/ncos-023-repair4-hermetic-discovery-tests/transaction.log
+files_installed=5
+files_skipped=0
+files_rolled_back=0

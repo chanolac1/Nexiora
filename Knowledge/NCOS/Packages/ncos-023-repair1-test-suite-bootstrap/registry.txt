@@ -1,0 +1,7 @@
+id=ncos-023-repair1-test-suite-bootstrap
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/ncos-023-repair1-test-suite-bootstrap/transaction.log
+files_installed=8
+files_skipped=0
+files_rolled_back=0
