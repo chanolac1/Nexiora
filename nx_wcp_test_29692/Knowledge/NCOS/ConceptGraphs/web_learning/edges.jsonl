@@ -1,0 +1,11 @@
+{"domain":"web_learning","from":"evidencia","relation":"co_occurs_with","to":"aprende","source":"nx_wcp_test_29692/sample.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"aprende","relation":"co_occurs_with","to":"conceptos","source":"nx_wcp_test_29692/sample.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"conceptos","relation":"co_occurs_with","to":"conserva","source":"nx_wcp_test_29692/sample.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"conserva","relation":"co_occurs_with","to":"inventar","source":"nx_wcp_test_29692/sample.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"inventar","relation":"co_occurs_with","to":"memoria","source":"nx_wcp_test_29692/sample.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"memoria","relation":"co_occurs_with","to":"nexiora","source":"nx_wcp_test_29692/sample.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"nexiora","relation":"co_occurs_with","to":"permite","source":"nx_wcp_test_29692/sample.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"permite","relation":"co_occurs_with","to":"relaciones","source":"nx_wcp_test_29692/sample.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"relaciones","relation":"co_occurs_with","to":"responder","source":"nx_wcp_test_29692/sample.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"responder","relation":"co_occurs_with","to":"semantica","source":"nx_wcp_test_29692/sample.nxknowledge","confidence":60}
+{"domain":"web_learning","from":"semantica","relation":"co_occurs_with","to":"verificable","source":"nx_wcp_test_29692/sample.nxknowledge","confidence":60}

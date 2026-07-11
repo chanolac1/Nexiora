@@ -1,0 +1,7 @@
+id=capability-03-sprint-01-repair1-test-target-alignment
+version=1.0.1
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/capability-03-sprint-01-repair1-test-target-alignment/transaction.log
+files_installed=16
+files_skipped=0
+files_rolled_back=0

@@ -1,0 +1,7 @@
+id=capability-03-sprint-01-versioned-semantic-memory
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/capability-03-sprint-01-versioned-semantic-memory/transaction.log
+files_installed=16
+files_skipped=0
+files_rolled_back=0
