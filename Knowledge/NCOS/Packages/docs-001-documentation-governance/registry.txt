@@ -1,0 +1,7 @@
+id=docs-001-documentation-governance
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/docs-001-documentation-governance/transaction.log
+files_installed=12
+files_skipped=3
+files_rolled_back=0

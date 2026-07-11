@@ -1,0 +1,12 @@
+nxgap/1
+status=OPEN
+subject=energia nuclear
+question=Como funciona un reactor de fusion
+reason=La evidencia disponible no alcanza el umbral mínimo de relevancia y confianza.
+confidence=0
+allowed_sources=documentación primaria, repositorios oficiales, artículos técnicos y transcripciones verificables
+success_criteria=Obtener al menos dos evidencias independientes, una fuente primaria y confianza fundamentada >= 60.
+query_count=3
+query.1=como funciona un reactor de fusion evidencia primaria
+query.2=como funciona un reactor de fusion explicación técnica
+query.3=como funciona un reactor de fusion contradicciones limitaciones

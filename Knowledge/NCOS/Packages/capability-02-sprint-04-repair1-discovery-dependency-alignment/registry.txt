@@ -1,0 +1,7 @@
+id=capability-02-sprint-04-repair1-discovery-dependency-alignment
+version=1.0.1
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/capability-02-sprint-04-repair1-discovery-dependency-alignment/transaction.log
+files_installed=11
+files_skipped=0
+files_rolled_back=0

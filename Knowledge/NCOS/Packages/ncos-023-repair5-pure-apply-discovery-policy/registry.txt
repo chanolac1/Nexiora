@@ -1,0 +1,7 @@
+id=ncos-023-repair5-pure-apply-discovery-policy
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/ncos-023-repair5-pure-apply-discovery-policy/transaction.log
+files_installed=6
+files_skipped=6
+files_rolled_back=0

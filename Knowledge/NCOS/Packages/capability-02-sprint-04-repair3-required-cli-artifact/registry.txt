@@ -1,0 +1,7 @@
+id=capability-02-sprint-04-repair3-required-cli-artifact
+version=1.0.3
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/capability-02-sprint-04-repair3-required-cli-artifact/transaction.log
+files_installed=5
+files_skipped=14
+files_rolled_back=0

@@ -1,0 +1,26 @@
+id=CAPABILITY-02 Sprint-04 Repair3 Required CLI Artifact
+version=1.0.3
+requires=NCOS-023 Repair5 Pure Apply Discovery Policy
+apply.configure_preset=windows-msvc-release
+apply.build_preset=release
+apply.test_target=nexiora_test_suite_staged
+apply.test_preset=release-tests
+file=Payload/CMakeLists.txt=>CMakeLists.txt
+file=Payload/Include/Nexiora/Research/NxKnowledgeGapResearch.h=>Include/Nexiora/Research/NxKnowledgeGapResearch.h
+file=Payload/Source/Research/NxKnowledgeGapResearch.c=>Source/Research/NxKnowledgeGapResearch.c
+file=Payload/Tools/Research/NxKnowledgeGapResearchTool.c=>Tools/Research/NxKnowledgeGapResearchTool.c
+file=Payload/Tests/Unit/NxKnowledgeGapResearchTests.c=>Tests/Unit/NxKnowledgeGapResearchTests.c
+file=Payload/Samples/Reasoning/gap_demo.nxevidence=>Samples/Reasoning/gap_demo.nxevidence
+file=Payload/Docs/MASTER_CONTEXT.md=>Docs/MASTER_CONTEXT.md
+file=Payload/Docs/PROJECT_STATE.md=>Docs/PROJECT_STATE.md
+file=Payload/Docs/ROADMAP.md=>Docs/ROADMAP.md
+file=Payload/Docs/CHANGELOG.md=>Docs/CHANGELOG.md
+file=Payload/Docs/DECISIONS.md=>Docs/DECISIONS.md
+file=Payload/Docs/ARCHITECTURE.md=>Docs/ARCHITECTURE.md
+file=Payload/Docs/CODING_STANDARD.md=>Docs/CODING_STANDARD.md
+file=Payload/Docs/TESTING_STANDARD.md=>Docs/TESTING_STANDARD.md
+file=Payload/Docs/PACKAGE_STANDARD.md=>Docs/PACKAGE_STANDARD.md
+file=Payload/Docs/NCOS/CAPABILITY-02_SPRINT-04_QUE_LOGRAMOS.md=>Docs/NCOS/CAPABILITY-02_SPRINT-04_QUE_LOGRAMOS.md
+file=Payload/Docs/NCOS/CAPABILITY-02_SPRINT-04_REPAIR1_QUE_LOGRAMOS.md=>Docs/NCOS/CAPABILITY-02_SPRINT-04_REPAIR1_QUE_LOGRAMOS.md
+file=Payload/Docs/NCOS/CAPABILITY-02_SPRINT-04_REPAIR2_QUE_LOGRAMOS.md=>Docs/NCOS/CAPABILITY-02_SPRINT-04_REPAIR2_QUE_LOGRAMOS.md
+file=Payload/Docs/NCOS/CAPABILITY-02_SPRINT-04_REPAIR3_QUE_LOGRAMOS.md=>Docs/NCOS/CAPABILITY-02_SPRINT-04_REPAIR3_QUE_LOGRAMOS.md

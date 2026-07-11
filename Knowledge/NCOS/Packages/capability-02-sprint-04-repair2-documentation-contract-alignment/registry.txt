@@ -1,0 +1,7 @@
+id=capability-02-sprint-04-repair2-documentation-contract-alignment
+version=1.0.2
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/capability-02-sprint-04-repair2-documentation-contract-alignment/transaction.log
+files_installed=14
+files_skipped=4
+files_rolled_back=0

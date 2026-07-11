@@ -1,0 +1,8 @@
+domain=web_learning
+name=nexiora
+normalized=nexiora
+definition=Nexiora aprende de evidencia verificable
+purpose=Concepto extraido de evidencia multimodal: nx_wcp_test_2928/sample.nxknowledge
+relationships=extraido_de evidencia_multimodal
+confidence=0.66
+version=1

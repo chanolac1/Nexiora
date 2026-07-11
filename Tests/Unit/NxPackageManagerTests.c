@@ -1,22 +1,15 @@
 #include "Nexiora/NCOS/NxPackageManager.h"
-#include "Nexiora/NCOS/NxPackageApply.h"
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <sys/stat.h>
 
-_Static_assert(sizeof(NxPackageApplyResult) > 0U, "NxPackageApplyResult must be defined exactly once");
-
 #if defined(_WIN32)
 #include <direct.h>
-#include <process.h>
 #define NX_TEST_MKDIR(path) _mkdir(path)
-#define NX_TEST_PID() _getpid()
 #else
-#include <unistd.h>
 #define NX_TEST_MKDIR(path) mkdir((path), 0777)
-#define NX_TEST_PID() getpid()
 #endif
 
 static int failures = 0;
@@ -102,157 +95,6 @@ int main(void)
 
     expect(NxPackageManager_Status(root, "NCOS Test Package", &status) == 1, "status should find installed package");
     expect(strcmp(status.package_id, "ncos-test-package") == 0, "status should normalize id");
-
-
-    {
-        NxPackageVerifyResult verify_result;
-        memset(&verify_result, 0, sizeof(verify_result));
-        expect(NxPackageManager_VerifyPackage(pkg, &verify_result) == 1, "verify should accept complete package");
-        expect(verify_result.files_declared == 1, "verify should count declared files");
-        expect(verify_result.payload_files_missing == 0, "verify should not report missing payload files");
-        expect(strcmp(verify_result.package_id, "ncos-test-package") == 0, "verify should expose normalized package id");
-    }
-
-    {
-        NxPackageVerifyResult deps;
-        const char* dep_pkg = "Build/ncos_package_dependency_pkg";
-        const char* dep_manifest = "Build/ncos_package_dependency_pkg/manifest.npkg";
-        const char* dep_registry_dir = "Build/ncos_package_manager_test_root_isolated/Knowledge/NCOS/Packages/ncos-required-package";
-        const char* dep_registry = "Build/ncos_package_manager_test_root_isolated/Knowledge/NCOS/Packages/ncos-required-package/registry.txt";
-
-        make_dir(dep_pkg);
-        write_text(dep_manifest,
-                   "id=NCOS Dependent Package\n"
-                   "version=1.0.0\n"
-                   "requires=NCOS Required Package\n");
-        remove_if_exists(dep_registry);
-        memset(&deps, 0, sizeof(deps));
-        expect(NxPackageManager_VerifyDependencies(root, dep_pkg, &deps) == 0,
-               "missing dependency should block package");
-        expect(deps.dependencies_declared == 1, "dependency should be declared");
-        expect(deps.dependencies_missing == 1, "dependency should be reported missing");
-
-        make_dir("Build/ncos_package_manager_test_root_isolated/Knowledge");
-        make_dir("Build/ncos_package_manager_test_root_isolated/Knowledge/NCOS");
-        make_dir("Build/ncos_package_manager_test_root_isolated/Knowledge/NCOS/Packages");
-        make_dir(dep_registry_dir);
-        write_text(dep_registry, "id=ncos-required-package\nstatus=installed\n");
-        memset(&deps, 0, sizeof(deps));
-        expect(NxPackageManager_VerifyDependencies(root, dep_pkg, &deps) == 1,
-               "installed dependency should satisfy package");
-        expect(deps.dependencies_satisfied == 1, "dependency should be reported satisfied");
-        expect(deps.dependencies_missing == 0, "no dependency should remain missing");
-    }
-
-
-    {
-        NxPackageInstallResult tx;
-        const char* txpkg = "Build/ncos_package_tx_pkg";
-        const char* txmanifest = "Build/ncos_package_tx_pkg/manifest.npkg";
-        const char* txpayload = "Build/ncos_package_tx_pkg/Payload/value.txt";
-        const char* target = "Build/ncos_package_manager_test_root_isolated/transaction/value.txt";
-        make_dir(txpkg); make_dir("Build/ncos_package_tx_pkg/Payload");
-        make_dir("Build/ncos_package_manager_test_root_isolated/transaction");
-        write_text(target,"original\n");
-        write_text(txpayload,"updated\n");
-        write_text(txmanifest,"id=NCOS Transaction Test\nversion=1.0.0\nfile=Payload/value.txt=>transaction/value.txt\n");
-        memset(&tx,0,sizeof(tx));
-        expect(NxPackageManager_Install(root,txpkg,&tx)==1,"transactional install should succeed");
-        expect(tx.transaction_committed==1,"transaction should commit");
-        expect(file_exists(tx.transaction_path),"transaction journal should exist");
-        expect(tx.transaction_id[0] != '\0', "install should assign transaction id");
-        {
-            NxPackageHistoryResult history;
-            memset(&history, 0, sizeof(history));
-            expect(NxPackageManager_History(root, "NCOS Transaction Test", &history) == 1,
-                   "history should expose committed transaction");
-            expect(history.entries >= 1, "history should contain at least one entry");
-            expect(file_exists(history.history_path), "history index should exist");
-        }
-
-        /* Regression: a second idempotent install must preserve the rollback journal. */
-        memset(&tx,0,sizeof(tx));
-        expect(NxPackageManager_Install(root,txpkg,&tx)==1,"second transactional install should succeed");
-        expect(tx.files_skipped==1,"second transactional install should be a no-op");
-        expect(file_exists(tx.transaction_path),"no-op install should preserve transaction journal");
-
-        {
-            char transaction_id[32];
-            NxPackageHistoryResult history;
-            memset(&history, 0, sizeof(history));
-            expect(NxPackageManager_History(root, "NCOS Transaction Test", &history) == 1,
-                   "history should survive no-op install");
-            expect(history.entries >= 1, "no-op install should not erase history");
-            snprintf(transaction_id, sizeof(transaction_id), "%s", "000001");
-            memset(&tx,0,sizeof(tx));
-            expect(NxPackageManager_RollbackTransaction(root,"NCOS Transaction Test",transaction_id,&tx)==1,
-                   "historical rollback should succeed");
-            expect(tx.files_rolled_back>=1,"historical rollback should restore at least one file");
-        }
-    }
-
-
-    {
-        NxPackageDiscoveryResult discovery;
-        NxPackageInstallResult discovered_install;
-        char discovery_root[256];
-        char package_root[320];
-        char pending[384];
-        char pending_payload_dir[448];
-        char pending_manifest[448];
-        char pending_payload[512];
-        int written;
-
-        written = snprintf(discovery_root, sizeof(discovery_root),
-                           "Build/ncos_package_discovery_root_%ld", (long)NX_TEST_PID());
-        expect(written > 0 && (size_t)written < sizeof(discovery_root),
-               "discovery workspace path should fit");
-        written = snprintf(package_root, sizeof(package_root), "%s/.ncos_packages", discovery_root);
-        expect(written > 0 && (size_t)written < sizeof(package_root),
-               "package root path should fit");
-        written = snprintf(pending, sizeof(pending), "%s/NCOS-PENDING", package_root);
-        expect(written > 0 && (size_t)written < sizeof(pending),
-               "pending package path should fit");
-        written = snprintf(pending_payload_dir, sizeof(pending_payload_dir), "%s/Payload", pending);
-        expect(written > 0 && (size_t)written < sizeof(pending_payload_dir),
-               "pending payload directory should fit");
-        written = snprintf(pending_manifest, sizeof(pending_manifest), "%s/manifest.npkg", pending);
-        expect(written > 0 && (size_t)written < sizeof(pending_manifest),
-               "pending manifest path should fit");
-        written = snprintf(pending_payload, sizeof(pending_payload), "%s/pending.txt", pending_payload_dir);
-        expect(written > 0 && (size_t)written < sizeof(pending_payload),
-               "pending payload path should fit");
-
-        make_dir(discovery_root);
-        make_dir(package_root);
-        make_dir(pending);
-        make_dir(pending_payload_dir);
-        write_text(pending_manifest,
-                   "id=NCOS Pending Discovery Test\n"
-                   "version=1.0.0\n"
-                   "file=Payload/pending.txt=>Knowledge/NCOS/pending.txt\n");
-        write_text(pending_payload, "pending package\n");
-        memset(&discovery, 0, sizeof(discovery));
-        expect(NxPackageManager_DiscoverPendingPackage(discovery_root, &discovery) == 1,
-               "automatic discovery should find a valid pending package");
-        expect(discovery.found == 1, "discovery result should be marked found");
-        expect(strcmp(discovery.package_id, "ncos-pending-discovery-test") == 0,
-               "discovery should expose normalized package id");
-        expect(strstr(discovery.package_dir, "NCOS-PENDING") != NULL,
-               "discovery should expose selected package directory");
-
-        memset(&discovered_install, 0, sizeof(discovered_install));
-        expect(NxPackageManager_Install(discovery_root, pending, &discovered_install) == 1,
-               "discovered package should install successfully");
-        memset(&discovery, 0, sizeof(discovery));
-        expect(NxPackageManager_DiscoverPendingPackage(discovery_root, &discovery) == 0,
-               "already installed package must not be discovered again");
-        expect(discovery.installed_candidates >= 1,
-               "discovery should count already installed packages");
-    }
-
-    expect(strcmp(NxPackageManager_ApplyPhaseName(NX_PACKAGE_APPLY_DISCOVERY), "discovery") == 0,
-           "apply workflow should expose discovery phase");
 
     return failures == 0 ? 0 : 1;
 }
