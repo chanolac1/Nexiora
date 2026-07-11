@@ -13,6 +13,3 @@ Its evolution is capability-driven, deterministic, auditable, transactional and 
 - Package Manager installation and rollback.
 - Documentation synchronized with code.
 - Git publication after certification.
-
-## Capacidad integrada actual
-CAPABILITY-02 Sprint-05 incorpora una interfaz única para conversación fundamentada, análisis de contradicciones y apertura autónoma de brechas de conocimiento.

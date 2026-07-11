@@ -11,8 +11,3 @@
 
 ## CAPABILITY-02 Sprint-04 Repair3
 - `nexiora_gap` se convierte en artefacto obligatorio de los objetivos `nexiora_test_suite` y `nexiora_test_suite_staged`.
-
-## CAPABILITY-02 Sprint-05
-- Se añadió Unified Cognitive Dialogue.
-- Se integraron memoria conversacional, razonamiento fundamentado, contradicciones y Knowledge Gap Research.
-- Se añadió `nexiora_cognitive_dialogue.exe` y su prueba de integración.

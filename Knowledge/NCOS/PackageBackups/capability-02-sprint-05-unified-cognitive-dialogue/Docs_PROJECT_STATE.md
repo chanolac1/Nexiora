@@ -54,17 +54,3 @@ Estado: listo para Pure Apply.
 La certificación exige materializar `nexiora_gap.exe` además de su prueba.
 NX-CODE: Tools/Research/NxKnowledgeGapResearchTool.c
 NX-CODE: CMakeLists.txt
-
-## CAPABILITY-02 Sprint-05 — Unified Cognitive Dialogue
-Estado: implementado y listo para Pure Apply.
-
-Capacidades:
-- diálogo fundamentado multi-turno;
-- evaluación de afirmaciones contradictorias;
-- apertura automática de brechas de conocimiento;
-- una sola interfaz cognitiva para respuesta, contradicción y falta de evidencia.
-
-NX-CODE: Include/Nexiora/Reasoning/NxUnifiedCognitiveDialogue.h
-NX-CODE: Source/Reasoning/NxUnifiedCognitiveDialogue.c
-NX-CODE: Tools/Reasoning/NxUnifiedCognitiveDialogueTool.c
-NX-CODE: Tests/Unit/NxUnifiedCognitiveDialogueTests.c

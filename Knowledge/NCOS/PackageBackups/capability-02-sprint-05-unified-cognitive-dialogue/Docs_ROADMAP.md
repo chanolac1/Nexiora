@@ -16,6 +16,3 @@
 4. Autonomous software engineering.
 5. Benchmark-governed self-evolution.
 6. Unified NCOS runtime and Control Center.
-
-## CAPABILITY-02 Sprint-05 — Completado
-Unified Cognitive Dialogue cierra la segunda capacidad transversal. Próximo bloque: CAPABILITY-03 — Long-Term Cognitive Memory.

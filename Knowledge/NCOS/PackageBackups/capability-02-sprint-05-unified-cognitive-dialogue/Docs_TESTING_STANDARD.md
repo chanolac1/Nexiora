@@ -5,6 +5,3 @@
 - A missing executable is a build failure, never a skipped success.
 - Release certification requires zero failed and zero not-run tests.
 - Tests must be hermetic and repeatable.
-
-## Pruebas de diálogo unificado
-Toda fachada cognitiva debe probar respuesta fundamentada, contradicción preservada y apertura de brecha ante evidencia insuficiente. La CLI debe ser artefacto obligatorio de Pure Apply.

@@ -1,0 +1,17 @@
+nxevidence/1
+chunk=1
+source=unified_demo@00:01
+text=La memoria episodica conserva experiencias personales asociadas con tiempo, lugar y contexto autobiografico.
+end_chunk
+chunk=2
+source=unified_demo@00:02
+text=La memoria semantica conserva conocimientos generales, hechos y conceptos sin contexto autobiografico.
+end_chunk
+chunk=3
+source=unified_demo@00:03
+text=La consolidacion de memoria depende principalmente del sueno profundo.
+end_chunk
+chunk=4
+source=unified_demo@00:04
+text=La consolidacion de memoria no depende exclusivamente del sueno; la repeticion y la recuperacion activa tambien contribuyen.
+end_chunk

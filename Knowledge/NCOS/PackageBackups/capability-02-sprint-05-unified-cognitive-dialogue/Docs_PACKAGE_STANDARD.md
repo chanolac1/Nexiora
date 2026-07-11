@@ -20,6 +20,3 @@ Running `nexiora_package.exe` with no package path discovers the newest valid pe
 - documentation validation
 - history
 - exact-transaction rollback on failure
-
-## Artefactos cognitivos obligatorios
-Los paquetes de capacidad con CLI deben añadir tanto la prueba como el ejecutable al target `nexiora_test_suite_staged`; una biblioteca sin su CLI no certifica la entrega.

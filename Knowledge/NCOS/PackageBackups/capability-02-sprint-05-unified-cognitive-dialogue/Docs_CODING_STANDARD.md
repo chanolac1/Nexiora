@@ -7,6 +7,3 @@
 - Bounds-checked path and string composition.
 - One canonical declaration and implementation per public API.
 - Deterministic behavior and explicit error states.
-
-## Regla de orquestadores cognitivos
-Los orquestadores deben reutilizar contratos existentes, no duplicar algoritmos de razonamiento, y deben propagar estados explícitos como `OK`, `CONTRADICTORY_EVIDENCE` y `GAP_OPENED`.

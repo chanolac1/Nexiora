@@ -1,0 +1,14 @@
+nxconversation/1
+evidence=.\Samples\Reasoning\unified_dialogue_demo.nxevidence
+subject=memoria episodica
+turns=0
+turn.1.question=Que conserva la memoria episodica
+turn.1.resolved=Que conserva la memoria episodica
+turn.1.status=OK
+turn.1.confidence=25
+turns=1
+turn.2.question=Como funciona un reactor de fusion
+turn.2.resolved=Como funciona un reactor de fusion
+turn.2.status=INSUFFICIENT_EVIDENCE
+turn.2.confidence=0
+turns=2

@@ -13,6 +13,3 @@ Grounded reasoning evaluates the existing evidence first. When evidence is insuf
 <!-- NX-CODE: Include/Nexiora/Research/NxKnowledgeGapResearch.h -->
 <!-- NX-CODE: Source/Research/NxKnowledgeGapResearch.c -->
 <!-- NX-CODE: Tools/Research/NxKnowledgeGapResearchTool.c -->
-
-## Unified Cognitive Dialogue
-`NxUnifiedCognitiveDialogue` orquesta `NxConversationalContext`, `NxGroundedReasoning`, `NxContradictionHypothesis` y `NxKnowledgeGapResearch`. La fachada no duplica motores; coordina sus contratos y preserva trazabilidad.

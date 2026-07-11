@@ -19,6 +19,3 @@ Represent every unresolved knowledge gap as a persistent `nxgap/1` artifact cont
 
 ## ADR — Las CLI son artefactos obligatorios de certificación
 Una prueba de biblioteca no certifica por sí sola una capacidad orientada al usuario. Cada CLI entregada debe ser dependencia explícita del objetivo Pure Apply correspondiente.
-
-## DEC-CAP02-S05 — Orquestación cognitiva unificada
-Nexiora expone una sola fachada de diálogo cognitivo. El motor responde con evidencia cuando puede, conserva contradicciones cuando las detecta y abre un plan `nxgap/1` cuando no existe respaldo suficiente. No se permite degradar una falta de evidencia a una respuesta especulativa.
