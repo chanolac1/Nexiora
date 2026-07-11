@@ -1,0 +1,10 @@
+nxevidence/1
+chunk=1
+source=memory_lecture@00:01:10
+text=La memoria episodica conserva experiencias personales asociadas con tiempo, lugar y contexto autobiografico.
+chunk=2
+source=memory_textbook@page:42
+text=La memoria semantica conserva conocimientos generales, hechos y conceptos sin contexto autobiografico.
+chunk=3
+source=memory_review@page:8
+text=La memoria episodica y la memoria semantica son sistemas declarativos distintos: una recuerda eventos vividos y la otra conocimiento general.

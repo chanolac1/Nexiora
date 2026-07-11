@@ -1,0 +1,14 @@
+nxconversation/1
+evidence=.\Samples\Reasoning\conversation_demo.nxevidence
+subject=memoria episodica
+turns=0
+turn.1.question=Que conserva la memoria episodica
+turn.1.resolved=Que conserva la memoria episodica
+turn.1.status=OK
+turn.1.confidence=56
+turns=1
+turn.2.question=Y como se diferencia de la semantica
+turn.2.resolved=Compara memoria episodica con memoria semantica. Pregunta original: Y como se diferencia de la semantica
+turn.2.status=OK
+turn.2.confidence=56
+turns=2

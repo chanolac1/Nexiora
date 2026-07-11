@@ -1,0 +1,7 @@
+id=ncos-021-native-package-apply-workflow
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/ncos-021-native-package-apply-workflow/transaction.log
+files_installed=10
+files_skipped=0
+files_rolled_back=0

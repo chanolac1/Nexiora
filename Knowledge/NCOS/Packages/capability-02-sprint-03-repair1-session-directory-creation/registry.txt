@@ -1,0 +1,7 @@
+id=capability-02-sprint-03-repair1-session-directory-creation
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/capability-02-sprint-03-repair1-session-directory-creation/transaction.log
+files_installed=6
+files_skipped=1
+files_rolled_back=0

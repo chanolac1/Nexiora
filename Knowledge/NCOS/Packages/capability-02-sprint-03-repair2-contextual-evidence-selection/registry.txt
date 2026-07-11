@@ -1,0 +1,7 @@
+id=capability-02-sprint-03-repair2-contextual-evidence-selection
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/capability-02-sprint-03-repair2-contextual-evidence-selection/transaction.log
+files_installed=7
+files_skipped=0
+files_rolled_back=0

@@ -1,0 +1,7 @@
+id=capability-02-sprint-03-conversational-memory-and-context
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/capability-02-sprint-03-conversational-memory-and-context/transaction.log
+files_installed=10
+files_skipped=0
+files_rolled_back=0

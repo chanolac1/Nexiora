@@ -1,0 +1,17 @@
+id=NCOS-021 Native Package Apply Workflow
+version=1.0.0
+requires=NCOS-020 Package History Recovery
+apply.configure_preset=windows-msvc-release
+apply.build_preset=release
+apply.test_target=nexiora_test_suite
+apply.test_preset=release-tests
+file=Payload/Include/Nexiora/NCOS/NxPackageManager.h=>Include/Nexiora/NCOS/NxPackageManager.h
+file=Payload/Source/NCOS/NxPackageManager.c=>Source/NCOS/NxPackageManager.c
+file=Payload/Tools/NCOS/NxPackageTool.c=>Tools/NCOS/NxPackageTool.c
+file=Payload/Tests/Unit/NxPackageManagerTests.c=>Tests/Unit/NxPackageManagerTests.c
+file=Payload/Docs/NCOS/NCOS-021_QUE_LOGRAMOS.md=>Docs/NCOS/NCOS-021_QUE_LOGRAMOS.md
+file=Payload/Docs/PACKAGE_STANDARD.md=>Docs/PACKAGE_STANDARD.md
+file=Payload/Docs/PROJECT_STATE.md=>Docs/PROJECT_STATE.md
+file=Payload/Docs/CHANGELOG.md=>Docs/CHANGELOG.md
+file=Payload/Docs/DECISIONS.md=>Docs/DECISIONS.md
+file=Payload/Docs/NCOS/NCOS-021_VALIDATION.md=>Docs/NCOS/NCOS-021_VALIDATION.md

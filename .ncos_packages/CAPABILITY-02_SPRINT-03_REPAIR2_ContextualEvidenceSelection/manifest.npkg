@@ -1,0 +1,10 @@
+id=CAPABILITY-02 Sprint-03 Repair2 Contextual Evidence Selection
+version=1.0.0
+requires=CAPABILITY-02 Sprint-03 Repair1 Session Directory Creation
+file=Payload/Source/Reasoning/NxConversationalContext.c=>Source/Reasoning/NxConversationalContext.c
+file=Payload/Tests/Unit/NxConversationalContextTests.c=>Tests/Unit/NxConversationalContextTests.c
+file=Payload/Samples/Reasoning/conversation_demo.nxevidence=>Samples/Reasoning/conversation_demo.nxevidence
+file=Payload/Docs/PROJECT_STATE.md=>Docs/PROJECT_STATE.md
+file=Payload/Docs/CHANGELOG.md=>Docs/CHANGELOG.md
+file=Payload/Docs/DECISIONS.md=>Docs/DECISIONS.md
+file=Payload/Docs/NCOS/CAPABILITY-02_SPRINT-03_REPAIR2_QUE_LOGRAMOS.md=>Docs/NCOS/CAPABILITY-02_SPRINT-03_REPAIR2_QUE_LOGRAMOS.md
