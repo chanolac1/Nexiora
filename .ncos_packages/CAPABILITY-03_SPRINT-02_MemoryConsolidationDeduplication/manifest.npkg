@@ -1,0 +1,27 @@
+id=CAPABILITY-03 Sprint-02 Memory Consolidation and Deduplication
+version=1.0.0
+requires=CAPABILITY-03 Sprint-01 Repair1 Test Target Alignment
+apply.configure_preset=windows-msvc-release
+apply.build_preset=release
+apply.test_target=nexiora_test_suite
+apply.test_preset=release-tests
+file=Payload/CMakeLists.txt=>CMakeLists.txt
+file=Payload/Docs/ARCHITECTURE.md=>Docs/ARCHITECTURE.md
+file=Payload/Docs/CHANGELOG.md=>Docs/CHANGELOG.md
+file=Payload/Docs/CODING_STANDARD.md=>Docs/CODING_STANDARD.md
+file=Payload/Docs/DECISIONS.md=>Docs/DECISIONS.md
+file=Payload/Docs/MASTER_CONTEXT.md=>Docs/MASTER_CONTEXT.md
+file=Payload/Docs/NCOS/CAPABILITY-03_SPRINT-02_QUE_LOGRAMOS.md=>Docs/NCOS/CAPABILITY-03_SPRINT-02_QUE_LOGRAMOS.md
+file=Payload/Docs/PACKAGE_STANDARD.md=>Docs/PACKAGE_STANDARD.md
+file=Payload/Docs/PROJECT_STATE.md=>Docs/PROJECT_STATE.md
+file=Payload/Docs/ROADMAP.md=>Docs/ROADMAP.md
+file=Payload/Docs/TESTING_STANDARD.md=>Docs/TESTING_STANDARD.md
+file=Payload/Include/Nexiora/Memory/NxMemoryConsolidation.h=>Include/Nexiora/Memory/NxMemoryConsolidation.h
+file=Payload/Include/Nexiora/Memory/NxVersionedSemanticMemory.h=>Include/Nexiora/Memory/NxVersionedSemanticMemory.h
+file=Payload/Samples/Memory/consolidation_demo.txt=>Samples/Memory/consolidation_demo.txt
+file=Payload/Source/Memory/NxMemoryConsolidation.c=>Source/Memory/NxMemoryConsolidation.c
+file=Payload/Source/Memory/NxVersionedSemanticMemory.c=>Source/Memory/NxVersionedSemanticMemory.c
+file=Payload/Tests/Unit/NxMemoryConsolidationTests.c=>Tests/Unit/NxMemoryConsolidationTests.c
+file=Payload/Tests/Unit/NxVersionedSemanticMemoryTests.c=>Tests/Unit/NxVersionedSemanticMemoryTests.c
+file=Payload/Tools/Memory/NxMemoryConsolidationTool.c=>Tools/Memory/NxMemoryConsolidationTool.c
+file=Payload/Tools/Memory/NxSemanticMemoryTool.c=>Tools/Memory/NxSemanticMemoryTool.c

@@ -1,0 +1,4 @@
+Concepto: memoria episodica
+Fuente A: La memoria episodica conserva experiencias personales con contexto autobiografico.
+Fuente B: La memoria episodica conserva experiencias personales con contexto autobiografico.
+Resultado esperado: refuerzo por fuentes independientes, nueva version y trazabilidad completa.
