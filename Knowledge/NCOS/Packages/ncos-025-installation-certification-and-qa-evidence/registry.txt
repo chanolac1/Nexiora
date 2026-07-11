@@ -1,0 +1,7 @@
+id=ncos-025-installation-certification-and-qa-evidence
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/ncos-025-installation-certification-and-qa-evidence/transaction.log
+files_installed=17
+files_skipped=0
+files_rolled_back=0

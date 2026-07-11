@@ -1,0 +1,28 @@
+id=NCOS-025 Installation Certification and QA Evidence
+version=1.0.0
+requires=NCOS-024 Repair2 Workspace Manifest Header Contract
+apply.configure_preset=windows-msvc-release
+apply.build_preset=release
+apply.test_target=nexiora_test_suite_staged
+apply.test_preset=release-tests
+apply.qa_repetitions=2
+artifact=Build/windows-msvc-release/bin/nexiora_package.next.exe
+artifact=Build/windows-msvc-release/bin/nexiora_self_update.exe
+artifact=Build/windows-msvc-release/bin/NxPackageManagerTests.exe
+file=Payload/CMakeLists.txt=>CMakeLists.txt
+file=Payload/Include/Nexiora/NCOS/NxPackageManager.h=>Include/Nexiora/NCOS/NxPackageManager.h
+file=Payload/Include/Nexiora/NCOS/NxPackageCertification.h=>Include/Nexiora/NCOS/NxPackageCertification.h
+file=Payload/Source/NCOS/NxPackageManager.c=>Source/NCOS/NxPackageManager.c
+file=Payload/Source/NCOS/NxPackageCertification.c=>Source/NCOS/NxPackageCertification.c
+file=Payload/Tools/NCOS/NxPackageTool.c=>Tools/NCOS/NxPackageTool.c
+file=Payload/Tests/Unit/NxPackageManagerTests.c=>Tests/Unit/NxPackageManagerTests.c
+file=Payload/Docs/MASTER_CONTEXT.md=>Docs/MASTER_CONTEXT.md
+file=Payload/Docs/PROJECT_STATE.md=>Docs/PROJECT_STATE.md
+file=Payload/Docs/ROADMAP.md=>Docs/ROADMAP.md
+file=Payload/Docs/CHANGELOG.md=>Docs/CHANGELOG.md
+file=Payload/Docs/DECISIONS.md=>Docs/DECISIONS.md
+file=Payload/Docs/ARCHITECTURE.md=>Docs/ARCHITECTURE.md
+file=Payload/Docs/CODING_STANDARD.md=>Docs/CODING_STANDARD.md
+file=Payload/Docs/TESTING_STANDARD.md=>Docs/TESTING_STANDARD.md
+file=Payload/Docs/PACKAGE_STANDARD.md=>Docs/PACKAGE_STANDARD.md
+file=Payload/Docs/NCOS/NCOS-025_QUE_LOGRAMOS.md=>Docs/NCOS/NCOS-025_QUE_LOGRAMOS.md

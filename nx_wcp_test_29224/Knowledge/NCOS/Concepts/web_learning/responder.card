@@ -1,0 +1,8 @@
+domain=web_learning
+name=responder
+normalized=responder
+definition=La evidencia permite responder sin inventar
+purpose=Concepto extraido de evidencia multimodal: nx_wcp_test_29224/sample.nxknowledge
+relationships=extraido_de evidencia_multimodal
+confidence=0.66
+version=1
