@@ -426,6 +426,3 @@ int NxWorkspace_Clean(const char* repository_root, const char* workspace_id)
     }
     return system(command) == 0;
 }
-
-/* NCOS-024 implementation kept in an include unit so the existing CMake target remains stable. */
-#include "NxWorkspaceManifest.inc"

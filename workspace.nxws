@@ -1,0 +1,19 @@
+nxworkspace/1
+project=Nexiora
+git_branch=main
+git_commit=97fdab598bdb1381b2ace2afd50d03d5071e8219
+git_dirty=true
+compiler=MSYS2 UCRT64 GCC
+c_standard=C23
+warning_policy=zero
+target_count=101
+test_count=60
+executable_count=81
+installed_packages=62
+pending_packages=2
+blocked_packages=0
+documentation_checked=9
+documentation_missing=0
+source_inventory_hash=aa42a22fedfa46e8
+cmake_inventory_hash=bdae6bcb17b1c077
+package_inventory_hash=14650fb0739d03bd

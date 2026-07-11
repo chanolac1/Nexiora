@@ -88,30 +88,5 @@ int main(void)
     nx_expect(!NxWorkspace_Status(root, "Test Workspace", NULL), "cleaned workspace should not exist");
 
     remove("Build/NxWorkspaceEngineTestsSandbox/alpha.txt");
-
-    {
-        const char* manifest_path = "Build/NxWorkspaceEngineTestsSandbox/workspace.nxws";
-        NxWorkspaceManifestResult manifest_result;
-        nx_expect(nx_write_file("Build/NxWorkspaceEngineTestsSandbox/CMakeLists.txt",
-                                "add_executable(alpha alpha.c)\nadd_test(NAME Alpha COMMAND alpha)\n"),
-                  "manifest cmake fixture should be created");
-        nx_expect(nx_write_file("Build/NxWorkspaceEngineTestsSandbox/CMakePresets.json", "{}\n"),
-                  "manifest presets fixture should be created");
-        nx_expect(NxWorkspaceManifest_Snapshot(root, manifest_path, &manifest_result),
-                  "workspace snapshot should succeed");
-        nx_expect(manifest_result.target_count == 1U, "snapshot should discover target count");
-        nx_expect(manifest_result.test_count == 1U, "snapshot should discover test count");
-        nx_expect(NxWorkspaceManifest_Diff(root, manifest_path, &manifest_result),
-                  "fresh snapshot should match workspace");
-        nx_expect(nx_write_file("Build/NxWorkspaceEngineTestsSandbox/CMakeLists.txt",
-                                "add_executable(alpha alpha.c)\nadd_executable(beta beta.c)\nadd_test(NAME Alpha COMMAND alpha)\n"),
-                  "changed manifest cmake fixture should be created");
-        nx_expect(!NxWorkspaceManifest_Diff(root, manifest_path, &manifest_result),
-                  "changed workspace should differ from snapshot");
-        remove(manifest_path);
-        remove("Build/NxWorkspaceEngineTestsSandbox/CMakeLists.txt");
-        remove("Build/NxWorkspaceEngineTestsSandbox/CMakePresets.json");
-    }
-
     return failures == 0 ? 0 : 1;
 }

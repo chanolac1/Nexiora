@@ -944,12 +944,3 @@ if(NEXIORA_BUILD_TESTS)
         add_dependencies(nexiora_test_suite_staged NxUnifiedCognitiveDialogueTests nexiora_cognitive_dialogue)
     endif()
 endif()
-
-# NCOS-024 — Workspace State Manifest delivery certification
-# The workspace CLI and its tests are mandatory artifacts of the Pure Apply build.
-if(TARGET nexiora_test_suite)
-    add_dependencies(nexiora_test_suite nexiora_workspace NxWorkspaceEngineTests)
-endif()
-if(TARGET nexiora_test_suite_staged)
-    add_dependencies(nexiora_test_suite_staged nexiora_workspace NxWorkspaceEngineTests)
-endif()

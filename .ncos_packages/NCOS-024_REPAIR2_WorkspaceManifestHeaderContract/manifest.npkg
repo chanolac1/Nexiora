@@ -1,0 +1,15 @@
+id=NCOS-024 Repair2 Workspace Manifest Header Contract
+version=1.0.2
+requires=CAPABILITY-02 Sprint-05 Unified Cognitive Dialogue
+apply.configure_preset=windows-msvc-release
+apply.build_preset=release
+apply.test_target=nexiora_test_suite
+apply.test_preset=release-tests
+file=Payload/CMakeLists.txt=>CMakeLists.txt
+file=Payload/Include/Nexiora/NCOS/NxWorkspaceEngine.h=>Include/Nexiora/NCOS/NxWorkspaceEngine.h
+file=Payload/Include/Nexiora/NCOS/NxWorkspaceManifest.h=>Include/Nexiora/NCOS/NxWorkspaceManifest.h
+file=Payload/Source/NCOS/NxWorkspaceEngine.c=>Source/NCOS/NxWorkspaceEngine.c
+file=Payload/Source/NCOS/NxWorkspaceManifest.inc=>Source/NCOS/NxWorkspaceManifest.inc
+file=Payload/Tools/NCOS/NxWorkspaceTool.c=>Tools/NCOS/NxWorkspaceTool.c
+file=Payload/Tests/Unit/NxWorkspaceEngineTests.c=>Tests/Unit/NxWorkspaceEngineTests.c
+file=Payload/Docs/NCOS/NCOS-024_WORKSPACE_STATE_MANIFEST.md=>Docs/NCOS/NCOS-024_WORKSPACE_STATE_MANIFEST.md

@@ -1,0 +1,7 @@
+id=ncos-024-repair2-workspace-manifest-header-contract
+version=1.0.2
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/ncos-024-repair2-workspace-manifest-header-contract/transaction.log
+files_installed=8
+files_skipped=0
+files_rolled_back=0

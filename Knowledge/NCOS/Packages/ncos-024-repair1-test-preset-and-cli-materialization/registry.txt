@@ -1,0 +1,7 @@
+id=ncos-024-repair1-test-preset-and-cli-materialization
+version=1.0.1
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/ncos-024-repair1-test-preset-and-cli-materialization/transaction.log
+files_installed=7
+files_skipped=0
+files_rolled_back=0
