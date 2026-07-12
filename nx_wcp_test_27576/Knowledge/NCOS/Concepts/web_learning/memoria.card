@@ -1,0 +1,8 @@
+domain=web_learning
+name=memoria
+normalized=memoria
+definition=La memoria semantica conserva conceptos y relaciones
+purpose=Concepto extraido de evidencia multimodal: nx_wcp_test_27576/sample.nxknowledge
+relationships=extraido_de evidencia_multimodal
+confidence=0.66
+version=1

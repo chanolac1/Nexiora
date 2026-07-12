@@ -1,0 +1,25 @@
+id=COGNITIVE-CORE-V2 Sprint-01 Goal Graph and Hierarchical Planning
+version=1.0.0
+requires=NCOS-025 Installation Certification and QA Evidence
+apply.configure_preset=windows-msvc-release
+apply.build_preset=release
+apply.test_target=nexiora_test_suite
+apply.test_preset=release-tests
+artifact=Build/windows-msvc-release/bin/nexiora_goal_graph.exe
+artifact=Build/windows-msvc-release/bin/NxGoalGraphTests.exe
+file=Payload/CMakeLists.txt=>CMakeLists.txt
+file=Payload/Include/Nexiora/CognitiveV2/NxGoalGraph.h=>Include/Nexiora/CognitiveV2/NxGoalGraph.h
+file=Payload/Source/CognitiveV2/NxGoalGraph.c=>Source/CognitiveV2/NxGoalGraph.c
+file=Payload/Tools/CognitiveV2/NxGoalGraphTool.c=>Tools/CognitiveV2/NxGoalGraphTool.c
+file=Payload/Tests/Unit/NxGoalGraphTests.c=>Tests/Unit/NxGoalGraphTests.c
+file=Payload/Samples/CognitiveV2/diablo_like_goal_plan.txt=>Samples/CognitiveV2/diablo_like_goal_plan.txt
+file=Payload/Docs/MASTER_CONTEXT.md=>Docs/MASTER_CONTEXT.md
+file=Payload/Docs/PROJECT_STATE.md=>Docs/PROJECT_STATE.md
+file=Payload/Docs/ROADMAP.md=>Docs/ROADMAP.md
+file=Payload/Docs/CHANGELOG.md=>Docs/CHANGELOG.md
+file=Payload/Docs/DECISIONS.md=>Docs/DECISIONS.md
+file=Payload/Docs/ARCHITECTURE.md=>Docs/ARCHITECTURE.md
+file=Payload/Docs/CODING_STANDARD.md=>Docs/CODING_STANDARD.md
+file=Payload/Docs/TESTING_STANDARD.md=>Docs/TESTING_STANDARD.md
+file=Payload/Docs/PACKAGE_STANDARD.md=>Docs/PACKAGE_STANDARD.md
+file=Payload/Docs/NCOS/COGNITIVE-CORE-V2_SPRINT-01_QUE_LOGRAMOS.md=>Docs/NCOS/COGNITIVE-CORE-V2_SPRINT-01_QUE_LOGRAMOS.md

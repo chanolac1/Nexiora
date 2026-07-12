@@ -1,0 +1,8 @@
+Objetivo: construir un RPG de accion isometrico original.
+Jerarquia sugerida:
+1 Arquitectura y vertical slice
+2 Motor de combate (depende de 1)
+3 Inventario y botin (depende de 1)
+4 IA y pathfinding (depende de 2)
+5 Mundo, misiones y progresion (depende de 2 y 3)
+6 Guardado, pruebas y rendimiento (depende de 4 y 5)

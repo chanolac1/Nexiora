@@ -1,0 +1,7 @@
+id=cognitive-core-v2-sprint-01-goal-graph-and-hierarchical-planning
+version=1.0.0
+status=installed
+transaction=./Knowledge/NCOS/PackageTransactions/cognitive-core-v2-sprint-01-goal-graph-and-hierarchical-planning/transaction.log
+files_installed=16
+files_skipped=0
+files_rolled_back=0

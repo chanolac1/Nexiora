@@ -1,0 +1,7 @@
+nxgoalgraph/1
+objective=Desarrollar un RPG de accion isometrico original
+node_count=4
+node=1|parent=0|priority=100|status=DONE|title=Definir arquitectura y vertical slice|deps=
+node=2|parent=1|priority=90|status=PENDING|title=Implementar motor de combate|deps=1
+node=3|parent=1|priority=85|status=PENDING|title=Implementar inventario y sistema de botin|deps=1
+node=4|parent=1|priority=80|status=PENDING|title=Implementar IA enemiga y pathfinding|deps=2
